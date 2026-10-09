@@ -1,0 +1,46 @@
+# ============================================================
+# train.yaml — aggregate instance-seg training config
+# Consumed by run_logo_ablation.py -> model.train(**cfg)
+# Target env: WSL + PyTorch ROCm (RX 7800 XT)
+# ============================================================
+
+# ---- model / schedule ---------------------------------------
+epochs: 100
+patience: 30                # early stop; folds are small
+imgsz: 640
+batch: 16
+workers: 4
+device: 0                   # ROCm device 0 under WSL
+amp: true
+seed: 42                    # SAME seed across all arms -> paired comparison
+deterministic: true
+cache: false
+save_period: -1             # folds: don't snapshot every N epochs
+plots: false                # fold runs skip plots; final holdout run sets true
+verbose: false
+
+# ---- optimizer (matches prior yolo26n-seg-p2 run) ------------
+optimizer: AdamW
+lr0: 0.001
+lrf: 0.01
+weight_decay: 0.0005
+momentum: 0.937
+warmup_epochs: 3.0
+
+# ---- augmentation policy ------------------------------------
+# Rationale + citations are documented in EDA.ipynb section 12.
+mosaic: 1.0                 # ON — standard for YOLO-seg
+close_mosaic: 15
+copy_paste: 0.0             # OFF for online aug; cf. Zhang et al. 2021 used it
+                            # for OFFLINE label synthesis instead (AutCon 133:103994)
+fliplr: 0.5                 # piles have no canonical left/right
+flipud: 0.0                 # gravity-facing piles; vertical flip is unrealistic
+degrees: 10.0               # mild rotation — camera held at fixed angle
+scale: 0.3
+translate: 0.1
+perspective: 0.0            # keeps polygon geometry honest
+shear: 0.0
+hsv_h: 0.010                # small — hue separates gravel vs sand
+hsv_s: 0.4
+hsv_v: 0.3                  # exposure robustness (dark/blur clips exist)
+erasing: 0.0
