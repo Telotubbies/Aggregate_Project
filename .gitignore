@@ -1,0 +1,20 @@
+# datasets — regenerable from bronze/Roboflow; audit artifacts kept
+experiment/data/**/images/
+experiment/data/**/labels/
+
+# training outputs
+runs/
+*.pt
+*.onnx
+
+# python / jupyter
+__pycache__/
+.ipynb_checkpoints/
+*.py[cod]
+.venv/
+venv/
+
+# os junk
+nul
+Thumbs.db
+.DS_Store
