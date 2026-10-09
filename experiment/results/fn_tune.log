@@ -1,0 +1,135 @@
+GT loaded: 348 insts
+sz640                              strict=0.3548 sieved=0.4485 sand=0.199 FN=114 FP=43
+sz960                              strict=0.2922 sieved=0.3733 sand=0.131 FN=144 FP=44
+sz1280                             strict=0.1956 sieved=0.2477 sand=0.025 FN=182 FP=45
+sz640_flipTTA                      strict=0.3595 sieved=0.4530 sand=0.199 FN=111 FP=54
+sz640_nms_free                     strict=0.3436 sieved=0.4338 sand=0.192 FN=117 FP=41
+sz640_iou0.4                       strict=0.3566 sieved=0.4492 sand=0.197 FN=114 FP=39
+sz640_temporal+0.1                 strict=0.3595 sieved=0.4544 sand=0.214 FN=112 FP=50
+union_640+960                      strict=0.3526 sieved=0.4439 sand=0.192 FN=110 FP=61
+union_640+960+1280                 strict=0.3456 sieved=0.4392 sand=0.183 FN=111 FP=79
+union_640+960+flip                 strict=0.3581 sieved=0.4508 sand=0.196 FN=107 FP=71
+union_base+clean960                strict=0.3607 sieved=0.4547 sand=0.190 FN=101 FP=61
+  sahi 04802d75-aef4-4463-b9ac- 213
+  sahi 2f4b2f2f-9d1c-4a87-b5eb- 96
+  sahi 5079fbab-a649-4a32-b4de- 116
+  sahi 5079fbab-a649-4a32-b4de- 115
+  sahi 5d14519a-5463-48e4-be39- 136
+  sahi 68935cd9-3fa0-403f-ba48- 152
+  sahi 7a600bac-e654-415e-b91d- 178
+  sahi 7b6b3d3f-a6f6-4877-8d0f- 143
+  sahi 9056e676-f14d-410c-9dc7- 203
+  sahi bbf45eda-4ffb-4bf1-9b29- 28
+  sahi bbf45eda-4ffb-4bf1-9b29- 25
+  sahi bbf45eda-4ffb-4bf1-9b29- 29
+  sahi bbf45eda-4ffb-4bf1-9b29- 30
+  sahi bbf45eda-4ffb-4bf1-9b29- 30
+  sahi bbf45eda-4ffb-4bf1-9b29- 44
+  sahi bbf45eda-4ffb-4bf1-9b29- 50
+  sahi bbf45eda-4ffb-4bf1-9b29- 29
+  sahi bbf45eda-4ffb-4bf1-9b29- 22
+  sahi bbf45eda-4ffb-4bf1-9b29- 28
+  sahi bbf45eda-4ffb-4bf1-9b29- 37
+  sahi bbf45eda-4ffb-4bf1-9b29- 35
+  sahi bbf45eda-4ffb-4bf1-9b29- 26
+  sahi bbf45eda-4ffb-4bf1-9b29- 44
+  sahi bbf45eda-4ffb-4bf1-9b29- 37
+  sahi bbf45eda-4ffb-4bf1-9b29- 29
+  sahi bbf45eda-4ffb-4bf1-9b29- 20
+  sahi bbf45eda-4ffb-4bf1-9b29- 34
+  sahi bbf45eda-4ffb-4bf1-9b29- 37
+  sahi bbf45eda-4ffb-4bf1-9b29- 28
+  sahi bbf45eda-4ffb-4bf1-9b29- 31
+  sahi bbf45eda-4ffb-4bf1-9b29- 29
+  sahi bbf45eda-4ffb-4bf1-9b29- 28
+  sahi bbf45eda-4ffb-4bf1-9b29- 35
+  sahi bbf45eda-4ffb-4bf1-9b29- 24
+  sahi bbf45eda-4ffb-4bf1-9b29- 43
+  sahi bbf45eda-4ffb-4bf1-9b29- 19
+  sahi bbf45eda-4ffb-4bf1-9b29- 25
+  sahi bbf45eda-4ffb-4bf1-9b29- 22
+  sahi bbf45eda-4ffb-4bf1-9b29- 15
+  sahi bbf45eda-4ffb-4bf1-9b29- 25
+  sahi bbf45eda-4ffb-4bf1-9b29- 27
+  sahi bbf45eda-4ffb-4bf1-9b29- 39
+  sahi bbf45eda-4ffb-4bf1-9b29- 43
+  sahi bbf45eda-4ffb-4bf1-9b29- 46
+  sahi bbf45eda-4ffb-4bf1-9b29- 33
+  sahi e9eebbd1-234c-467a-91b7- 43
+  sahi e9eebbd1-234c-467a-91b7- 55
+  sahi e9eebbd1-234c-467a-91b7- 60
+  sahi f9b12ec3-0036-45f7-8cc3- 76
+  sahi f9b12ec3-0036-45f7-8cc3- 38
+  sahi f9b12ec3-0036-45f7-8cc3- 16
+  sahi f9b12ec3-0036-45f7-8cc3- 27
+  sahi f9b12ec3-0036-45f7-8cc3- 24
+  sahi f9b12ec3-0036-45f7-8cc3- 18
+  sahi f9b12ec3-0036-45f7-8cc3- 17
+  sahi f9b12ec3-0036-45f7-8cc3- 18
+  sahi f9b12ec3-0036-45f7-8cc3- 16
+  sahi f9b12ec3-0036-45f7-8cc3- 25
+  sahi f9b12ec3-0036-45f7-8cc3- 21
+  sahi f9b12ec3-0036-45f7-8cc3- 14
+  sahi f9b12ec3-0036-45f7-8cc3- 16
+  sahi f9b12ec3-0036-45f7-8cc3- 19
+  sahi f9b12ec3-0036-45f7-8cc3- 30
+  sahi f9b12ec3-0036-45f7-8cc3- 32
+  sahi f9b12ec3-0036-45f7-8cc3- 25
+  sahi f9b12ec3-0036-45f7-8cc3- 21
+  sahi f9b12ec3-0036-45f7-8cc3- 46
+  sahi f9b12ec3-0036-45f7-8cc3- 32
+  sahi f9b12ec3-0036-45f7-8cc3- 33
+  sahi f9b12ec3-0036-45f7-8cc3- 45
+  sahi f9b12ec3-0036-45f7-8cc3- 49
+  sahi f9b12ec3-0036-45f7-8cc3- 43
+  sahi f9b12ec3-0036-45f7-8cc3- 46
+  sahi f9b12ec3-0036-45f7-8cc3- 63
+  sahi f9b12ec3-0036-45f7-8cc3- 56
+  sahi f9b12ec3-0036-45f7-8cc3- 57
+  sahi f9b12ec3-0036-45f7-8cc3- 54
+  sahi f9b12ec3-0036-45f7-8cc3- 53
+  sahi f9b12ec3-0036-45f7-8cc3- 44
+  sahi f9b12ec3-0036-45f7-8cc3- 38
+  sahi f9b12ec3-0036-45f7-8cc3- 50
+  sahi f9b12ec3-0036-45f7-8cc3- 49
+  sahi f9b12ec3-0036-45f7-8cc3- 55
+  sahi f9b12ec3-0036-45f7-8cc3- 44
+  sahi f9b12ec3-0036-45f7-8cc3- 51
+  sahi f9b12ec3-0036-45f7-8cc3- 55
+  sahi f9b12ec3-0036-45f7-8cc3- 40
+  sahi f9b12ec3-0036-45f7-8cc3- 43
+  sahi f9b12ec3-0036-45f7-8cc3- 55
+  sahi f9b12ec3-0036-45f7-8cc3- 65
+  sahi f9b12ec3-0036-45f7-8cc3- 65
+  sahi f9b12ec3-0036-45f7-8cc3- 66
+  sahi f9b12ec3-0036-45f7-8cc3- 73
+  sahi f9b12ec3-0036-45f7-8cc3- 82
+  sahi f9b12ec3-0036-45f7-8cc3- 79
+  sahi f9b12ec3-0036-45f7-8cc3- 79
+  sahi f9b12ec3-0036-45f7-8cc3- 73
+  sahi f9b12ec3-0036-45f7-8cc3- 80
+  sahi f9b12ec3-0036-45f7-8cc3- 76
+  sahi f9b12ec3-0036-45f7-8cc3- 82
+  sahi f9b12ec3-0036-45f7-8cc3- 79
+  sahi f9b12ec3-0036-45f7-8cc3- 65
+  sahi f9b12ec3-0036-45f7-8cc3- 72
+  sahi f9b12ec3-0036-45f7-8cc3- 78
+  sahi fe3e6f0d-5f1f-4948-8468- 148
+sahi480                            strict=0.0618 sieved=0.0886 sand=0.031 FN=167 FP=282
+union_base+sahi                    strict=0.2495 sieved=0.3233 sand=0.139 FN=110 FP=297
+
+=== LEADERBOARD (sieved mAP) ===
+             config  strict_mAP  sieved_mAP  sand_strict  TP  FP  FN
+union_base+clean960      0.3607      0.4547       0.1901 168  61 101
+ sz640_temporal+0.1      0.3595      0.4544       0.2136 157  50 112
+      sz640_flipTTA      0.3595      0.4530       0.1986 158  54 111
+ union_640+960+flip      0.3581      0.4508       0.1955 162  71 107
+       sz640_iou0.4      0.3566      0.4492       0.1972 155  39 114
+              sz640      0.3548      0.4485       0.1991 155  43 114
+      union_640+960      0.3526      0.4439       0.1923 159  61 110
+ union_640+960+1280      0.3456      0.4392       0.1827 158  79 111
+     sz640_nms_free      0.3436      0.4338       0.1921 152  41 117
+              sz960      0.2922      0.3733       0.1309 125  44 144
+    union_base+sahi      0.2495      0.3233       0.1385 159 297 110
+             sz1280      0.1956      0.2477       0.0250  87  45 182
+            sahi480      0.0618      0.0886       0.0311 102 282 167
