@@ -1,0 +1,46 @@
+{
+  "artifact": "/home/supawich/Desktop/Aggregate_Project/experiment/runs/final_best/weights/best.pt",
+  "sha256_16": "9077148c9e89ec6a",
+  "architecture": "yolo26n-seg",
+  "task": "instance segmentation",
+  "classes": {
+    "0": "gravel",
+    "1": "sand"
+  },
+  "recipe": {
+    "optimizer": "AdamW",
+    "lr0": 0.001,
+    "imgsz": 640,
+    "epochs": 100,
+    "patience": 30,
+    "seed": 42,
+    "data": "data/gold (video-grouped)"
+  },
+  "splits": {
+    "train": 753,
+    "valid": 226,
+    "test": 105
+  },
+  "metrics": {
+    "test_strict": 0.388,
+    "test_sieved": 0.4717,
+    "test_biou": 0.2951,
+    "ultralytics_test_mask_mAP50_95": 0.3828,
+    "ultralytics_test_mask_mAP50": 0.5276
+  },
+  "deploy": {
+    "conf": 0.25,
+    "area_min": 0.005,
+    "stride": 5,
+    "decision": "mass_vote",
+    "ambiguity": "margin<0.4 or no-data",
+    "module": "deploy/material_state.py"
+  },
+  "env": {
+    "torch": "2.11.0+cu130",
+    "ultralytics": "8.4.171",
+    "cuda": "13.0",
+    "gpu": "NVIDIA GeForce RTX 3080 Ti",
+    "python": "3.12.3"
+  }
+}

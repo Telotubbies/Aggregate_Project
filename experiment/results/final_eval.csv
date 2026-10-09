@@ -1,0 +1,10 @@
+config,protocol,mAP,gravel,sand,TP,FP,FN
+sz640 base,strict,0.3801,0.5414,0.2187,177,75,171
+sz640 base,sieved,0.4734,0.6631,0.2837,172,66,97
+sz640 base,biou,0.2908,0.4189,0.1628,178,74,170
++flip union,strict,0.388,0.5625,0.2134,186,99,162
++flip union,sieved,0.4694,0.6657,0.2732,177,86,92
++flip union,biou,0.2991,0.4371,0.161,186,99,162
++temporal (best),strict,0.388,0.5505,0.2255,188,108,160
++temporal (best),sieved,0.4717,0.654,0.2895,179,94,90
++temporal (best),biou,0.2951,0.4216,0.1687,188,108,160
