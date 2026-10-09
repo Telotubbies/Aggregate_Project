@@ -1,0 +1,79 @@
+test: 105 imgs | 348 GT insts
+scanning checkpoints for shape-compatibility with final_best...
+  skip(unreadable): best.pt Can't get attribute 'Segment26P2' on <module '__main__' from '/home/supawich/Desktop/Aggregate_Project/experiment/soup_eval.py'>
+  skip(unreadable): last.pt Can't get attribute 'Segment26P2' on <module '__main__' from '/home/supawich/Desktop/Aggregate_Project/experiment/soup_eval.py'>
+compatible: 28/30 scanned
+  + arm_clean960 best.pt
+  + arm_clean960 last.pt
+  + arm_gold best.pt
+  + arm_gold last.pt
+  + arm_gold-2 best.pt
+  + arm_gold-2 last.pt
+  + arm_gold_aug best.pt
+  + arm_gold_aug last.pt
+  + arm_gold_aug-2 best.pt
+  + arm_gold_aug-2 last.pt
+  + arm_gold_clahe best.pt
+  + arm_gold_clahe last.pt
+  + arm_gold_clahe-2 best.pt
+  + arm_gold_clahe-2 last.pt
+  + final_best best.pt
+  + final_best last.pt
+  + opt_AdamW best.pt
+  + opt_AdamW last.pt
+  + opt_AdamW-2 best.pt
+  + opt_AdamW-2 last.pt
+  + opt_MuSGD best.pt
+  + opt_MuSGD last.pt
+  + opt_MuSGD-2 best.pt
+  + opt_MuSGD-2 last.pt
+  + opt_SGD best.pt
+  + opt_SGD last.pt
+  + opt_SGD-2 best.pt
+  + opt_SGD-2 last.pt
+
+== soup_pair_final: averaging 2 ckpts ==
+   strict: mAP=0.3615 gravel=0.542 sand=0.181 TP=165 FP=55 FN=183
+   sieved: mAP=0.4482 gravel=0.662 sand=0.235 TP=159 FP=50 FN=110
+Ultralytics 8.4.171 🚀 Python-3.12.3 torch-2.11.0+cu130 CUDA:0 (NVIDIA GeForce RTX 3080 Ti, 11902MiB)
+YOLO26n-seg summary (fused): 136 layers, 2,689,274 parameters, 0 gradients, 9.1 GFLOPs
+[34m[1mval: [0mFast image access ✅ (ping: 0.0±0.0 ms, read: 5444.9±1693.1 MB/s, size: 76.4 KB)
+[K[34m[1mval: [0mScanning /home/supawich/Desktop/Aggregate_Project/experiment/data/gold/test/labels.cache... 105 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 105/105 40.0Mit/s 0.0s
+[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95)     Mask(P          R      mAP50  mAP50-95): 14% ━╸────────── 1/7 1.9s/it 0.6s<11.4s[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95)     Mask(P          R      mAP50  mAP50-95): 42% ━━━━━─────── 3/7 5.6it/s 0.7s<0.7s[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95)     Mask(P          R      mAP50  mAP50-95): 85% ━━━━━━━━━━── 6/7 11.5it/s 0.8s<0.1s[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95)     Mask(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 7/7 8.0it/s 0.9s
+                   all        105        348      0.838      0.409      0.496      0.349      0.787      0.417      0.497      0.368
+Speed: 0.2ms preprocess, 2.4ms inference, 0.0ms loss, 0.5ms postprocess per image
+
+== soup_gold_bests: averaging 13 ckpts ==
+   strict: mAP=0.3564 gravel=0.499 sand=0.214 TP=51 FP=3 FN=297
+   sieved: mAP=0.4522 gravel=0.623 sand=0.282 TP=49 FP=3 FN=220
+Ultralytics 8.4.171 🚀 Python-3.12.3 torch-2.11.0+cu130 CUDA:0 (NVIDIA GeForce RTX 3080 Ti, 11902MiB)
+YOLO26n-seg summary (fused): 136 layers, 2,689,274 parameters, 0 gradients, 9.1 GFLOPs
+[34m[1mval: [0mFast image access ✅ (ping: 0.0±0.0 ms, read: 4553.0±957.8 MB/s, size: 50.7 KB)
+[K[34m[1mval: [0mScanning /home/supawich/Desktop/Aggregate_Project/experiment/data/gold/test/labels.cache... 105 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 105/105 88.1Mit/s 0.0s
+[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95)     Mask(P          R      mAP50  mAP50-95): 14% ━╸────────── 1/7 1.5s/it 0.5s<9.2s[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95)     Mask(P          R      mAP50  mAP50-95): 57% ━━━━━━╸───── 4/7 8.5it/s 0.6s<0.4s[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95)     Mask(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 7/7 10.4it/s 0.7s
+                   all        105        348      0.605      0.524      0.473      0.337      0.607      0.527      0.477      0.358
+Speed: 0.2ms preprocess, 1.0ms inference, 0.0ms loss, 0.5ms postprocess per image
+
+== soup_all_compat: averaging 28 ckpts ==
+   strict: mAP=0.3528 gravel=0.496 sand=0.209 TP=28 FP=3 FN=320
+   sieved: mAP=0.4486 gravel=0.623 sand=0.274 TP=26 FP=3 FN=243
+Ultralytics 8.4.171 🚀 Python-3.12.3 torch-2.11.0+cu130 CUDA:0 (NVIDIA GeForce RTX 3080 Ti, 11902MiB)
+YOLO26n-seg summary (fused): 136 layers, 2,689,274 parameters, 0 gradients, 9.1 GFLOPs
+[34m[1mval: [0mFast image access ✅ (ping: 0.0±0.0 ms, read: 3946.0±678.2 MB/s, size: 52.5 KB)
+[K[34m[1mval: [0mScanning /home/supawich/Desktop/Aggregate_Project/experiment/data/gold/test/labels.cache... 105 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 105/105 88.1Mit/s 0.0s
+[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95)     Mask(P          R      mAP50  mAP50-95): 14% ━╸────────── 1/7 1.5s/it 0.5s<9.1s[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95)     Mask(P          R      mAP50  mAP50-95): 57% ━━━━━━╸───── 4/7 8.7it/s 0.6s<0.3s[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95)     Mask(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 7/7 10.6it/s 0.7s
+                   all        105        348      0.693      0.504      0.467      0.334      0.693      0.504      0.467      0.355
+Speed: 0.3ms preprocess, 1.0ms inference, 0.0ms loss, 0.4ms postprocess per image
+
+===== LEADERBOARD =====
+                soup  n_ckpt protocol      mAP   gravel     sand  TP  FP  FN  ultra_mAP50_95
+FINAL_BEST (no soup)       1   strict 0.380058 0.541371 0.218744 177  75 171             NaN
+FINAL_BEST (no soup)       1   sieved 0.473391 0.663051 0.283731 172  66  97             NaN
+     soup_pair_final       2   strict 0.361472 0.541999 0.180944 165  55 183          0.3683
+     soup_pair_final       2   sieved 0.448234 0.661672 0.234795 159  50 110          0.3683
+     soup_gold_bests      13   strict 0.356354 0.498768 0.213940  51   3 297          0.3579
+     soup_gold_bests      13   sieved 0.452239 0.622748 0.281729  49   3 220          0.3579
+     soup_all_compat      28   strict 0.352785 0.496293 0.209277  28   3 320          0.3554
+     soup_all_compat      28   sieved 0.448619 0.622778 0.274461  26   3 243          0.3554
+
+total 91s
