@@ -1,0 +1,16 @@
+video,rule,sand_frac,decision,margin,frame_flips
+0a48349e-f671,mass_vote,1.0,sand,1.0,0
+0a48349e-f671,frame_majority,1.0,sand,1.0,0
+0a48349e-f671,top20pct_mass,1.0,sand,1.0,0
+0a48349e-f671,median_frame,1.0,sand,1.0,0
+0a48349e-f671,ema0.3,1.0,sand,1.0,0
+32842c3f-25ad,mass_vote,0.004999999888241291,gravel,0.9900000095367432,0
+32842c3f-25ad,frame_majority,0.0,gravel,1.0,0
+32842c3f-25ad,top20pct_mass,0.0,gravel,1.0,0
+32842c3f-25ad,median_frame,0.0,gravel,1.0,0
+32842c3f-25ad,ema0.3,0.0,gravel,1.0,0
+5d81688a-7f52,mass_vote,0.0,gravel,1.0,0
+5d81688a-7f52,frame_majority,0.0,gravel,1.0,0
+5d81688a-7f52,top20pct_mass,0.0,gravel,1.0,0
+5d81688a-7f52,median_frame,0.0,gravel,1.0,0
+5d81688a-7f52,ema0.3,0.0,gravel,1.0,0
