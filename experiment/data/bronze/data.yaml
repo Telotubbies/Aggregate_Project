@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 2
+names: ['gravel', 'sand']
+
+roboflow:
+  workspace: ilovefoods-workspace-qd0ut
+  project: aggregate_rock-and-sand
+  version: 5
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/ilovefoods-workspace-qd0ut/aggregate_rock-and-sand/dataset/5
