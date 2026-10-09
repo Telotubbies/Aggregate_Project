@@ -1,0 +1,5 @@
+{
+  "extract_ms_inst": 8.93572688648838,
+  "avg_inst_per_test_img": 3.3142857142857145,
+  "note": "oracle-mask: AP = classifier AP, detection = GT"
+}
