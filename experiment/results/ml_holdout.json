@@ -1,0 +1,8 @@
+{
+  "config": "svm_kernel+full",
+  "macro_f1": 0.9019068147902505,
+  "acc": 0.9022988505747126,
+  "n_test": 348,
+  "feat_dim": 126,
+  "seed": 42
+}
