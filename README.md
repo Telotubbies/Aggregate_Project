@@ -14,12 +14,17 @@ Instance segmentation of aggregate materials (gravel vs sand) — thesis pipelin
 
 ## Datasets
 
-Images/labels are not in git. Two ways to get them:
+Full datasets are committed under `experiment/data/` — clone and run.
 
-1. **Release asset** (recommended): download `datasets.tar.gz` from
-   [v0.1-data](https://github.com/Telotubbies/Aggregate_Project/releases/tag/v0.1-data)
-   and extract into `experiment/data/`.
-2. **Re-derive**: run `00EDA.ipynb` end-to-end (needs `ROBOFLOW_API_KEY`).
+- `bronze` — raw Roboflow export
+- `silver` — cleaned labels
+- `gold` — group-aware split (753 train / 226 valid / 105 test)
+- `gold_clahe` — CLAHE A/B variant
+- `gold_aug` — offline expansion, train 3012 (4x, incl. dark/rain)
+
+Fallback if a shallow/lfs-less clone is needed: `datasets.tar.gz` on the
+[v0.1-data release](https://github.com/Telotubbies/Aggregate_Project/releases/tag/v0.1-data),
+or re-run `00EDA.ipynb` end-to-end (needs `ROBOFLOW_API_KEY`).
 
 `gold` train/valid/test = 753/226/105. `gold_aug` train = 3012 (4x offline
 expansion incl. dark/rain environmental variants). File-level sha256 manifest:
