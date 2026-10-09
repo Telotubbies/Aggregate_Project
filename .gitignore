@@ -1,7 +1,3 @@
-# datasets — regenerable from bronze/Roboflow; audit artifacts kept
-experiment/data/**/images/
-experiment/data/**/labels/
-
 # training outputs
 runs/
 *.pt
