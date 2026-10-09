@@ -1,0 +1,2 @@
+name,data,imgsz,epochs_run,best_fit,best_epoch,wall_min,ds_sig,git,save_dir
+arm_clean960,gold_aug_clean,960,60,0.6108060000000001,15,37.5,6688f:164MB,0b99c72,/home/supawich/Desktop/Aggregate_Project/experiment/runs/arm_clean960

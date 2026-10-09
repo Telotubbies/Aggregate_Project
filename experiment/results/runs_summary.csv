@@ -1,0 +1,7 @@
+name,data,model,optimizer,lr0,batch,seed,ds_sig,git,epochs_run,best_fit,best_epoch,final_fit,wall_min,save_dir,phase,arm,winner_opt,winner_arm
+opt_MuSGD,gold_aug,yolo26n-seg.pt,MuSGD,0.0054,12,42,6690f:165MB,0b99c72,30,0.5591550000000001,29,0.55632,10.0,/home/supawich/Desktop/Aggregate_Project/experiment/runs/opt_MuSGD-2,optimizer,,AdamW,gold
+opt_AdamW,gold_aug,yolo26n-seg.pt,AdamW,0.001,12,42,6690f:165MB,0b99c72,30,0.57345,24,0.559479,9.5,/home/supawich/Desktop/Aggregate_Project/experiment/runs/opt_AdamW-2,optimizer,,AdamW,gold
+opt_SGD,gold_aug,yolo26n-seg.pt,SGD,0.01,12,42,6690f:165MB,0b99c72,30,0.569587,22,0.5626099999999999,9.7,/home/supawich/Desktop/Aggregate_Project/experiment/runs/opt_SGD-2,optimizer,,AdamW,gold
+arm_gold,gold,yolo26n-seg.pt,AdamW,0.001,12,42,2175f:54MB,0b99c72,94,0.5818840000000001,64,0.571837,9.1,/home/supawich/Desktop/Aggregate_Project/experiment/runs/arm_gold-2,data_arm,gold,AdamW,gold
+arm_gold_aug,gold_aug,yolo26n-seg.pt,AdamW,0.001,12,42,6690f:165MB,0b99c72,89,0.5594480000000001,59,0.519573,28.9,/home/supawich/Desktop/Aggregate_Project/experiment/runs/arm_gold_aug-2,data_arm,gold_aug,AdamW,gold
+arm_gold_clahe,gold_clahe,yolo26n-seg.pt,AdamW,0.001,12,42,2171f:66MB,0b99c72,94,0.5737380000000001,64,0.566855,9.0,/home/supawich/Desktop/Aggregate_Project/experiment/runs/arm_gold_clahe-2,data_arm,gold_clahe,AdamW,gold

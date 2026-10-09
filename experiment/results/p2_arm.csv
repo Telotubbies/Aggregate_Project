@@ -1,0 +1,2 @@
+name,data,model,optimizer,lr0,batch,seed,ds_sig,git,epochs_run,best_fit,best_epoch,final_fit,wall_min,save_dir
+arm_gold_p2,gold,/home/supawich/Desktop/Aggregate_Project/experiment/yolo26n-seg-p2.yaml,AdamW,0.001,12,42,2176f:54MB,0b99c72,92,0.550493,62,0.530929,11.2,/home/supawich/Desktop/Aggregate_Project/experiment/runs/arm_gold_p2

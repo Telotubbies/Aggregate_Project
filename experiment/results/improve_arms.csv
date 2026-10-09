@@ -1,0 +1,6 @@
+arm,epochs,best_ep,best_fit,wall_min,save_dir,error,imgsz
+cp02,54.0,24.0,0.5109,5.3,/home/supawich/Desktop/Aggregate_Project/experiment/runs/segment/runs/imp_cp02,,
+mr1,47.0,17.0,0.5057,24.0,/home/supawich/Desktop/Aggregate_Project/experiment/runs/segment/runs/imp_mr1,,
+cp02_mr1,0.0,0.0,skipped,0.0,user-skip,,
+aug_strong,69.0,39.0,0.5016,6.5,/home/supawich/Desktop/Aggregate_Project/experiment/runs/segment/runs/imp_aug_strong,,
+img960,61.0,31.0,0.5051,10.3,/home/supawich/Desktop/Aggregate_Project/experiment/runs/segment/runs/imp_img960,,960.0
