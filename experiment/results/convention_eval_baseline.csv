@@ -1,0 +1,6 @@
+model,protocol,AP_gravel,AP_sand,mAP5095,TP,FP,FN
+baseline,strict,0.5105,0.1991,0.3548,158,44,190
+baseline,sieved,0.6279,0.2696,0.4487,155,43,114
+baseline,void,0.6257,0.2625,0.4441,155,44,114
+baseline,kirillov,0.6511,0.1693,0.4102,122,44,82
+baseline,biou,0.7924,0.4954,0.6439,158,44,190

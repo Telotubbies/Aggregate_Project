@@ -1,0 +1,7 @@
+cls,protocol,TP,FP,FN
+gravel,strict,108,26,81
+gravel,sieved,105,26,44
+gravel,void,105,26,44
+sand,strict,50,18,109
+sand,sieved,50,17,70
+sand,void,50,18,70
