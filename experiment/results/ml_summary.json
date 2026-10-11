@@ -1,0 +1,30 @@
+{
+  "win_cfg": "svm_kernel+full",
+  "holdout": {
+    "config": "svm_kernel+full",
+    "macro_f1": 0.9019068147902505,
+    "acc": 0.9022988505747126,
+    "n_test": 348,
+    "feat_dim": 126,
+    "seed": 42
+  },
+  "cv_means": {
+    "cnn": 0.8919709020964506,
+    "logreg": 0.7558359943011371,
+    "mlp": 0.9135914137192708,
+    "svm_kernel": 0.9335351762530693
+  },
+  "arm_means": {
+    "baseline106": 0.9184923905550911,
+    "classic_rest": 0.5753622913216123,
+    "color": 0.9139010236814076,
+    "full": 0.9335351762530693,
+    "texture_gpu": 0.517255554056371
+  },
+  "feat_dim_raw": 195,
+  "feat_dim_kept": 126,
+  "n_instances": 12224,
+  "n_groups": 26,
+  "device": "cuda",
+  "seed": 42
+}
