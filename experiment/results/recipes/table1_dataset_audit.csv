@@ -1,0 +1,5 @@
+dataset,train_imgs,gravel_inst,sand_inst,total_inst,sand_frac,inst_per_img
+aug,3012,5066,6120,11186,0.547,3.71
+aug_rfs,4720,6198,12240,18438,0.664,3.91
+aug_sahift,19468,15701,23655,39356,0.601,2.02
+aug_hem,3376,5841,7117,12958,0.549,3.84

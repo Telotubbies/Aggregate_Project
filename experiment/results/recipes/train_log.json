@@ -1,0 +1,22 @@
+{
+ "aug": {
+  "imgsz": 960,
+  "hours": 0.86
+ },
+ "rfs": {
+  "imgsz": 960,
+  "hours": 0.71
+ },
+ "sahift": {
+  "imgsz": 640,
+  "hours": 1.98
+ },
+ "hem": {
+  "imgsz": 960,
+  "hours": 0.62
+ },
+ "res1280": {
+  "imgsz": 1280,
+  "hours": 1.23
+ }
+}

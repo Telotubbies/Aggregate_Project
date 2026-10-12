@@ -1,0 +1,4 @@
+eval,gravel_AP50,sand_AP50,macro,sand_recall
+aug x gold test (old),0.7332,0.4152,0.5742,0.132
+aug x gold_v2 test,0.7815,0.5021,0.6418,0.277
+v2ctrl x gold_v2 test,0.6728,0.3473,0.51,0.221

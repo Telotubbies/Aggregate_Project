@@ -1,0 +1,6 @@
+path: /home/supawich/Desktop/Aggregate_Project/experiment/data/logo/bbf45eda
+train: train/images
+val: valid/images
+test: test/images
+nc: 2
+names: ['gravel', 'sand']

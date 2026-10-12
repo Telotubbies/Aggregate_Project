@@ -1,0 +1,21 @@
+{
+ "ngt": {
+  "0": 182,
+  "1": 0
+ },
+ "gravel": {
+  "AP50": 0.6471,
+  "recall": 0.478,
+  "tp": 87,
+  "npred": 117
+ },
+ "sand": {
+  "AP50": 0.0,
+  "recall": 0.0,
+  "tp": 0,
+  "npred": 0
+ },
+ "AP50_macro": 0.3236,
+ "held_out": "d56fcb3c",
+ "test_imgs": 57
+}

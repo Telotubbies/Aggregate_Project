@@ -15,3 +15,9 @@ nul
 Thumbs.db
 .DS_Store
 *.cache
+
+# generated recipe datasets (rebuild via nb12 cells)
+experiment/data/recipes/
+
+# prediction caches (regenerable, large)
+*.npy

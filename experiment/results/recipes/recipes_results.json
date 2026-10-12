@@ -1,0 +1,77 @@
+{
+ "aug": {
+  "gravel": {
+   "AP50": 0.7332,
+   "recall": 0.571,
+   "tp": 108,
+   "npred": 137
+  },
+  "sand": {
+   "AP50": 0.4152,
+   "recall": 0.132,
+   "tp": 21,
+   "npred": 29
+  },
+  "AP50_macro": 0.5742
+ },
+ "rfs": {
+  "gravel": {
+   "AP50": 0.6139,
+   "recall": 0.577,
+   "tp": 109,
+   "npred": 234
+  },
+  "sand": {
+   "AP50": 0.3807,
+   "recall": 0.164,
+   "tp": 26,
+   "npred": 43
+  },
+  "AP50_macro": 0.4973
+ },
+ "sahift": {
+  "gravel": {
+   "AP50": 0.6874,
+   "recall": 0.582,
+   "tp": 110,
+   "npred": 181
+  },
+  "sand": {
+   "AP50": 0.36,
+   "recall": 0.075,
+   "tp": 12,
+   "npred": 19
+  },
+  "AP50_macro": 0.5237
+ },
+ "hem": {
+  "gravel": {
+   "AP50": 0.6873,
+   "recall": 0.624,
+   "tp": 118,
+   "npred": 217
+  },
+  "sand": {
+   "AP50": 0.3049,
+   "recall": 0.057,
+   "tp": 9,
+   "npred": 16
+  },
+  "AP50_macro": 0.4961
+ },
+ "res1280": {
+  "gravel": {
+   "AP50": 0.7373,
+   "recall": 0.593,
+   "tp": 112,
+   "npred": 151
+  },
+  "sand": {
+   "AP50": 0.3079,
+   "recall": 0.05,
+   "tp": 8,
+   "npred": 14
+  },
+  "AP50_macro": 0.5226
+ }
+}
