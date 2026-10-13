@@ -9,6 +9,38 @@ all train-time augmentations disabled (controlled protocol, nb12).
 Metric: per-class AP50 + recall at same-class mask-IoU ≥ .5, conf ≥ .05,
 evaluated at flat 960 on held-out images (identical evaluator across all runs).
 
+---
+
+## 0. Latest — Final Model v1 (`bench_ws`, 2026-10-14)
+
+**รายงานฉบับเต็ม → [experiment/docs/final_model_v1.md](../docs/final_model_v1.md)**
+
+Benchmark ล่าสุดบน `gold_ws` (stripe/seen-scene split) — train บน `gold_ws_aug`,
+eval บน `gold_ws/test` 88 ภาพ, conf ≥ .05, mask-IoU ≥ .5:
+
+| model | gravel AP50 | sand AP50 | macro AP50 | model file |
+|---|---:|---:|---:|---|
+| Mask R-CNN R50-FPN v2 | .964 | .913 | **.939** | local only — `bench_ws/mrcnn_best.pt` (178 MB > GitHub 100 MB limit) |
+| YOLO26s-seg | .933 | .881 | **.907** | [`runs/bench_ws/yolo26s/weights/best.pt`](../runs/bench_ws/yolo26s/weights/best.pt) (23 MB) |
+| **YOLO26n-seg — Final Model v1** ⭐ | .942 | .856 | **.899** | [`runs/ws/final/weights/best.pt`](../runs/ws/final/weights/best.pt) (6.3 MB) |
+| U-Net + watershed | .286 | .299 | .292 | [`bench_ws/unet_best.pt`](bench_ws/unet_best.pt) (30 MB) |
+| YOLO26n-det (aux, det-only) | box AP50 .889 | — | — | [`runs/bench_ws/yolo26n_det/weights/best.pt`](../runs/bench_ws/yolo26n_det/weights/best.pt) (20 MB) |
+
+> ⚠️ `gold_ws` เป็น **seen-scene split** (เฟรมคลิปเดียวกันสลับข้าม train/test) —
+> ตัวเลข ~.90 ไม่ใช่ unseen-site generalization ดู caveat เต็มในเอกสารหลัก
+
+### Demo — YOLO-seg overlay บน 3 คลิปจริง
+
+| 32842c3f | 5d81688a | 0a48349e |
+|---|---|---|
+| ![32842c3f](bench_ws/video/32842c3f.gif) | ![5d81688a](bench_ws/video/5d81688a.gif) | ![0a48349e](bench_ws/video/0a48349e.gif) |
+| [▶ mp4 เต็ม](bench_ws/video/32842c3f.mp4) | [▶ mp4 เต็ม](bench_ws/video/5d81688a.mp4) | [▶ mp4 เต็ม](bench_ws/video/0a48349e.mp4) |
+
+Artifacts ทั้งหมดของชุดนี้อยู่ใน [`bench_ws/`](bench_ws/) — สรุปเนื้อหาโฟลเดอร์
+ดู §8 ของ [final_model_v1.md](../docs/final_model_v1.md)
+
+---
+
 ## 1. Experiment matrix
 
 | # | Experiment | Arms | Question |
