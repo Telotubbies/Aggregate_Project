@@ -2,12 +2,13 @@
 
 Instance-segmentation pipeline for classifying aggregate deliveries
 (**gravel** vs **sand**) from truck-camera footage. Built on Ultralytics
-**YOLO26n-seg**, evaluated under convention-aware protocols on a
-leakage-free, video-grouped split, and deployed as a per-video
-decision-state system that emits exactly one material label per event.
+**YOLO26n-seg**, evaluated under multiple convention-aware grouped
+protocols, and deployed as a per-video decision-state system that emits
+exactly one material label per event.
 
-This repository accompanies a thesis project; every experiment is
-reproducible and all reported numbers trace to committed artifacts.
+This repository accompanies a thesis project; experiments are designed
+to be reproducible, with protocol caveats and provenance documented in
+`experiment/docs/model_comparison.md`.
 
 ---
 
@@ -42,7 +43,11 @@ frame, EMA) agree unanimously; no clip produces contradictory states.
 > Reporting note: earlier exploratory runs showed ~0.79 "mAP50"; that figure
 > is **validation** mAP50, not test mAP50-95, and older random-frame splits
 > leaked videos across splits. The numbers above are the correct,
-> comparable headline metrics.
+> comparable headline metrics for that protocol.
+>
+> Multi-model evidence and limitations: `experiment/docs/model_comparison.md`.
+> The ~0.90 AP50 figures come from a seen-scene development benchmark and
+> must not be reported as unseen-site performance.
 
 ---
 
@@ -58,6 +63,7 @@ Aggregate_Project/
     ├── final_pipeline.ipynb         # PRIMARY DELIVERABLE: formal
     │                                #   train -> eval -> deploy notebook
     ├── methods_survey.md            # literature survey w/ verdicts per method
+    ├── docs/model_comparison.md     # model evidence + protocol limitations
     ├── deploy/
     │   └── material_state.py        # production decision module (Ultralytics)
     ├── soup_eval.py                 # model-soup evaluation script

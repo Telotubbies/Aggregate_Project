@@ -1,0 +1,5 @@
+,params_M,GFLOPs,lat_ms_3080ti,size_MB,note,fps_3080ti
+yolo26n,3.05,22.87,6.26,6.6,,159.7
+yolo26s,11.44,83.44,7.63,23.4,,131.1
+mrcnn,46.36,128.24,37.36,185.8,GFLOPs backbone-only,26.8
+unet,7.76,48.3,147.06,31.1,incl. watershed post,6.8

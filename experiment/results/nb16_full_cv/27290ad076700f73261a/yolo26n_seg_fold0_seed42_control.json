@@ -1,0 +1,82 @@
+{
+  "status": "completed",
+  "name": "yolo26n_seg_fold0_seed42_control",
+  "model": "yolo26n_seg",
+  "fold": 0,
+  "seed": 42,
+  "arm": "control",
+  "spec": {
+    "plan_id": "27290ad076700f73261a",
+    "job": {
+      "recipe": {
+        "name": "yolo26n_seg",
+        "kind": "yolo",
+        "task": "segment",
+        "init": "yolo26n-seg.pt",
+        "size": 960,
+        "epochs": 30,
+        "batch": 2,
+        "lr": 0.001
+      },
+      "fold": 0,
+      "seed": 42,
+      "arm": "control"
+    },
+    "optimizer_steps": 11070,
+    "initializer_sha": "361fbfabab285c3237700b6bb91d7ecfa602cd945fffda8dbe1242829b71e73f"
+  },
+  "checkpoint": "/home/supawich/Desktop/Aggregate_Project/experiment/runs/nb16_full_cv/27290ad076700f73261a/yolo26n_seg_fold0_seed42_control/selected.pt",
+  "checkpoint_sha": "99d5eaae523c1490b73f338976fcd3119e20d67d80fbcb21b8ff8987dbc89b3c",
+  "optimizer_steps": 11070,
+  "selected_epoch": 22,
+  "threshold_source": "inner-valid",
+  "thresholds": {
+    "0": 0.17572759091854095,
+    "1": 0.08306032419204712
+  },
+  "box": {
+    "AP": 0.17536712873348229,
+    "AP50": 0.32753947179548426,
+    "AP75": 0.15988348927112928,
+    "AP_small": 0.0013494481316263492,
+    "AP_medium": 0.18364127299909644,
+    "AP_large": 0.231194112286734,
+    "AR1": 0.11737908496732026,
+    "AR10": 0.25201960784313726,
+    "AR100": 0.2552875816993464,
+    "AR_small": 0.010638297872340424,
+    "AR_medium": 0.23073770491803275,
+    "AR_large": 0.35719047619047617,
+    "status": "canonical COCOeval",
+    "mode": "bbox",
+    "per_class": {
+      "gravel": 0.3483580198432023,
+      "sand": 0.002376237623762376
+    }
+  },
+  "mask": {
+    "AP": 0.18634651047952383,
+    "AP50": 0.33093430712643523,
+    "AP75": 0.19132167174761894,
+    "AP_small": 0.0002556981372249854,
+    "AP_medium": 0.20015580865978866,
+    "AP_large": 0.24932844309916663,
+    "AR1": 0.11916666666666667,
+    "AR10": 0.25816448801742925,
+    "AR100": 0.26143246187363844,
+    "AR_small": 0.006382978723404255,
+    "AR_medium": 0.2485655737704918,
+    "AR_large": 0.3496428571428571,
+    "status": "canonical COCOeval",
+    "mode": "segm",
+    "per_class": {
+      "gravel": 0.3707128229392457,
+      "sand": 0.0019801980198019802
+    }
+  },
+  "postprocessing": null,
+  "predictions": "/home/supawich/Desktop/Aggregate_Project/experiment/results/nb16_full_cv/27290ad076700f73261a/yolo26n_seg_fold0_seed42_control_predictions.jsonl.gz",
+  "predictions_sha": "920d62d0ac84000cec39a98e4b04c132673ac5d9b4c2357199af024aa14d9486",
+  "seconds": 1046.5091987529995,
+  "scope": "development grouped CV; one seed; not external event/site validation"
+}
