@@ -1,0 +1,30 @@
+{
+ "yolo26n": {
+  "params_M": 3.05,
+  "GFLOPs": 22.87,
+  "lat_ms_3080ti": 6.15,
+  "size_MB": 6.6,
+  "note": ""
+ },
+ "yolo26s": {
+  "params_M": 11.44,
+  "GFLOPs": 83.44,
+  "lat_ms_3080ti": 7.21,
+  "size_MB": 23.4,
+  "note": ""
+ },
+ "mrcnn": {
+  "params_M": 46.36,
+  "GFLOPs": 128.24,
+  "lat_ms_3080ti": 40.73,
+  "size_MB": 185.8,
+  "note": "GFLOPs backbone-only"
+ },
+ "unet": {
+  "params_M": 7.76,
+  "GFLOPs": 48.3,
+  "lat_ms_3080ti": 147.09,
+  "size_MB": 31.1,
+  "note": "incl. watershed post"
+ }
+}

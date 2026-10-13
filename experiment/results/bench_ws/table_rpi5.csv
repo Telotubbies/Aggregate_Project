@@ -1,0 +1,5 @@
+,rpi5_ms_est,rpi5_fps_est
+yolo26n,250.0,3.99
+yolo26s,458.0,2.18
+mrcnn,3362.0,0.3
+unet,8824.0,0.11
