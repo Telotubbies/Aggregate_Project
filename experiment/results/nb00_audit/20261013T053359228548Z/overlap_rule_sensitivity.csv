@@ -1,0 +1,9 @@
+metric,threshold,pairs
+iou,0.3,1222
+iou,0.5,1044
+iou,0.7,894
+iou,0.9,736
+iomin,0.3,1711
+iomin,0.5,1689
+iomin,0.7,1678
+iomin,0.9,1640

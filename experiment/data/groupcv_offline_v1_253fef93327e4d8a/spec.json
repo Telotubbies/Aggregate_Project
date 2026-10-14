@@ -1,0 +1,38 @@
+{
+  "schema": "groupcv-offline-v1",
+  "source_dataset_id": "9bf2fab6eb34eb82dc7c4aad4b4de736c217e203c2f0f7cb2e36c6118705b8b9",
+  "source_code_id": "16b90991afda8ba893a5b1c834dbe22c61d676e747c07588ccc6cac9acfe8348",
+  "k": 5,
+  "seed": 42,
+  "inner_valid_fraction": 0.2,
+  "group_policy": "merged group + UUID + byte/pixel duplicates + dHash<=6 conservative connected components",
+  "assignments_sha": "a2c3f4c16618c17e8b46232c87f188ddae45bcf318df20fe2debe2d6685389aa",
+  "augmentation": {
+    "version": "offline-safe-v1",
+    "copies_per_parent": 3,
+    "variants": [
+      "hflip",
+      "gamma_brightness",
+      "clahe_blur"
+    ],
+    "gamma_range": [
+      0.85,
+      1.15
+    ],
+    "brightness_range": [
+      0.9,
+      1.1
+    ],
+    "clahe_clip": 2.0,
+    "clahe_grid": [
+      8,
+      8
+    ],
+    "blur_sigma": 0.35,
+    "affine": false,
+    "vertical_flip": false,
+    "online_augmentation": false
+  },
+  "geometry_review": "mechanical only; independent semantic review pending",
+  "evaluation_scope": "development grouped CV; not external/untouched test"
+}

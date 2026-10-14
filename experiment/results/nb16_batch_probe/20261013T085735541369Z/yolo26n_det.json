@@ -1,0 +1,9 @@
+{
+  "model": "yolo26n_det",
+  "batch": 12,
+  "status": "FAIL",
+  "peak_allocated_gib": 10.373546600341797,
+  "peak_reserved_gib": 10.544921875,
+  "seconds": 1.4348582519996853,
+  "error": "AssertionError: Batch/budget changed by runtime recovery"
+}

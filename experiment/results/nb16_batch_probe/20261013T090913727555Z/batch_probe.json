@@ -1,0 +1,121 @@
+{
+  "recipes": [
+    {
+      "name": "yolo26n_seg",
+      "kind": "yolo",
+      "task": "segment",
+      "init": "yolo26n-seg.pt",
+      "size": 960,
+      "epochs": 30,
+      "batch": 12,
+      "lr": 0.001
+    },
+    {
+      "name": "yolo26s_seg",
+      "kind": "yolo",
+      "task": "segment",
+      "init": "yolo26s-seg.pt",
+      "size": 960,
+      "epochs": 30,
+      "batch": 6,
+      "lr": 0.001
+    },
+    {
+      "name": "mrcnn",
+      "kind": "mrcnn",
+      "task": "segment",
+      "init": "COCO_DEFAULT",
+      "size": 960,
+      "epochs": 30,
+      "batch": 8,
+      "lr": 0.005
+    },
+    {
+      "name": "unet_ws",
+      "kind": "unet",
+      "task": "segment",
+      "init": "random",
+      "size": 512,
+      "epochs": 30,
+      "batch": 14,
+      "lr": 0.001
+    },
+    {
+      "name": "yolo26n_det",
+      "kind": "yolo",
+      "task": "detect",
+      "init": "yolo26n.pt",
+      "size": 960,
+      "epochs": 30,
+      "batch": 10,
+      "lr": 0.001
+    },
+    {
+      "name": "yolo26s_det",
+      "kind": "yolo",
+      "task": "detect",
+      "init": "yolo26s.pt",
+      "size": 960,
+      "epochs": 30,
+      "batch": 5,
+      "lr": 0.001
+    }
+  ],
+  "steps": 3,
+  "results": [
+    {
+      "model": "yolo26n_seg",
+      "batch": 12,
+      "status": "PASS",
+      "peak_allocated_gib": 8.950582027435303,
+      "peak_reserved_gib": 9.75390625,
+      "seconds": 32.287693219001085,
+      "error": null
+    },
+    {
+      "model": "yolo26s_seg",
+      "batch": 6,
+      "status": "PASS",
+      "peak_allocated_gib": 8.480451583862305,
+      "peak_reserved_gib": 9.279296875,
+      "seconds": 31.909788372999174,
+      "error": null
+    },
+    {
+      "model": "mrcnn",
+      "batch": 8,
+      "status": "PASS",
+      "peak_allocated_gib": 9.197021484375,
+      "peak_reserved_gib": 10.1328125,
+      "seconds": 47.11987822100127,
+      "error": null
+    },
+    {
+      "model": "unet_ws",
+      "batch": 14,
+      "status": "PASS",
+      "peak_allocated_gib": 7.71783447265625,
+      "peak_reserved_gib": 10.12109375,
+      "seconds": 8.383154447998095,
+      "error": null
+    },
+    {
+      "model": "yolo26n_det",
+      "batch": 10,
+      "status": "PASS",
+      "peak_allocated_gib": 5.716838836669922,
+      "peak_reserved_gib": 6.7109375,
+      "seconds": 4.834854552002071,
+      "error": null
+    },
+    {
+      "model": "yolo26s_det",
+      "batch": 5,
+      "status": "PASS",
+      "peak_allocated_gib": 5.710226535797119,
+      "peak_reserved_gib": 6.552734375,
+      "seconds": 5.4175133099997765,
+      "error": null
+    }
+  ]
+}

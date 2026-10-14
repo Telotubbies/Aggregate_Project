@@ -1,0 +1,140 @@
+{
+  "spec": {
+    "schema": "groupcv-offline-v2",
+    "source_dataset_id": "9bf2fab6eb34eb82dc7c4aad4b4de736c217e203c2f0f7cb2e36c6118705b8b9",
+    "source_code_id": "50948d1499207f6e6a6645ed5047de30f64330250c232e7975370072ebf7e89d",
+    "k": 5,
+    "seed": 42,
+    "inner_valid_fraction": 0.2,
+    "group_policy": "merged group + UUID + byte/pixel duplicates + dHash<=6 conservative connected components",
+    "assignments_sha": "a2c3f4c16618c17e8b46232c87f188ddae45bcf318df20fe2debe2d6685389aa",
+    "augmentation": {
+      "version": "offline-recipe-v2-draft",
+      "status": "preflight; production approval required",
+      "copies_per_parent": 3,
+      "variants": [
+        "color_light",
+        "clahe_blur",
+        "environment"
+      ],
+      "gamma_range": [
+        0.85,
+        1.9
+      ],
+      "brightness_range": [
+        0.9,
+        1.1
+      ],
+      "hue_probability": 0.5,
+      "hue_degrees": [
+        -15.0,
+        15.0
+      ],
+      "saturation_probability": 0.5,
+      "saturation_range": [
+        0.85,
+        1.15
+      ],
+      "white_balance_probability": 0.5,
+      "white_balance_rgb_gains": [
+        0.95,
+        1.05
+      ],
+      "clahe_clip": 2.0,
+      "clahe_grid": [
+        8,
+        8
+      ],
+      "blur_probability": 0.5,
+      "blur_sigma": 0.35,
+      "environment_choices": [
+        "rain",
+        "noise",
+        "night"
+      ],
+      "environment_probabilities": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "rain_density": [
+        0.0003,
+        0.0006
+      ],
+      "rain_angle_degrees": [
+        75.0,
+        105.0
+      ],
+      "rain_length_pixels": [
+        8.0,
+        22.0
+      ],
+      "rain_alpha": 0.6,
+      "noise_sigma": [
+        0.01,
+        0.03
+      ],
+      "night_gamma": [
+        1.3,
+        1.9
+      ],
+      "night_brightness": [
+        0.55,
+        0.8
+      ],
+      "night_rgb_tints": [
+        [
+          1.05,
+          1.0,
+          0.95
+        ],
+        [
+          0.95,
+          1.0,
+          1.05
+        ]
+      ],
+      "train_only": true,
+      "geometric": false,
+      "online_augmentation_owner": "16",
+      "gamma_definition": "output = input ** gamma; gamma > 1 darkens"
+    },
+    "sampling": {
+      "parent": "uniform_with_replacement",
+      "aug_variant_probabilities": {
+        "original": 0.25,
+        "color_light": 0.25,
+        "clahe_blur": 0.25,
+        "environment": 0.25
+      },
+      "control_variant": "original",
+      "hard_scene_oversampling": false
+    },
+    "geometry_review": "mechanical only; independent semantic review pending",
+    "evaluation_scope": "development grouped CV; not external/untouched test"
+  },
+  "cv_id": "de6276f2311154176e0bd27ac05ecdc5de369612f143d6ca67d4d4752a0c329f",
+  "artifacts": {
+    "assignments.csv": "ff4de57a0f9463502f5a6debe90ec4a4df6547cff9bc2ce96153f12726839388",
+    "group_links.csv": "97dd6f310fae9f73071ee79e954c0cd40d8d4b35380435ba72f41c0e56b6c8db",
+    "role_support.csv": "493548c89ac09d230cf26377acf916c42f75176f4fae001c8fdae7657101f1be",
+    "lineage.csv": "ba2353c680318f2040c5c7f15eb7459731c9b582a65ba9b28490397ecdd477c0",
+    "spec.json": "c4722e15f2553bbbfe4d780a3245175f90e8f99b68d4ddb67c468300324f42bd",
+    "quality_reference_fold0.json": "6beada5667a576b475b58ee714fe11293f9a5649daccf4324f9cd4905c5f6177",
+    "quality_reference_fold1.json": "ba54e5c478ad12c9911d65533d098036e790217171c8bbeefe0f81adab221595",
+    "quality_reference_fold2.json": "2737d5bf44b9170435993b2412d22f2e62cf503665385f76abb0089fdebaadb7",
+    "quality_reference_fold3.json": "1eca33cc7486d91c1dd9b2abcfd70991192f92de4d1b2ff973079af2cabfa0aa",
+    "quality_reference_fold4.json": "ab41e9a16da6b209e8da7b60773ba200e6060c48a1df473c21102a3683f2bb55",
+    "fold0/control/data.yaml": "a4bb62647b4f5e3ff952a7a71ba1a310959b4d2b37b4e6bad3836e12a65e460b",
+    "fold0/offline_aug/data.yaml": "441a89bcc1a4932f134ef4dafa8c0817b15527ca30f1579be070730d1c039e18",
+    "fold1/control/data.yaml": "a14273d0e2206b436ac114b2222a064bac8b132f81c08121882cc867f727726f",
+    "fold1/offline_aug/data.yaml": "4b202f2aad3ba8a8a75ec62e54791f96f91f3257f07179534630fe3a1d8bb1ad",
+    "fold2/control/data.yaml": "f147c66d264146f54d6762d9bfd93415dbcb22e363398b063a27a3e878178ce2",
+    "fold2/offline_aug/data.yaml": "0a181b74219da3c1ecdf19b904ec9bd2a4743c16873190b6db40b600eb7db722",
+    "fold3/control/data.yaml": "00a17ef5097cd82aaa06be2813f8c9f936fa723713415a663a8aa879e49e4b87",
+    "fold3/offline_aug/data.yaml": "bd4845e087b98974b0a4915502b7f85b3de6ba829519e864f7555546197a9e85",
+    "fold4/control/data.yaml": "ed40a3869ecbb14f3040b4338d264af750c61becfcf785a7ccc2e70f0da4ae06",
+    "fold4/offline_aug/data.yaml": "7e04cc2f052bc55f6922f977328823b9d8a8afcd168075229ffed1d0f00682a3"
+  },
+  "status": "materialized; audit required"
+}

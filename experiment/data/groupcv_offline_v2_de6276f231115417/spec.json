@@ -1,0 +1,114 @@
+{
+  "schema": "groupcv-offline-v2",
+  "source_dataset_id": "9bf2fab6eb34eb82dc7c4aad4b4de736c217e203c2f0f7cb2e36c6118705b8b9",
+  "source_code_id": "50948d1499207f6e6a6645ed5047de30f64330250c232e7975370072ebf7e89d",
+  "k": 5,
+  "seed": 42,
+  "inner_valid_fraction": 0.2,
+  "group_policy": "merged group + UUID + byte/pixel duplicates + dHash<=6 conservative connected components",
+  "assignments_sha": "a2c3f4c16618c17e8b46232c87f188ddae45bcf318df20fe2debe2d6685389aa",
+  "augmentation": {
+    "version": "offline-recipe-v2-draft",
+    "status": "preflight; production approval required",
+    "copies_per_parent": 3,
+    "variants": [
+      "color_light",
+      "clahe_blur",
+      "environment"
+    ],
+    "gamma_range": [
+      0.85,
+      1.9
+    ],
+    "brightness_range": [
+      0.9,
+      1.1
+    ],
+    "hue_probability": 0.5,
+    "hue_degrees": [
+      -15.0,
+      15.0
+    ],
+    "saturation_probability": 0.5,
+    "saturation_range": [
+      0.85,
+      1.15
+    ],
+    "white_balance_probability": 0.5,
+    "white_balance_rgb_gains": [
+      0.95,
+      1.05
+    ],
+    "clahe_clip": 2.0,
+    "clahe_grid": [
+      8,
+      8
+    ],
+    "blur_probability": 0.5,
+    "blur_sigma": 0.35,
+    "environment_choices": [
+      "rain",
+      "noise",
+      "night"
+    ],
+    "environment_probabilities": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ],
+    "rain_density": [
+      0.0003,
+      0.0006
+    ],
+    "rain_angle_degrees": [
+      75.0,
+      105.0
+    ],
+    "rain_length_pixels": [
+      8.0,
+      22.0
+    ],
+    "rain_alpha": 0.6,
+    "noise_sigma": [
+      0.01,
+      0.03
+    ],
+    "night_gamma": [
+      1.3,
+      1.9
+    ],
+    "night_brightness": [
+      0.55,
+      0.8
+    ],
+    "night_rgb_tints": [
+      [
+        1.05,
+        1.0,
+        0.95
+      ],
+      [
+        0.95,
+        1.0,
+        1.05
+      ]
+    ],
+    "train_only": true,
+    "geometric": false,
+    "online_augmentation_owner": "16",
+    "gamma_definition": "output = input ** gamma; gamma > 1 darkens"
+  },
+  "sampling": {
+    "parent": "uniform_with_replacement",
+    "aug_variant_probabilities": {
+      "original": 0.25,
+      "color_light": 0.25,
+      "clahe_blur": 0.25,
+      "environment": 0.25
+    },
+    "control_variant": "original",
+    "hard_scene_oversampling": false
+  },
+  "geometry_review": "mechanical only; independent semantic review pending",
+  "evaluation_scope": "development grouped CV; not external/untouched test"
+}

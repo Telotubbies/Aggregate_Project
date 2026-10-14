@@ -1,0 +1,947 @@
+{
+  "schema": "nb16-full-groupcv-v2",
+  "cv_id": "253fef93327e4d8a354f71b998769e29b4571dad4f4fdcee308a328ccffba510",
+  "dataset_id": "9bf2fab6eb34eb82dc7c4aad4b4de736c217e203c2f0f7cb2e36c6118705b8b9",
+  "source_id": "9d35bc9c65471fe877f28fe889b291816c60c3b09af8d0f7937d7c357a39137d",
+  "versions": {
+    "numpy": "2.5.2",
+    "pandas": "3.0.6",
+    "opencv-python": "5.0.0.93",
+    "matplotlib": "3.11.2",
+    "torch": "2.11.0+cu130",
+    "torchvision": "0.26.0+cu130",
+    "ultralytics": "8.4.171",
+    "scipy": "1.18.1",
+    "scikit-image": "0.25.2",
+    "pycocotools": "2.0.11",
+    "onnx": "1.23.2",
+    "onnxruntime": "1.31.0"
+  },
+  "jobs": [
+    {
+      "recipe": {
+        "name": "yolo26n_seg",
+        "kind": "yolo",
+        "task": "segment",
+        "init": "yolo26n-seg.pt",
+        "size": 960,
+        "epochs": 30,
+        "batch": 14,
+        "lr": 0.001
+      },
+      "fold": 0,
+      "seed": 42,
+      "arm": "control"
+    },
+    {
+      "recipe": {
+        "name": "yolo26n_seg",
+        "kind": "yolo",
+        "task": "segment",
+        "init": "yolo26n-seg.pt",
+        "size": 960,
+        "epochs": 30,
+        "batch": 14,
+        "lr": 0.001
+      },
+      "fold": 0,
+      "seed": 42,
+      "arm": "offline_aug"
+    },
+    {
+      "recipe": {
+        "name": "yolo26s_seg",
+        "kind": "yolo",
+        "task": "segment",
+        "init": "yolo26s-seg.pt",
+        "size": 960,
+        "epochs": 30,
+        "batch": 7,
+        "lr": 0.001
+      },
+      "fold": 0,
+      "seed": 42,
+      "arm": "control"
+    },
+    {
+      "recipe": {
+        "name": "yolo26s_seg",
+        "kind": "yolo",
+        "task": "segment",
+        "init": "yolo26s-seg.pt",
+        "size": 960,
+        "epochs": 30,
+        "batch": 7,
+        "lr": 0.001
+      },
+      "fold": 0,
+      "seed": 42,
+      "arm": "offline_aug"
+    },
+    {
+      "recipe": {
+        "name": "mrcnn",
+        "kind": "mrcnn",
+        "task": "segment",
+        "init": "COCO_DEFAULT",
+        "size": 960,
+        "epochs": 30,
+        "batch": 8,
+        "lr": 0.005
+      },
+      "fold": 0,
+      "seed": 42,
+      "arm": "control"
+    },
+    {
+      "recipe": {
+        "name": "mrcnn",
+        "kind": "mrcnn",
+        "task": "segment",
+        "init": "COCO_DEFAULT",
+        "size": 960,
+        "epochs": 30,
+        "batch": 8,
+        "lr": 0.005
+      },
+      "fold": 0,
+      "seed": 42,
+      "arm": "offline_aug"
+    },
+    {
+      "recipe": {
+        "name": "unet_ws",
+        "kind": "unet",
+        "task": "segment",
+        "init": "random",
+        "size": 512,
+        "epochs": 30,
+        "batch": 16,
+        "lr": 0.001
+      },
+      "fold": 0,
+      "seed": 42,
+      "arm": "control"
+    },
+    {
+      "recipe": {
+        "name": "unet_ws",
+        "kind": "unet",
+        "task": "segment",
+        "init": "random",
+        "size": 512,
+        "epochs": 30,
+        "batch": 16,
+        "lr": 0.001
+      },
+      "fold": 0,
+      "seed": 42,
+      "arm": "offline_aug"
+    },
+    {
+      "recipe": {
+        "name": "yolo26n_det",
+        "kind": "yolo",
+        "task": "detect",
+        "init": "yolo26n.pt",
+        "size": 960,
+        "epochs": 30,
+        "batch": 18,
+        "lr": 0.001
+      },
+      "fold": 0,
+      "seed": 42,
+      "arm": "control"
+    },
+    {
+      "recipe": {
+        "name": "yolo26n_det",
+        "kind": "yolo",
+        "task": "detect",
+        "init": "yolo26n.pt",
+        "size": 960,
+        "epochs": 30,
+        "batch": 18,
+        "lr": 0.001
+      },
+      "fold": 0,
+      "seed": 42,
+      "arm": "offline_aug"
+    },
+    {
+      "recipe": {
+        "name": "yolo26s_det",
+        "kind": "yolo",
+        "task": "detect",
+        "init": "yolo26s.pt",
+        "size": 960,
+        "epochs": 30,
+        "batch": 9,
+        "lr": 0.001
+      },
+      "fold": 0,
+      "seed": 42,
+      "arm": "control"
+    },
+    {
+      "recipe": {
+        "name": "yolo26s_det",
+        "kind": "yolo",
+        "task": "detect",
+        "init": "yolo26s.pt",
+        "size": 960,
+        "epochs": 30,
+        "batch": 9,
+        "lr": 0.001
+      },
+      "fold": 0,
+      "seed": 42,
+      "arm": "offline_aug"
+    },
+    {
+      "recipe": {
+        "name": "yolo26n_seg",
+        "kind": "yolo",
+        "task": "segment",
+        "init": "yolo26n-seg.pt",
+        "size": 960,
+        "epochs": 30,
+        "batch": 14,
+        "lr": 0.001
+      },
+      "fold": 1,
+      "seed": 42,
+      "arm": "control"
+    },
+    {
+      "recipe": {
+        "name": "yolo26n_seg",
+        "kind": "yolo",
+        "task": "segment",
+        "init": "yolo26n-seg.pt",
+        "size": 960,
+        "epochs": 30,
+        "batch": 14,
+        "lr": 0.001
+      },
+      "fold": 1,
+      "seed": 42,
+      "arm": "offline_aug"
+    },
+    {
+      "recipe": {
+        "name": "yolo26s_seg",
+        "kind": "yolo",
+        "task": "segment",
+        "init": "yolo26s-seg.pt",
+        "size": 960,
+        "epochs": 30,
+        "batch": 7,
+        "lr": 0.001
+      },
+      "fold": 1,
+      "seed": 42,
+      "arm": "control"
+    },
+    {
+      "recipe": {
+        "name": "yolo26s_seg",
+        "kind": "yolo",
+        "task": "segment",
+        "init": "yolo26s-seg.pt",
+        "size": 960,
+        "epochs": 30,
+        "batch": 7,
+        "lr": 0.001
+      },
+      "fold": 1,
+      "seed": 42,
+      "arm": "offline_aug"
+    },
+    {
+      "recipe": {
+        "name": "mrcnn",
+        "kind": "mrcnn",
+        "task": "segment",
+        "init": "COCO_DEFAULT",
+        "size": 960,
+        "epochs": 30,
+        "batch": 8,
+        "lr": 0.005
+      },
+      "fold": 1,
+      "seed": 42,
+      "arm": "control"
+    },
+    {
+      "recipe": {
+        "name": "mrcnn",
+        "kind": "mrcnn",
+        "task": "segment",
+        "init": "COCO_DEFAULT",
+        "size": 960,
+        "epochs": 30,
+        "batch": 8,
+        "lr": 0.005
+      },
+      "fold": 1,
+      "seed": 42,
+      "arm": "offline_aug"
+    },
+    {
+      "recipe": {
+        "name": "unet_ws",
+        "kind": "unet",
+        "task": "segment",
+        "init": "random",
+        "size": 512,
+        "epochs": 30,
+        "batch": 16,
+        "lr": 0.001
+      },
+      "fold": 1,
+      "seed": 42,
+      "arm": "control"
+    },
+    {
+      "recipe": {
+        "name": "unet_ws",
+        "kind": "unet",
+        "task": "segment",
+        "init": "random",
+        "size": 512,
+        "epochs": 30,
+        "batch": 16,
+        "lr": 0.001
+      },
+      "fold": 1,
+      "seed": 42,
+      "arm": "offline_aug"
+    },
+    {
+      "recipe": {
+        "name": "yolo26n_det",
+        "kind": "yolo",
+        "task": "detect",
+        "init": "yolo26n.pt",
+        "size": 960,
+        "epochs": 30,
+        "batch": 18,
+        "lr": 0.001
+      },
+      "fold": 1,
+      "seed": 42,
+      "arm": "control"
+    },
+    {
+      "recipe": {
+        "name": "yolo26n_det",
+        "kind": "yolo",
+        "task": "detect",
+        "init": "yolo26n.pt",
+        "size": 960,
+        "epochs": 30,
+        "batch": 18,
+        "lr": 0.001
+      },
+      "fold": 1,
+      "seed": 42,
+      "arm": "offline_aug"
+    },
+    {
+      "recipe": {
+        "name": "yolo26s_det",
+        "kind": "yolo",
+        "task": "detect",
+        "init": "yolo26s.pt",
+        "size": 960,
+        "epochs": 30,
+        "batch": 9,
+        "lr": 0.001
+      },
+      "fold": 1,
+      "seed": 42,
+      "arm": "control"
+    },
+    {
+      "recipe": {
+        "name": "yolo26s_det",
+        "kind": "yolo",
+        "task": "detect",
+        "init": "yolo26s.pt",
+        "size": 960,
+        "epochs": 30,
+        "batch": 9,
+        "lr": 0.001
+      },
+      "fold": 1,
+      "seed": 42,
+      "arm": "offline_aug"
+    },
+    {
+      "recipe": {
+        "name": "yolo26n_seg",
+        "kind": "yolo",
+        "task": "segment",
+        "init": "yolo26n-seg.pt",
+        "size": 960,
+        "epochs": 30,
+        "batch": 14,
+        "lr": 0.001
+      },
+      "fold": 2,
+      "seed": 42,
+      "arm": "control"
+    },
+    {
+      "recipe": {
+        "name": "yolo26n_seg",
+        "kind": "yolo",
+        "task": "segment",
+        "init": "yolo26n-seg.pt",
+        "size": 960,
+        "epochs": 30,
+        "batch": 14,
+        "lr": 0.001
+      },
+      "fold": 2,
+      "seed": 42,
+      "arm": "offline_aug"
+    },
+    {
+      "recipe": {
+        "name": "yolo26s_seg",
+        "kind": "yolo",
+        "task": "segment",
+        "init": "yolo26s-seg.pt",
+        "size": 960,
+        "epochs": 30,
+        "batch": 7,
+        "lr": 0.001
+      },
+      "fold": 2,
+      "seed": 42,
+      "arm": "control"
+    },
+    {
+      "recipe": {
+        "name": "yolo26s_seg",
+        "kind": "yolo",
+        "task": "segment",
+        "init": "yolo26s-seg.pt",
+        "size": 960,
+        "epochs": 30,
+        "batch": 7,
+        "lr": 0.001
+      },
+      "fold": 2,
+      "seed": 42,
+      "arm": "offline_aug"
+    },
+    {
+      "recipe": {
+        "name": "mrcnn",
+        "kind": "mrcnn",
+        "task": "segment",
+        "init": "COCO_DEFAULT",
+        "size": 960,
+        "epochs": 30,
+        "batch": 8,
+        "lr": 0.005
+      },
+      "fold": 2,
+      "seed": 42,
+      "arm": "control"
+    },
+    {
+      "recipe": {
+        "name": "mrcnn",
+        "kind": "mrcnn",
+        "task": "segment",
+        "init": "COCO_DEFAULT",
+        "size": 960,
+        "epochs": 30,
+        "batch": 8,
+        "lr": 0.005
+      },
+      "fold": 2,
+      "seed": 42,
+      "arm": "offline_aug"
+    },
+    {
+      "recipe": {
+        "name": "unet_ws",
+        "kind": "unet",
+        "task": "segment",
+        "init": "random",
+        "size": 512,
+        "epochs": 30,
+        "batch": 16,
+        "lr": 0.001
+      },
+      "fold": 2,
+      "seed": 42,
+      "arm": "control"
+    },
+    {
+      "recipe": {
+        "name": "unet_ws",
+        "kind": "unet",
+        "task": "segment",
+        "init": "random",
+        "size": 512,
+        "epochs": 30,
+        "batch": 16,
+        "lr": 0.001
+      },
+      "fold": 2,
+      "seed": 42,
+      "arm": "offline_aug"
+    },
+    {
+      "recipe": {
+        "name": "yolo26n_det",
+        "kind": "yolo",
+        "task": "detect",
+        "init": "yolo26n.pt",
+        "size": 960,
+        "epochs": 30,
+        "batch": 18,
+        "lr": 0.001
+      },
+      "fold": 2,
+      "seed": 42,
+      "arm": "control"
+    },
+    {
+      "recipe": {
+        "name": "yolo26n_det",
+        "kind": "yolo",
+        "task": "detect",
+        "init": "yolo26n.pt",
+        "size": 960,
+        "epochs": 30,
+        "batch": 18,
+        "lr": 0.001
+      },
+      "fold": 2,
+      "seed": 42,
+      "arm": "offline_aug"
+    },
+    {
+      "recipe": {
+        "name": "yolo26s_det",
+        "kind": "yolo",
+        "task": "detect",
+        "init": "yolo26s.pt",
+        "size": 960,
+        "epochs": 30,
+        "batch": 9,
+        "lr": 0.001
+      },
+      "fold": 2,
+      "seed": 42,
+      "arm": "control"
+    },
+    {
+      "recipe": {
+        "name": "yolo26s_det",
+        "kind": "yolo",
+        "task": "detect",
+        "init": "yolo26s.pt",
+        "size": 960,
+        "epochs": 30,
+        "batch": 9,
+        "lr": 0.001
+      },
+      "fold": 2,
+      "seed": 42,
+      "arm": "offline_aug"
+    },
+    {
+      "recipe": {
+        "name": "yolo26n_seg",
+        "kind": "yolo",
+        "task": "segment",
+        "init": "yolo26n-seg.pt",
+        "size": 960,
+        "epochs": 30,
+        "batch": 14,
+        "lr": 0.001
+      },
+      "fold": 3,
+      "seed": 42,
+      "arm": "control"
+    },
+    {
+      "recipe": {
+        "name": "yolo26n_seg",
+        "kind": "yolo",
+        "task": "segment",
+        "init": "yolo26n-seg.pt",
+        "size": 960,
+        "epochs": 30,
+        "batch": 14,
+        "lr": 0.001
+      },
+      "fold": 3,
+      "seed": 42,
+      "arm": "offline_aug"
+    },
+    {
+      "recipe": {
+        "name": "yolo26s_seg",
+        "kind": "yolo",
+        "task": "segment",
+        "init": "yolo26s-seg.pt",
+        "size": 960,
+        "epochs": 30,
+        "batch": 7,
+        "lr": 0.001
+      },
+      "fold": 3,
+      "seed": 42,
+      "arm": "control"
+    },
+    {
+      "recipe": {
+        "name": "yolo26s_seg",
+        "kind": "yolo",
+        "task": "segment",
+        "init": "yolo26s-seg.pt",
+        "size": 960,
+        "epochs": 30,
+        "batch": 7,
+        "lr": 0.001
+      },
+      "fold": 3,
+      "seed": 42,
+      "arm": "offline_aug"
+    },
+    {
+      "recipe": {
+        "name": "mrcnn",
+        "kind": "mrcnn",
+        "task": "segment",
+        "init": "COCO_DEFAULT",
+        "size": 960,
+        "epochs": 30,
+        "batch": 8,
+        "lr": 0.005
+      },
+      "fold": 3,
+      "seed": 42,
+      "arm": "control"
+    },
+    {
+      "recipe": {
+        "name": "mrcnn",
+        "kind": "mrcnn",
+        "task": "segment",
+        "init": "COCO_DEFAULT",
+        "size": 960,
+        "epochs": 30,
+        "batch": 8,
+        "lr": 0.005
+      },
+      "fold": 3,
+      "seed": 42,
+      "arm": "offline_aug"
+    },
+    {
+      "recipe": {
+        "name": "unet_ws",
+        "kind": "unet",
+        "task": "segment",
+        "init": "random",
+        "size": 512,
+        "epochs": 30,
+        "batch": 16,
+        "lr": 0.001
+      },
+      "fold": 3,
+      "seed": 42,
+      "arm": "control"
+    },
+    {
+      "recipe": {
+        "name": "unet_ws",
+        "kind": "unet",
+        "task": "segment",
+        "init": "random",
+        "size": 512,
+        "epochs": 30,
+        "batch": 16,
+        "lr": 0.001
+      },
+      "fold": 3,
+      "seed": 42,
+      "arm": "offline_aug"
+    },
+    {
+      "recipe": {
+        "name": "yolo26n_det",
+        "kind": "yolo",
+        "task": "detect",
+        "init": "yolo26n.pt",
+        "size": 960,
+        "epochs": 30,
+        "batch": 18,
+        "lr": 0.001
+      },
+      "fold": 3,
+      "seed": 42,
+      "arm": "control"
+    },
+    {
+      "recipe": {
+        "name": "yolo26n_det",
+        "kind": "yolo",
+        "task": "detect",
+        "init": "yolo26n.pt",
+        "size": 960,
+        "epochs": 30,
+        "batch": 18,
+        "lr": 0.001
+      },
+      "fold": 3,
+      "seed": 42,
+      "arm": "offline_aug"
+    },
+    {
+      "recipe": {
+        "name": "yolo26s_det",
+        "kind": "yolo",
+        "task": "detect",
+        "init": "yolo26s.pt",
+        "size": 960,
+        "epochs": 30,
+        "batch": 9,
+        "lr": 0.001
+      },
+      "fold": 3,
+      "seed": 42,
+      "arm": "control"
+    },
+    {
+      "recipe": {
+        "name": "yolo26s_det",
+        "kind": "yolo",
+        "task": "detect",
+        "init": "yolo26s.pt",
+        "size": 960,
+        "epochs": 30,
+        "batch": 9,
+        "lr": 0.001
+      },
+      "fold": 3,
+      "seed": 42,
+      "arm": "offline_aug"
+    },
+    {
+      "recipe": {
+        "name": "yolo26n_seg",
+        "kind": "yolo",
+        "task": "segment",
+        "init": "yolo26n-seg.pt",
+        "size": 960,
+        "epochs": 30,
+        "batch": 14,
+        "lr": 0.001
+      },
+      "fold": 4,
+      "seed": 42,
+      "arm": "control"
+    },
+    {
+      "recipe": {
+        "name": "yolo26n_seg",
+        "kind": "yolo",
+        "task": "segment",
+        "init": "yolo26n-seg.pt",
+        "size": 960,
+        "epochs": 30,
+        "batch": 14,
+        "lr": 0.001
+      },
+      "fold": 4,
+      "seed": 42,
+      "arm": "offline_aug"
+    },
+    {
+      "recipe": {
+        "name": "yolo26s_seg",
+        "kind": "yolo",
+        "task": "segment",
+        "init": "yolo26s-seg.pt",
+        "size": 960,
+        "epochs": 30,
+        "batch": 7,
+        "lr": 0.001
+      },
+      "fold": 4,
+      "seed": 42,
+      "arm": "control"
+    },
+    {
+      "recipe": {
+        "name": "yolo26s_seg",
+        "kind": "yolo",
+        "task": "segment",
+        "init": "yolo26s-seg.pt",
+        "size": 960,
+        "epochs": 30,
+        "batch": 7,
+        "lr": 0.001
+      },
+      "fold": 4,
+      "seed": 42,
+      "arm": "offline_aug"
+    },
+    {
+      "recipe": {
+        "name": "mrcnn",
+        "kind": "mrcnn",
+        "task": "segment",
+        "init": "COCO_DEFAULT",
+        "size": 960,
+        "epochs": 30,
+        "batch": 8,
+        "lr": 0.005
+      },
+      "fold": 4,
+      "seed": 42,
+      "arm": "control"
+    },
+    {
+      "recipe": {
+        "name": "mrcnn",
+        "kind": "mrcnn",
+        "task": "segment",
+        "init": "COCO_DEFAULT",
+        "size": 960,
+        "epochs": 30,
+        "batch": 8,
+        "lr": 0.005
+      },
+      "fold": 4,
+      "seed": 42,
+      "arm": "offline_aug"
+    },
+    {
+      "recipe": {
+        "name": "unet_ws",
+        "kind": "unet",
+        "task": "segment",
+        "init": "random",
+        "size": 512,
+        "epochs": 30,
+        "batch": 16,
+        "lr": 0.001
+      },
+      "fold": 4,
+      "seed": 42,
+      "arm": "control"
+    },
+    {
+      "recipe": {
+        "name": "unet_ws",
+        "kind": "unet",
+        "task": "segment",
+        "init": "random",
+        "size": 512,
+        "epochs": 30,
+        "batch": 16,
+        "lr": 0.001
+      },
+      "fold": 4,
+      "seed": 42,
+      "arm": "offline_aug"
+    },
+    {
+      "recipe": {
+        "name": "yolo26n_det",
+        "kind": "yolo",
+        "task": "detect",
+        "init": "yolo26n.pt",
+        "size": 960,
+        "epochs": 30,
+        "batch": 18,
+        "lr": 0.001
+      },
+      "fold": 4,
+      "seed": 42,
+      "arm": "control"
+    },
+    {
+      "recipe": {
+        "name": "yolo26n_det",
+        "kind": "yolo",
+        "task": "detect",
+        "init": "yolo26n.pt",
+        "size": 960,
+        "epochs": 30,
+        "batch": 18,
+        "lr": 0.001
+      },
+      "fold": 4,
+      "seed": 42,
+      "arm": "offline_aug"
+    },
+    {
+      "recipe": {
+        "name": "yolo26s_det",
+        "kind": "yolo",
+        "task": "detect",
+        "init": "yolo26s.pt",
+        "size": 960,
+        "epochs": 30,
+        "batch": 9,
+        "lr": 0.001
+      },
+      "fold": 4,
+      "seed": 42,
+      "arm": "control"
+    },
+    {
+      "recipe": {
+        "name": "yolo26s_det",
+        "kind": "yolo",
+        "task": "detect",
+        "init": "yolo26s.pt",
+        "size": 960,
+        "epochs": 30,
+        "batch": 9,
+        "lr": 0.001
+      },
+      "fold": 4,
+      "seed": 42,
+      "arm": "offline_aug"
+    }
+  ],
+  "control_epochs": 30,
+  "selection": "inner-valid canonical AP at equal optimizer steps",
+  "postprocessing": {
+    "fg": 0.5,
+    "spacing": 9,
+    "min_area": 25,
+    "method": "watershed"
+  },
+  "per_recipe_batch": {
+    "yolo26n_seg": 14,
+    "yolo26s_seg": 7,
+    "mrcnn": 8,
+    "unet_ws": 16,
+    "yolo26n_det": 18,
+    "yolo26s_det": 9
+  },
+  "batch_probe_peak_gib": {
+    "yolo26n_seg": 10.08,
+    "yolo26s_seg": 9.73,
+    "mrcnn": 8.44,
+    "unet_ws": 8.67,
+    "yolo26n_det": 9.96,
+    "yolo26s_det": 9.91
+  },
+  "owner_approval": "6 models; 2 data arms; 5 folds; seed 42; custom per-recipe batch; control-equivalent 30 epochs; notebook-cell execution only"
+}

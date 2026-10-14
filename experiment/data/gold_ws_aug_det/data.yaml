@@ -1,0 +1,5 @@
+path: /home/supawich/Desktop/Aggregate_Project/experiment/data/gold_ws_aug_det
+train: train/images
+val: valid/images
+test: test/images
+names: {0: gravel, 1: sand}

@@ -1,0 +1,13 @@
+{
+  "status": "running",
+  "plan_id": "d8a12f48267189e7472f",
+  "total": 60,
+  "completed": 0,
+  "failed": 2,
+  "pid": 276329,
+  "started_utc": "2026-10-13T08:48:39.218753+00:00",
+  "current": "yolo26s_seg_fold0_seed42_control",
+  "epoch": 0,
+  "optimizer_steps": 0,
+  "updated_utc": "2026-10-13T08:48:46.109097+00:00"
+}

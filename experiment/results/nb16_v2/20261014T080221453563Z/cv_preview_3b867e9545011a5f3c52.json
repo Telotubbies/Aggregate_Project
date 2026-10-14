@@ -1,0 +1,970 @@
+{
+  "protocol_id": "3b867e9545011a5f3c52",
+  "plan": {
+    "schema": "nb16-parent-recipe-v2",
+    "cv_id": "de6276f2311154176e0bd27ac05ecdc5de369612f143d6ca67d4d4752a0c329f",
+    "dataset_id": "9bf2fab6eb34eb82dc7c4aad4b4de736c217e203c2f0f7cb2e36c6118705b8b9",
+    "source_id": "c2bfcca6de9b7923f982158a5ed60accd070580bd6b629d5d2b83c6a05637d00",
+    "packages": {
+      "ultralytics": "8.4.171",
+      "torch": "2.11.0+cu130",
+      "torchvision": "0.26.0+cu130",
+      "numpy": "2.5.2",
+      "opencv-python": "5.0.0.93",
+      "pycocotools": "2.0.11"
+    },
+    "jobs": [
+      {
+        "recipe": {
+          "name": "yolo26n_seg",
+          "kind": "yolo",
+          "task": "segment",
+          "init": "yolo26n-seg.pt",
+          "size": 960,
+          "epochs": 30,
+          "batch": 12,
+          "lr": 0.001
+        },
+        "fold": 0,
+        "seed": 42,
+        "arm": "control"
+      },
+      {
+        "recipe": {
+          "name": "yolo26n_seg",
+          "kind": "yolo",
+          "task": "segment",
+          "init": "yolo26n-seg.pt",
+          "size": 960,
+          "epochs": 30,
+          "batch": 12,
+          "lr": 0.001
+        },
+        "fold": 0,
+        "seed": 42,
+        "arm": "offline_aug"
+      },
+      {
+        "recipe": {
+          "name": "yolo26s_seg",
+          "kind": "yolo",
+          "task": "segment",
+          "init": "yolo26s-seg.pt",
+          "size": 960,
+          "epochs": 30,
+          "batch": 6,
+          "lr": 0.001
+        },
+        "fold": 0,
+        "seed": 42,
+        "arm": "control"
+      },
+      {
+        "recipe": {
+          "name": "yolo26s_seg",
+          "kind": "yolo",
+          "task": "segment",
+          "init": "yolo26s-seg.pt",
+          "size": 960,
+          "epochs": 30,
+          "batch": 6,
+          "lr": 0.001
+        },
+        "fold": 0,
+        "seed": 42,
+        "arm": "offline_aug"
+      },
+      {
+        "recipe": {
+          "name": "yolo26n_seg",
+          "kind": "yolo",
+          "task": "segment",
+          "init": "yolo26n-seg.pt",
+          "size": 960,
+          "epochs": 30,
+          "batch": 12,
+          "lr": 0.001
+        },
+        "fold": 1,
+        "seed": 42,
+        "arm": "control"
+      },
+      {
+        "recipe": {
+          "name": "yolo26n_seg",
+          "kind": "yolo",
+          "task": "segment",
+          "init": "yolo26n-seg.pt",
+          "size": 960,
+          "epochs": 30,
+          "batch": 12,
+          "lr": 0.001
+        },
+        "fold": 1,
+        "seed": 42,
+        "arm": "offline_aug"
+      },
+      {
+        "recipe": {
+          "name": "yolo26s_seg",
+          "kind": "yolo",
+          "task": "segment",
+          "init": "yolo26s-seg.pt",
+          "size": 960,
+          "epochs": 30,
+          "batch": 6,
+          "lr": 0.001
+        },
+        "fold": 1,
+        "seed": 42,
+        "arm": "control"
+      },
+      {
+        "recipe": {
+          "name": "yolo26s_seg",
+          "kind": "yolo",
+          "task": "segment",
+          "init": "yolo26s-seg.pt",
+          "size": 960,
+          "epochs": 30,
+          "batch": 6,
+          "lr": 0.001
+        },
+        "fold": 1,
+        "seed": 42,
+        "arm": "offline_aug"
+      },
+      {
+        "recipe": {
+          "name": "yolo26n_seg",
+          "kind": "yolo",
+          "task": "segment",
+          "init": "yolo26n-seg.pt",
+          "size": 960,
+          "epochs": 30,
+          "batch": 12,
+          "lr": 0.001
+        },
+        "fold": 2,
+        "seed": 42,
+        "arm": "control"
+      },
+      {
+        "recipe": {
+          "name": "yolo26n_seg",
+          "kind": "yolo",
+          "task": "segment",
+          "init": "yolo26n-seg.pt",
+          "size": 960,
+          "epochs": 30,
+          "batch": 12,
+          "lr": 0.001
+        },
+        "fold": 2,
+        "seed": 42,
+        "arm": "offline_aug"
+      },
+      {
+        "recipe": {
+          "name": "yolo26s_seg",
+          "kind": "yolo",
+          "task": "segment",
+          "init": "yolo26s-seg.pt",
+          "size": 960,
+          "epochs": 30,
+          "batch": 6,
+          "lr": 0.001
+        },
+        "fold": 2,
+        "seed": 42,
+        "arm": "control"
+      },
+      {
+        "recipe": {
+          "name": "yolo26s_seg",
+          "kind": "yolo",
+          "task": "segment",
+          "init": "yolo26s-seg.pt",
+          "size": 960,
+          "epochs": 30,
+          "batch": 6,
+          "lr": 0.001
+        },
+        "fold": 2,
+        "seed": 42,
+        "arm": "offline_aug"
+      },
+      {
+        "recipe": {
+          "name": "yolo26n_seg",
+          "kind": "yolo",
+          "task": "segment",
+          "init": "yolo26n-seg.pt",
+          "size": 960,
+          "epochs": 30,
+          "batch": 12,
+          "lr": 0.001
+        },
+        "fold": 3,
+        "seed": 42,
+        "arm": "control"
+      },
+      {
+        "recipe": {
+          "name": "yolo26n_seg",
+          "kind": "yolo",
+          "task": "segment",
+          "init": "yolo26n-seg.pt",
+          "size": 960,
+          "epochs": 30,
+          "batch": 12,
+          "lr": 0.001
+        },
+        "fold": 3,
+        "seed": 42,
+        "arm": "offline_aug"
+      },
+      {
+        "recipe": {
+          "name": "yolo26s_seg",
+          "kind": "yolo",
+          "task": "segment",
+          "init": "yolo26s-seg.pt",
+          "size": 960,
+          "epochs": 30,
+          "batch": 6,
+          "lr": 0.001
+        },
+        "fold": 3,
+        "seed": 42,
+        "arm": "control"
+      },
+      {
+        "recipe": {
+          "name": "yolo26s_seg",
+          "kind": "yolo",
+          "task": "segment",
+          "init": "yolo26s-seg.pt",
+          "size": 960,
+          "epochs": 30,
+          "batch": 6,
+          "lr": 0.001
+        },
+        "fold": 3,
+        "seed": 42,
+        "arm": "offline_aug"
+      },
+      {
+        "recipe": {
+          "name": "yolo26n_seg",
+          "kind": "yolo",
+          "task": "segment",
+          "init": "yolo26n-seg.pt",
+          "size": 960,
+          "epochs": 30,
+          "batch": 12,
+          "lr": 0.001
+        },
+        "fold": 4,
+        "seed": 42,
+        "arm": "control"
+      },
+      {
+        "recipe": {
+          "name": "yolo26n_seg",
+          "kind": "yolo",
+          "task": "segment",
+          "init": "yolo26n-seg.pt",
+          "size": 960,
+          "epochs": 30,
+          "batch": 12,
+          "lr": 0.001
+        },
+        "fold": 4,
+        "seed": 42,
+        "arm": "offline_aug"
+      },
+      {
+        "recipe": {
+          "name": "yolo26s_seg",
+          "kind": "yolo",
+          "task": "segment",
+          "init": "yolo26s-seg.pt",
+          "size": 960,
+          "epochs": 30,
+          "batch": 6,
+          "lr": 0.001
+        },
+        "fold": 4,
+        "seed": 42,
+        "arm": "control"
+      },
+      {
+        "recipe": {
+          "name": "yolo26s_seg",
+          "kind": "yolo",
+          "task": "segment",
+          "init": "yolo26s-seg.pt",
+          "size": 960,
+          "epochs": 30,
+          "batch": 6,
+          "lr": 0.001
+        },
+        "fold": 4,
+        "seed": 42,
+        "arm": "offline_aug"
+      }
+    ],
+    "offline": {
+      "version": "offline-recipe-v2-draft",
+      "status": "preflight; production approval required",
+      "copies_per_parent": 3,
+      "variants": [
+        "color_light",
+        "clahe_blur",
+        "environment"
+      ],
+      "gamma_range": [
+        0.85,
+        1.9
+      ],
+      "brightness_range": [
+        0.9,
+        1.1
+      ],
+      "hue_probability": 0.5,
+      "hue_degrees": [
+        -15.0,
+        15.0
+      ],
+      "saturation_probability": 0.5,
+      "saturation_range": [
+        0.85,
+        1.15
+      ],
+      "white_balance_probability": 0.5,
+      "white_balance_rgb_gains": [
+        0.95,
+        1.05
+      ],
+      "clahe_clip": 2.0,
+      "clahe_grid": [
+        8,
+        8
+      ],
+      "blur_probability": 0.5,
+      "blur_sigma": 0.35,
+      "environment_choices": [
+        "rain",
+        "noise",
+        "night"
+      ],
+      "environment_probabilities": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "rain_density": [
+        0.0003,
+        0.0006
+      ],
+      "rain_angle_degrees": [
+        75.0,
+        105.0
+      ],
+      "rain_length_pixels": [
+        8.0,
+        22.0
+      ],
+      "rain_alpha": 0.6,
+      "noise_sigma": [
+        0.01,
+        0.03
+      ],
+      "night_gamma": [
+        1.3,
+        1.9
+      ],
+      "night_brightness": [
+        0.55,
+        0.8
+      ],
+      "night_rgb_tints": [
+        [
+          1.05,
+          1.0,
+          0.95
+        ],
+        [
+          0.95,
+          1.0,
+          1.05
+        ]
+      ],
+      "train_only": true,
+      "geometric": false,
+      "online_augmentation_owner": "16",
+      "gamma_definition": "output = input ** gamma; gamma > 1 darkens"
+    },
+    "online": {
+      "fliplr": 0.5,
+      "flipud": 0.0,
+      "degrees": 10.0,
+      "translate": 0.05,
+      "scale": 0.1,
+      "shear": 3.0,
+      "perspective": 0.0,
+      "mosaic": 0.25,
+      "copy_paste": 0.1,
+      "copy_paste_mode": "mixup",
+      "copy_paste_fraction": 1.0,
+      "close_mosaic": 0,
+      "mixup": 0.0,
+      "cutmix": 0.0,
+      "hsv_h": 0.0,
+      "hsv_s": 0.0,
+      "hsv_v": 0.0,
+      "bgr": 0.0,
+      "crop": "affine clipping only",
+      "albumentations": false
+    },
+    "training": {
+      "optimizer": "AdamW",
+      "lr0": 0.001,
+      "lrf": 0.01,
+      "cos_lr": false,
+      "momentum": 0.937,
+      "weight_decay": 0.0005,
+      "warmup_epochs": 0,
+      "amp": false,
+      "deterministic": true,
+      "workers": 0,
+      "cache": false,
+      "plots": false,
+      "save": true,
+      "overlap_mask": true,
+      "mask_ratio": 4,
+      "channels_last": false,
+      "compile": false
+    },
+    "sampling": {
+      "parent": "uniform_with_replacement",
+      "aug_variant_probabilities": {
+        "original": 0.25,
+        "color_light": 0.25,
+        "clahe_blur": 0.25,
+        "environment": 0.25
+      },
+      "control_variant": "original",
+      "hard_scene_oversampling": false
+    },
+    "selection": "inner-valid canonical mask AP; thresholds inner-valid; freeze before evaluation",
+    "scope": "development grouped CV; one seed; recipe-level effect, not transform causality",
+    "resume": "last completed virtual epoch; raw FP32 weights, optimizer, scheduler, scaler, EMA, criterion, RNG and parent sampler"
+  },
+  "samples": [
+    {
+      "arm": "control",
+      "index": 0,
+      "sources": [
+        {
+          "parent": "2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0013_jpg.rf.c29ea91432240aa33d22b27bf184d35c",
+          "variant": "original",
+          "primary": true
+        }
+      ],
+      "image_sha": "7edd6f82e70973d6414f9c883925d2c487ec5247a3c8c334643015a5d3a2969b",
+      "mask_sha": "a4b709d1dff0564288c9f97ba36a8abdd3720c8ca823905e84f21c05a50fdd4a"
+    },
+    {
+      "arm": "control",
+      "index": 1,
+      "sources": [
+        {
+          "parent": "b029e315-2e53-4152-a536-1adea99e32f7_mp4-0024_jpg.rf.5f8218262f482ac00b2708eaa0524546",
+          "variant": "original",
+          "primary": true
+        }
+      ],
+      "image_sha": "537fcd086f2eba9113b53dfec59af1bb96b16823d952d6c31bb33a661c310c57",
+      "mask_sha": "a1c9b3cec3fee0c61c647ce49c255184b790400e6661b350129f85edbc162850"
+    },
+    {
+      "arm": "control",
+      "index": 2,
+      "sources": [
+        {
+          "parent": "8f435cb5-02c7-452a-a971-cef315681c19_mp4-0026_jpg.rf.1c3a7f81bd63cfa969e425e79a516855",
+          "variant": "original",
+          "primary": true
+        }
+      ],
+      "image_sha": "eb4a52ee3001fbb00063c1db46b5d6876aeff1d878e38cc0ec0544d49c7d43c8",
+      "mask_sha": "a59d2aaa8e38ab8cb19418109c5e372dc890561af2ae9d9d4fe7244eec142caa"
+    },
+    {
+      "arm": "control",
+      "index": 3,
+      "sources": [
+        {
+          "parent": "2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0143_jpg.rf.3ce5299e96f006c397ef33be681213ba",
+          "variant": "original",
+          "primary": true
+        }
+      ],
+      "image_sha": "f3e46b1bf13bd2b3e4ebe73bfed6c99fb0872fc6ebe35477dabedacc51f92160",
+      "mask_sha": "006cbd48608d4f87a15bb22862bdb88c6f68b3bbb3626d3bd2b80abdee0102b5"
+    },
+    {
+      "arm": "control",
+      "index": 4,
+      "sources": [
+        {
+          "parent": "2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0140_jpg.rf.7dfd441a8c2ff7ebba301d602b85b55c",
+          "variant": "original",
+          "primary": true
+        }
+      ],
+      "image_sha": "d3040dd6baf6061b5b20ae9a645a21ae8ebc15e6776b9c6200330053d55b13ba",
+      "mask_sha": "e8148208c2b924a5776fea3ccbf9eb06580deebeb7e2aa97c4ac40ef43eac272"
+    },
+    {
+      "arm": "control",
+      "index": 5,
+      "sources": [
+        {
+          "parent": "d56fcb3c-0531-4696-8b67-2645d89e4a7f_mp4-0054_jpg.rf.d9e700caf2c20607f5e74093286eaec1",
+          "variant": "original",
+          "primary": true
+        }
+      ],
+      "image_sha": "2ecc46efaa8826434a29a750934e61b05ebbc159c0e4e41d4e5b43660d557f1b",
+      "mask_sha": "ca853063612898dd83eb234bbdc7f60ee484a0bf0d19679b09b31ee5b4d9d6f4"
+    },
+    {
+      "arm": "control",
+      "index": 6,
+      "sources": [
+        {
+          "parent": "2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0012_jpg.rf.bcd7a30e9e3d7998c5dcca4d1ad6f27f",
+          "variant": "original",
+          "primary": true
+        }
+      ],
+      "image_sha": "b935261d9ea97d6416a1836eed7c332c3f766eed8726b3d54818f2f10f3857d8",
+      "mask_sha": "d9fef2e10d69103b566862b6f424274195bab4d4144000e7e737702409c493ba"
+    },
+    {
+      "arm": "control",
+      "index": 7,
+      "sources": [
+        {
+          "parent": "96ecd4fe-5910-4cd4-8a24-11ed20aab3b7_mp4-0030_jpg.rf.929d67ff9af9494120bc7f32bbbaa112",
+          "variant": "original",
+          "primary": true
+        }
+      ],
+      "image_sha": "7bf03e60f0561b63eeb290cfbea1a0483266c7f21c2b7a31286bdf257384444e",
+      "mask_sha": "3a4367e98003e3b101cf5bf537baba933c9afdc458f2c63797b1d1000db21c5a"
+    },
+    {
+      "arm": "control",
+      "index": 8,
+      "sources": [
+        {
+          "parent": "2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0055_jpg.rf.113c61626f792ac1f433ec0722dc57d8",
+          "variant": "original",
+          "primary": true
+        }
+      ],
+      "image_sha": "f024be404827b46dadca2aeb1d69e183cb0990e0624207750552e3e2bc4283fa",
+      "mask_sha": "4ac5866e0c0e40f5f2558fda5051542a59b5d2b67b74b3f65d34b7267341e34e"
+    },
+    {
+      "arm": "control",
+      "index": 9,
+      "sources": [
+        {
+          "parent": "2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0015_jpg.rf.ebebab7b4da2e5f4a1150889884b51d2",
+          "variant": "original",
+          "primary": true
+        }
+      ],
+      "image_sha": "99ccfad264b0f56e9cbb1130571bc73f636f6aedcaa93fc2544519a85cccbe16",
+      "mask_sha": "efca25953ff117aabab9d319a97276b349cabb5ffc960de037b91ca69710e574"
+    },
+    {
+      "arm": "control",
+      "index": 10,
+      "sources": [
+        {
+          "parent": "6459c886-45a3-4065-82bc-2ed15b2875b0_mp4-0031_jpg.rf.beb1338020cd85dd0f0ea37d14c4e7ae",
+          "variant": "original",
+          "primary": true
+        }
+      ],
+      "image_sha": "a8d8835601c6774586f1781821eb229b7f1621dc77a1b2ed7e4b42c0d779bb3f",
+      "mask_sha": "6be59fee52f3eb9ae5a3ad53b26a52480079554b55c5336f8e30536f2bf8e71c"
+    },
+    {
+      "arm": "control",
+      "index": 11,
+      "sources": [
+        {
+          "parent": "fa45e6fb-4502-41bb-bb80-a4a4149318ad_mp4-0025_jpg.rf.f2a27c2123b476027954257474e08169",
+          "variant": "original",
+          "primary": true
+        }
+      ],
+      "image_sha": "d81f0f036ae256ed8b34a6ef05cf1e5de4cd7d4decfbb3cf80f542bb3b659964",
+      "mask_sha": "d76541a176a3a4121b7073f5cd250e17fadf4d507652a885d5e409e18e8a1912"
+    },
+    {
+      "arm": "control",
+      "index": 12,
+      "sources": [
+        {
+          "parent": "96ecd4fe-5910-4cd4-8a24-11ed20aab3b7_mp4-0062_jpg.rf.d16d45b994f1fd25a78699f1647f8b23",
+          "variant": "original",
+          "primary": true
+        }
+      ],
+      "image_sha": "21c9b870ed23b042cc684318678ba1b2390f7f70b678329c7fa34cc2e8c9d3e9",
+      "mask_sha": "1f255dbd304d0aebb201d7cf089029ae488e1d42f45afbde165fe2cce3de834d"
+    },
+    {
+      "arm": "control",
+      "index": 13,
+      "sources": [
+        {
+          "parent": "b029e315-2e53-4152-a536-1adea99e32f7_mp4-0014_jpg.rf.582847bb6f201b85d7a5c87216a7acaf",
+          "variant": "original",
+          "primary": true
+        }
+      ],
+      "image_sha": "0345db9d42eca98920212b2c42880ec8e0a990fbf5e8bbb91ac8747cb69e1352",
+      "mask_sha": "0c457da4640e94bf6229bbdb133e116651c84d57cdf3929e8785cfc5c02e0384"
+    },
+    {
+      "arm": "control",
+      "index": 14,
+      "sources": [
+        {
+          "parent": "96ecd4fe-5910-4cd4-8a24-11ed20aab3b7_mp4-0045_jpg.rf.bd966dcd5bc73281f5afda2a2295c1c3",
+          "variant": "original",
+          "primary": true
+        }
+      ],
+      "image_sha": "406f2c351be2af872c9e88b29442a49046d48d4f3222d03a2f324c49c00075d4",
+      "mask_sha": "7b9ce73d9ed0dcfcaff34fa44d47296d8a2aa8d0b9643219ab33f64669fc5ca6"
+    },
+    {
+      "arm": "control",
+      "index": 15,
+      "sources": [
+        {
+          "parent": "d56fcb3c-0531-4696-8b67-2645d89e4a7f_mp4-0001_jpg.rf.f1b41e917b3bb2dde3eeb85146a2be42",
+          "variant": "original",
+          "primary": true
+        }
+      ],
+      "image_sha": "41cca183acabfdc65795eb954913cd532a92e1ff81f8f606c749f1e6fa7603ad",
+      "mask_sha": "b972155248936dbaa8f8479ee37791a13b463ad6f9a00202eb00190da78db5ed"
+    },
+    {
+      "arm": "offline_aug",
+      "index": 0,
+      "sources": [
+        {
+          "parent": "2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0013_jpg.rf.c29ea91432240aa33d22b27bf184d35c",
+          "variant": "clahe_blur",
+          "primary": true
+        },
+        {
+          "parent": "6459c886-45a3-4065-82bc-2ed15b2875b0_mp4-0015_jpg.rf.c9fd5f3f2a2e2124055b17a25826229e",
+          "variant": "original",
+          "primary": false
+        },
+        {
+          "parent": "8f435cb5-02c7-452a-a971-cef315681c19_mp4-0024_jpg.rf.03fa57ee716dfbe9f2b20e3c6e209fa1",
+          "variant": "environment",
+          "primary": false
+        },
+        {
+          "parent": "2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0128_jpg.rf.943e735920be82cac9e9cc595ed2c266",
+          "variant": "color_light",
+          "primary": false
+        }
+      ],
+      "image_sha": "d933a453cc2019ce33c722c63d7085e9e6a7b493a62ffebe90240caccc5e2d11",
+      "mask_sha": "e91f3dab25c0582dc356367808f0b0ba83e047b21aa2676450689a246a855a1c"
+    },
+    {
+      "arm": "offline_aug",
+      "index": 1,
+      "sources": [
+        {
+          "parent": "b029e315-2e53-4152-a536-1adea99e32f7_mp4-0024_jpg.rf.5f8218262f482ac00b2708eaa0524546",
+          "variant": "clahe_blur",
+          "primary": true
+        },
+        {
+          "parent": "07451999-bdf8-4862-b869-6db57c35f0c1_mp4-0032_jpg.rf.5da2ec40c98683759dbe4c648e68fc6e",
+          "variant": "color_light",
+          "primary": false
+        }
+      ],
+      "image_sha": "607f3b41d23d5187a63e929ed4bdb360fcb0908415c4276f5b2522994ca11990",
+      "mask_sha": "ac0aef1ce780085570b24b97a723c8a209ec6f7ec24a665c57b0a91c6b0e7d0d"
+    },
+    {
+      "arm": "offline_aug",
+      "index": 2,
+      "sources": [
+        {
+          "parent": "8f435cb5-02c7-452a-a971-cef315681c19_mp4-0026_jpg.rf.1c3a7f81bd63cfa969e425e79a516855",
+          "variant": "original",
+          "primary": true
+        }
+      ],
+      "image_sha": "5db43ca8e157c6945bb5b976c86316d8234e61c26a03c6cd995341642db068fb",
+      "mask_sha": "3dc25c1f93f4666a5c54696952bbfa90bdca48ed5369be0c34e08b968b369cbe"
+    },
+    {
+      "arm": "offline_aug",
+      "index": 3,
+      "sources": [
+        {
+          "parent": "2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0143_jpg.rf.3ce5299e96f006c397ef33be681213ba",
+          "variant": "environment",
+          "primary": true
+        }
+      ],
+      "image_sha": "fd70dc5753b20ab231c70e8bd013b2c8b67200de57dc6f459ed4c1f70e686eac",
+      "mask_sha": "99158afa1a1e829fc7095edd43c64bbf296b4fe81c5557ad9aa62b7fe4912301"
+    },
+    {
+      "arm": "offline_aug",
+      "index": 4,
+      "sources": [
+        {
+          "parent": "2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0140_jpg.rf.7dfd441a8c2ff7ebba301d602b85b55c",
+          "variant": "clahe_blur",
+          "primary": true
+        }
+      ],
+      "image_sha": "367bf3d71ba63d6ffcfc6b7c222904a89dc481912dc23bc0793e1817ca18fffe",
+      "mask_sha": "26c770bf294078c39a2f5b4b8ab2c88ac70ef2716ea6bbab165509a01393bf5d"
+    },
+    {
+      "arm": "offline_aug",
+      "index": 5,
+      "sources": [
+        {
+          "parent": "d56fcb3c-0531-4696-8b67-2645d89e4a7f_mp4-0054_jpg.rf.d9e700caf2c20607f5e74093286eaec1",
+          "variant": "original",
+          "primary": true
+        }
+      ],
+      "image_sha": "c68f86e570c334529ffe2eaf25a44bdfb423314500075a6724cbea97bf48d912",
+      "mask_sha": "54b0bd18e48b65fbfba2221c65279a29da646e547b739e853ab9793885d266a7"
+    },
+    {
+      "arm": "offline_aug",
+      "index": 6,
+      "sources": [
+        {
+          "parent": "2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0012_jpg.rf.bcd7a30e9e3d7998c5dcca4d1ad6f27f",
+          "variant": "environment",
+          "primary": true
+        }
+      ],
+      "image_sha": "498c24b31b96305ac5d3c406518aa3e130337b80f609f3a78870e3ee7151e6fb",
+      "mask_sha": "fe71484798506908b4a12ce78b2f312e7dd525a8ed007e49cb2b50bff4e8faf2"
+    },
+    {
+      "arm": "offline_aug",
+      "index": 7,
+      "sources": [
+        {
+          "parent": "96ecd4fe-5910-4cd4-8a24-11ed20aab3b7_mp4-0030_jpg.rf.929d67ff9af9494120bc7f32bbbaa112",
+          "variant": "environment",
+          "primary": true
+        }
+      ],
+      "image_sha": "5f1170e8cf39c1661ec14f18a2c725e76910f24a5cc2ac49c42998d4e8501f79",
+      "mask_sha": "0eb97abca44c7c831e06792b6f4dec4643b90232a821bd527f2797d206fee8de"
+    },
+    {
+      "arm": "offline_aug",
+      "index": 8,
+      "sources": [
+        {
+          "parent": "2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0055_jpg.rf.113c61626f792ac1f433ec0722dc57d8",
+          "variant": "original",
+          "primary": true
+        }
+      ],
+      "image_sha": "9f7214f16299982aec84af7e10dae6dce93a2d244ef9aa45eb21f4d3d512a3b8",
+      "mask_sha": "43c4bd8e1a3121588592c364809adc9227c7c1341243f0055ae1efe7c0eec1c9"
+    },
+    {
+      "arm": "offline_aug",
+      "index": 9,
+      "sources": [
+        {
+          "parent": "2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0015_jpg.rf.ebebab7b4da2e5f4a1150889884b51d2",
+          "variant": "original",
+          "primary": true
+        },
+        {
+          "parent": "6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0034_jpg.rf.4cee857cad3d31117219cb2284c214df",
+          "variant": "original",
+          "primary": false
+        }
+      ],
+      "image_sha": "02d55e178ebce664c265df0042a67fc353aecc6e22674b6663c8696334d2759d",
+      "mask_sha": "74d1327a79077ea84fe88fb8407183a7aca78f5ea05df43680bcde87e5c7fb6c"
+    },
+    {
+      "arm": "offline_aug",
+      "index": 10,
+      "sources": [
+        {
+          "parent": "6459c886-45a3-4065-82bc-2ed15b2875b0_mp4-0031_jpg.rf.beb1338020cd85dd0f0ea37d14c4e7ae",
+          "variant": "color_light",
+          "primary": true
+        }
+      ],
+      "image_sha": "89c576d26b9ddd8e328a257f73892c263206b3025dae3d0c1d2af9531f9e1cac",
+      "mask_sha": "0151aa9638fbe3c50d1274e6778d5cc16824694a5a3b9458d4b5312f76bdc73e"
+    },
+    {
+      "arm": "offline_aug",
+      "index": 11,
+      "sources": [
+        {
+          "parent": "fa45e6fb-4502-41bb-bb80-a4a4149318ad_mp4-0025_jpg.rf.f2a27c2123b476027954257474e08169",
+          "variant": "color_light",
+          "primary": true
+        },
+        {
+          "parent": "07451999-bdf8-4862-b869-6db57c35f0c1_mp4-0014_jpg.rf.196c0d7568bf9e44229411555abbb189",
+          "variant": "clahe_blur",
+          "primary": false
+        },
+        {
+          "parent": "2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0082_jpg.rf.ed987af656eda573ad2bdfb7d76a90ca",
+          "variant": "clahe_blur",
+          "primary": false
+        },
+        {
+          "parent": "d56fcb3c-0531-4696-8b67-2645d89e4a7f_mp4-0040_jpg.rf.d980081bd6f94ae902ad287dc8e4bcfe",
+          "variant": "clahe_blur",
+          "primary": false
+        }
+      ],
+      "image_sha": "44d36dc96e3f81cde708d1fd020cb3c96c376aca4979140e0182b641c1d54c74",
+      "mask_sha": "c2dc1a8c59328fd6d1ba8318a7da0046089141af255e087c7183276056d39ab0"
+    },
+    {
+      "arm": "offline_aug",
+      "index": 12,
+      "sources": [
+        {
+          "parent": "96ecd4fe-5910-4cd4-8a24-11ed20aab3b7_mp4-0062_jpg.rf.d16d45b994f1fd25a78699f1647f8b23",
+          "variant": "color_light",
+          "primary": true
+        },
+        {
+          "parent": "2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0162_jpg.rf.221f3abc99ff120fae488f600b537fd5",
+          "variant": "environment",
+          "primary": false
+        },
+        {
+          "parent": "6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0041_jpg.rf.aaeac167e8d2500845e817fff25ca4bd",
+          "variant": "color_light",
+          "primary": false
+        },
+        {
+          "parent": "fa45e6fb-4502-41bb-bb80-a4a4149318ad_mp4-0016_jpg.rf.8ae3a7338169ab109319a0c82aa2931b",
+          "variant": "color_light",
+          "primary": false
+        }
+      ],
+      "image_sha": "77aedfb47f8e93530e674889b9f615cf82ac7136f4dff5495b6131301a7b3f86",
+      "mask_sha": "e1ebb85621a8b7fa0aca48b407ad2ac74565e5e16e2ff4464e146b2b9ca2b9d7"
+    },
+    {
+      "arm": "offline_aug",
+      "index": 13,
+      "sources": [
+        {
+          "parent": "b029e315-2e53-4152-a536-1adea99e32f7_mp4-0014_jpg.rf.582847bb6f201b85d7a5c87216a7acaf",
+          "variant": "color_light",
+          "primary": true
+        },
+        {
+          "parent": "2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0063_jpg.rf.9c3c666f4d8f3595f0afeef14fcde790",
+          "variant": "environment",
+          "primary": false
+        },
+        {
+          "parent": "d56fcb3c-0531-4696-8b67-2645d89e4a7f_mp4-0045_jpg.rf.b364a3116c1bcc292d115ebf049b21ee",
+          "variant": "environment",
+          "primary": false
+        },
+        {
+          "parent": "b029e315-2e53-4152-a536-1adea99e32f7_mp4-0008_jpg.rf.3d2666118084be462cbe8b20defa4527",
+          "variant": "environment",
+          "primary": false
+        }
+      ],
+      "image_sha": "fe62f6a4ff339ae5b479d85552b7f32c48bd3311174f81aab1bf8cc9b31e21c0",
+      "mask_sha": "1a5c1e38609d31ec8fb6dd118b004e257352089e2af8c23af94d3f3cdd5ae93e"
+    },
+    {
+      "arm": "offline_aug",
+      "index": 14,
+      "sources": [
+        {
+          "parent": "96ecd4fe-5910-4cd4-8a24-11ed20aab3b7_mp4-0045_jpg.rf.bd966dcd5bc73281f5afda2a2295c1c3",
+          "variant": "clahe_blur",
+          "primary": true
+        },
+        {
+          "parent": "2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0121_jpg.rf.c4ab8aa8a1d67fcfe99e2e6848bea889",
+          "variant": "clahe_blur",
+          "primary": false
+        },
+        {
+          "parent": "2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0078_jpg.rf.3a929807afcc46c1b1201baffe7dddc4",
+          "variant": "color_light",
+          "primary": false
+        },
+        {
+          "parent": "2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0081_jpg.rf.3811d7e562ce6ffd9128bbeed80f5c1a",
+          "variant": "original",
+          "primary": false
+        }
+      ],
+      "image_sha": "fc3eb5ab7a46fe296fb4a19b4cc3f51821754844c56d81b18f2c68ad99ba4252",
+      "mask_sha": "c36bfd2c382ed79b391c0db6de85d7ec6eb37553953e4d25ed732a6d377f45c5"
+    },
+    {
+      "arm": "offline_aug",
+      "index": 15,
+      "sources": [
+        {
+          "parent": "d56fcb3c-0531-4696-8b67-2645d89e4a7f_mp4-0001_jpg.rf.f1b41e917b3bb2dde3eeb85146a2be42",
+          "variant": "clahe_blur",
+          "primary": true
+        }
+      ],
+      "image_sha": "7e59ef7a20ec9f8df6020db7096916e491128f100992f18ed266e9e42a8177f3",
+      "mask_sha": "acbccb9c767cce44381da778392ffe99147f929f3227f74753c20a65258bb94c"
+    }
+  ],
+  "alignment_review": "PENDING human review",
+  "training_executed": false
+}

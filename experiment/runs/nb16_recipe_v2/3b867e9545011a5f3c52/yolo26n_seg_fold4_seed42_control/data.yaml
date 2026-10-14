@@ -1,0 +1,4 @@
+path: /home/supawich/Desktop/Aggregate_Project/experiment/data/groupcv_offline_v2_de6276f231115417/fold4/control
+train: train/images
+val: valid/images
+names: ['gravel', 'sand']

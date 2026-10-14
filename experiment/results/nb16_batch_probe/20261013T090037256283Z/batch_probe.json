@@ -1,0 +1,121 @@
+{
+  "recipes": [
+    {
+      "name": "yolo26n_seg",
+      "kind": "yolo",
+      "task": "segment",
+      "init": "yolo26n-seg.pt",
+      "size": 960,
+      "epochs": 30,
+      "batch": 12,
+      "lr": 0.001
+    },
+    {
+      "name": "yolo26s_seg",
+      "kind": "yolo",
+      "task": "segment",
+      "init": "yolo26s-seg.pt",
+      "size": 960,
+      "epochs": 30,
+      "batch": 6,
+      "lr": 0.001
+    },
+    {
+      "name": "mrcnn",
+      "kind": "mrcnn",
+      "task": "segment",
+      "init": "COCO_DEFAULT",
+      "size": 960,
+      "epochs": 30,
+      "batch": 8,
+      "lr": 0.005
+    },
+    {
+      "name": "unet_ws",
+      "kind": "unet",
+      "task": "segment",
+      "init": "random",
+      "size": 512,
+      "epochs": 30,
+      "batch": 14,
+      "lr": 0.001
+    },
+    {
+      "name": "yolo26n_det",
+      "kind": "yolo",
+      "task": "detect",
+      "init": "yolo26n.pt",
+      "size": 960,
+      "epochs": 30,
+      "batch": 10,
+      "lr": 0.001
+    },
+    {
+      "name": "yolo26s_det",
+      "kind": "yolo",
+      "task": "detect",
+      "init": "yolo26s.pt",
+      "size": 960,
+      "epochs": 30,
+      "batch": 5,
+      "lr": 0.001
+    }
+  ],
+  "steps": 3,
+  "results": [
+    {
+      "model": "yolo26n_seg",
+      "batch": 12,
+      "status": "PASS",
+      "peak_allocated_gib": 8.950582027435303,
+      "peak_reserved_gib": 9.75390625,
+      "seconds": 32.260304169001756,
+      "error": null
+    },
+    {
+      "model": "yolo26s_seg",
+      "batch": 6,
+      "status": "PASS",
+      "peak_allocated_gib": 8.480451583862305,
+      "peak_reserved_gib": 9.279296875,
+      "seconds": 32.01112068499788,
+      "error": null
+    },
+    {
+      "model": "mrcnn",
+      "batch": 8,
+      "status": "FAIL",
+      "peak_allocated_gib": 10.407466411590576,
+      "peak_reserved_gib": 10.53125,
+      "seconds": 1.288285212998744,
+      "error": "OutOfMemoryError: CUDA out of memory. Tried to allocate 476.00 MiB. GPU 0 has a total capacity of 11.62 GiB of which 51.31 MiB is free. Process 2113 has 253.94 MiB memory in use. Including non-PyTorch memory, this process has 10.90 GiB memory in use. Of the allocated memory 10.41 GiB is allocated by PyTorch, and 126.75 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)"
+    },
+    {
+      "model": "unet_ws",
+      "batch": 14,
+      "status": "FAIL",
+      "peak_allocated_gib": 6.189068794250488,
+      "peak_reserved_gib": 7.48046875,
+      "seconds": 0.17790405299820122,
+      "error": "RuntimeError: nll_loss2d_forward_out_cuda_template does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True)'. You can turn off determinism just for this operation, or you can use the 'warn_only=True' option, if that's acceptable for your application. You can also file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation."
+    },
+    {
+      "model": "yolo26n_det",
+      "batch": 10,
+      "status": "PASS",
+      "peak_allocated_gib": 5.715862274169922,
+      "peak_reserved_gib": 6.7109375,
+      "seconds": 4.851983216001827,
+      "error": null
+    },
+    {
+      "model": "yolo26s_det",
+      "batch": 5,
+      "status": "PASS",
+      "peak_allocated_gib": 5.709249973297119,
+      "peak_reserved_gib": 6.552734375,
+      "seconds": 5.38328770699809,
+      "error": null
+    }
+  ]
+}

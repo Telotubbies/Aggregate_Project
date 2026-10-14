@@ -1,0 +1,9 @@
+{
+  "model": "yolo26n_seg",
+  "batch": 12,
+  "status": "PASS",
+  "peak_allocated_gib": 8.950582027435303,
+  "peak_reserved_gib": 9.75390625,
+  "seconds": 32.287693219001085,
+  "error": null
+}

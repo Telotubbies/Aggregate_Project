@@ -1,0 +1,14 @@
+{
+  "output_images": 22140,
+  "source_parent_draws": 40996,
+  "primary_parent_draws": 22140,
+  "donor_parent_draws": 18856,
+  "unique_source_files": 2948,
+  "unique_parents": 737,
+  "variant_draws": {
+    "original": 10357,
+    "color_light": 10285,
+    "clahe_blur": 10200,
+    "environment": 10154
+  }
+}

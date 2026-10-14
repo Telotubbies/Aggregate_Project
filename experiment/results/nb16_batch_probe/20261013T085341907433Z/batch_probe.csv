@@ -1,0 +1,17 @@
+model,batch,status,peak_allocated_gib,peak_reserved_gib,seconds,error
+yolo26n_seg,12,PASS,8.950582027435303,9.75390625,32.31311753400041,
+yolo26s_seg,6,PASS,8.480451583862305,9.279296875,31.786402342000656,
+mrcnn,8,FAIL,6.227999210357666,6.357421875,17.081545888999244,"InductorError: CppCompileError: C++ compile error
+
+Command:
+/opt/llvm-13/bin/clang++ /tmp/torchinductor_supawich/cr/ccryphpmkodp7ls6sxc64cjdjw3urr4wiqgbcsb6pu3x7rof5bj6.main.cpp -D TORCH_INDUCTOR_CPP_WRAPPER -D STANDALONE_TORCH_HEADER -D C10_USING_CUSTOM_GENERATED_MACROS -O3 -DNDEBUG -fno-trapping-math -funsafe-math-optimizations -ffinite-math-only -fno-signed-zeros -fno-math-errno -fno-finite-math-only -fno-unsafe-math-optimizations -ffp-contract=off -march=native -shared -fPIC -Wall -std=c++17 -Wno-unused-variable -Wno-unknown-pragmas -Werror=ignored-optimization-argument -fopenmp -include /tmp/torchinductor_supawich/precompiled_headers/cs6lls6v6e5qtc7k4ibkpdlzu2dobeiif7drosw7cpun6mffgzcr.h -I/usr/include/python3.12 -I/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/include -I/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/include/torch/csrc/api/include -o /tmp/torchinductor_supawich/cr/ccryphpmkodp7ls6sxc64cjdjw3urr4wiqgbcsb6pu3x7rof5bj6.main.so -ltorch -ltorch_cpu -ltorch_python -lgomp -L/usr/lib/x86_64-linux-gnu -L/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/lib
+
+Output:
+clang-13: error: no such file or directory: 'AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/lib'
+
+
+Set TORCHDYNAMO_VERBOSE=1 for the internal stack trace (please do this especially if you're reporting a bug to PyTorch). For even more developer context, set TORCH_LOGS=""+dynamo""
+"
+unet_ws,20,FAIL,10.126712322235107,10.48828125,0.23985427400111803,"OutOfMemoryError: CUDA out of memory. Tried to allocate 320.00 MiB. GPU 0 has a total capacity of 11.62 GiB of which 190.69 MiB is free. Process 2113 has 253.94 MiB memory in use. Including non-PyTorch memory, this process has 10.77 GiB memory in use. Of the allocated memory 10.13 GiB is allocated by PyTorch, and 280.25 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)"
+yolo26n_det,16,FAIL,10.50313949584961,10.544921875,4.9740519910010335,AssertionError: Validation is not at the declared optimizer step
+yolo26s_det,8,FAIL,10.41562271118164,10.548828125,5.111328017001142,AssertionError: Validation is not at the declared optimizer step

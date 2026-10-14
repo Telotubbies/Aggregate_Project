@@ -1,0 +1,173 @@
+[
+  {
+    "parent_stem": "07451999-bdf8-4862-b869-6db57c35f0c1_mp4-0000_jpg.rf.7765e8724b4515244673af137ac2b4c3",
+    "variant": "original",
+    "seed": 1357687495,
+    "params": {}
+  },
+  {
+    "parent_stem": "07451999-bdf8-4862-b869-6db57c35f0c1_mp4-0000_jpg.rf.7765e8724b4515244673af137ac2b4c3",
+    "variant": "color_light",
+    "seed": 3964474008,
+    "params": {
+      "gamma": 1.4302658059273692,
+      "brightness_gain": 1.05830818209164,
+      "hue_degrees": -5.085520581482831,
+      "saturation_gain": 1.0276456331578345
+    }
+  },
+  {
+    "parent_stem": "07451999-bdf8-4862-b869-6db57c35f0c1_mp4-0000_jpg.rf.7765e8724b4515244673af137ac2b4c3",
+    "variant": "clahe_blur",
+    "seed": 2506352070,
+    "params": {
+      "clip": 2.0,
+      "grid": [
+        8,
+        8
+      ],
+      "blur_applied": false
+    }
+  },
+  {
+    "parent_stem": "07451999-bdf8-4862-b869-6db57c35f0c1_mp4-0000_jpg.rf.7765e8724b4515244673af137ac2b4c3",
+    "variant": "environment",
+    "seed": 3093891221,
+    "params": {
+      "method": "rain",
+      "density": 0.0005548486337741887,
+      "streaks": 287,
+      "angle_degrees": 103.81857576784341,
+      "alpha": 0.6
+    }
+  },
+  {
+    "parent_stem": "2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0103_jpg.rf.821177b7dd664d84327621f37d4e3931",
+    "variant": "original",
+    "seed": 2823177519,
+    "params": {}
+  },
+  {
+    "parent_stem": "2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0103_jpg.rf.821177b7dd664d84327621f37d4e3931",
+    "variant": "color_light",
+    "seed": 1348173206,
+    "params": {
+      "gamma": 1.0476538495399974,
+      "brightness_gain": 1.020682814090286,
+      "saturation_gain": 0.9028508726631933,
+      "white_balance_rgb_gains": [
+        0.9636412180362898,
+        0.9551999289457496,
+        0.9755867455729562
+      ]
+    }
+  },
+  {
+    "parent_stem": "2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0103_jpg.rf.821177b7dd664d84327621f37d4e3931",
+    "variant": "clahe_blur",
+    "seed": 2769927363,
+    "params": {
+      "clip": 2.0,
+      "grid": [
+        8,
+        8
+      ],
+      "blur_applied": true,
+      "blur_sigma": 0.35
+    }
+  },
+  {
+    "parent_stem": "2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0103_jpg.rf.821177b7dd664d84327621f37d4e3931",
+    "variant": "environment",
+    "seed": 2041872070,
+    "params": {
+      "method": "night",
+      "gamma": 1.448259710498315,
+      "brightness_gain": 0.6878081718215732,
+      "rgb_tint": [
+        0.95,
+        1.0,
+        1.05
+      ]
+    }
+  },
+  {
+    "parent_stem": "96ecd4fe-5910-4cd4-8a24-11ed20aab3b7_mp4-0006_jpg.rf.b5f7d8baa8cccacd12ca846369839490",
+    "variant": "original",
+    "seed": 1670873005,
+    "params": {}
+  },
+  {
+    "parent_stem": "96ecd4fe-5910-4cd4-8a24-11ed20aab3b7_mp4-0006_jpg.rf.b5f7d8baa8cccacd12ca846369839490",
+    "variant": "color_light",
+    "seed": 2760992575,
+    "params": {
+      "gamma": 1.1376782442483941,
+      "brightness_gain": 0.958090342939558,
+      "hue_degrees": -10.817464759135781
+    }
+  },
+  {
+    "parent_stem": "96ecd4fe-5910-4cd4-8a24-11ed20aab3b7_mp4-0006_jpg.rf.b5f7d8baa8cccacd12ca846369839490",
+    "variant": "clahe_blur",
+    "seed": 338548924,
+    "params": {
+      "clip": 2.0,
+      "grid": [
+        8,
+        8
+      ],
+      "blur_applied": false
+    }
+  },
+  {
+    "parent_stem": "96ecd4fe-5910-4cd4-8a24-11ed20aab3b7_mp4-0006_jpg.rf.b5f7d8baa8cccacd12ca846369839490",
+    "variant": "environment",
+    "seed": 803996514,
+    "params": {
+      "method": "noise",
+      "sigma_0_1": 0.029911666674121387
+    }
+  },
+  {
+    "parent_stem": "fe3e6f0d-5f1f-4948-8468-9538c3b384da_jpg.rf.ed2555e903d23777a178cf828971d272",
+    "variant": "original",
+    "seed": 3284705159,
+    "params": {}
+  },
+  {
+    "parent_stem": "fe3e6f0d-5f1f-4948-8468-9538c3b384da_jpg.rf.ed2555e903d23777a178cf828971d272",
+    "variant": "color_light",
+    "seed": 662174513,
+    "params": {
+      "gamma": 1.2065239418442935,
+      "brightness_gain": 1.069572289569884,
+      "saturation_gain": 1.0265602167517056
+    }
+  },
+  {
+    "parent_stem": "fe3e6f0d-5f1f-4948-8468-9538c3b384da_jpg.rf.ed2555e903d23777a178cf828971d272",
+    "variant": "clahe_blur",
+    "seed": 1734607143,
+    "params": {
+      "clip": 2.0,
+      "grid": [
+        8,
+        8
+      ],
+      "blur_applied": false
+    }
+  },
+  {
+    "parent_stem": "fe3e6f0d-5f1f-4948-8468-9538c3b384da_jpg.rf.ed2555e903d23777a178cf828971d272",
+    "variant": "environment",
+    "seed": 455756292,
+    "params": {
+      "method": "rain",
+      "density": 0.00031820360693025283,
+      "streaks": 494,
+      "angle_degrees": 77.41028421646271,
+      "alpha": 0.6
+    }
+  }
+]

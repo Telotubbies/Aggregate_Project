@@ -1,0 +1,9 @@
+{
+  "model": "mrcnn",
+  "batch": 8,
+  "status": "FAIL",
+  "peak_allocated_gib": 9.197021007537842,
+  "peak_reserved_gib": 10.1328125,
+  "seconds": 25.074873702000332,
+  "error": "ValueError: Wrong representation or invalid binary mask"
+}

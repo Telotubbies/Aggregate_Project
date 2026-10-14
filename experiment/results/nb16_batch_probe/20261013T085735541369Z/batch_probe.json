@@ -1,0 +1,121 @@
+{
+  "recipes": [
+    {
+      "name": "yolo26n_seg",
+      "kind": "yolo",
+      "task": "segment",
+      "init": "yolo26n-seg.pt",
+      "size": 960,
+      "epochs": 30,
+      "batch": 12,
+      "lr": 0.001
+    },
+    {
+      "name": "yolo26s_seg",
+      "kind": "yolo",
+      "task": "segment",
+      "init": "yolo26s-seg.pt",
+      "size": 960,
+      "epochs": 30,
+      "batch": 6,
+      "lr": 0.001
+    },
+    {
+      "name": "mrcnn",
+      "kind": "mrcnn",
+      "task": "segment",
+      "init": "COCO_DEFAULT",
+      "size": 960,
+      "epochs": 30,
+      "batch": 8,
+      "lr": 0.005
+    },
+    {
+      "name": "unet_ws",
+      "kind": "unet",
+      "task": "segment",
+      "init": "random",
+      "size": 512,
+      "epochs": 30,
+      "batch": 16,
+      "lr": 0.001
+    },
+    {
+      "name": "yolo26n_det",
+      "kind": "yolo",
+      "task": "detect",
+      "init": "yolo26n.pt",
+      "size": 960,
+      "epochs": 30,
+      "batch": 12,
+      "lr": 0.001
+    },
+    {
+      "name": "yolo26s_det",
+      "kind": "yolo",
+      "task": "detect",
+      "init": "yolo26s.pt",
+      "size": 960,
+      "epochs": 30,
+      "batch": 6,
+      "lr": 0.001
+    }
+  ],
+  "steps": 3,
+  "results": [
+    {
+      "model": "yolo26n_seg",
+      "batch": 12,
+      "status": "PASS",
+      "peak_allocated_gib": 8.950582027435303,
+      "peak_reserved_gib": 9.75390625,
+      "seconds": 32.200468801998795,
+      "error": null
+    },
+    {
+      "model": "yolo26s_seg",
+      "batch": 6,
+      "status": "PASS",
+      "peak_allocated_gib": 8.480451583862305,
+      "peak_reserved_gib": 9.279296875,
+      "seconds": 32.342263406999336,
+      "error": null
+    },
+    {
+      "model": "mrcnn",
+      "batch": 8,
+      "status": "FAIL",
+      "peak_allocated_gib": 6.227999210357666,
+      "peak_reserved_gib": 6.357421875,
+      "seconds": 6.271192856000198,
+      "error": "InductorError: CppCompileError: C++ compile error\n\nCommand:\n/opt/llvm-13/bin/clang++ /tmp/torchinductor_supawich/cr/ccryphpmkodp7ls6sxc64cjdjw3urr4wiqgbcsb6pu3x7rof5bj6.main.cpp -D TORCH_INDUCTOR_CPP_WRAPPER -D STANDALONE_TORCH_HEADER -D C10_USING_CUSTOM_GENERATED_MACROS -O3 -DNDEBUG -fno-trapping-math -funsafe-math-optimizations -ffinite-math-only -fno-signed-zeros -fno-math-errno -fno-finite-math-only -fno-unsafe-math-optimizations -ffp-contract=off -march=native -shared -fPIC -Wall -std=c++17 -Wno-unused-variable -Wno-unknown-pragmas -Werror=ignored-optimization-argument -fopenmp -include /tmp/torchinductor_supawich/precompiled_headers/cs6lls6v6e5qtc7k4ibkpdlzu2dobeiif7drosw7cpun6mffgzcr.h -I/usr/include/python3.12 -I/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/include -I/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/include/torch/csrc/api/include -o /tmp/torchinductor_supawich/cr/ccryphpmkodp7ls6sxc64cjdjw3urr4wiqgbcsb6pu3x7rof5bj6.main.so -ltorch -ltorch_cpu -ltorch_python -lgomp -L/usr/lib/x86_64-linux-gnu -L/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/lib\n\nOutput:\nclang-13: error: no such file or directory: 'AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/lib'\n\n\nSet TORCHDYNAMO_VERBOSE=1 for the internal stack trace (please do this especially if you're reporting a bug to PyTorch). For even more developer context, set TORCH_LOGS=\"+dynamo\"\n"
+    },
+    {
+      "model": "unet_ws",
+      "batch": 16,
+      "status": "FAIL",
+      "peak_allocated_gib": 10.036380290985107,
+      "peak_reserved_gib": 10.412109375,
+      "seconds": 0.21969088299920259,
+      "error": "OutOfMemoryError: CUDA out of memory. Tried to allocate 512.00 MiB. GPU 0 has a total capacity of 11.62 GiB of which 179.00 MiB is free. Process 2113 has 253.94 MiB memory in use. Including non-PyTorch memory, this process has 10.78 GiB memory in use. Of the allocated memory 9.98 GiB is allocated by PyTorch, and 444.25 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)"
+    },
+    {
+      "model": "yolo26n_det",
+      "batch": 12,
+      "status": "FAIL",
+      "peak_allocated_gib": 10.373546600341797,
+      "peak_reserved_gib": 10.544921875,
+      "seconds": 1.4348582519996853,
+      "error": "AssertionError: Batch/budget changed by runtime recovery"
+    },
+    {
+      "model": "yolo26s_det",
+      "batch": 6,
+      "status": "FAIL",
+      "peak_allocated_gib": 10.383817195892334,
+      "peak_reserved_gib": 10.544921875,
+      "seconds": 1.944214388000546,
+      "error": "AssertionError: Batch/budget changed by runtime recovery"
+    }
+  ]
+}

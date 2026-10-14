@@ -1,0 +1,23 @@
+{
+  "name": "piled_materials",
+  "zip": "/home/supawich/Desktop/Aggregate_Project/experiment/data/Piled Materials.v2i.yolo26.zip",
+  "zip_sha": "ab12d1805e4cee6b8029119494c063b5f56574a5bc748bcc23f9b65c76d82b65",
+  "yaml_names": [
+    "Rock",
+    "Sand"
+  ],
+  "n_images": 1095,
+  "splits": {
+    "train": 766,
+    "valid": 220,
+    "test": 109
+  },
+  "labeled": 1055,
+  "invalid_polygons": 0,
+  "src_duplicates": 0,
+  "internal_duplicates": 0,
+  "class_hist": {
+    "0": 528,
+    "1": 702
+  }
+}

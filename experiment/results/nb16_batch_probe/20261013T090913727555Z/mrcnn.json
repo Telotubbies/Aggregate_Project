@@ -1,0 +1,9 @@
+{
+  "model": "mrcnn",
+  "batch": 8,
+  "status": "PASS",
+  "peak_allocated_gib": 9.197021484375,
+  "peak_reserved_gib": 10.1328125,
+  "seconds": 47.11987822100127,
+  "error": null
+}

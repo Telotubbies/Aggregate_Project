@@ -1,0 +1,15 @@
+{
+  "name": "s02",
+  "zip": "/home/supawich/Desktop/Aggregate_Project/experiment/data/S02.zip",
+  "zip_sha": "677be0f3441dfee8fa575d58673e37fdf88d8e46ba9dbbe7109f7e127fccd642",
+  "yaml_names": [],
+  "n_images": 66,
+  "splits": {
+    "unlabeled": 66
+  },
+  "labeled": 0,
+  "invalid_polygons": 0,
+  "src_duplicates": 0,
+  "internal_duplicates": 0,
+  "class_hist": {}
+}

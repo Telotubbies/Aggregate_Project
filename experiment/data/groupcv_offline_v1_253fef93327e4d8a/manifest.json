@@ -1,0 +1,64 @@
+{
+  "spec": {
+    "schema": "groupcv-offline-v1",
+    "source_dataset_id": "9bf2fab6eb34eb82dc7c4aad4b4de736c217e203c2f0f7cb2e36c6118705b8b9",
+    "source_code_id": "16b90991afda8ba893a5b1c834dbe22c61d676e747c07588ccc6cac9acfe8348",
+    "k": 5,
+    "seed": 42,
+    "inner_valid_fraction": 0.2,
+    "group_policy": "merged group + UUID + byte/pixel duplicates + dHash<=6 conservative connected components",
+    "assignments_sha": "a2c3f4c16618c17e8b46232c87f188ddae45bcf318df20fe2debe2d6685389aa",
+    "augmentation": {
+      "version": "offline-safe-v1",
+      "copies_per_parent": 3,
+      "variants": [
+        "hflip",
+        "gamma_brightness",
+        "clahe_blur"
+      ],
+      "gamma_range": [
+        0.85,
+        1.15
+      ],
+      "brightness_range": [
+        0.9,
+        1.1
+      ],
+      "clahe_clip": 2.0,
+      "clahe_grid": [
+        8,
+        8
+      ],
+      "blur_sigma": 0.35,
+      "affine": false,
+      "vertical_flip": false,
+      "online_augmentation": false
+    },
+    "geometry_review": "mechanical only; independent semantic review pending",
+    "evaluation_scope": "development grouped CV; not external/untouched test"
+  },
+  "cv_id": "253fef93327e4d8a354f71b998769e29b4571dad4f4fdcee308a328ccffba510",
+  "artifacts": {
+    "assignments.csv": "ff4de57a0f9463502f5a6debe90ec4a4df6547cff9bc2ce96153f12726839388",
+    "group_links.csv": "97dd6f310fae9f73071ee79e954c0cd40d8d4b35380435ba72f41c0e56b6c8db",
+    "role_support.csv": "493548c89ac09d230cf26377acf916c42f75176f4fae001c8fdae7657101f1be",
+    "lineage.csv": "89eb0fd07d9f447456156b2c200f37f5bc6f771a2e66a5712cd7fc1f3a4df53a",
+    "spec.json": "c8fd3f76ec96b27bff5d0db23f60de8893af80ca180fc9039d6904a6c98122b9",
+    "quality_reference_fold0.json": "6beada5667a576b475b58ee714fe11293f9a5649daccf4324f9cd4905c5f6177",
+    "quality_reference_fold1.json": "ba54e5c478ad12c9911d65533d098036e790217171c8bbeefe0f81adab221595",
+    "quality_reference_fold2.json": "2737d5bf44b9170435993b2412d22f2e62cf503665385f76abb0089fdebaadb7",
+    "quality_reference_fold3.json": "1eca33cc7486d91c1dd9b2abcfd70991192f92de4d1b2ff973079af2cabfa0aa",
+    "quality_reference_fold4.json": "ab41e9a16da6b209e8da7b60773ba200e6060c48a1df473c21102a3683f2bb55",
+    "fold0/control/data.yaml": "2008c3ddc72a363c149b12180dd43f7c39ee641958fd844e9af62d7636db73b5",
+    "fold0/offline_aug/data.yaml": "1e66a47e0158dc2ffd3218083aa1fa86bea0c732863b8f05d5dabc234428740b",
+    "fold1/control/data.yaml": "05eb2d7aef21276f6d07bfa5838a3efa494e409948996c3dc27526efd5a1c4ce",
+    "fold1/offline_aug/data.yaml": "ffd19cb095184dcd7a0da409ac5b980881f5c66a959468fb10f1b7ac92592de3",
+    "fold2/control/data.yaml": "bbfd40024df477053f15aef327f3e1be7c525b1eab4efc52dbd066523e084942",
+    "fold2/offline_aug/data.yaml": "1106525d502ee81dae4bd690d2b2c851dc8b22e2263518c7fc0439528050b38d",
+    "fold3/control/data.yaml": "f3f0a9968c0bbe52c1e865c3f51314c4e189229c4829b8b997557e6b76fa74b4",
+    "fold3/offline_aug/data.yaml": "5e4fb55c82ebc7edfae92ddd264b12af8f241b406ed35342c58f4b792f312785",
+    "fold4/control/data.yaml": "41ed09c86a8f2420b9ceb43baea965bdc030e5575a3024a445b10b11d93f20b9",
+    "fold4/offline_aug/data.yaml": "a9188fbe87fc0d23f13f121da5989a849052a54aeba949cddeeb71719c726f3e"
+  },
+  "status": "materialized; audit required"
+}

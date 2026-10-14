@@ -1,0 +1,7 @@
+model,batch,status,peak_allocated_gib,peak_reserved_gib,seconds,error
+yolo26n_seg,12,PASS,8.950582027435303,9.75390625,32.260304169001756,
+yolo26s_seg,6,PASS,8.480451583862305,9.279296875,32.01112068499788,
+mrcnn,8,FAIL,10.407466411590576,10.53125,1.288285212998744,"OutOfMemoryError: CUDA out of memory. Tried to allocate 476.00 MiB. GPU 0 has a total capacity of 11.62 GiB of which 51.31 MiB is free. Process 2113 has 253.94 MiB memory in use. Including non-PyTorch memory, this process has 10.90 GiB memory in use. Of the allocated memory 10.41 GiB is allocated by PyTorch, and 126.75 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)"
+unet_ws,14,FAIL,6.189068794250488,7.48046875,0.17790405299820122,"RuntimeError: nll_loss2d_forward_out_cuda_template does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True)'. You can turn off determinism just for this operation, or you can use the 'warn_only=True' option, if that's acceptable for your application. You can also file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation."
+yolo26n_det,10,PASS,5.715862274169922,6.7109375,4.851983216001827,
+yolo26s_det,5,PASS,5.709249973297119,6.552734375,5.38328770699809,

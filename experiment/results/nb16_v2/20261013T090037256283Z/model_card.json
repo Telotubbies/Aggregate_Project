@@ -1,0 +1,158 @@
+{
+  "task": "Gravel/sand annotated material-region segmentation and detection",
+  "intended_use": "Research decision support; supervised visual inspection",
+  "excluded_use": [
+    "individual-grain sizing",
+    "mass or volume estimation",
+    "autonomous consequential field decisions"
+  ],
+  "dataset_id": "9bf2fab6eb34eb82dc7c4aad4b4de736c217e203c2f0f7cb2e36c6118705b8b9",
+  "source_id": "875ef52c218e3415f3808d10431442a95244db30bf4f602d73a82a080d06d7a7",
+  "test_status": "development-inspected grouped benchmark",
+  "group_semantics": "merged filename/dHash groups; events and sites unverified",
+  "labels": "pseudo-GT; independent human adjudication pending",
+  "recipes": [
+    {
+      "name": "yolo26n_seg",
+      "kind": "yolo",
+      "task": "segment",
+      "init": "yolo26n-seg.pt",
+      "size": 960,
+      "epochs": 100,
+      "batch": 8,
+      "lr": 0.001
+    },
+    {
+      "name": "yolo26s_seg",
+      "kind": "yolo",
+      "task": "segment",
+      "init": "yolo26s-seg.pt",
+      "size": 960,
+      "epochs": 100,
+      "batch": 8,
+      "lr": 0.001
+    },
+    {
+      "name": "mrcnn",
+      "kind": "mrcnn",
+      "task": "segment",
+      "init": "COCO_DEFAULT",
+      "size": 960,
+      "epochs": 12,
+      "batch": 2,
+      "lr": 0.005
+    },
+    {
+      "name": "unet_ws",
+      "kind": "unet",
+      "task": "segment",
+      "init": "random",
+      "size": 512,
+      "epochs": 40,
+      "batch": 8,
+      "lr": 0.001
+    },
+    {
+      "name": "yolo26n_det",
+      "kind": "yolo",
+      "task": "detect",
+      "init": "yolo26n.pt",
+      "size": 960,
+      "epochs": 100,
+      "batch": 8,
+      "lr": 0.001
+    },
+    {
+      "name": "yolo26s_det",
+      "kind": "yolo",
+      "task": "detect",
+      "init": "yolo26s.pt",
+      "size": 960,
+      "epochs": 100,
+      "batch": 8,
+      "lr": 0.001
+    }
+  ],
+  "seeds": [
+    42,
+    123,
+    2026
+  ],
+  "threshold_source": "full valid",
+  "results": [],
+  "measured_efficiency": [],
+  "limitations": [
+    {
+      "requirement": "Canonical COCO evaluator",
+      "status": "AVAILABLE",
+      "evidence": "metric self-check cell",
+      "scope": "noncrowd dataset"
+    },
+    {
+      "requirement": "Completed planned arms/seeds",
+      "status": "PENDING",
+      "evidence": "main_results.csv",
+      "scope": "development-inspected grouped test"
+    },
+    {
+      "requirement": "Independent human labels and adjudication",
+      "status": "PENDING",
+      "evidence": "nb00 reviewer queue",
+      "scope": "pseudo-GT cannot establish annotation correctness"
+    },
+    {
+      "requirement": "New event/site confirmatory test",
+      "status": "DEFERRED",
+      "evidence": "owner metadata deferral",
+      "scope": "no external validity claim"
+    },
+    {
+      "requirement": "Negative/background-scene evaluation",
+      "status": "PENDING",
+      "evidence": "nb00 final distribution audit",
+      "scope": "FP rate on target background scenes unknown"
+    },
+    {
+      "requirement": "Controlled ablations",
+      "status": "PENDING",
+      "evidence": "ablations.csv",
+      "scope": "verify full planned arm coverage before concluding"
+    },
+    {
+      "requirement": "Conditional cluster uncertainty",
+      "status": "PENDING",
+      "evidence": "paired_bootstrap.json",
+      "scope": "not seed variability; sparse groups disclosed"
+    },
+    {
+      "requirement": "Actual execution-hardware efficiency",
+      "status": "PENDING",
+      "evidence": "efficiency_measured.json",
+      "scope": "not Pi5 or field throughput"
+    },
+    {
+      "requirement": "Deployment runtime/task parity",
+      "status": "PENDING",
+      "evidence": "exports.json",
+      "scope": "ONNX syntax alone insufficient"
+    },
+    {
+      "requirement": "Monitoring owner, rollback, acceptance limits",
+      "status": "PENDING",
+      "evidence": "model card",
+      "scope": "human operational sign-off required"
+    }
+  ],
+  "monitoring": {
+    "observe": [
+      "brightness/blur against fixed training reference",
+      "class score and empty-prediction rates",
+      "annotated sample precision/recall and boundary quality",
+      "latency/error rate by hardware/runtime"
+    ],
+    "owner": null,
+    "cadence": null,
+    "alert_limits": null,
+    "rollback": "retain known checkpoint and escalate to human; never auto-retrain on drift alone"
+  }
+}

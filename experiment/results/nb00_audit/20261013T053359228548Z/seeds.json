@@ -1,0 +1,11 @@
+{
+  "gold_split": 42,
+  "contrast_sample": 11,
+  "tiny_viz": 7,
+  "overlay_viz": 5,
+  "aug_viz": 7,
+  "aug_integrity": 21,
+  "aug_offline": 42,
+  "leak_viz": 42,
+  "train": 42
+}

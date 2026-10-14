@@ -1,0 +1,22 @@
+[
+  {
+    "name": "yolo26n_seg",
+    "kind": "yolo",
+    "task": "segment",
+    "init": "yolo26n-seg.pt",
+    "size": 960,
+    "epochs": 100,
+    "batch": 8,
+    "lr": 0.001
+  },
+  {
+    "name": "yolo26s_seg",
+    "kind": "yolo",
+    "task": "segment",
+    "init": "yolo26s-seg.pt",
+    "size": 960,
+    "epochs": 100,
+    "batch": 8,
+    "lr": 0.001
+  }
+]

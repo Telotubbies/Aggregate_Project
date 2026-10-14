@@ -1,0 +1,12 @@
+requirement,status,evidence,scope
+Image/label identity and merged-group disjointness,PASS,dataset_manifest.csv,"filename-derived groups, not independent events"
+Canonical COCO evaluator,BLOCKED,metric self-check cell,noncrowd dataset
+Completed planned arms/seeds,PENDING,main_results.csv,development-inspected grouped test
+Independent human labels and adjudication,PENDING,nb00 reviewer queue,pseudo-GT cannot establish annotation correctness
+New event/site confirmatory test,DEFERRED,owner metadata deferral,no external validity claim
+Negative/background-scene evaluation,PENDING,nb00 final distribution audit,FP rate on target background scenes unknown
+Controlled ablations,PENDING,ablations.csv,verify full planned arm coverage before concluding
+Conditional cluster uncertainty,PENDING,paired_bootstrap.json,not seed variability; sparse groups disclosed
+Actual execution-hardware efficiency,PENDING,efficiency_measured.json,not Pi5 or field throughput
+Deployment runtime/task parity,PENDING,exports.json,ONNX syntax alone insufficient
+"Monitoring owner, rollback, acceptance limits",PENDING,model card,human operational sign-off required

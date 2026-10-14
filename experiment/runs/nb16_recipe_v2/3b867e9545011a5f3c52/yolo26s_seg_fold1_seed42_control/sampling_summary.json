@@ -1,0 +1,11 @@
+{
+  "output_images": 16380,
+  "source_parent_draws": 16380,
+  "primary_parent_draws": 16380,
+  "donor_parent_draws": 0,
+  "unique_source_files": 543,
+  "unique_parents": 543,
+  "variant_draws": {
+    "original": 16380
+  }
+}

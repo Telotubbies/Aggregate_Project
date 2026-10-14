@@ -1,0 +1,128 @@
+{
+  "status": "PASS",
+  "cv_id": "253fef93327e4d8a354f71b998769e29b4571dad4f4fdcee308a328ccffba510",
+  "dataset_id": "9bf2fab6eb34eb82dc7c4aad4b4de736c217e203c2f0f7cb2e36c6118705b8b9",
+  "source_id": "9123eaa4a4b565de3f5febf463ec3067eb89b91e4454dc5d0b164df4f4e29c00",
+  "arms": [
+    {
+      "arm": "control",
+      "status": "PASS",
+      "cv_id": "253fef93327e4d8a354f71b998769e29b4571dad4f4fdcee308a328ccffba510",
+      "dataset_id": "9bf2fab6eb34eb82dc7c4aad4b4de736c217e203c2f0f7cb2e36c6118705b8b9",
+      "source_id": "9123eaa4a4b565de3f5febf463ec3067eb89b91e4454dc5d0b164df4f4e29c00",
+      "initializer_sha": "361fbfabab285c3237700b6bb91d7ecfa602cd945fffda8dbe1242829b71e73f",
+      "training_init_sha": "2dd7620881f763b487dd890e090be270e490c01e0a3e9a0b3b63f601c84b7d96",
+      "seed": 42,
+      "fold": 0,
+      "train_parents": [
+        "07451999-bdf8-4862-b869-6db57c35f0c1_mp4-0000_jpg.rf.7765e8724b4515244673af137ac2b4c3",
+        "07451999-bdf8-4862-b869-6db57c35f0c1_mp4-0001_jpg.rf.8a2d6e716c3fe1d5b7ffd1b7c91bd29d",
+        "07451999-bdf8-4862-b869-6db57c35f0c1_mp4-0031_jpg.rf.8a82813520c94a229808c96f13dff77c",
+        "07451999-bdf8-4862-b869-6db57c35f0c1_mp4-0033_jpg.rf.c0d23a60297d6770d3c9257144ab15f5"
+      ],
+      "valid_parents": [
+        "1991989f-1bf5-4e50-89bb-7301b220ac01_mp4-0000_jpg.rf.9778ba75af4d8f79c6e64d8e78584430",
+        "1991989f-1bf5-4e50-89bb-7301b220ac01_mp4-0001_jpg.rf.c62605d0ee2e99eb8a807abd06ff40a0",
+        "0a48349e-f671-436a-8af5-de54f079109f_mp4-0000_jpg.rf.8d73fc8aae9dc52e4bedc3caf62770f5",
+        "0a48349e-f671-436a-8af5-de54f079109f_mp4-0001_jpg.rf.65807a1edc21b97c96cf58c8c45c20eb"
+      ],
+      "train_images": 4,
+      "valid_images": 4,
+      "imgsz": 640,
+      "batch": 2,
+      "optimizer_steps": 2,
+      "finite_gradient_steps": 2,
+      "nonzero_gradient_steps": 2,
+      "losses": [
+        34.61625671386719,
+        31.10452651977539
+      ],
+      "parameter_delta_l1": 0.6154622435569763,
+      "checkpoint": "/home/supawich/Desktop/Aggregate_Project/experiment/runs/nb16_cv_smoke/20261013T063459997146Z/control/native/weights/best.pt",
+      "checkpoint_sha": "37a560ab320cf194d3cc4dbb34ab425d9c45e720c31f59485bd2f3c4c51896d8",
+      "metrics_smoke_only": {
+        "AP": 0.0013495069313694654,
+        "AP50": 0.004563065002152389,
+        "AP75": 0.0,
+        "AP_small": 0.0,
+        "AP_medium": 0.0,
+        "AP_large": 0.006631034532024631,
+        "AR1": 0.0,
+        "AR10": 0.005555555555555555,
+        "AR100": 0.04444444444444444,
+        "AR_small": 0.0,
+        "AR_medium": 0.0,
+        "AR_large": 0.2,
+        "status": "canonical COCOeval",
+        "mode": "segm",
+        "per_class": {
+          "gravel": 0.0026990138627389307,
+          "sand": 0.0
+        }
+      },
+      "outer_predictions": 0,
+      "scope": "bounded pipeline smoke; not research accuracy or augmentation benefit"
+    },
+    {
+      "arm": "offline_aug",
+      "status": "PASS",
+      "cv_id": "253fef93327e4d8a354f71b998769e29b4571dad4f4fdcee308a328ccffba510",
+      "dataset_id": "9bf2fab6eb34eb82dc7c4aad4b4de736c217e203c2f0f7cb2e36c6118705b8b9",
+      "source_id": "9123eaa4a4b565de3f5febf463ec3067eb89b91e4454dc5d0b164df4f4e29c00",
+      "initializer_sha": "361fbfabab285c3237700b6bb91d7ecfa602cd945fffda8dbe1242829b71e73f",
+      "training_init_sha": "2dd7620881f763b487dd890e090be270e490c01e0a3e9a0b3b63f601c84b7d96",
+      "seed": 42,
+      "fold": 0,
+      "train_parents": [
+        "07451999-bdf8-4862-b869-6db57c35f0c1_mp4-0000_jpg.rf.7765e8724b4515244673af137ac2b4c3",
+        "07451999-bdf8-4862-b869-6db57c35f0c1_mp4-0001_jpg.rf.8a2d6e716c3fe1d5b7ffd1b7c91bd29d",
+        "07451999-bdf8-4862-b869-6db57c35f0c1_mp4-0031_jpg.rf.8a82813520c94a229808c96f13dff77c",
+        "07451999-bdf8-4862-b869-6db57c35f0c1_mp4-0033_jpg.rf.c0d23a60297d6770d3c9257144ab15f5"
+      ],
+      "valid_parents": [
+        "1991989f-1bf5-4e50-89bb-7301b220ac01_mp4-0000_jpg.rf.9778ba75af4d8f79c6e64d8e78584430",
+        "1991989f-1bf5-4e50-89bb-7301b220ac01_mp4-0001_jpg.rf.c62605d0ee2e99eb8a807abd06ff40a0",
+        "0a48349e-f671-436a-8af5-de54f079109f_mp4-0000_jpg.rf.8d73fc8aae9dc52e4bedc3caf62770f5",
+        "0a48349e-f671-436a-8af5-de54f079109f_mp4-0001_jpg.rf.65807a1edc21b97c96cf58c8c45c20eb"
+      ],
+      "train_images": 16,
+      "valid_images": 4,
+      "imgsz": 640,
+      "batch": 2,
+      "optimizer_steps": 2,
+      "finite_gradient_steps": 2,
+      "nonzero_gradient_steps": 2,
+      "losses": [
+        33.40830993652344,
+        29.60999298095703
+      ],
+      "parameter_delta_l1": 0.620519757270813,
+      "checkpoint": "/home/supawich/Desktop/Aggregate_Project/experiment/runs/nb16_cv_smoke/20261013T063459997146Z/offline_aug/native/weights/best.pt",
+      "checkpoint_sha": "4370a1a68ad3f04e84d7a1a2f76e136020e1d83515276409b0f9f6f8f33385b1",
+      "metrics_smoke_only": {
+        "AP": 0.0003923469815047182,
+        "AP50": 0.0018892510479019255,
+        "AP75": 0.0,
+        "AP_small": 0.0,
+        "AP_medium": 0.00024045261669024043,
+        "AP_large": 0.0015902703232164527,
+        "AR1": 0.0,
+        "AR10": 0.0,
+        "AR100": 0.03888888888888888,
+        "AR_small": 0.0,
+        "AR_medium": 0.016666666666666666,
+        "AR_large": 0.125,
+        "status": "canonical COCOeval",
+        "mode": "segm",
+        "per_class": {
+          "gravel": 0.0007846939630094365,
+          "sand": 0.0
+        }
+      },
+      "outer_predictions": 0,
+      "scope": "bounded pipeline smoke; not research accuracy or augmentation benefit"
+    }
+  ],
+  "outer_predictions": 0,
+  "full_training": false
+}

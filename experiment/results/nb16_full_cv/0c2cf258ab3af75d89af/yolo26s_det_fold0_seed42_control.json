@@ -1,0 +1,63 @@
+{
+  "status": "completed",
+  "name": "yolo26s_det_fold0_seed42_control",
+  "model": "yolo26s_det",
+  "fold": 0,
+  "seed": 42,
+  "arm": "control",
+  "spec": {
+    "plan_id": "0c2cf258ab3af75d89af",
+    "job": {
+      "recipe": {
+        "name": "yolo26s_det",
+        "kind": "yolo",
+        "task": "detect",
+        "init": "yolo26s.pt",
+        "size": 960,
+        "epochs": 30,
+        "batch": 5,
+        "lr": 0.001
+      },
+      "fold": 0,
+      "seed": 42,
+      "arm": "control"
+    },
+    "optimizer_steps": 4440,
+    "initializer_sha": "646f8bc3fe0a656803d95c294f7852321748cb29d13466a1af8862e2db384a1b"
+  },
+  "checkpoint": "/home/supawich/Desktop/Aggregate_Project/experiment/runs/nb16_full_cv/0c2cf258ab3af75d89af/yolo26s_det_fold0_seed42_control/selected.pt",
+  "checkpoint_sha": "a4a90eca8d652c3e63d3d9149e6f5600650a64c3b0eff299555a826121243910",
+  "optimizer_steps": 4440,
+  "selected_epoch": 18,
+  "threshold_source": "inner-valid",
+  "thresholds": {
+    "0": 0.2863174080848694,
+    "1": 0.06098151206970215
+  },
+  "box": {
+    "AP": 0.19696009765108838,
+    "AP50": 0.43976930711302004,
+    "AP75": 0.13682471385987724,
+    "AP_small": 0.008168316831683169,
+    "AP_medium": 0.12017679699962273,
+    "AP_large": 0.3614662910447007,
+    "AR1": 0.1718834422657952,
+    "AR10": 0.3129444444444444,
+    "AR100": 0.3273235294117647,
+    "AR_small": 0.008510638297872339,
+    "AR_medium": 0.19205698672911786,
+    "AR_large": 0.5291309523809524,
+    "status": "canonical COCOeval",
+    "mode": "bbox",
+    "per_class": {
+      "gravel": 0.2620426669146112,
+      "sand": 0.13187752838756556
+    }
+  },
+  "mask": {},
+  "postprocessing": null,
+  "predictions": "/home/supawich/Desktop/Aggregate_Project/experiment/results/nb16_full_cv/0c2cf258ab3af75d89af/yolo26s_det_fold0_seed42_control_predictions.jsonl.gz",
+  "predictions_sha": "d5e192fb3e2d8eb567835a352707c0b4fee1192fc606f74769863646772bb442",
+  "seconds": 694.7805889129995,
+  "scope": "development grouped CV; one seed; not external event/site validation"
+}

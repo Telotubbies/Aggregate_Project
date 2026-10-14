@@ -1,0 +1,4 @@
+split,images,gravel_img_pct,sand_img_pct,mixed_class_imgs,empty_imgs
+train,753,58.2,56.7,112,0
+valid,226,42.5,57.5,0,0
+test,105,63.8,36.2,0,0

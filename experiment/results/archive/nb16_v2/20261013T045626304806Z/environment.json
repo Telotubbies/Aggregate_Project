@@ -1,0 +1,18 @@
+{
+  "python": "3.12.3",
+  "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39",
+  "packages": {
+    "numpy": "2.5.1",
+    "pandas": "3.0.2",
+    "opencv-python": "NOT INSTALLED",
+    "matplotlib": "3.10.9",
+    "torch": "NOT INSTALLED",
+    "torchvision": "0.20.1+cu121",
+    "ultralytics": "NOT INSTALLED",
+    "scipy": "1.18.0",
+    "scikit-image": "NOT INSTALLED",
+    "pycocotools": "NOT INSTALLED",
+    "onnx": "NOT INSTALLED",
+    "onnxruntime": "NOT INSTALLED"
+  }
+}

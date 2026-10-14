@@ -1,0 +1,88 @@
+{
+  "schema": "nb00-to-nb16-v1",
+  "dataset": "/home/supawich/Desktop/Aggregate_Project/experiment/data/gold",
+  "dataset_id": "2d819f9fcc37a746d4c9987a5e1d465e19e3eaf3e1630a43311d9859b41e768f",
+  "source_id": "dd78a5958db82e20f4498e3f5572f1a9b8925f85c4d46703d0a0f340dbac7317",
+  "created_utc": "20261013T050942110818Z",
+  "manifest": "final_manifest.csv",
+  "manifest_sha": "836d00253c98b33e776ca7e0a82a1e4372e1a64fdf3d017d85f7fb75bbecd25a",
+  "quality": "final_quality_flags.csv",
+  "quality_sha": "8ee88e190ad4bfec61239753c3d5ae2ddca3b5415944b977f71ae977f37c077e",
+  "quality_reference": "quality_reference.json",
+  "quality_reference_sha": "dff877a3d64ed6a7b357db4201834cefa6551c0e3735895d57abb23b7c6ba871",
+  "quality_threshold_source": "train",
+  "geometry_status": "FAIL: 57 invalid polygons; see invalid_geometry.csv",
+  "exact_byte_pixel_separation": "PASS",
+  "cross_split_perceptual_candidates": 2,
+  "near_duplicate_review_status": "PENDING",
+  "ontology": "gravel/sand material regions, not individual grains or mass/volume",
+  "labels": "pseudo-GT; independent review pending",
+  "test_status": "development-inspected grouped benchmark",
+  "events_sites": "DEFERRED; filename groups are not proven acquisition events",
+  "class_group_support": [
+    {
+      "split": "train",
+      "cls": "gravel",
+      "instances": 1281,
+      "class_groups": 7,
+      "largest_group_share": 0.2888368462138954,
+      "inverse_concentration": 5.471529697341527
+    },
+    {
+      "split": "train",
+      "cls": "sand",
+      "instances": 1541,
+      "class_groups": 3,
+      "largest_group_share": 0.900064892926671,
+      "inverse_concentration": 1.2263209509059727
+    },
+    {
+      "split": "valid",
+      "cls": "gravel",
+      "instances": 317,
+      "class_groups": 5,
+      "largest_group_share": 0.5520504731861199,
+      "inverse_concentration": 2.1233808769149496
+    },
+    {
+      "split": "valid",
+      "cls": "sand",
+      "instances": 374,
+      "class_groups": 2,
+      "largest_group_share": 0.5,
+      "inverse_concentration": 2.0
+    },
+    {
+      "split": "test",
+      "cls": "gravel",
+      "instances": 189,
+      "class_groups": 9,
+      "largest_group_share": 0.7671957671957672,
+      "inverse_concentration": 1.672409757011096
+    },
+    {
+      "split": "test",
+      "cls": "sand",
+      "instances": 159,
+      "class_groups": 4,
+      "largest_group_share": 0.9559748427672956,
+      "inverse_concentration": 1.0933269904424165
+    }
+  ],
+  "negative_images": {
+    "test": 0,
+    "train": 0,
+    "valid": 0
+  },
+  "environment": {
+    "python": "3.12.3",
+    "packages": {
+      "numpy": "2.4.6",
+      "pandas": "2.3.3",
+      "opencv-python": "4.13.0.92",
+      "matplotlib": "3.10.8",
+      "shapely": "2.1.2",
+      "pillow": "12.1.1"
+    }
+  }
+}

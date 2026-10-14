@@ -1,0 +1,63 @@
+{
+  "status": "completed",
+  "name": "yolo26s_det_fold1_seed42_offline_aug",
+  "model": "yolo26s_det",
+  "fold": 1,
+  "seed": 42,
+  "arm": "offline_aug",
+  "spec": {
+    "plan_id": "0c2cf258ab3af75d89af",
+    "job": {
+      "recipe": {
+        "name": "yolo26s_det",
+        "kind": "yolo",
+        "task": "detect",
+        "init": "yolo26s.pt",
+        "size": 960,
+        "epochs": 30,
+        "batch": 5,
+        "lr": 0.001
+      },
+      "fold": 1,
+      "seed": 42,
+      "arm": "offline_aug"
+    },
+    "optimizer_steps": 3270,
+    "initializer_sha": "646f8bc3fe0a656803d95c294f7852321748cb29d13466a1af8862e2db384a1b"
+  },
+  "checkpoint": "/home/supawich/Desktop/Aggregate_Project/experiment/runs/nb16_full_cv/0c2cf258ab3af75d89af/yolo26s_det_fold1_seed42_offline_aug/selected.pt",
+  "checkpoint_sha": "fc3013d4a8c4ef19022deaf857e744bcfc36e3768f9c729b74361b63d955ceb8",
+  "optimizer_steps": 3270,
+  "selected_epoch": 23,
+  "threshold_source": "inner-valid",
+  "thresholds": {
+    "0": 0.6775853633880615,
+    "1": 0.14285708963871002
+  },
+  "box": {
+    "AP": 0.27401234252815465,
+    "AP50": 0.4991234423157977,
+    "AP75": 0.2847975825183314,
+    "AP_small": 0.0,
+    "AP_medium": 0.16962552233265057,
+    "AP_large": 0.36287420374963153,
+    "AR1": 0.14709360875663882,
+    "AR10": 0.3665812962319118,
+    "AR100": 0.37049999400558675,
+    "AR_small": 0.0,
+    "AR_medium": 0.2247622125773386,
+    "AR_large": 0.47307351273327136,
+    "status": "canonical COCOeval",
+    "mode": "bbox",
+    "per_class": {
+      "gravel": 0.340000047864368,
+      "sand": 0.2080246371919412
+    }
+  },
+  "mask": {},
+  "postprocessing": null,
+  "predictions": "/home/supawich/Desktop/Aggregate_Project/experiment/results/nb16_full_cv/0c2cf258ab3af75d89af/yolo26s_det_fold1_seed42_offline_aug_predictions.jsonl.gz",
+  "predictions_sha": "07f0b0ce6733bc8e8814afd8b34071ba566886aa37c87544b8da3ebe942576a3",
+  "seconds": 582.7927143369998,
+  "scope": "development grouped CV; one seed; not external event/site validation"
+}

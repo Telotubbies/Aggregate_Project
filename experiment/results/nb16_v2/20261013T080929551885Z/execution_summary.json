@@ -1,0 +1,17 @@
+{
+  "dataset_id": "9bf2fab6eb34eb82dc7c4aad4b4de736c217e203c2f0f7cb2e36c6118705b8b9",
+  "code_id": "6b0771008c89fc96a0ee477d3b7e72b07ac5c1eb7097a2fa60ad8facc9e3de45",
+  "flags": {
+    "train": false,
+    "infer": false,
+    "test": false,
+    "bootstrap": false,
+    "ablations": false,
+    "benchmark": false,
+    "export": false
+  },
+  "checkpoints": 0,
+  "validation_runs": 0,
+  "test_runs": 0,
+  "headline": "Research workflow only; publication and production evidence incomplete"
+}

@@ -1,0 +1,9 @@
+{
+  "model": "yolo26n_det",
+  "batch": 16,
+  "status": "FAIL",
+  "peak_allocated_gib": 10.50313949584961,
+  "peak_reserved_gib": 10.544921875,
+  "seconds": 4.9740519910010335,
+  "error": "AssertionError: Validation is not at the declared optimizer step"
+}

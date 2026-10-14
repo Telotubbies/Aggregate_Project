@@ -1,0 +1,154 @@
+
+===== CELL 1 =====
+Protocol: /home/supawich/Desktop/Aggregate_Project/experiment/data/gold_fixed_v1 | output: /home/supawich/Desktop/Aggregate_Project/experiment/results/nb16_v2/20261013T080929551885Z
+No training/inference/test evaluation enabled by default.
+
+===== CELL 3 =====
+       images  groups  gravel  sand
+split                              
+test      105      12     189   159
+train     753       7    1301  1550
+valid     226       7     320   374
+Dataset identity: 9bf2fab6eb34eb82dc7c4aad4b4de736c217e203c2f0f7cb2e36c6118705b8b9
+Verified nb00 handoff: /home/supawich/Desktop/Aggregate_Project/experiment/results/nb00_audit/20261013T062846849977Z/final_quality_flags.csv | shapely validity checked | near-duplicate review: PENDING
+GT loaded; no model predictions evaluated.
+
+===== CELL 4 =====
+Test seal: CONTAMINATED: visually inspected, error-analysed and used to motivate post-hoc resplit
+Test sha: 5cf27d13cfecd436 | groups: 12 | largest group share: 0.533
+      groups  images  gravel  sand
+fold                              
+0          1     397     225  1396
+1          3     220     466   187
+2          4     199     490   187
+3          6     163     440   154
+Development groups: 14 | folds: 4 | test excluded from folds
+
+===== CELL 6 =====
+
+===== CELL 7 =====
+segm canonical COCOeval
+bbox canonical COCOeval
+Evaluator regression assertions passed; canonical parity is checked only when COCOeval is installed.
+
+===== CELL 9 =====
+       name           init  size  epochs  batch    lr
+yolo26n_seg yolo26n-seg.pt   960     100      8 0.001
+yolo26s_seg yolo26s-seg.pt   960     100      8 0.001
+      mrcnn   COCO_DEFAULT   960      12      2 0.005
+    unet_ws         random   512      40      8 0.001
+yolo26n_det     yolo26n.pt   960     100      8 0.001
+yolo26s_det     yolo26s.pt   960     100      8 0.001
+
+===== CELL 10 =====
+
+===== CELL 11 =====
+
+===== CELL 12 =====
+PENDING training: yolo26n_seg 42
+PENDING training: yolo26n_seg 123
+PENDING training: yolo26n_seg 2026
+PENDING training: yolo26s_seg 42
+PENDING training: yolo26s_seg 123
+PENDING training: yolo26s_seg 2026
+PENDING training: mrcnn 42
+PENDING training: mrcnn 123
+PENDING training: mrcnn 2026
+PENDING training: unet_ws 42
+PENDING training: unet_ws 123
+PENDING training: unet_ws 2026
+PENDING training: yolo26n_det 42
+PENDING training: yolo26n_det 123
+PENDING training: yolo26n_det 2026
+PENDING training: yolo26s_det 42
+PENDING training: yolo26s_det 123
+PENDING training: yolo26s_det 2026
+Compatible checkpoints: 0
+
+===== CELL 13 =====
+Validation/test prediction caches: 0 0
+
+===== CELL 15 =====
+PENDING: no compatible grouped-holdout predictions. Old seen-clip scores are not copied into this table.
+
+===== CELL 17 =====
+Error/slice analysis completed for 0 compatible runs. No stale disk flags are used.
+
+===== CELL 19 =====
+Figures pending verified prediction caches.
+
+===== CELL 21 =====
+Group bootstrap disabled; no confidence intervals claimed.
+
+===== CELL 23 =====
+PENDING: validation reliability requires provenance-verified predictions.
+
+===== CELL 25 =====
+Controlled ablations disabled; no improvement claim is made.
+
+===== CELL 27 =====
+Efficiency benchmark disabled. Pi5 throughput and energy remain unmeasured.
+
+===== CELL 29 =====
+Export disabled; no deployment parity claimed.
+                                          requirement  ...                                              scope
+0   Image/label identity and merged-group disjoint...  ...    filename-derived groups, not independent events
+1                            Canonical COCO evaluator  ...                                   noncrowd dataset
+2                        Completed planned arms/seeds  ...                 development-inspected grouped test
+3           Independent human labels and adjudication  ...  pseudo-GT cannot establish annotation correctness
+4                    New event/site confirmatory test  ...                         no external validity claim
+5                Negative/background-scene evaluation  ...        FP rate on target background scenes unknown
+6                                Controlled ablations  ...  verify full planned arm coverage before conclu...
+7                     Conditional cluster uncertainty  ...      not seed variability; sparse groups disclosed
+8                Actual execution-hardware efficiency  ...                        not Pi5 or field throughput
+9                      Deployment runtime/task parity  ...                     ONNX syntax alone insufficient
+10      Monitoring owner, rollback, acceptance limits  ...                human operational sign-off required
+
+[11 rows x 4 columns]
+
+===== CELL 31 =====
+Trade-off pending matching measured latency and verified results; no estimated points plotted.
+
+===== CELL 34 =====
+PASS audited CV handoff: /home/supawich/Desktop/Aggregate_Project/experiment/data/groupcv_offline_v1_253fef93327e4d8a
+    fold          arm     role  images  parents status
+0      0      control    train     737      737   PASS
+1      0      control    valid     183      183   PASS
+2      0      control  heldout     164      164   PASS
+3      0  offline_aug    train    2948      737   PASS
+4      0  offline_aug    valid     183      183   PASS
+5      0  offline_aug  heldout     164      164   PASS
+6      1      control    train     543      543   PASS
+7      1      control    valid     140      140   PASS
+8      1      control  heldout     401      401   PASS
+9      1  offline_aug    train    2172      543   PASS
+10     1  offline_aug    valid     140      140   PASS
+11     1  offline_aug  heldout     401      401   PASS
+12     2      control    train     728      728   PASS
+13     2      control    valid     191      191   PASS
+14     2      control  heldout     165      165   PASS
+15     2  offline_aug    train    2912      728   PASS
+16     2  offline_aug    valid     191      191   PASS
+17     2  offline_aug  heldout     165      165   PASS
+18     3      control    train     722      722   PASS
+19     3      control    valid     165      165   PASS
+20     3      control  heldout     197      197   PASS
+21     3  offline_aug    train    2888      722   PASS
+22     3  offline_aug    valid     165      165   PASS
+23     3  offline_aug  heldout     197      197   PASS
+24     4      control    train     732      732   PASS
+25     4      control    valid     195      195   PASS
+26     4      control  heldout     157      157   PASS
+27     4  offline_aug    train    2928      732   PASS
+28     4  offline_aug    valid     195      195   PASS
+29     4  offline_aug  heldout     157      157   PASS
+Data arms: ['control', 'offline_aug'] | 5 folds | full training remains disabled.
+PASS regression: cross-role group rejected.
+
+===== CELL 36 =====
+CV smoke disabled. Enable NB16_CV_SMOKE=1 deliberately; full CV training is not executed.
+
+===== CELL 39 =====
+PASS matched-step loader: fixed window and continuous coverage across virtual epochs.
+Full CV disabled. Approved plan: 60 runs, seed 42, batch 6, matched control-equivalent 30 epochs. Set NB16_FULL_CV=1 deliberately.
+PREFLIGHT_PASS

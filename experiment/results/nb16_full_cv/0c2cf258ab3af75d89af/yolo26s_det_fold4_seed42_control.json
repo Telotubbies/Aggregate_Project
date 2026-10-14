@@ -1,0 +1,63 @@
+{
+  "status": "completed",
+  "name": "yolo26s_det_fold4_seed42_control",
+  "model": "yolo26s_det",
+  "fold": 4,
+  "seed": 42,
+  "arm": "control",
+  "spec": {
+    "plan_id": "0c2cf258ab3af75d89af",
+    "job": {
+      "recipe": {
+        "name": "yolo26s_det",
+        "kind": "yolo",
+        "task": "detect",
+        "init": "yolo26s.pt",
+        "size": 960,
+        "epochs": 30,
+        "batch": 5,
+        "lr": 0.001
+      },
+      "fold": 4,
+      "seed": 42,
+      "arm": "control"
+    },
+    "optimizer_steps": 4410,
+    "initializer_sha": "646f8bc3fe0a656803d95c294f7852321748cb29d13466a1af8862e2db384a1b"
+  },
+  "checkpoint": "/home/supawich/Desktop/Aggregate_Project/experiment/runs/nb16_full_cv/0c2cf258ab3af75d89af/yolo26s_det_fold4_seed42_control/selected.pt",
+  "checkpoint_sha": "aaa4ee589ae2dd971bd2ec6739272a7a3a5e26d55164915a7eb1264f33d6f862",
+  "optimizer_steps": 4410,
+  "selected_epoch": 13,
+  "threshold_source": "inner-valid",
+  "thresholds": {
+    "0": 0.6768339276313782,
+    "1": 0.051880449056625366
+  },
+  "box": {
+    "AP": 0.24907020397533225,
+    "AP50": 0.4741116824906248,
+    "AP75": 0.21810132324969414,
+    "AP_small": 0.08672746234920234,
+    "AP_medium": 0.22263405603818323,
+    "AP_large": 0.34342636301198043,
+    "AR1": 0.14962900053638478,
+    "AR10": 0.3770635913940044,
+    "AR100": 0.3922514750581083,
+    "AR_small": 0.18607142857142858,
+    "AR_medium": 0.337391851502281,
+    "AR_large": 0.48470500068129174,
+    "status": "canonical COCOeval",
+    "mode": "bbox",
+    "per_class": {
+      "gravel": 0.33797680140130487,
+      "sand": 0.1601636065493597
+    }
+  },
+  "mask": {},
+  "postprocessing": null,
+  "predictions": "/home/supawich/Desktop/Aggregate_Project/experiment/results/nb16_full_cv/0c2cf258ab3af75d89af/yolo26s_det_fold4_seed42_control_predictions.jsonl.gz",
+  "predictions_sha": "8204f4578fa612553838dbb4c3370b1f8e46fa0f99491aea1a7dbfafea2aa749",
+  "seconds": 686.8794129679954,
+  "scope": "development grouped CV; one seed; not external event/site validation"
+}

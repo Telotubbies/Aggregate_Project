@@ -70,3 +70,21 @@ inside WSL: `cd /mnt/b/02_Projects/thesis_final/experiment`.
   +rocm10.1.0 — ROCm 7.2.4+ fixed RDNA3 kernel bugs; may unlock AMP.
 - MIOPEN_USER_DB_PATH / MIOPEN_CUSTOM_CACHE_DIR persist tuning
   across runs; MIOPEN_FIND_ENFORCE=3 tunes+stores.
+
+## Grouped CV continuation (2026-10-14, Protocol v2)
+
+For current `00`/`16`/`17` CV work, use Linux + RTX 3080 Ti and kernel `venv_inf`
+(`/home/supawich/YOLO AGGREGATE/.venv_inf/bin/python`), not the historical WSL paths above.
+`17_cv_v2.ipynb` is the clean v2-only notebook (2 seg models, grouped CV, parent sampler,
+freeze/evaluate gates, external/Stripe audit). `16_train_last.ipynb` is historical context
+(fixed-split 6-model benchmark) and was the launcher of run set `3b867e9545011a5f3c52`;
+continue that launch in `17` via `NB16_ADOPT_PLAN=1` + `NB16_APPROVED_PROTOCOL=3b867e9545011a5f3c52`
+(`NB16_APPROVED_PREVIEW_SHA=f6dd2f6010d6888d00bb07caae6498b4a87467b3e5f3015d79184ad4d303853b`).
+`00` audit/CV executes cells 1, 66, 68, 70, 72, 74, 76, 78, 80; `NB00_BUILD_CV=1` materializes `groupcv_offline_v2_<id>` (`original + color_light + clahe_blur + environment` on inner-train only) and publishes `nb00-groupcv-v2`.
+Active v2 dataset: `data/groupcv_offline_v2_de6276f231115417` (source `gold_fixed_v1` id `9bf2fab6…`).
+Historical `data/groupcv_offline_v1_253fef93327e4d8a` and `results/nb16_full_cv/*` belong to v1 (`hflip/gamma_brightness/clahe_blur`, online disabled) and are rejected by v2 handoff loaders.
+`16`/`17` default to audit; separate flags gate each stage: `NB16_CV_PREVIEW=1`, `NB16_CV_SMOKE=1`, `NB16_FULL_CV=1` (requires `NB16_APPROVED_PROTOCOL` + `NB16_APPROVED_PREVIEW_SHA`), `NB16_CV_FREEZE=1`, `NB16_CV_EVALUATE=1`, `NB16_EXTERNAL_AUDIT=1`, `NB16_EVAL_EXTERNAL=1`, `NB16_EVAL_STRIPE=1`.
+Full CV (20 runs: 2 models × 2 arms × 5 folds × seed 42) launched 2026-10-14; outputs under `runs|results/nb16_recipe_v2/3b867e9545011a5f3c52/`.
+Persist outputs for executed cells and retain historical outputs in skipped cells.
+Handoff identity hashes code cells only; Markdown/output edits do not invalidate it.
+Use grouped development CV on existing data; Stripe 88 is a development-inspected seen-scene benchmark, and external ZIPs require mechanical + human ontology/annotation/duplicate review before reporting separately.

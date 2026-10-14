@@ -1,0 +1,87 @@
+{
+  "status": "completed",
+  "name": "unet_ws_fold3_seed42_control",
+  "model": "unet_ws",
+  "fold": 3,
+  "seed": 42,
+  "arm": "control",
+  "spec": {
+    "plan_id": "0c2cf258ab3af75d89af",
+    "job": {
+      "recipe": {
+        "name": "unet_ws",
+        "kind": "unet",
+        "task": "segment",
+        "init": "random",
+        "size": 512,
+        "epochs": 30,
+        "batch": 14,
+        "lr": 0.001
+      },
+      "fold": 3,
+      "seed": 42,
+      "arm": "control"
+    },
+    "optimizer_steps": 1560,
+    "initializer_sha": "random"
+  },
+  "checkpoint": "/home/supawich/Desktop/Aggregate_Project/experiment/runs/nb16_full_cv/0c2cf258ab3af75d89af/unet_ws_fold3_seed42_control/selected.pt",
+  "checkpoint_sha": "059097ae1ca44b5d84619915ef3eb25a99d5f2f8d8fd0bfa461f0a794e91d25b",
+  "optimizer_steps": 1560,
+  "selected_epoch": 9,
+  "threshold_source": "inner-valid",
+  "thresholds": {
+    "0": 0.7975336313247681,
+    "1": 0.8840014934539795
+  },
+  "box": {
+    "AP": 0.0003564492112822146,
+    "AP50": 0.0006964263140204279,
+    "AP75": 0.0003059055082180479,
+    "AP_small": 0.0,
+    "AP_medium": 0.0003768030724479448,
+    "AP_large": 0.0031672206058261697,
+    "AR1": 0.0029498525073746312,
+    "AR10": 0.025056394239111573,
+    "AR100": 0.03323395327559825,
+    "AR_small": 0.0,
+    "AR_medium": 0.04267241379310345,
+    "AR_large": 0.03262023030029352,
+    "status": "canonical COCOeval",
+    "mode": "bbox",
+    "per_class": {
+      "gravel": 0.0005819353826957119,
+      "sand": 0.00013096303986871735
+    }
+  },
+  "mask": {
+    "AP": 0.000369925456415987,
+    "AP50": 0.0008078760448807787,
+    "AP75": 0.0003445860048013641,
+    "AP_small": 0.0,
+    "AP_medium": 0.0005946629106251501,
+    "AP_large": 0.003027358114899075,
+    "AR1": 0.0025073746312684365,
+    "AR10": 0.023978199485747635,
+    "AR100": 0.034257725616392974,
+    "AR_small": 0.0,
+    "AR_medium": 0.056034482758620684,
+    "AR_large": 0.027184466019417475,
+    "status": "canonical COCOeval",
+    "mode": "segm",
+    "per_class": {
+      "gravel": 0.0005550846525472708,
+      "sand": 0.00018476626028470321
+    }
+  },
+  "postprocessing": {
+    "fg": 0.5,
+    "spacing": 9,
+    "min_area": 25,
+    "method": "watershed"
+  },
+  "predictions": "/home/supawich/Desktop/Aggregate_Project/experiment/results/nb16_full_cv/0c2cf258ab3af75d89af/unet_ws_fold3_seed42_control_predictions.jsonl.gz",
+  "predictions_sha": "84b55de4b369773621be139380d31296e1df318790b1089e87bb4005207877a4",
+  "seconds": 1334.8781312900028,
+  "scope": "development grouped CV; one seed; not external event/site validation"
+}

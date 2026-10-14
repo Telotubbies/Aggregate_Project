@@ -1,0 +1,5 @@
+path: /home/supawich/Desktop/Aggregate_Project/experiment/data/gold_fixed_v1
+train: train/images
+val: valid/images
+test: test/images
+names: [gravel, sand]

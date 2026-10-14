@@ -1,0 +1,11 @@
+dataset,threshold,cls,total,affected,groups
+current_gold,0.0,gravel,1810,0,0
+current_gold,0.0,sand,2083,0,0
+current_gold,0.0001,gravel,1810,19,3
+current_gold,0.0001,sand,2083,6,1
+current_gold,0.0005,gravel,1810,23,4
+current_gold,0.0005,sand,2083,9,1
+current_gold,0.001,gravel,1810,23,4
+current_gold,0.001,sand,2083,9,1
+current_gold,0.002,gravel,1810,117,14
+current_gold,0.002,sand,2083,120,6

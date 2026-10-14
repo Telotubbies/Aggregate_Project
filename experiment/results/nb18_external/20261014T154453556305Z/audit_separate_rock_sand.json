@@ -1,0 +1,27 @@
+{
+  "name": "separate_rock_sand",
+  "zip": "/home/supawich/Desktop/Aggregate_Project/experiment/data/Separate Rock-Sand.v6i.yolo26.zip",
+  "zip_sha": "5eb6259db783de04c4122e258c7b7aa351f51eba18503fa96e19d51692d55a0d",
+  "yaml_names": [
+    "Road Cone",
+    "Rock",
+    "Sand",
+    "Scraper"
+  ],
+  "n_images": 182,
+  "splits": {
+    "train": 150,
+    "test": 16,
+    "valid": 16
+  },
+  "labeled": 182,
+  "invalid_polygons": 0,
+  "src_duplicates": 0,
+  "internal_duplicates": 0,
+  "class_hist": {
+    "0": 199,
+    "1": 411,
+    "2": 321,
+    "3": 93
+  }
+}

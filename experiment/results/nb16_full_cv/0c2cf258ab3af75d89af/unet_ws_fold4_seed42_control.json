@@ -1,0 +1,87 @@
+{
+  "status": "completed",
+  "name": "unet_ws_fold4_seed42_control",
+  "model": "unet_ws",
+  "fold": 4,
+  "seed": 42,
+  "arm": "control",
+  "spec": {
+    "plan_id": "0c2cf258ab3af75d89af",
+    "job": {
+      "recipe": {
+        "name": "unet_ws",
+        "kind": "unet",
+        "task": "segment",
+        "init": "random",
+        "size": 512,
+        "epochs": 30,
+        "batch": 14,
+        "lr": 0.001
+      },
+      "fold": 4,
+      "seed": 42,
+      "arm": "control"
+    },
+    "optimizer_steps": 1590,
+    "initializer_sha": "random"
+  },
+  "checkpoint": "/home/supawich/Desktop/Aggregate_Project/experiment/runs/nb16_full_cv/0c2cf258ab3af75d89af/unet_ws_fold4_seed42_control/selected.pt",
+  "checkpoint_sha": "2c36a984c78e8ecc544ffd1fbabafcc9c817a2e9c69a86e0ac809dcce6e6fc25",
+  "optimizer_steps": 1590,
+  "selected_epoch": 13,
+  "threshold_source": "inner-valid",
+  "thresholds": {
+    "0": 0.8330621123313904,
+    "1": 0.9270832538604736
+  },
+  "box": {
+    "AP": 0.0016788700889062709,
+    "AP50": 0.006377878907195996,
+    "AP75": 0.0006987082147016495,
+    "AP_small": 0.0,
+    "AP_medium": 0.0010288309674753907,
+    "AP_large": 0.011598692028741343,
+    "AR1": 0.008987424757136897,
+    "AR10": 0.024834614696942606,
+    "AR100": 0.02616440193098516,
+    "AR_small": 0.0,
+    "AR_medium": 0.019175711813748622,
+    "AR_large": 0.040417631829949584,
+    "status": "canonical COCOeval",
+    "mode": "bbox",
+    "per_class": {
+      "gravel": 0.0003163584129156208,
+      "sand": 0.0030413817648969202
+    }
+  },
+  "mask": {
+    "AP": 0.0018085300048183998,
+    "AP50": 0.009693850286049459,
+    "AP75": 0.0001900921904502116,
+    "AP_small": 0.0,
+    "AP_medium": 0.001168763361208585,
+    "AP_large": 0.012038325985870398,
+    "AR1": 0.006593807735860302,
+    "AR10": 0.023967459324155192,
+    "AR100": 0.026361076345431788,
+    "AR_small": 0.0,
+    "AR_medium": 0.022994336951392167,
+    "AR_large": 0.036885134214470636,
+    "status": "canonical COCOeval",
+    "mode": "segm",
+    "per_class": {
+      "gravel": 0.0004448023852958317,
+      "sand": 0.0031722576243409678
+    }
+  },
+  "postprocessing": {
+    "fg": 0.5,
+    "spacing": 9,
+    "min_area": 25,
+    "method": "watershed"
+  },
+  "predictions": "/home/supawich/Desktop/Aggregate_Project/experiment/results/nb16_full_cv/0c2cf258ab3af75d89af/unet_ws_fold4_seed42_control_predictions.jsonl.gz",
+  "predictions_sha": "1fad3c5a7e2178c548d7b5d069f7a57e26f95cbf1bbe0d85a836aadd56c8167d",
+  "seconds": 1583.348462078,
+  "scope": "development grouped CV; one seed; not external event/site validation"
+}

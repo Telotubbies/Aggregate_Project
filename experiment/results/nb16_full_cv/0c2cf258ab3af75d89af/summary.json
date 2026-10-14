@@ -1,0 +1,3452 @@
+{
+  "progress": {
+    "status": "finished_with_errors",
+    "plan_id": "0c2cf258ab3af75d89af",
+    "total": 60,
+    "completed": 43,
+    "failed": 17,
+    "pid": 304597,
+    "started_utc": "2026-10-13T09:12:32.294634+00:00",
+    "current": null,
+    "epoch": 30,
+    "optimizer_steps": 4410,
+    "val_AP": 0.21102513117566987,
+    "updated_utc": "2026-10-13T21:00:14.117598+00:00",
+    "finished_utc": "2026-10-13T21:00:14.124192+00:00"
+  },
+  "errors": [
+    {
+      "name": "mrcnn_fold0_seed42_control",
+      "error": "OutOfMemoryError",
+      "message": "CUDA out of memory. Tried to allocate 332.00 MiB. GPU 0 has a total capacity of 11.62 GiB of which 152.31 MiB is free. Process 2113 has 253.94 MiB memory in use. Including non-PyTorch memory, this process has 10.56 GiB memory in use. Of the allocated memory 9.22 GiB is allocated by PyTorch, and 1000.57 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)",
+      "traceback": "Traceback (most recent call last):\n  File \"/tmp/ipykernel_304597/3275090666.py\", line 218, in run_full_cv\n    cp = cv_train_yolo(r,seed,run_dir,root,valid,steps_per_epoch,report) if r['kind']=='yolo' else cv_train_torch(r,seed,run_dir,root,valid,steps_per_epoch,report)\n                                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/ipykernel_304597/3275090666.py\", line 133, in cv_train_torch\n    optimizer.zero_grad(); loss.backward()\n                           ^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/_tensor.py\", line 631, in backward\n    torch.autograd.backward(\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/autograd/__init__.py\", line 381, in backward\n    _engine_run_backward(\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/autograd/graph.py\", line 869, in _engine_run_backward\n    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntorch.OutOfMemoryError: CUDA out of memory. Tried to allocate 332.00 MiB. GPU 0 has a total capacity of 11.62 GiB of which 152.31 MiB is free. Process 2113 has 253.94 MiB memory in use. Including non-PyTorch memory, this process has 10.56 GiB memory in use. Of the allocated memory 9.22 GiB is allocated by PyTorch, and 1000.57 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"
+    },
+    {
+      "name": "mrcnn_fold0_seed42_offline_aug",
+      "error": "OutOfMemoryError",
+      "message": "CUDA out of memory. Tried to allocate 330.00 MiB. GPU 0 has a total capacity of 11.62 GiB of which 330.31 MiB is free. Process 2113 has 253.94 MiB memory in use. Including non-PyTorch memory, this process has 10.39 GiB memory in use. Of the allocated memory 8.90 GiB is allocated by PyTorch, and 1.13 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)",
+      "traceback": "Traceback (most recent call last):\n  File \"/tmp/ipykernel_304597/3275090666.py\", line 218, in run_full_cv\n    cp = cv_train_yolo(r,seed,run_dir,root,valid,steps_per_epoch,report) if r['kind']=='yolo' else cv_train_torch(r,seed,run_dir,root,valid,steps_per_epoch,report)\n                                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/ipykernel_304597/3275090666.py\", line 133, in cv_train_torch\n    optimizer.zero_grad(); loss.backward()\n                           ^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/_tensor.py\", line 631, in backward\n    torch.autograd.backward(\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/autograd/__init__.py\", line 381, in backward\n    _engine_run_backward(\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/autograd/graph.py\", line 869, in _engine_run_backward\n    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntorch.OutOfMemoryError: CUDA out of memory. Tried to allocate 330.00 MiB. GPU 0 has a total capacity of 11.62 GiB of which 330.31 MiB is free. Process 2113 has 253.94 MiB memory in use. Including non-PyTorch memory, this process has 10.39 GiB memory in use. Of the allocated memory 8.90 GiB is allocated by PyTorch, and 1.13 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"
+    },
+    {
+      "name": "yolo26n_det_fold0_seed42_offline_aug",
+      "error": "ValueError",
+      "message": "Expected finite positive-area xyxy box",
+      "traceback": "Traceback (most recent call last):\n  File \"/tmp/ipykernel_304597/3275090666.py\", line 218, in run_full_cv\n    cp = cv_train_yolo(r,seed,run_dir,root,valid,steps_per_epoch,report) if r['kind']=='yolo' else cv_train_torch(r,seed,run_dir,root,valid,steps_per_epoch,report)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/ipykernel_304597/3275090666.py\", line 97, in cv_train_yolo\n    model.train(trainer=MatchedTrainer,data=str(cfg),epochs=recipe['epochs'],patience=recipe['epochs']+1,batch=recipe['batch'],nbs=recipe['batch'],imgsz=recipe['size'],device=device,seed=seed,optimizer='AdamW',lr0=recipe['lr'],warmup_epochs=0,amp=False,deterministic=True,workers=0,cache=False,plots=False,save=True,split='val',mosaic=0,close_mosaic=0,mixup=0,cutmix=0,copy_paste=0,hsv_h=0,hsv_s=0,hsv_v=0,degrees=0,translate=0,scale=0,shear=0,perspective=0,fliplr=0,flipud=0,bgr=0,auto_augment=None,erasing=0,project=str(run_dir),name='native',exist_ok=True)\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/ultralytics/engine/model.py\", line 894, in train\n    self.trainer.train()\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/ultralytics/engine/trainer.py\", line 262, in train\n    self._do_train()\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/ultralytics/engine/trainer.py\", line 651, in _do_train\n    self.metrics, self.fitness = self.validate()\n                                 ^^^^^^^^^^^^^^^\n  File \"/tmp/ipykernel_304597/3275090666.py\", line 75, in validate\n    validate_predictions(predictions,valid,recipe['task'])\n  File \"/tmp/ipykernel_304597/2151613340.py\", line 38, in validate_predictions\n    box = as_box(a)\n          ^^^^^^^^^\n  File \"/tmp/ipykernel_304597/2151613340.py\", line 5, in as_box\n    raise ValueError('Expected finite positive-area xyxy box')\nValueError: Expected finite positive-area xyxy box\n"
+    },
+    {
+      "name": "mrcnn_fold1_seed42_control",
+      "error": "OutOfMemoryError",
+      "message": "CUDA out of memory. Tried to allocate 114.00 MiB. GPU 0 has a total capacity of 11.62 GiB of which 58.75 MiB is free. Process 2113 has 253.94 MiB memory in use. Including non-PyTorch memory, this process has 10.65 GiB memory in use. Of the allocated memory 10.14 GiB is allocated by PyTorch, and 143.07 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)",
+      "traceback": "Traceback (most recent call last):\n  File \"/tmp/ipykernel_304597/3275090666.py\", line 218, in run_full_cv\n    cp = cv_train_yolo(r,seed,run_dir,root,valid,steps_per_epoch,report) if r['kind']=='yolo' else cv_train_torch(r,seed,run_dir,root,valid,steps_per_epoch,report)\n                                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/ipykernel_304597/3275090666.py\", line 122, in cv_train_torch\n    loss = sum(model([x.to(device) for x in images],[{k:v.to(device) for k,v in t.items()} for t in target]).values())\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torchvision/models/detection/generalized_rcnn.py\", line 117, in forward\n    proposals, proposal_losses = self.rpn(images, features, targets)\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torchvision/models/detection/rpn.py\", line 360, in forward\n    objectness, pred_bbox_deltas = self.head(features)\n                                   ^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torchvision/models/detection/rpn.py\", line 75, in forward\n    t = self.conv(feature)\n        ^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/container.py\", line 253, in forward\n    input = module(input)\n            ^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/container.py\", line 253, in forward\n    input = module(input)\n            ^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/conv.py\", line 553, in forward\n    return self._conv_forward(input, self.weight, self.bias)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/conv.py\", line 548, in _conv_forward\n    return F.conv2d(\n           ^^^^^^^^^\ntorch.OutOfMemoryError: CUDA out of memory. Tried to allocate 114.00 MiB. GPU 0 has a total capacity of 11.62 GiB of which 58.75 MiB is free. Process 2113 has 253.94 MiB memory in use. Including non-PyTorch memory, this process has 10.65 GiB memory in use. Of the allocated memory 10.14 GiB is allocated by PyTorch, and 143.07 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"
+    },
+    {
+      "name": "mrcnn_fold1_seed42_offline_aug",
+      "error": "OutOfMemoryError",
+      "message": "CUDA out of memory. Tried to allocate 114.00 MiB. GPU 0 has a total capacity of 11.62 GiB of which 77.38 MiB is free. Process 2113 has 253.94 MiB memory in use. Including non-PyTorch memory, this process has 10.63 GiB memory in use. Of the allocated memory 10.13 GiB is allocated by PyTorch, and 129.19 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)",
+      "traceback": "Traceback (most recent call last):\n  File \"/tmp/ipykernel_304597/3275090666.py\", line 218, in run_full_cv\n    cp = cv_train_yolo(r,seed,run_dir,root,valid,steps_per_epoch,report) if r['kind']=='yolo' else cv_train_torch(r,seed,run_dir,root,valid,steps_per_epoch,report)\n                                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/ipykernel_304597/3275090666.py\", line 122, in cv_train_torch\n    loss = sum(model([x.to(device) for x in images],[{k:v.to(device) for k,v in t.items()} for t in target]).values())\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torchvision/models/detection/generalized_rcnn.py\", line 117, in forward\n    proposals, proposal_losses = self.rpn(images, features, targets)\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torchvision/models/detection/rpn.py\", line 360, in forward\n    objectness, pred_bbox_deltas = self.head(features)\n                                   ^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torchvision/models/detection/rpn.py\", line 75, in forward\n    t = self.conv(feature)\n        ^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/container.py\", line 253, in forward\n    input = module(input)\n            ^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/container.py\", line 253, in forward\n    input = module(input)\n            ^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/conv.py\", line 553, in forward\n    return self._conv_forward(input, self.weight, self.bias)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/conv.py\", line 548, in _conv_forward\n    return F.conv2d(\n           ^^^^^^^^^\ntorch.OutOfMemoryError: CUDA out of memory. Tried to allocate 114.00 MiB. GPU 0 has a total capacity of 11.62 GiB of which 77.38 MiB is free. Process 2113 has 253.94 MiB memory in use. Including non-PyTorch memory, this process has 10.63 GiB memory in use. Of the allocated memory 10.13 GiB is allocated by PyTorch, and 129.19 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"
+    },
+    {
+      "name": "yolo26s_det_fold1_seed42_control",
+      "error": "ValueError",
+      "message": "Expected finite positive-area xyxy box",
+      "traceback": "Traceback (most recent call last):\n  File \"/tmp/ipykernel_304597/3275090666.py\", line 218, in run_full_cv\n    cp = cv_train_yolo(r,seed,run_dir,root,valid,steps_per_epoch,report) if r['kind']=='yolo' else cv_train_torch(r,seed,run_dir,root,valid,steps_per_epoch,report)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/ipykernel_304597/3275090666.py\", line 97, in cv_train_yolo\n    model.train(trainer=MatchedTrainer,data=str(cfg),epochs=recipe['epochs'],patience=recipe['epochs']+1,batch=recipe['batch'],nbs=recipe['batch'],imgsz=recipe['size'],device=device,seed=seed,optimizer='AdamW',lr0=recipe['lr'],warmup_epochs=0,amp=False,deterministic=True,workers=0,cache=False,plots=False,save=True,split='val',mosaic=0,close_mosaic=0,mixup=0,cutmix=0,copy_paste=0,hsv_h=0,hsv_s=0,hsv_v=0,degrees=0,translate=0,scale=0,shear=0,perspective=0,fliplr=0,flipud=0,bgr=0,auto_augment=None,erasing=0,project=str(run_dir),name='native',exist_ok=True)\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/ultralytics/engine/model.py\", line 894, in train\n    self.trainer.train()\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/ultralytics/engine/trainer.py\", line 262, in train\n    self._do_train()\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/ultralytics/engine/trainer.py\", line 651, in _do_train\n    self.metrics, self.fitness = self.validate()\n                                 ^^^^^^^^^^^^^^^\n  File \"/tmp/ipykernel_304597/3275090666.py\", line 75, in validate\n    validate_predictions(predictions,valid,recipe['task'])\n  File \"/tmp/ipykernel_304597/2151613340.py\", line 38, in validate_predictions\n    box = as_box(a)\n          ^^^^^^^^^\n  File \"/tmp/ipykernel_304597/2151613340.py\", line 5, in as_box\n    raise ValueError('Expected finite positive-area xyxy box')\nValueError: Expected finite positive-area xyxy box\n"
+    },
+    {
+      "name": "mrcnn_fold2_seed42_control",
+      "error": "OutOfMemoryError",
+      "message": "CUDA out of memory. Tried to allocate 114.00 MiB. GPU 0 has a total capacity of 11.62 GiB of which 49.75 MiB is free. Process 2113 has 253.94 MiB memory in use. Including non-PyTorch memory, this process has 10.66 GiB memory in use. Of the allocated memory 10.15 GiB is allocated by PyTorch, and 146.87 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)",
+      "traceback": "Traceback (most recent call last):\n  File \"/tmp/ipykernel_304597/3275090666.py\", line 218, in run_full_cv\n    cp = cv_train_yolo(r,seed,run_dir,root,valid,steps_per_epoch,report) if r['kind']=='yolo' else cv_train_torch(r,seed,run_dir,root,valid,steps_per_epoch,report)\n                                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/ipykernel_304597/3275090666.py\", line 122, in cv_train_torch\n    loss = sum(model([x.to(device) for x in images],[{k:v.to(device) for k,v in t.items()} for t in target]).values())\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torchvision/models/detection/generalized_rcnn.py\", line 117, in forward\n    proposals, proposal_losses = self.rpn(images, features, targets)\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torchvision/models/detection/rpn.py\", line 360, in forward\n    objectness, pred_bbox_deltas = self.head(features)\n                                   ^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torchvision/models/detection/rpn.py\", line 75, in forward\n    t = self.conv(feature)\n        ^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/container.py\", line 253, in forward\n    input = module(input)\n            ^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/container.py\", line 253, in forward\n    input = module(input)\n            ^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/conv.py\", line 553, in forward\n    return self._conv_forward(input, self.weight, self.bias)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/conv.py\", line 548, in _conv_forward\n    return F.conv2d(\n           ^^^^^^^^^\ntorch.OutOfMemoryError: CUDA out of memory. Tried to allocate 114.00 MiB. GPU 0 has a total capacity of 11.62 GiB of which 49.75 MiB is free. Process 2113 has 253.94 MiB memory in use. Including non-PyTorch memory, this process has 10.66 GiB memory in use. Of the allocated memory 10.15 GiB is allocated by PyTorch, and 146.87 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"
+    },
+    {
+      "name": "mrcnn_fold2_seed42_offline_aug",
+      "error": "OutOfMemoryError",
+      "message": "CUDA out of memory. Tried to allocate 450.00 MiB. GPU 0 has a total capacity of 11.62 GiB of which 423.75 MiB is free. Process 2113 has 253.94 MiB memory in use. Including non-PyTorch memory, this process has 10.29 GiB memory in use. Of the allocated memory 9.14 GiB is allocated by PyTorch, and 800.05 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)",
+      "traceback": "Traceback (most recent call last):\n  File \"/tmp/ipykernel_304597/3275090666.py\", line 218, in run_full_cv\n    cp = cv_train_yolo(r,seed,run_dir,root,valid,steps_per_epoch,report) if r['kind']=='yolo' else cv_train_torch(r,seed,run_dir,root,valid,steps_per_epoch,report)\n                                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/ipykernel_304597/3275090666.py\", line 122, in cv_train_torch\n    loss = sum(model([x.to(device) for x in images],[{k:v.to(device) for k,v in t.items()} for t in target]).values())\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torchvision/models/detection/generalized_rcnn.py\", line 114, in forward\n    features = self.backbone(images.tensors)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torchvision/models/detection/backbone_utils.py\", line 58, in forward\n    x = self.fpn(x)\n        ^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torchvision/ops/feature_pyramid_network.py\", line 195, in forward\n    last_inner = inner_lateral + inner_top_down\n                 ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~\ntorch.OutOfMemoryError: CUDA out of memory. Tried to allocate 450.00 MiB. GPU 0 has a total capacity of 11.62 GiB of which 423.75 MiB is free. Process 2113 has 253.94 MiB memory in use. Including non-PyTorch memory, this process has 10.29 GiB memory in use. Of the allocated memory 9.14 GiB is allocated by PyTorch, and 800.05 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"
+    },
+    {
+      "name": "yolo26n_det_fold2_seed42_control",
+      "error": "ValueError",
+      "message": "Expected finite positive-area xyxy box",
+      "traceback": "Traceback (most recent call last):\n  File \"/tmp/ipykernel_304597/3275090666.py\", line 218, in run_full_cv\n    cp = cv_train_yolo(r,seed,run_dir,root,valid,steps_per_epoch,report) if r['kind']=='yolo' else cv_train_torch(r,seed,run_dir,root,valid,steps_per_epoch,report)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/ipykernel_304597/3275090666.py\", line 97, in cv_train_yolo\n    model.train(trainer=MatchedTrainer,data=str(cfg),epochs=recipe['epochs'],patience=recipe['epochs']+1,batch=recipe['batch'],nbs=recipe['batch'],imgsz=recipe['size'],device=device,seed=seed,optimizer='AdamW',lr0=recipe['lr'],warmup_epochs=0,amp=False,deterministic=True,workers=0,cache=False,plots=False,save=True,split='val',mosaic=0,close_mosaic=0,mixup=0,cutmix=0,copy_paste=0,hsv_h=0,hsv_s=0,hsv_v=0,degrees=0,translate=0,scale=0,shear=0,perspective=0,fliplr=0,flipud=0,bgr=0,auto_augment=None,erasing=0,project=str(run_dir),name='native',exist_ok=True)\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/ultralytics/engine/model.py\", line 894, in train\n    self.trainer.train()\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/ultralytics/engine/trainer.py\", line 262, in train\n    self._do_train()\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/ultralytics/engine/trainer.py\", line 651, in _do_train\n    self.metrics, self.fitness = self.validate()\n                                 ^^^^^^^^^^^^^^^\n  File \"/tmp/ipykernel_304597/3275090666.py\", line 75, in validate\n    validate_predictions(predictions,valid,recipe['task'])\n  File \"/tmp/ipykernel_304597/2151613340.py\", line 38, in validate_predictions\n    box = as_box(a)\n          ^^^^^^^^^\n  File \"/tmp/ipykernel_304597/2151613340.py\", line 5, in as_box\n    raise ValueError('Expected finite positive-area xyxy box')\nValueError: Expected finite positive-area xyxy box\n"
+    },
+    {
+      "name": "yolo26n_det_fold2_seed42_offline_aug",
+      "error": "ValueError",
+      "message": "Expected finite positive-area xyxy box",
+      "traceback": "Traceback (most recent call last):\n  File \"/tmp/ipykernel_304597/3275090666.py\", line 218, in run_full_cv\n    cp = cv_train_yolo(r,seed,run_dir,root,valid,steps_per_epoch,report) if r['kind']=='yolo' else cv_train_torch(r,seed,run_dir,root,valid,steps_per_epoch,report)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/ipykernel_304597/3275090666.py\", line 97, in cv_train_yolo\n    model.train(trainer=MatchedTrainer,data=str(cfg),epochs=recipe['epochs'],patience=recipe['epochs']+1,batch=recipe['batch'],nbs=recipe['batch'],imgsz=recipe['size'],device=device,seed=seed,optimizer='AdamW',lr0=recipe['lr'],warmup_epochs=0,amp=False,deterministic=True,workers=0,cache=False,plots=False,save=True,split='val',mosaic=0,close_mosaic=0,mixup=0,cutmix=0,copy_paste=0,hsv_h=0,hsv_s=0,hsv_v=0,degrees=0,translate=0,scale=0,shear=0,perspective=0,fliplr=0,flipud=0,bgr=0,auto_augment=None,erasing=0,project=str(run_dir),name='native',exist_ok=True)\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/ultralytics/engine/model.py\", line 894, in train\n    self.trainer.train()\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/ultralytics/engine/trainer.py\", line 262, in train\n    self._do_train()\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/ultralytics/engine/trainer.py\", line 651, in _do_train\n    self.metrics, self.fitness = self.validate()\n                                 ^^^^^^^^^^^^^^^\n  File \"/tmp/ipykernel_304597/3275090666.py\", line 75, in validate\n    validate_predictions(predictions,valid,recipe['task'])\n  File \"/tmp/ipykernel_304597/2151613340.py\", line 38, in validate_predictions\n    box = as_box(a)\n          ^^^^^^^^^\n  File \"/tmp/ipykernel_304597/2151613340.py\", line 5, in as_box\n    raise ValueError('Expected finite positive-area xyxy box')\nValueError: Expected finite positive-area xyxy box\n"
+    },
+    {
+      "name": "yolo26s_det_fold2_seed42_control",
+      "error": "ValueError",
+      "message": "Expected finite positive-area xyxy box",
+      "traceback": "Traceback (most recent call last):\n  File \"/tmp/ipykernel_304597/3275090666.py\", line 218, in run_full_cv\n    cp = cv_train_yolo(r,seed,run_dir,root,valid,steps_per_epoch,report) if r['kind']=='yolo' else cv_train_torch(r,seed,run_dir,root,valid,steps_per_epoch,report)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/ipykernel_304597/3275090666.py\", line 97, in cv_train_yolo\n    model.train(trainer=MatchedTrainer,data=str(cfg),epochs=recipe['epochs'],patience=recipe['epochs']+1,batch=recipe['batch'],nbs=recipe['batch'],imgsz=recipe['size'],device=device,seed=seed,optimizer='AdamW',lr0=recipe['lr'],warmup_epochs=0,amp=False,deterministic=True,workers=0,cache=False,plots=False,save=True,split='val',mosaic=0,close_mosaic=0,mixup=0,cutmix=0,copy_paste=0,hsv_h=0,hsv_s=0,hsv_v=0,degrees=0,translate=0,scale=0,shear=0,perspective=0,fliplr=0,flipud=0,bgr=0,auto_augment=None,erasing=0,project=str(run_dir),name='native',exist_ok=True)\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/ultralytics/engine/model.py\", line 894, in train\n    self.trainer.train()\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/ultralytics/engine/trainer.py\", line 262, in train\n    self._do_train()\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/ultralytics/engine/trainer.py\", line 651, in _do_train\n    self.metrics, self.fitness = self.validate()\n                                 ^^^^^^^^^^^^^^^\n  File \"/tmp/ipykernel_304597/3275090666.py\", line 75, in validate\n    validate_predictions(predictions,valid,recipe['task'])\n  File \"/tmp/ipykernel_304597/2151613340.py\", line 38, in validate_predictions\n    box = as_box(a)\n          ^^^^^^^^^\n  File \"/tmp/ipykernel_304597/2151613340.py\", line 5, in as_box\n    raise ValueError('Expected finite positive-area xyxy box')\nValueError: Expected finite positive-area xyxy box\n"
+    },
+    {
+      "name": "mrcnn_fold3_seed42_control",
+      "error": "OutOfMemoryError",
+      "message": "CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 11.62 GiB of which 36.44 MiB is free. Process 2113 has 253.94 MiB memory in use. Including non-PyTorch memory, this process has 10.94 GiB memory in use. Of the allocated memory 10.43 GiB is allocated by PyTorch, and 140.73 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)",
+      "traceback": "Traceback (most recent call last):\n  File \"/tmp/ipykernel_304597/3275090666.py\", line 218, in run_full_cv\n    cp = cv_train_yolo(r,seed,run_dir,root,valid,steps_per_epoch,report) if r['kind']=='yolo' else cv_train_torch(r,seed,run_dir,root,valid,steps_per_epoch,report)\n                                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/ipykernel_304597/3275090666.py\", line 122, in cv_train_torch\n    loss = sum(model([x.to(device) for x in images],[{k:v.to(device) for k,v in t.items()} for t in target]).values())\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torchvision/models/detection/generalized_rcnn.py\", line 117, in forward\n    proposals, proposal_losses = self.rpn(images, features, targets)\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torchvision/models/detection/rpn.py\", line 360, in forward\n    objectness, pred_bbox_deltas = self.head(features)\n                                   ^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torchvision/models/detection/rpn.py\", line 75, in forward\n    t = self.conv(feature)\n        ^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/container.py\", line 253, in forward\n    input = module(input)\n            ^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/container.py\", line 253, in forward\n    input = module(input)\n            ^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/conv.py\", line 553, in forward\n    return self._conv_forward(input, self.weight, self.bias)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/conv.py\", line 548, in _conv_forward\n    return F.conv2d(\n           ^^^^^^^^^\ntorch.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 11.62 GiB of which 36.44 MiB is free. Process 2113 has 253.94 MiB memory in use. Including non-PyTorch memory, this process has 10.94 GiB memory in use. Of the allocated memory 10.43 GiB is allocated by PyTorch, and 140.73 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"
+    },
+    {
+      "name": "mrcnn_fold3_seed42_offline_aug",
+      "error": "OutOfMemoryError",
+      "message": "CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 11.62 GiB of which 42.75 MiB is free. Process 2113 has 253.94 MiB memory in use. Including non-PyTorch memory, this process has 10.93 GiB memory in use. Of the allocated memory 10.45 GiB is allocated by PyTorch, and 109.46 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)",
+      "traceback": "Traceback (most recent call last):\n  File \"/tmp/ipykernel_304597/3275090666.py\", line 218, in run_full_cv\n    cp = cv_train_yolo(r,seed,run_dir,root,valid,steps_per_epoch,report) if r['kind']=='yolo' else cv_train_torch(r,seed,run_dir,root,valid,steps_per_epoch,report)\n                                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/ipykernel_304597/3275090666.py\", line 122, in cv_train_torch\n    loss = sum(model([x.to(device) for x in images],[{k:v.to(device) for k,v in t.items()} for t in target]).values())\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torchvision/models/detection/generalized_rcnn.py\", line 117, in forward\n    proposals, proposal_losses = self.rpn(images, features, targets)\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torchvision/models/detection/rpn.py\", line 361, in forward\n    anchors = self.anchor_generator(images, features)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torchvision/models/detection/anchor_utils.py\", line 132, in forward\n    anchors = [torch.cat(anchors_per_image) for anchors_per_image in anchors]\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntorch.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 11.62 GiB of which 42.75 MiB is free. Process 2113 has 253.94 MiB memory in use. Including non-PyTorch memory, this process has 10.93 GiB memory in use. Of the allocated memory 10.45 GiB is allocated by PyTorch, and 109.46 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"
+    },
+    {
+      "name": "yolo26n_det_fold3_seed42_control",
+      "error": "ValueError",
+      "message": "Expected finite positive-area xyxy box",
+      "traceback": "Traceback (most recent call last):\n  File \"/tmp/ipykernel_304597/3275090666.py\", line 218, in run_full_cv\n    cp = cv_train_yolo(r,seed,run_dir,root,valid,steps_per_epoch,report) if r['kind']=='yolo' else cv_train_torch(r,seed,run_dir,root,valid,steps_per_epoch,report)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/ipykernel_304597/3275090666.py\", line 97, in cv_train_yolo\n    model.train(trainer=MatchedTrainer,data=str(cfg),epochs=recipe['epochs'],patience=recipe['epochs']+1,batch=recipe['batch'],nbs=recipe['batch'],imgsz=recipe['size'],device=device,seed=seed,optimizer='AdamW',lr0=recipe['lr'],warmup_epochs=0,amp=False,deterministic=True,workers=0,cache=False,plots=False,save=True,split='val',mosaic=0,close_mosaic=0,mixup=0,cutmix=0,copy_paste=0,hsv_h=0,hsv_s=0,hsv_v=0,degrees=0,translate=0,scale=0,shear=0,perspective=0,fliplr=0,flipud=0,bgr=0,auto_augment=None,erasing=0,project=str(run_dir),name='native',exist_ok=True)\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/ultralytics/engine/model.py\", line 894, in train\n    self.trainer.train()\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/ultralytics/engine/trainer.py\", line 262, in train\n    self._do_train()\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/ultralytics/engine/trainer.py\", line 651, in _do_train\n    self.metrics, self.fitness = self.validate()\n                                 ^^^^^^^^^^^^^^^\n  File \"/tmp/ipykernel_304597/3275090666.py\", line 75, in validate\n    validate_predictions(predictions,valid,recipe['task'])\n  File \"/tmp/ipykernel_304597/2151613340.py\", line 38, in validate_predictions\n    box = as_box(a)\n          ^^^^^^^^^\n  File \"/tmp/ipykernel_304597/2151613340.py\", line 5, in as_box\n    raise ValueError('Expected finite positive-area xyxy box')\nValueError: Expected finite positive-area xyxy box\n"
+    },
+    {
+      "name": "yolo26s_det_fold3_seed42_control",
+      "error": "ValueError",
+      "message": "Expected finite positive-area xyxy box",
+      "traceback": "Traceback (most recent call last):\n  File \"/tmp/ipykernel_304597/3275090666.py\", line 218, in run_full_cv\n    cp = cv_train_yolo(r,seed,run_dir,root,valid,steps_per_epoch,report) if r['kind']=='yolo' else cv_train_torch(r,seed,run_dir,root,valid,steps_per_epoch,report)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/ipykernel_304597/3275090666.py\", line 97, in cv_train_yolo\n    model.train(trainer=MatchedTrainer,data=str(cfg),epochs=recipe['epochs'],patience=recipe['epochs']+1,batch=recipe['batch'],nbs=recipe['batch'],imgsz=recipe['size'],device=device,seed=seed,optimizer='AdamW',lr0=recipe['lr'],warmup_epochs=0,amp=False,deterministic=True,workers=0,cache=False,plots=False,save=True,split='val',mosaic=0,close_mosaic=0,mixup=0,cutmix=0,copy_paste=0,hsv_h=0,hsv_s=0,hsv_v=0,degrees=0,translate=0,scale=0,shear=0,perspective=0,fliplr=0,flipud=0,bgr=0,auto_augment=None,erasing=0,project=str(run_dir),name='native',exist_ok=True)\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/ultralytics/engine/model.py\", line 894, in train\n    self.trainer.train()\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/ultralytics/engine/trainer.py\", line 262, in train\n    self._do_train()\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/ultralytics/engine/trainer.py\", line 651, in _do_train\n    self.metrics, self.fitness = self.validate()\n                                 ^^^^^^^^^^^^^^^\n  File \"/tmp/ipykernel_304597/3275090666.py\", line 75, in validate\n    validate_predictions(predictions,valid,recipe['task'])\n  File \"/tmp/ipykernel_304597/2151613340.py\", line 38, in validate_predictions\n    box = as_box(a)\n          ^^^^^^^^^\n  File \"/tmp/ipykernel_304597/2151613340.py\", line 5, in as_box\n    raise ValueError('Expected finite positive-area xyxy box')\nValueError: Expected finite positive-area xyxy box\n"
+    },
+    {
+      "name": "mrcnn_fold4_seed42_control",
+      "error": "OutOfMemoryError",
+      "message": "CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 11.62 GiB of which 51.12 MiB is free. Process 2113 has 253.94 MiB memory in use. Including non-PyTorch memory, this process has 10.92 GiB memory in use. Of the allocated memory 10.45 GiB is allocated by PyTorch, and 107.71 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)",
+      "traceback": "Traceback (most recent call last):\n  File \"/tmp/ipykernel_304597/3275090666.py\", line 218, in run_full_cv\n    cp = cv_train_yolo(r,seed,run_dir,root,valid,steps_per_epoch,report) if r['kind']=='yolo' else cv_train_torch(r,seed,run_dir,root,valid,steps_per_epoch,report)\n                                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/ipykernel_304597/3275090666.py\", line 122, in cv_train_torch\n    loss = sum(model([x.to(device) for x in images],[{k:v.to(device) for k,v in t.items()} for t in target]).values())\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torchvision/models/detection/generalized_rcnn.py\", line 117, in forward\n    proposals, proposal_losses = self.rpn(images, features, targets)\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torchvision/models/detection/rpn.py\", line 361, in forward\n    anchors = self.anchor_generator(images, features)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torchvision/models/detection/anchor_utils.py\", line 132, in forward\n    anchors = [torch.cat(anchors_per_image) for anchors_per_image in anchors]\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntorch.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 11.62 GiB of which 51.12 MiB is free. Process 2113 has 253.94 MiB memory in use. Including non-PyTorch memory, this process has 10.92 GiB memory in use. Of the allocated memory 10.45 GiB is allocated by PyTorch, and 107.71 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"
+    },
+    {
+      "name": "mrcnn_fold4_seed42_offline_aug",
+      "error": "OutOfMemoryError",
+      "message": "CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 11.62 GiB of which 45.12 MiB is free. Process 2113 has 253.94 MiB memory in use. Including non-PyTorch memory, this process has 10.93 GiB memory in use. Of the allocated memory 10.45 GiB is allocated by PyTorch, and 112.02 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)",
+      "traceback": "Traceback (most recent call last):\n  File \"/tmp/ipykernel_304597/3275090666.py\", line 218, in run_full_cv\n    cp = cv_train_yolo(r,seed,run_dir,root,valid,steps_per_epoch,report) if r['kind']=='yolo' else cv_train_torch(r,seed,run_dir,root,valid,steps_per_epoch,report)\n                                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/ipykernel_304597/3275090666.py\", line 122, in cv_train_torch\n    loss = sum(model([x.to(device) for x in images],[{k:v.to(device) for k,v in t.items()} for t in target]).values())\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torchvision/models/detection/generalized_rcnn.py\", line 117, in forward\n    proposals, proposal_losses = self.rpn(images, features, targets)\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torchvision/models/detection/rpn.py\", line 361, in forward\n    anchors = self.anchor_generator(images, features)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/supawich/YOLO AGGREGATE/.venv_inf/lib/python3.12/site-packages/torchvision/models/detection/anchor_utils.py\", line 132, in forward\n    anchors = [torch.cat(anchors_per_image) for anchors_per_image in anchors]\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntorch.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 11.62 GiB of which 45.12 MiB is free. Process 2113 has 253.94 MiB memory in use. Including non-PyTorch memory, this process has 10.93 GiB memory in use. Of the allocated memory 10.45 GiB is allocated by PyTorch, and 112.02 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"
+    }
+  ],
+  "results": [
+    {
+      "status": "completed",
+      "name": "yolo26n_seg_fold0_seed42_control",
+      "model": "yolo26n_seg",
+      "fold": 0,
+      "seed": 42,
+      "arm": "control",
+      "spec": {
+        "plan_id": "0c2cf258ab3af75d89af",
+        "job": {
+          "recipe": {
+            "name": "yolo26n_seg",
+            "kind": "yolo",
+            "task": "segment",
+            "init": "yolo26n-seg.pt",
+            "size": 960,
+            "epochs": 30,
+            "batch": 12,
+            "lr": 0.001
+          },
+          "fold": 0,
+          "seed": 42,
+          "arm": "control"
+        },
+        "optimizer_steps": 1860,
+        "initializer_sha": "361fbfabab285c3237700b6bb91d7ecfa602cd945fffda8dbe1242829b71e73f"
+      },
+      "checkpoint": "/home/supawich/Desktop/Aggregate_Project/experiment/runs/nb16_full_cv/0c2cf258ab3af75d89af/yolo26n_seg_fold0_seed42_control/selected.pt",
+      "checkpoint_sha": "ccbcaa381c087cdfcc322614403679290b447f456f0cdfc2172fbdb96c647fc5",
+      "optimizer_steps": 1860,
+      "selected_epoch": 7,
+      "threshold_source": "inner-valid",
+      "thresholds": {
+        "0": 0.12722750008106232,
+        "1": 0.33387354016304016
+      },
+      "box": {
+        "AP": 0.19359837185630202,
+        "AP50": 0.34953721478613786,
+        "AP75": 0.18724352439325953,
+        "AP_small": 0.008060129772339454,
+        "AP_medium": 0.21128543791914217,
+        "AP_large": 0.26414370951536137,
+        "AR1": 0.12930936819172115,
+        "AR10": 0.33469716775599123,
+        "AR100": 0.36280174291939,
+        "AR_small": 0.08723404255319149,
+        "AR_medium": 0.28889539422326305,
+        "AR_large": 0.5011071428571428,
+        "status": "canonical COCOeval",
+        "mode": "bbox",
+        "per_class": {
+          "gravel": 0.37353332422565744,
+          "sand": 0.013663419486946608
+        }
+      },
+      "mask": {
+        "AP": 0.22562048411438398,
+        "AP50": 0.37078799282312036,
+        "AP75": 0.23217074613727753,
+        "AP_small": 0.0057176735896473626,
+        "AP_medium": 0.23150913526091593,
+        "AP_large": 0.3232243593712335,
+        "AR1": 0.14377233115468407,
+        "AR10": 0.35752287581699344,
+        "AR100": 0.38599346405228757,
+        "AR_small": 0.07234042553191489,
+        "AR_medium": 0.31974043715846995,
+        "AR_large": 0.5296547619047619,
+        "status": "canonical COCOeval",
+        "mode": "segm",
+        "per_class": {
+          "gravel": 0.4348093559698127,
+          "sand": 0.01643161225895536
+        }
+      },
+      "postprocessing": null,
+      "predictions": "/home/supawich/Desktop/Aggregate_Project/experiment/results/nb16_full_cv/0c2cf258ab3af75d89af/yolo26n_seg_fold0_seed42_control_predictions.jsonl.gz",
+      "predictions_sha": "8903e7b11dd49a1a2ae26bf66683598b828392161024965cdb84afb24e6eb1d7",
+      "seconds": 836.2357511730006,
+      "scope": "development grouped CV; one seed; not external event/site validation"
+    },
+    {
+      "status": "completed",
+      "name": "yolo26n_seg_fold0_seed42_offline_aug",
+      "model": "yolo26n_seg",
+      "fold": 0,
+      "seed": 42,
+      "arm": "offline_aug",
+      "spec": {
+        "plan_id": "0c2cf258ab3af75d89af",
+        "job": {
+          "recipe": {
+            "name": "yolo26n_seg",
+            "kind": "yolo",
+            "task": "segment",
+            "init": "yolo26n-seg.pt",
+            "size": 960,
+            "epochs": 30,
+            "batch": 12,
+            "lr": 0.001
+          },
+          "fold": 0,
+          "seed": 42,
+          "arm": "offline_aug"
+        },
+        "optimizer_steps": 1860,
+        "initializer_sha": "361fbfabab285c3237700b6bb91d7ecfa602cd945fffda8dbe1242829b71e73f"
+      },
+      "checkpoint": "/home/supawich/Desktop/Aggregate_Project/experiment/runs/nb16_full_cv/0c2cf258ab3af75d89af/yolo26n_seg_fold0_seed42_offline_aug/selected.pt",
+      "checkpoint_sha": "2457381bf94b5ac5588a79397312aef7676a07297ca24be61d9f254817e178d7",
+      "optimizer_steps": 1860,
+      "selected_epoch": 20,
+      "threshold_source": "inner-valid",
+      "thresholds": {
+        "0": 0.2961276173591614,
+        "1": 0.2664135694503784
+      },
+      "box": {
+        "AP": 0.29790622421108315,
+        "AP50": 0.4674130799961373,
+        "AP75": 0.31227959346306444,
+        "AP_small": 0.02231282287611578,
+        "AP_medium": 0.2652101608012825,
+        "AP_large": 0.4239833878406697,
+        "AR1": 0.26931917211328976,
+        "AR10": 0.4686960784313725,
+        "AR100": 0.4802570806100217,
+        "AR_small": 0.07021276595744681,
+        "AR_medium": 0.3294691647150664,
+        "AR_large": 0.6967619047619047,
+        "status": "canonical COCOeval",
+        "mode": "bbox",
+        "per_class": {
+          "gravel": 0.44782593721366293,
+          "sand": 0.14798651120850354
+        }
+      },
+      "mask": {
+        "AP": 0.31098669463398304,
+        "AP50": 0.46386295761717083,
+        "AP75": 0.3355537212385397,
+        "AP_small": 0.015210036887937055,
+        "AP_medium": 0.2550330208409854,
+        "AP_large": 0.47169483060234885,
+        "AR1": 0.2843496732026144,
+        "AR10": 0.47876034858387806,
+        "AR100": 0.48666230936819177,
+        "AR_small": 0.06702127659574468,
+        "AR_medium": 0.32475604996096796,
+        "AR_large": 0.7146785714285713,
+        "status": "canonical COCOeval",
+        "mode": "segm",
+        "per_class": {
+          "gravel": 0.4647184651025448,
+          "sand": 0.15725492416542128
+        }
+      },
+      "postprocessing": null,
+      "predictions": "/home/supawich/Desktop/Aggregate_Project/experiment/results/nb16_full_cv/0c2cf258ab3af75d89af/yolo26n_seg_fold0_seed42_offline_aug_predictions.jsonl.gz",
+      "predictions_sha": "72c54f7e744b6f4a15f1b15ce295092450eea46e642ff8163251b61dbc1ede14",
+      "seconds": 917.3542653780023,
+      "scope": "development grouped CV; one seed; not external event/site validation"
+    },
+    {
+      "status": "completed",
+      "name": "yolo26s_seg_fold0_seed42_control",
+      "model": "yolo26s_seg",
+      "fold": 0,
+      "seed": 42,
+      "arm": "control",
+      "spec": {
+        "plan_id": "0c2cf258ab3af75d89af",
+        "job": {
+          "recipe": {
+            "name": "yolo26s_seg",
+            "kind": "yolo",
+            "task": "segment",
+            "init": "yolo26s-seg.pt",
+            "size": 960,
+            "epochs": 30,
+            "batch": 6,
+            "lr": 0.001
+          },
+          "fold": 0,
+          "seed": 42,
+          "arm": "control"
+        },
+        "optimizer_steps": 3690,
+        "initializer_sha": "3da1d83e31caec96f9300eb4064f4f62882c133c7c264d63dfe61a7c197837a4"
+      },
+      "checkpoint": "/home/supawich/Desktop/Aggregate_Project/experiment/runs/nb16_full_cv/0c2cf258ab3af75d89af/yolo26s_seg_fold0_seed42_control/selected.pt",
+      "checkpoint_sha": "05a8e3118002338c56bb6d19a92e53ab23e2693a074fcbdebee6653bccbfc579",
+      "optimizer_steps": 3690,
+      "selected_epoch": 20,
+      "threshold_source": "inner-valid",
+      "thresholds": {
+        "0": 0.233721062541008,
+        "1": 0.34107834100723267
+      },
+      "box": {
+        "AP": 0.19395829933321515,
+        "AP50": 0.3370431739965954,
+        "AP75": 0.20057796980415185,
+        "AP_small": 0.006742747804192184,
+        "AP_medium": 0.19250066638186517,
+        "AP_large": 0.26228199452151013,
+        "AR1": 0.11737908496732026,
+        "AR10": 0.2537712418300654,
+        "AR100": 0.262921568627451,
+        "AR_small": 0.0276595744680851,
+        "AR_medium": 0.2541471506635441,
+        "AR_large": 0.33780952380952384,
+        "status": "canonical COCOeval",
+        "mode": "bbox",
+        "per_class": {
+          "gravel": 0.38126893385258254,
+          "sand": 0.00664766481384781
+        }
+      },
+      "mask": {
+        "AP": 0.22077790427170846,
+        "AP50": 0.340911387688851,
+        "AP75": 0.23888211085057925,
+        "AP_small": 0.001817753032663645,
+        "AP_medium": 0.205009245588181,
+        "AP_large": 0.3084420045351516,
+        "AR1": 0.12663834422657955,
+        "AR10": 0.2663932461873639,
+        "AR100": 0.2741274509803922,
+        "AR_small": 0.023404255319148935,
+        "AR_medium": 0.2552888368462139,
+        "AR_large": 0.3683333333333333,
+        "status": "canonical COCOeval",
+        "mode": "segm",
+        "per_class": {
+          "gravel": 0.43142510847075705,
+          "sand": 0.010130700072659782
+        }
+      },
+      "postprocessing": null,
+      "predictions": "/home/supawich/Desktop/Aggregate_Project/experiment/results/nb16_full_cv/0c2cf258ab3af75d89af/yolo26s_seg_fold0_seed42_control_predictions.jsonl.gz",
+      "predictions_sha": "be8b2de32171820cc279efaea812292e52df7e756bca5a19637ab3df01c4df3e",
+      "seconds": 1127.5988946649995,
+      "scope": "development grouped CV; one seed; not external event/site validation"
+    },
+    {
+      "status": "completed",
+      "name": "yolo26s_seg_fold0_seed42_offline_aug",
+      "model": "yolo26s_seg",
+      "fold": 0,
+      "seed": 42,
+      "arm": "offline_aug",
+      "spec": {
+        "plan_id": "0c2cf258ab3af75d89af",
+        "job": {
+          "recipe": {
+            "name": "yolo26s_seg",
+            "kind": "yolo",
+            "task": "segment",
+            "init": "yolo26s-seg.pt",
+            "size": 960,
+            "epochs": 30,
+            "batch": 6,
+            "lr": 0.001
+          },
+          "fold": 0,
+          "seed": 42,
+          "arm": "offline_aug"
+        },
+        "optimizer_steps": 3690,
+        "initializer_sha": "3da1d83e31caec96f9300eb4064f4f62882c133c7c264d63dfe61a7c197837a4"
+      },
+      "checkpoint": "/home/supawich/Desktop/Aggregate_Project/experiment/runs/nb16_full_cv/0c2cf258ab3af75d89af/yolo26s_seg_fold0_seed42_offline_aug/selected.pt",
+      "checkpoint_sha": "4dcb94962f164d036e68f1984bd33abbdb25251c7ed2bcd77d326a99124104db",
+      "optimizer_steps": 3690,
+      "selected_epoch": 15,
+      "threshold_source": "inner-valid",
+      "thresholds": {
+        "0": 0.19759464263916016,
+        "1": 0.3851984739303589
+      },
+      "box": {
+        "AP": 0.20030123317514753,
+        "AP50": 0.36500522064513924,
+        "AP75": 0.15844382197745294,
+        "AP_small": 0.006920185754934166,
+        "AP_medium": 0.21794789674809548,
+        "AP_large": 0.2725766646501378,
+        "AR1": 0.10618409586056647,
+        "AR10": 0.2815631808278867,
+        "AR100": 0.3065032679738562,
+        "AR_small": 0.06170212765957447,
+        "AR_medium": 0.31316354410616704,
+        "AR_large": 0.35725,
+        "status": "canonical COCOeval",
+        "mode": "bbox",
+        "per_class": {
+          "gravel": 0.3982163786548875,
+          "sand": 0.0023860876954074897
+        }
+      },
+      "mask": {
+        "AP": 0.24032370846899315,
+        "AP50": 0.367514017721661,
+        "AP75": 0.25016087918437824,
+        "AP_small": 0.0028790529207688535,
+        "AP_medium": 0.23550145145208565,
+        "AP_large": 0.3396371541650011,
+        "AR1": 0.12489542483660128,
+        "AR10": 0.30827668845315903,
+        "AR100": 0.3253344226579521,
+        "AR_small": 0.05744680851063829,
+        "AR_medium": 0.31832552693208427,
+        "AR_large": 0.4042261904761905,
+        "status": "canonical COCOeval",
+        "mode": "segm",
+        "per_class": {
+          "gravel": 0.4771299702447388,
+          "sand": 0.003517446693247535
+        }
+      },
+      "postprocessing": null,
+      "predictions": "/home/supawich/Desktop/Aggregate_Project/experiment/results/nb16_full_cv/0c2cf258ab3af75d89af/yolo26s_seg_fold0_seed42_offline_aug_predictions.jsonl.gz",
+      "predictions_sha": "ffb5871171cffd9293c0b617e49eb836a70ed8027e6d8df554ce90d9fce02440",
+      "seconds": 1362.1442225089995,
+      "scope": "development grouped CV; one seed; not external event/site validation"
+    },
+    {
+      "status": "completed",
+      "name": "unet_ws_fold0_seed42_control",
+      "model": "unet_ws",
+      "fold": 0,
+      "seed": 42,
+      "arm": "control",
+      "spec": {
+        "plan_id": "0c2cf258ab3af75d89af",
+        "job": {
+          "recipe": {
+            "name": "unet_ws",
+            "kind": "unet",
+            "task": "segment",
+            "init": "random",
+            "size": 512,
+            "epochs": 30,
+            "batch": 14,
+            "lr": 0.001
+          },
+          "fold": 0,
+          "seed": 42,
+          "arm": "control"
+        },
+        "optimizer_steps": 1590,
+        "initializer_sha": "random"
+      },
+      "checkpoint": "/home/supawich/Desktop/Aggregate_Project/experiment/runs/nb16_full_cv/0c2cf258ab3af75d89af/unet_ws_fold0_seed42_control/selected.pt",
+      "checkpoint_sha": "c5542dbaea5c3a98531dbd16f50ee6d5f32b153cb03d2c4371362eb22f603206",
+      "optimizer_steps": 1590,
+      "selected_epoch": 30,
+      "threshold_source": "inner-valid",
+      "thresholds": {
+        "0": 0.9047573208808899,
+        "1": 0.8964148759841919
+      },
+      "box": {
+        "AP": 0.005165688761686761,
+        "AP50": 0.01049540030481697,
+        "AP75": 0.004267668146124957,
+        "AP_small": 0.00012376237623762376,
+        "AP_medium": 1.0313811133168222e-05,
+        "AP_large": 0.028488421501507762,
+        "AR1": 0.023529411764705882,
+        "AR10": 0.026534858387799565,
+        "AR100": 0.026534858387799565,
+        "AR_small": 0.00625,
+        "AR_medium": 0.000819672131147541,
+        "AR_large": 0.0699404761904762,
+        "status": "canonical COCOeval",
+        "mode": "bbox",
+        "per_class": {
+          "gravel": 0.010315408184504151,
+          "sand": 1.596933886937081e-05
+        }
+      },
+      "mask": {
+        "AP": 0.003271307949346821,
+        "AP50": 0.006911112003695298,
+        "AP75": 0.0038374316826131727,
+        "AP_small": 0.0,
+        "AP_medium": 3.1018924677277856e-05,
+        "AP_large": 0.019712546845015933,
+        "AR1": 0.01710239651416122,
+        "AR10": 0.018300653594771243,
+        "AR100": 0.018300653594771243,
+        "AR_small": 0.0,
+        "AR_medium": 0.0012295081967213116,
+        "AR_large": 0.04821428571428571,
+        "status": "canonical COCOeval",
+        "mode": "segm",
+        "per_class": {
+          "gravel": 0.006542615898693642,
+          "sand": 0.0
+        }
+      },
+      "postprocessing": {
+        "fg": 0.5,
+        "spacing": 9,
+        "min_area": 25,
+        "method": "watershed"
+      },
+      "predictions": "/home/supawich/Desktop/Aggregate_Project/experiment/results/nb16_full_cv/0c2cf258ab3af75d89af/unet_ws_fold0_seed42_control_predictions.jsonl.gz",
+      "predictions_sha": "df51e007cccbc05d0aca3a8d7ac56c0414ea722254ce7ff2c60876de8f03e64d",
+      "seconds": 1126.2003512690026,
+      "scope": "development grouped CV; one seed; not external event/site validation"
+    },
+    {
+      "status": "completed",
+      "name": "unet_ws_fold0_seed42_offline_aug",
+      "model": "unet_ws",
+      "fold": 0,
+      "seed": 42,
+      "arm": "offline_aug",
+      "spec": {
+        "plan_id": "0c2cf258ab3af75d89af",
+        "job": {
+          "recipe": {
+            "name": "unet_ws",
+            "kind": "unet",
+            "task": "segment",
+            "init": "random",
+            "size": 512,
+            "epochs": 30,
+            "batch": 14,
+            "lr": 0.001
+          },
+          "fold": 0,
+          "seed": 42,
+          "arm": "offline_aug"
+        },
+        "optimizer_steps": 1590,
+        "initializer_sha": "random"
+      },
+      "checkpoint": "/home/supawich/Desktop/Aggregate_Project/experiment/runs/nb16_full_cv/0c2cf258ab3af75d89af/unet_ws_fold0_seed42_offline_aug/selected.pt",
+      "checkpoint_sha": "c161a6b21b2ddb31621d3e49ad3cff39b78a40daa54ba8a07a05902c4e95fd4f",
+      "optimizer_steps": 1590,
+      "selected_epoch": 14,
+      "threshold_source": "inner-valid",
+      "thresholds": {
+        "0": 0.8979406356811523,
+        "1": 0.8654114007949829
+      },
+      "box": {
+        "AP": 0.003969931592399199,
+        "AP50": 0.0050057655972994015,
+        "AP75": 0.00495049504950495,
+        "AP_small": 0.0,
+        "AP_medium": 3.6144248896500075e-05,
+        "AP_large": 0.003960396039603959,
+        "AR1": 0.0008714596949891068,
+        "AR10": 0.0018714596949891069,
+        "AR100": 0.002371459694989107,
+        "AR_small": 0.0,
+        "AR_medium": 0.0035714285714285713,
+        "AR_large": 0.0023809523809523807,
+        "status": "canonical COCOeval",
+        "mode": "bbox",
+        "per_class": {
+          "gravel": 0.007920792079207917,
+          "sand": 1.907110559047758e-05
+        }
+      },
+      "mask": {
+        "AP": 0.003960396039603959,
+        "AP50": 0.00495049504950495,
+        "AP75": 0.00495049504950495,
+        "AP_small": 0.0,
+        "AP_medium": 0.0,
+        "AP_large": 0.003960396039603959,
+        "AR1": 0.0008714596949891068,
+        "AR10": 0.0008714596949891068,
+        "AR100": 0.0008714596949891068,
+        "AR_small": 0.0,
+        "AR_medium": 0.0,
+        "AR_large": 0.0023809523809523807,
+        "status": "canonical COCOeval",
+        "mode": "segm",
+        "per_class": {
+          "gravel": 0.007920792079207917,
+          "sand": 0.0
+        }
+      },
+      "postprocessing": {
+        "fg": 0.5,
+        "spacing": 9,
+        "min_area": 25,
+        "method": "watershed"
+      },
+      "predictions": "/home/supawich/Desktop/Aggregate_Project/experiment/results/nb16_full_cv/0c2cf258ab3af75d89af/unet_ws_fold0_seed42_offline_aug_predictions.jsonl.gz",
+      "predictions_sha": "e0088dacf3364553627218ad8ed08472d9d76e8c4a061590a3d4151a9ab464c8",
+      "seconds": 1358.1796095540012,
+      "scope": "development grouped CV; one seed; not external event/site validation"
+    },
+    {
+      "status": "completed",
+      "name": "yolo26n_det_fold0_seed42_control",
+      "model": "yolo26n_det",
+      "fold": 0,
+      "seed": 42,
+      "arm": "control",
+      "spec": {
+        "plan_id": "0c2cf258ab3af75d89af",
+        "job": {
+          "recipe": {
+            "name": "yolo26n_det",
+            "kind": "yolo",
+            "task": "detect",
+            "init": "yolo26n.pt",
+            "size": 960,
+            "epochs": 30,
+            "batch": 10,
+            "lr": 0.001
+          },
+          "fold": 0,
+          "seed": 42,
+          "arm": "control"
+        },
+        "optimizer_steps": 2220,
+        "initializer_sha": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef"
+      },
+      "checkpoint": "/home/supawich/Desktop/Aggregate_Project/experiment/runs/nb16_full_cv/0c2cf258ab3af75d89af/yolo26n_det_fold0_seed42_control/selected.pt",
+      "checkpoint_sha": "b140a489a3aade2fc46d64aa9ab06c10c5164235211108db72fdb49344707e0c",
+      "optimizer_steps": 2220,
+      "selected_epoch": 9,
+      "threshold_source": "inner-valid",
+      "thresholds": {
+        "0": 0.1452963799238205,
+        "1": 0.045286498963832855
+      },
+      "box": {
+        "AP": 0.21405905204346962,
+        "AP50": 0.37533192122194425,
+        "AP75": 0.2192810014912749,
+        "AP_small": 0.019126663212641185,
+        "AP_medium": 0.15479859444218844,
+        "AP_large": 0.3338143889043506,
+        "AR1": 0.21457516339869281,
+        "AR10": 0.41890631808278866,
+        "AR100": 0.437785403050109,
+        "AR_small": 0.05319148936170213,
+        "AR_medium": 0.24747267759562835,
+        "AR_large": 0.6983333333333334,
+        "status": "canonical COCOeval",
+        "mode": "bbox",
+        "per_class": {
+          "gravel": 0.33262763876505086,
+          "sand": 0.09549046532188836
+        }
+      },
+      "mask": {},
+      "postprocessing": null,
+      "predictions": "/home/supawich/Desktop/Aggregate_Project/experiment/results/nb16_full_cv/0c2cf258ab3af75d89af/yolo26n_det_fold0_seed42_control_predictions.jsonl.gz",
+      "predictions_sha": "a47102bebb08b822236ac1d1d786af1beb233be59aad32e638b6622d36c38263",
+      "seconds": 441.54350852599964,
+      "scope": "development grouped CV; one seed; not external event/site validation"
+    },
+    {
+      "status": "completed",
+      "name": "yolo26s_det_fold0_seed42_control",
+      "model": "yolo26s_det",
+      "fold": 0,
+      "seed": 42,
+      "arm": "control",
+      "spec": {
+        "plan_id": "0c2cf258ab3af75d89af",
+        "job": {
+          "recipe": {
+            "name": "yolo26s_det",
+            "kind": "yolo",
+            "task": "detect",
+            "init": "yolo26s.pt",
+            "size": 960,
+            "epochs": 30,
+            "batch": 5,
+            "lr": 0.001
+          },
+          "fold": 0,
+          "seed": 42,
+          "arm": "control"
+        },
+        "optimizer_steps": 4440,
+        "initializer_sha": "646f8bc3fe0a656803d95c294f7852321748cb29d13466a1af8862e2db384a1b"
+      },
+      "checkpoint": "/home/supawich/Desktop/Aggregate_Project/experiment/runs/nb16_full_cv/0c2cf258ab3af75d89af/yolo26s_det_fold0_seed42_control/selected.pt",
+      "checkpoint_sha": "a4a90eca8d652c3e63d3d9149e6f5600650a64c3b0eff299555a826121243910",
+      "optimizer_steps": 4440,
+      "selected_epoch": 18,
+      "threshold_source": "inner-valid",
+      "thresholds": {
+        "0": 0.2863174080848694,
+        "1": 0.06098151206970215
+      },
+      "box": {
+        "AP": 0.19696009765108838,
+        "AP50": 0.43976930711302004,
+        "AP75": 0.13682471385987724,
+        "AP_small": 0.008168316831683169,
+        "AP_medium": 0.12017679699962273,
+        "AP_large": 0.3614662910447007,
+        "AR1": 0.1718834422657952,
+        "AR10": 0.3129444444444444,
+        "AR100": 0.3273235294117647,
+        "AR_small": 0.008510638297872339,
+        "AR_medium": 0.19205698672911786,
+        "AR_large": 0.5291309523809524,
+        "status": "canonical COCOeval",
+        "mode": "bbox",
+        "per_class": {
+          "gravel": 0.2620426669146112,
+          "sand": 0.13187752838756556
+        }
+      },
+      "mask": {},
+      "postprocessing": null,
+      "predictions": "/home/supawich/Desktop/Aggregate_Project/experiment/results/nb16_full_cv/0c2cf258ab3af75d89af/yolo26s_det_fold0_seed42_control_predictions.jsonl.gz",
+      "predictions_sha": "d5e192fb3e2d8eb567835a352707c0b4fee1192fc606f74769863646772bb442",
+      "seconds": 694.7805889129995,
+      "scope": "development grouped CV; one seed; not external event/site validation"
+    },
+    {
+      "status": "completed",
+      "name": "yolo26s_det_fold0_seed42_offline_aug",
+      "model": "yolo26s_det",
+      "fold": 0,
+      "seed": 42,
+      "arm": "offline_aug",
+      "spec": {
+        "plan_id": "0c2cf258ab3af75d89af",
+        "job": {
+          "recipe": {
+            "name": "yolo26s_det",
+            "kind": "yolo",
+            "task": "detect",
+            "init": "yolo26s.pt",
+            "size": 960,
+            "epochs": 30,
+            "batch": 5,
+            "lr": 0.001
+          },
+          "fold": 0,
+          "seed": 42,
+          "arm": "offline_aug"
+        },
+        "optimizer_steps": 4440,
+        "initializer_sha": "646f8bc3fe0a656803d95c294f7852321748cb29d13466a1af8862e2db384a1b"
+      },
+      "checkpoint": "/home/supawich/Desktop/Aggregate_Project/experiment/runs/nb16_full_cv/0c2cf258ab3af75d89af/yolo26s_det_fold0_seed42_offline_aug/selected.pt",
+      "checkpoint_sha": "2299a28a453d17b128d33b2185c5c010e59ff3180916a0d19a89fb7c408a0e52",
+      "optimizer_steps": 4440,
+      "selected_epoch": 24,
+      "threshold_source": "inner-valid",
+      "thresholds": {
+        "0": 0.13696753978729248,
+        "1": 0.08175259083509445
+      },
+      "box": {
+        "AP": 0.27110124363238614,
+        "AP50": 0.4396574985103641,
+        "AP75": 0.2779357375954567,
+        "AP_small": 0.013971492330546736,
+        "AP_medium": 0.15039248253593926,
+        "AP_large": 0.453745014174962,
+        "AR1": 0.2932843137254902,
+        "AR10": 0.409479302832244,
+        "AR100": 0.4250119825708061,
+        "AR_small": 0.03723404255319149,
+        "AR_medium": 0.2288934426229508,
+        "AR_large": 0.679595238095238,
+        "status": "canonical COCOeval",
+        "mode": "bbox",
+        "per_class": {
+          "gravel": 0.3158056346219122,
+          "sand": 0.2263968526428601
+        }
+      },
+      "mask": {},
+      "postprocessing": null,
+      "predictions": "/home/supawich/Desktop/Aggregate_Project/experiment/results/nb16_full_cv/0c2cf258ab3af75d89af/yolo26s_det_fold0_seed42_offline_aug_predictions.jsonl.gz",
+      "predictions_sha": "e3d55f2cf6a2464b0027750d9faa7086ee6363a7fb21777d96616a9c0eba9564",
+      "seconds": 769.0387171410002,
+      "scope": "development grouped CV; one seed; not external event/site validation"
+    },
+    {
+      "status": "completed",
+      "name": "yolo26n_seg_fold1_seed42_control",
+      "model": "yolo26n_seg",
+      "fold": 1,
+      "seed": 42,
+      "arm": "control",
+      "spec": {
+        "plan_id": "0c2cf258ab3af75d89af",
+        "job": {
+          "recipe": {
+            "name": "yolo26n_seg",
+            "kind": "yolo",
+            "task": "segment",
+            "init": "yolo26n-seg.pt",
+            "size": 960,
+            "epochs": 30,
+            "batch": 12,
+            "lr": 0.001
+          },
+          "fold": 1,
+          "seed": 42,
+          "arm": "control"
+        },
+        "optimizer_steps": 1380,
+        "initializer_sha": "361fbfabab285c3237700b6bb91d7ecfa602cd945fffda8dbe1242829b71e73f"
+      },
+      "checkpoint": "/home/supawich/Desktop/Aggregate_Project/experiment/runs/nb16_full_cv/0c2cf258ab3af75d89af/yolo26n_seg_fold1_seed42_control/selected.pt",
+      "checkpoint_sha": "46e4c00517a0f28d2ead384a9cdf634a57116b58d32927b50cd92d02306216f0",
+      "optimizer_steps": 1380,
+      "selected_epoch": 18,
+      "threshold_source": "inner-valid",
+      "thresholds": {
+        "0": 0.3265209496021271,
+        "1": 0.14535343647003174
+      },
+      "box": {
+        "AP": 0.48024780563333624,
+        "AP50": 0.6734353376936184,
+        "AP75": 0.5321511119626292,
+        "AP_small": 6.592277515124516e-05,
+        "AP_medium": 0.19224397190274,
+        "AP_large": 0.66021512273868,
+        "AR1": 0.20499334620134038,
+        "AR10": 0.5555049693685485,
+        "AR100": 0.5592706597451176,
+        "AR_small": 0.0015723270440251575,
+        "AR_medium": 0.2886531535691199,
+        "AR_large": 0.7435570677389423,
+        "status": "canonical COCOeval",
+        "mode": "bbox",
+        "per_class": {
+          "gravel": 0.47542975883636523,
+          "sand": 0.48506585243030725
+        }
+      },
+      "mask": {
+        "AP": 0.3999775260966437,
+        "AP50": 0.6808786065146568,
+        "AP75": 0.40983000836532507,
+        "AP_small": 0.0001355544490952884,
+        "AP_medium": 0.18234107777449143,
+        "AP_large": 0.5282782825435198,
+        "AR1": 0.18778923043723247,
+        "AR10": 0.47640943640527017,
+        "AR100": 0.47853730323338634,
+        "AR_small": 0.003773584905660378,
+        "AR_medium": 0.2791508911256811,
+        "AR_large": 0.6136941952778637,
+        "status": "canonical COCOeval",
+        "mode": "segm",
+        "per_class": {
+          "gravel": 0.4704136557082623,
+          "sand": 0.32954139648502506
+        }
+      },
+      "postprocessing": null,
+      "predictions": "/home/supawich/Desktop/Aggregate_Project/experiment/results/nb16_full_cv/0c2cf258ab3af75d89af/yolo26n_seg_fold1_seed42_control_predictions.jsonl.gz",
+      "predictions_sha": "8ad941f0d344eb71857004329a7c1760e598a7bba937ebd7c50679ad7e72a072",
+      "seconds": 703.1383557599984,
+      "scope": "development grouped CV; one seed; not external event/site validation"
+    },
+    {
+      "status": "completed",
+      "name": "yolo26n_seg_fold1_seed42_offline_aug",
+      "model": "yolo26n_seg",
+      "fold": 1,
+      "seed": 42,
+      "arm": "offline_aug",
+      "spec": {
+        "plan_id": "0c2cf258ab3af75d89af",
+        "job": {
+          "recipe": {
+            "name": "yolo26n_seg",
+            "kind": "yolo",
+            "task": "segment",
+            "init": "yolo26n-seg.pt",
+            "size": 960,
+            "epochs": 30,
+            "batch": 12,
+            "lr": 0.001
+          },
+          "fold": 1,
+          "seed": 42,
+          "arm": "offline_aug"
+        },
+        "optimizer_steps": 1380,
+        "initializer_sha": "361fbfabab285c3237700b6bb91d7ecfa602cd945fffda8dbe1242829b71e73f"
+      },
+      "checkpoint": "/home/supawich/Desktop/Aggregate_Project/experiment/runs/nb16_full_cv/0c2cf258ab3af75d89af/yolo26n_seg_fold1_seed42_offline_aug/selected.pt",
+      "checkpoint_sha": "17dd87bfd7f22adbb0416ab422d871431cc66bd958629c6e085d0a6beef1670e",
+      "optimizer_steps": 1380,
+      "selected_epoch": 8,
+      "threshold_source": "inner-valid",
+      "thresholds": {
+        "0": 0.23648309707641602,
+        "1": 0.2926219403743744
+      },
+      "box": {
+        "AP": 0.4682893979008313,
+        "AP50": 0.6969884161084805,
+        "AP75": 0.5133776597205548,
+        "AP_small": 0.012798720739477992,
+        "AP_medium": 0.22171647091486604,
+        "AP_large": 0.6159874780797504,
+        "AR1": 0.20667927491577848,
+        "AR10": 0.5706371162076944,
+        "AR100": 0.621953639208258,
+        "AR_small": 0.15170709793351303,
+        "AR_medium": 0.463976359774679,
+        "AR_large": 0.7455882049695847,
+        "status": "canonical COCOeval",
+        "mode": "bbox",
+        "per_class": {
+          "gravel": 0.4877451325460013,
+          "sand": 0.44883366325566126
+        }
+      },
+      "mask": {
+        "AP": 0.45962959551224797,
+        "AP50": 0.7097694745418862,
+        "AP75": 0.5092224172069326,
+        "AP_small": 0.006820926291211618,
+        "AP_medium": 0.18508038442993863,
+        "AP_large": 0.5989074118304645,
+        "AR1": 0.20413884259869802,
+        "AR10": 0.5451364328445888,
+        "AR100": 0.5877047092110153,
+        "AR_small": 0.1251123090745732,
+        "AR_medium": 0.45251177394034536,
+        "AR_large": 0.6891885761418703,
+        "status": "canonical COCOeval",
+        "mode": "segm",
+        "per_class": {
+          "gravel": 0.5099964859759658,
+          "sand": 0.4092627050485301
+        }
+      },
+      "postprocessing": null,
+      "predictions": "/home/supawich/Desktop/Aggregate_Project/experiment/results/nb16_full_cv/0c2cf258ab3af75d89af/yolo26n_seg_fold1_seed42_offline_aug_predictions.jsonl.gz",
+      "predictions_sha": "729066f5c09cd2211c485237ad34bf9d653d53aacf806f0f175df04fde569ebe",
+      "seconds": 844.4183854839976,
+      "scope": "development grouped CV; one seed; not external event/site validation"
+    },
+    {
+      "status": "completed",
+      "name": "yolo26s_seg_fold1_seed42_control",
+      "model": "yolo26s_seg",
+      "fold": 1,
+      "seed": 42,
+      "arm": "control",
+      "spec": {
+        "plan_id": "0c2cf258ab3af75d89af",
+        "job": {
+          "recipe": {
+            "name": "yolo26s_seg",
+            "kind": "yolo",
+            "task": "segment",
+            "init": "yolo26s-seg.pt",
+            "size": 960,
+            "epochs": 30,
+            "batch": 6,
+            "lr": 0.001
+          },
+          "fold": 1,
+          "seed": 42,
+          "arm": "control"
+        },
+        "optimizer_steps": 2730,
+        "initializer_sha": "3da1d83e31caec96f9300eb4064f4f62882c133c7c264d63dfe61a7c197837a4"
+      },
+      "checkpoint": "/home/supawich/Desktop/Aggregate_Project/experiment/runs/nb16_full_cv/0c2cf258ab3af75d89af/yolo26s_seg_fold1_seed42_control/selected.pt",
+      "checkpoint_sha": "2f9ce250009cab05872c1967eed28d2b9c7f98d73b3a8c7ae75c669c299f0b09",
+      "optimizer_steps": 2730,
+      "selected_epoch": 27,
+      "threshold_source": "inner-valid",
+      "thresholds": {
+        "0": 0.12804868817329407,
+        "1": 0.05777811259031296
+      },
+      "box": {
+        "AP": 0.4126320510258216,
+        "AP50": 0.599112861102705,
+        "AP75": 0.4639341700012241,
+        "AP_small": 0.003391089108910891,
+        "AP_medium": 0.1471475722367093,
+        "AP_large": 0.5790625871926819,
+        "AR1": 0.19606122094208198,
+        "AR10": 0.4660471940151779,
+        "AR100": 0.4752520650753498,
+        "AR_small": 0.005345911949685535,
+        "AR_medium": 0.2028649921507064,
+        "AR_large": 0.6494288070935148,
+        "status": "canonical COCOeval",
+        "mode": "bbox",
+        "per_class": {
+          "gravel": 0.4151403095339822,
+          "sand": 0.410123792517661
+        }
+      },
+      "mask": {
+        "AP": 0.3812805662655356,
+        "AP50": 0.5903161651483853,
+        "AP75": 0.4179592606391199,
+        "AP_small": 0.0019183861663477273,
+        "AP_medium": 0.1304539294122669,
+        "AP_large": 0.5251711690973359,
+        "AR1": 0.19563711620769442,
+        "AR10": 0.42048186090563594,
+        "AR100": 0.43111939672225474,
+        "AR_small": 0.005974842767295598,
+        "AR_medium": 0.20763228368270387,
+        "AR_large": 0.5734745850087637,
+        "status": "canonical COCOeval",
+        "mode": "segm",
+        "per_class": {
+          "gravel": 0.41467824094442773,
+          "sand": 0.34788289158664343
+        }
+      },
+      "postprocessing": null,
+      "predictions": "/home/supawich/Desktop/Aggregate_Project/experiment/results/nb16_full_cv/0c2cf258ab3af75d89af/yolo26s_seg_fold1_seed42_control_predictions.jsonl.gz",
+      "predictions_sha": "65306957d8f8d9f6081f96d160ee871cd1f2b324ebb794bb08fa431ed26b6367",
+      "seconds": 964.4536900060011,
+      "scope": "development grouped CV; one seed; not external event/site validation"
+    },
+    {
+      "status": "completed",
+      "name": "yolo26s_seg_fold1_seed42_offline_aug",
+      "model": "yolo26s_seg",
+      "fold": 1,
+      "seed": 42,
+      "arm": "offline_aug",
+      "spec": {
+        "plan_id": "0c2cf258ab3af75d89af",
+        "job": {
+          "recipe": {
+            "name": "yolo26s_seg",
+            "kind": "yolo",
+            "task": "segment",
+            "init": "yolo26s-seg.pt",
+            "size": 960,
+            "epochs": 30,
+            "batch": 6,
+            "lr": 0.001
+          },
+          "fold": 1,
+          "seed": 42,
+          "arm": "offline_aug"
+        },
+        "optimizer_steps": 2730,
+        "initializer_sha": "3da1d83e31caec96f9300eb4064f4f62882c133c7c264d63dfe61a7c197837a4"
+      },
+      "checkpoint": "/home/supawich/Desktop/Aggregate_Project/experiment/runs/nb16_full_cv/0c2cf258ab3af75d89af/yolo26s_seg_fold1_seed42_offline_aug/selected.pt",
+      "checkpoint_sha": "43b4ae80e81e0a467750713a9cb06d14693753cf0206948fadd86f311a906ca0",
+      "optimizer_steps": 2730,
+      "selected_epoch": 28,
+      "threshold_source": "inner-valid",
+      "thresholds": {
+        "0": 0.12590789794921875,
+        "1": 0.35933494567871094
+      },
+      "box": {
+        "AP": 0.3975891690385424,
+        "AP50": 0.6075316525353269,
+        "AP75": 0.4140703018872101,
+        "AP_small": 0.00018811881188118815,
+        "AP_medium": 0.18271072173416839,
+        "AP_large": 0.5325276357046713,
+        "AR1": 0.18547164043111822,
+        "AR10": 0.5123822097804844,
+        "AR100": 0.5135641582045533,
+        "AR_small": 0.0015723270440251575,
+        "AR_medium": 0.2608666543540493,
+        "AR_large": 0.6813960202082688,
+        "status": "canonical COCOeval",
+        "mode": "bbox",
+        "per_class": {
+          "gravel": 0.4467339864386536,
+          "sand": 0.3484443516384313
+        }
+      },
+      "mask": {
+        "AP": 0.38812308992713684,
+        "AP50": 0.5984052547500769,
+        "AP75": 0.42435018212769776,
+        "AP_small": 0.0003247965038490021,
+        "AP_medium": 0.18450762047499583,
+        "AP_large": 0.5084943545934905,
+        "AR1": 0.19600262555298462,
+        "AR10": 0.47690742228243277,
+        "AR100": 0.47819682056323504,
+        "AR_small": 0.00408805031446541,
+        "AR_medium": 0.2896043032597654,
+        "AR_large": 0.6049056603773586,
+        "status": "canonical COCOeval",
+        "mode": "segm",
+        "per_class": {
+          "gravel": 0.45725419793242483,
+          "sand": 0.3189919819218489
+        }
+      },
+      "postprocessing": null,
+      "predictions": "/home/supawich/Desktop/Aggregate_Project/experiment/results/nb16_full_cv/0c2cf258ab3af75d89af/yolo26s_seg_fold1_seed42_offline_aug_predictions.jsonl.gz",
+      "predictions_sha": "4eff675243f2f531aeda1b663ffaa872cfc0d260a1844251d51bdbffbb3b501e",
+      "seconds": 1037.0540304580027,
+      "scope": "development grouped CV; one seed; not external event/site validation"
+    },
+    {
+      "status": "completed",
+      "name": "unet_ws_fold1_seed42_control",
+      "model": "unet_ws",
+      "fold": 1,
+      "seed": 42,
+      "arm": "control",
+      "spec": {
+        "plan_id": "0c2cf258ab3af75d89af",
+        "job": {
+          "recipe": {
+            "name": "unet_ws",
+            "kind": "unet",
+            "task": "segment",
+            "init": "random",
+            "size": 512,
+            "epochs": 30,
+            "batch": 14,
+            "lr": 0.001
+          },
+          "fold": 1,
+          "seed": 42,
+          "arm": "control"
+        },
+        "optimizer_steps": 1170,
+        "initializer_sha": "random"
+      },
+      "checkpoint": "/home/supawich/Desktop/Aggregate_Project/experiment/runs/nb16_full_cv/0c2cf258ab3af75d89af/unet_ws_fold1_seed42_control/selected.pt",
+      "checkpoint_sha": "66f8585ee49ed0257418ddf1bfbd616906d6a31dc0a964c6071a3fcf55926bdf",
+      "optimizer_steps": 1170,
+      "selected_epoch": 26,
+      "threshold_source": "inner-valid",
+      "thresholds": {
+        "0": 0.9520618915557861,
+        "1": 0.9928444027900696
+      },
+      "box": {
+        "AP": 0.030244355734574083,
+        "AP50": 0.09379447045561597,
+        "AP75": 0.012898059859914442,
+        "AP_small": 0.00012496620155849064,
+        "AP_medium": 0.0044437537853329,
+        "AP_large": 0.06720499106400464,
+        "AR1": 0.04047083118533527,
+        "AR10": 0.17683848653055353,
+        "AR100": 0.17876284303029574,
+        "AR_small": 0.02057502246181491,
+        "AR_medium": 0.13137639671253118,
+        "AR_large": 0.21518507062583772,
+        "status": "canonical COCOeval",
+        "mode": "bbox",
+        "per_class": {
+          "gravel": 0.04633386002892006,
+          "sand": 0.014154851440228098
+        }
+      },
+      "mask": {
+        "AP": 0.03143245730674248,
+        "AP50": 0.09697153206597035,
+        "AP75": 0.015060153895846825,
+        "AP_small": 0.0001287991146561012,
+        "AP_medium": 0.00452129607828976,
+        "AP_large": 0.079690550928778,
+        "AR1": 0.04147939120739471,
+        "AR10": 0.18236878229490114,
+        "AR100": 0.18461548836484395,
+        "AR_small": 0.009119496855345913,
+        "AR_medium": 0.12228045064179519,
+        "AR_large": 0.22781833178678212,
+        "status": "canonical COCOeval",
+        "mode": "segm",
+        "per_class": {
+          "gravel": 0.04030382531680362,
+          "sand": 0.02256108929668136
+        }
+      },
+      "postprocessing": {
+        "fg": 0.5,
+        "spacing": 9,
+        "min_area": 25,
+        "method": "watershed"
+      },
+      "predictions": "/home/supawich/Desktop/Aggregate_Project/experiment/results/nb16_full_cv/0c2cf258ab3af75d89af/unet_ws_fold1_seed42_control_predictions.jsonl.gz",
+      "predictions_sha": "0f61ebf1a53e47da67c922f54997b3f8e2de2c82abae4c0f3ca4c451099e9310",
+      "seconds": 1069.3005674759988,
+      "scope": "development grouped CV; one seed; not external event/site validation"
+    },
+    {
+      "status": "completed",
+      "name": "unet_ws_fold1_seed42_offline_aug",
+      "model": "unet_ws",
+      "fold": 1,
+      "seed": 42,
+      "arm": "offline_aug",
+      "spec": {
+        "plan_id": "0c2cf258ab3af75d89af",
+        "job": {
+          "recipe": {
+            "name": "unet_ws",
+            "kind": "unet",
+            "task": "segment",
+            "init": "random",
+            "size": 512,
+            "epochs": 30,
+            "batch": 14,
+            "lr": 0.001
+          },
+          "fold": 1,
+          "seed": 42,
+          "arm": "offline_aug"
+        },
+        "optimizer_steps": 1170,
+        "initializer_sha": "random"
+      },
+      "checkpoint": "/home/supawich/Desktop/Aggregate_Project/experiment/runs/nb16_full_cv/0c2cf258ab3af75d89af/unet_ws_fold1_seed42_offline_aug/selected.pt",
+      "checkpoint_sha": "d855c5d6e35a2f716d65751408b816c7942285500615b1d29189244558c6a753",
+      "optimizer_steps": 1170,
+      "selected_epoch": 20,
+      "threshold_source": "inner-valid",
+      "thresholds": {
+        "0": 0.9099506139755249,
+        "1": 0.9646792411804199
+      },
+      "box": {
+        "AP": 0.03188775131879567,
+        "AP50": 0.07418955446358172,
+        "AP75": 0.025692867988437167,
+        "AP_small": 6.52239136957174e-07,
+        "AP_medium": 0.01013855072451932,
+        "AP_large": 0.10629223558639116,
+        "AR1": 0.05760825910251645,
+        "AR10": 0.2204919015477575,
+        "AR100": 0.23471619450671977,
+        "AR_small": 0.0003144654088050315,
+        "AR_medium": 0.14960984393757504,
+        "AR_large": 0.29479224662336323,
+        "status": "canonical COCOeval",
+        "mode": "bbox",
+        "per_class": {
+          "gravel": 0.03411143206812728,
+          "sand": 0.029664070569464067
+        }
+      },
+      "mask": {
+        "AP": 0.03167194181334968,
+        "AP50": 0.08256522213123751,
+        "AP75": 0.024535385877957352,
+        "AP_small": 0.0,
+        "AP_medium": 0.00957277465447568,
+        "AP_large": 0.12743576363765594,
+        "AR1": 0.05616825118989103,
+        "AR10": 0.2096229813813526,
+        "AR100": 0.2246425831125391,
+        "AR_small": 0.0,
+        "AR_medium": 0.14110952073136945,
+        "AR_large": 0.2850108258583359,
+        "status": "canonical COCOeval",
+        "mode": "segm",
+        "per_class": {
+          "gravel": 0.030720793035868256,
+          "sand": 0.032623090590831114
+        }
+      },
+      "postprocessing": {
+        "fg": 0.5,
+        "spacing": 9,
+        "min_area": 25,
+        "method": "watershed"
+      },
+      "predictions": "/home/supawich/Desktop/Aggregate_Project/experiment/results/nb16_full_cv/0c2cf258ab3af75d89af/unet_ws_fold1_seed42_offline_aug_predictions.jsonl.gz",
+      "predictions_sha": "946e6c37bd925dd510890f5d591294833e4d02fc8b812b60966de5274b022c25",
+      "seconds": 1466.4874622589996,
+      "scope": "development grouped CV; one seed; not external event/site validation"
+    },
+    {
+      "status": "completed",
+      "name": "yolo26n_det_fold1_seed42_control",
+      "model": "yolo26n_det",
+      "fold": 1,
+      "seed": 42,
+      "arm": "control",
+      "spec": {
+        "plan_id": "0c2cf258ab3af75d89af",
+        "job": {
+          "recipe": {
+            "name": "yolo26n_det",
+            "kind": "yolo",
+            "task": "detect",
+            "init": "yolo26n.pt",
+            "size": 960,
+            "epochs": 30,
+            "batch": 10,
+            "lr": 0.001
+          },
+          "fold": 1,
+          "seed": 42,
+          "arm": "control"
+        },
+        "optimizer_steps": 1650,
+        "initializer_sha": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef"
+      },
+      "checkpoint": "/home/supawich/Desktop/Aggregate_Project/experiment/runs/nb16_full_cv/0c2cf258ab3af75d89af/yolo26n_det_fold1_seed42_control/selected.pt",
+      "checkpoint_sha": "f1f1e9c6c54da0de4c28ab82e4b9aba9d4120b0521da105d718bfb776f7562d6",
+      "optimizer_steps": 1650,
+      "selected_epoch": 18,
+      "threshold_source": "inner-valid",
+      "thresholds": {
+        "0": 0.051605064421892166,
+        "1": 0.06897653639316559
+      },
+      "box": {
+        "AP": 0.41451346017785057,
+        "AP50": 0.626491659131308,
+        "AP75": 0.4574399833159152,
+        "AP_small": 0.001863444505749373,
+        "AP_medium": 0.16661589532722312,
+        "AP_large": 0.5609176040426651,
+        "AR1": 0.19231741017371812,
+        "AR10": 0.5268356391842802,
+        "AR100": 0.5269072724221026,
+        "AR_small": 0.025606469002695413,
+        "AR_medium": 0.3202604118570505,
+        "AR_large": 0.6755449015362409,
+        "status": "canonical COCOeval",
+        "mode": "bbox",
+        "per_class": {
+          "gravel": 0.3361136512848911,
+          "sand": 0.49291326907081
+        }
+      },
+      "mask": {},
+      "postprocessing": null,
+      "predictions": "/home/supawich/Desktop/Aggregate_Project/experiment/results/nb16_full_cv/0c2cf258ab3af75d89af/yolo26n_det_fold1_seed42_control_predictions.jsonl.gz",
+      "predictions_sha": "dc0dcb664f9085cedf2d5a0f410a6962ed86232e11bbcf1ef91b0c2fc6103531",
+      "seconds": 310.0881271149992,
+      "scope": "development grouped CV; one seed; not external event/site validation"
+    },
+    {
+      "status": "completed",
+      "name": "yolo26n_det_fold1_seed42_offline_aug",
+      "model": "yolo26n_det",
+      "fold": 1,
+      "seed": 42,
+      "arm": "offline_aug",
+      "spec": {
+        "plan_id": "0c2cf258ab3af75d89af",
+        "job": {
+          "recipe": {
+            "name": "yolo26n_det",
+            "kind": "yolo",
+            "task": "detect",
+            "init": "yolo26n.pt",
+            "size": 960,
+            "epochs": 30,
+            "batch": 10,
+            "lr": 0.001
+          },
+          "fold": 1,
+          "seed": 42,
+          "arm": "offline_aug"
+        },
+        "optimizer_steps": 1650,
+        "initializer_sha": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef"
+      },
+      "checkpoint": "/home/supawich/Desktop/Aggregate_Project/experiment/runs/nb16_full_cv/0c2cf258ab3af75d89af/yolo26n_det_fold1_seed42_offline_aug/selected.pt",
+      "checkpoint_sha": "7d21a9629a604ceeb5889d8140d7f2d2775b895bfc4287082abc100e84f0ac4b",
+      "optimizer_steps": 1650,
+      "selected_epoch": 22,
+      "threshold_source": "inner-valid",
+      "thresholds": {
+        "0": 0.17030221223831177,
+        "1": 0.05497795715928078
+      },
+      "box": {
+        "AP": 0.4623068657732525,
+        "AP50": 0.6625011791014064,
+        "AP75": 0.5101735947328822,
+        "AP_small": 0.004811110289281705,
+        "AP_medium": 0.1571452057490722,
+        "AP_large": 0.6452162152756928,
+        "AR1": 0.20868575487645513,
+        "AR10": 0.5357171116519404,
+        "AR100": 0.5371815467983839,
+        "AR_small": 0.01666666666666667,
+        "AR_medium": 0.24022532089758974,
+        "AR_large": 0.7279575213939582,
+        "status": "canonical COCOeval",
+        "mode": "bbox",
+        "per_class": {
+          "gravel": 0.4629807697640416,
+          "sand": 0.46163296178246327
+        }
+      },
+      "mask": {},
+      "postprocessing": null,
+      "predictions": "/home/supawich/Desktop/Aggregate_Project/experiment/results/nb16_full_cv/0c2cf258ab3af75d89af/yolo26n_det_fold1_seed42_offline_aug_predictions.jsonl.gz",
+      "predictions_sha": "d4152e61b26dc6f725e22064e33c9af50a5af1dbf9334d4a3d428df83ea7c921",
+      "seconds": 384.06057803899967,
+      "scope": "development grouped CV; one seed; not external event/site validation"
+    },
+    {
+      "status": "completed",
+      "name": "yolo26s_det_fold1_seed42_offline_aug",
+      "model": "yolo26s_det",
+      "fold": 1,
+      "seed": 42,
+      "arm": "offline_aug",
+      "spec": {
+        "plan_id": "0c2cf258ab3af75d89af",
+        "job": {
+          "recipe": {
+            "name": "yolo26s_det",
+            "kind": "yolo",
+            "task": "detect",
+            "init": "yolo26s.pt",
+            "size": 960,
+            "epochs": 30,
+            "batch": 5,
+            "lr": 0.001
+          },
+          "fold": 1,
+          "seed": 42,
+          "arm": "offline_aug"
+        },
+        "optimizer_steps": 3270,
+        "initializer_sha": "646f8bc3fe0a656803d95c294f7852321748cb29d13466a1af8862e2db384a1b"
+      },
+      "checkpoint": "/home/supawich/Desktop/Aggregate_Project/experiment/runs/nb16_full_cv/0c2cf258ab3af75d89af/yolo26s_det_fold1_seed42_offline_aug/selected.pt",
+      "checkpoint_sha": "fc3013d4a8c4ef19022deaf857e744bcfc36e3768f9c729b74361b63d955ceb8",
+      "optimizer_steps": 3270,
+      "selected_epoch": 23,
+      "threshold_source": "inner-valid",
+      "thresholds": {
+        "0": 0.6775853633880615,
+        "1": 0.14285708963871002
+      },
+      "box": {
+        "AP": 0.27401234252815465,
+        "AP50": 0.4991234423157977,
+        "AP75": 0.2847975825183314,
+        "AP_small": 0.0,
+        "AP_medium": 0.16962552233265057,
+        "AP_large": 0.36287420374963153,
+        "AR1": 0.14709360875663882,
+        "AR10": 0.3665812962319118,
+        "AR100": 0.37049999400558675,
+        "AR_small": 0.0,
+        "AR_medium": 0.2247622125773386,
+        "AR_large": 0.47307351273327136,
+        "status": "canonical COCOeval",
+        "mode": "bbox",
+        "per_class": {
+          "gravel": 0.340000047864368,
+          "sand": 0.2080246371919412
+        }
+      },
+      "mask": {},
+      "postprocessing": null,
+      "predictions": "/home/supawich/Desktop/Aggregate_Project/experiment/results/nb16_full_cv/0c2cf258ab3af75d89af/yolo26s_det_fold1_seed42_offline_aug_predictions.jsonl.gz",
+      "predictions_sha": "07f0b0ce6733bc8e8814afd8b34071ba566886aa37c87544b8da3ebe942576a3",
+      "seconds": 582.7927143369998,
+      "scope": "development grouped CV; one seed; not external event/site validation"
+    },
+    {
+      "status": "completed",
+      "name": "yolo26n_seg_fold2_seed42_control",
+      "model": "yolo26n_seg",
+      "fold": 2,
+      "seed": 42,
+      "arm": "control",
+      "spec": {
+        "plan_id": "0c2cf258ab3af75d89af",
+        "job": {
+          "recipe": {
+            "name": "yolo26n_seg",
+            "kind": "yolo",
+            "task": "segment",
+            "init": "yolo26n-seg.pt",
+            "size": 960,
+            "epochs": 30,
+            "batch": 12,
+            "lr": 0.001
+          },
+          "fold": 2,
+          "seed": 42,
+          "arm": "control"
+        },
+        "optimizer_steps": 1830,
+        "initializer_sha": "361fbfabab285c3237700b6bb91d7ecfa602cd945fffda8dbe1242829b71e73f"
+      },
+      "checkpoint": "/home/supawich/Desktop/Aggregate_Project/experiment/runs/nb16_full_cv/0c2cf258ab3af75d89af/yolo26n_seg_fold2_seed42_control/selected.pt",
+      "checkpoint_sha": "5edeeaeafc570010003431be812ceca337583637207363910de93c77eebb974f",
+      "optimizer_steps": 1830,
+      "selected_epoch": 15,
+      "threshold_source": "inner-valid",
+      "thresholds": {
+        "0": 0.4564436078071594,
+        "1": 0.6103160977363586
+      },
+      "box": {
+        "AP": 0.2815032851567756,
+        "AP50": 0.42893570445467116,
+        "AP75": 0.30695362066513016,
+        "AP_small": 0.010396039603960393,
+        "AP_medium": 0.18753941237540112,
+        "AP_large": 0.44771232431010566,
+        "AR1": 0.14039141872278665,
+        "AR10": 0.3619806785195936,
+        "AR100": 0.3647451015965167,
+        "AR_small": 0.007142857142857143,
+        "AR_medium": 0.2538518092315561,
+        "AR_large": 0.5797014111804252,
+        "status": "canonical COCOeval",
+        "mode": "bbox",
+        "per_class": {
+          "gravel": 0.5032792535260598,
+          "sand": 0.059727316787491436
+        }
+      },
+      "mask": {
+        "AP": 0.28762693994344424,
+        "AP50": 0.4242449941967494,
+        "AP75": 0.31281150478000763,
+        "AP_small": 0.010576057605760573,
+        "AP_medium": 0.18586502814591838,
+        "AP_large": 0.4530015270796925,
+        "AR1": 0.14819484760522494,
+        "AR10": 0.35269412191582,
+        "AR100": 0.3550979680696661,
+        "AR_small": 0.00816326530612245,
+        "AR_medium": 0.25150875847078374,
+        "AR_large": 0.5542607958330811,
+        "status": "canonical COCOeval",
+        "mode": "segm",
+        "per_class": {
+          "gravel": 0.519112981317685,
+          "sand": 0.056140898569203394
+        }
+      },
+      "postprocessing": null,
+      "predictions": "/home/supawich/Desktop/Aggregate_Project/experiment/results/nb16_full_cv/0c2cf258ab3af75d89af/yolo26n_seg_fold2_seed42_control_predictions.jsonl.gz",
+      "predictions_sha": "47fd06e593decebbe602fc81bceb96955448c157228bd0220192f770bc10bbf2",
+      "seconds": 853.1442330900027,
+      "scope": "development grouped CV; one seed; not external event/site validation"
+    },
+    {
+      "status": "completed",
+      "name": "yolo26n_seg_fold2_seed42_offline_aug",
+      "model": "yolo26n_seg",
+      "fold": 2,
+      "seed": 42,
+      "arm": "offline_aug",
+      "spec": {
+        "plan_id": "0c2cf258ab3af75d89af",
+        "job": {
+          "recipe": {
+            "name": "yolo26n_seg",
+            "kind": "yolo",
+            "task": "segment",
+            "init": "yolo26n-seg.pt",
+            "size": 960,
+            "epochs": 30,
+            "batch": 12,
+            "lr": 0.001
+          },
+          "fold": 2,
+          "seed": 42,
+          "arm": "offline_aug"
+        },
+        "optimizer_steps": 1830,
+        "initializer_sha": "361fbfabab285c3237700b6bb91d7ecfa602cd945fffda8dbe1242829b71e73f"
+      },
+      "checkpoint": "/home/supawich/Desktop/Aggregate_Project/experiment/runs/nb16_full_cv/0c2cf258ab3af75d89af/yolo26n_seg_fold2_seed42_offline_aug/selected.pt",
+      "checkpoint_sha": "040c3b83d8f243f8885eac3b6ffa3be2f09694af0fc90cfa33fa3115748b4835",
+      "optimizer_steps": 1830,
+      "selected_epoch": 13,
+      "threshold_source": "inner-valid",
+      "thresholds": {
+        "0": 0.4561702013015747,
+        "1": 0.44265061616897583
+      },
+      "box": {
+        "AP": 0.2912246027288802,
+        "AP50": 0.4401158728328699,
+        "AP75": 0.33335048352201774,
+        "AP_small": 0.01741237644806081,
+        "AP_medium": 0.20575678409325304,
+        "AP_large": 0.4929317539887637,
+        "AR1": 0.13740702104499275,
+        "AR10": 0.39127131712626995,
+        "AR100": 0.4077421988388969,
+        "AR_small": 0.04591836734693877,
+        "AR_medium": 0.3297436389208542,
+        "AR_large": 0.605992974380716,
+        "status": "canonical COCOeval",
+        "mode": "bbox",
+        "per_class": {
+          "gravel": 0.5150360939703577,
+          "sand": 0.06741311148740275
+        }
+      },
+      "mask": {
+        "AP": 0.3144488574536952,
+        "AP50": 0.4464733566436555,
+        "AP75": 0.3539940733071243,
+        "AP_small": 0.007795320979105172,
+        "AP_medium": 0.20974692123249808,
+        "AP_large": 0.5548566475377084,
+        "AR1": 0.1525149673439768,
+        "AR10": 0.40834996371552973,
+        "AR100": 0.42330370101596515,
+        "AR_small": 0.03265306122448979,
+        "AR_medium": 0.3296829049993607,
+        "AR_large": 0.6429138150324027,
+        "status": "canonical COCOeval",
+        "mode": "segm",
+        "per_class": {
+          "gravel": 0.5525480926430021,
+          "sand": 0.07634962226438842
+        }
+      },
+      "postprocessing": null,
+      "predictions": "/home/supawich/Desktop/Aggregate_Project/experiment/results/nb16_full_cv/0c2cf258ab3af75d89af/yolo26n_seg_fold2_seed42_offline_aug_predictions.jsonl.gz",
+      "predictions_sha": "d2f95da230ab5818bb1541fd774e76cd520644d7bfe1b46b756d6a291668a3a5",
+      "seconds": 1007.4211430659998,
+      "scope": "development grouped CV; one seed; not external event/site validation"
+    },
+    {
+      "status": "completed",
+      "name": "yolo26s_seg_fold2_seed42_control",
+      "model": "yolo26s_seg",
+      "fold": 2,
+      "seed": 42,
+      "arm": "control",
+      "spec": {
+        "plan_id": "0c2cf258ab3af75d89af",
+        "job": {
+          "recipe": {
+            "name": "yolo26s_seg",
+            "kind": "yolo",
+            "task": "segment",
+            "init": "yolo26s-seg.pt",
+            "size": 960,
+            "epochs": 30,
+            "batch": 6,
+            "lr": 0.001
+          },
+          "fold": 2,
+          "seed": 42,
+          "arm": "control"
+        },
+        "optimizer_steps": 3660,
+        "initializer_sha": "3da1d83e31caec96f9300eb4064f4f62882c133c7c264d63dfe61a7c197837a4"
+      },
+      "checkpoint": "/home/supawich/Desktop/Aggregate_Project/experiment/runs/nb16_full_cv/0c2cf258ab3af75d89af/yolo26s_seg_fold2_seed42_control/selected.pt",
+      "checkpoint_sha": "07bbf4fdd51787b1ca0c292796803b79f6cd01d9521b2a2de9f9d8de6e803998",
+      "optimizer_steps": 3660,
+      "selected_epoch": 8,
+      "threshold_source": "inner-valid",
+      "thresholds": {
+        "0": 0.43925872445106506,
+        "1": 0.38954317569732666
+      },
+      "box": {
+        "AP": 0.2258740555594912,
+        "AP50": 0.3789669606843996,
+        "AP75": 0.22780431947163127,
+        "AP_small": 0.008462053342285617,
+        "AP_medium": 0.13214865543340434,
+        "AP_large": 0.3737475344181165,
+        "AR1": 0.14355270319303334,
+        "AR10": 0.295323838896952,
+        "AR100": 0.31311230043541366,
+        "AR_small": 0.03559423769507803,
+        "AR_medium": 0.22848101265822787,
+        "AR_large": 0.4714947610683787,
+        "status": "canonical COCOeval",
+        "mode": "bbox",
+        "per_class": {
+          "gravel": 0.40046611794786885,
+          "sand": 0.05128199317111348
+        }
+      },
+      "mask": {
+        "AP": 0.23651993342171426,
+        "AP50": 0.3632377429665351,
+        "AP75": 0.2457166705173312,
+        "AP_small": 0.010705058894050209,
+        "AP_medium": 0.13301983045167146,
+        "AP_large": 0.3788438421186381,
+        "AR1": 0.14557783018867926,
+        "AR10": 0.28442489114658925,
+        "AR100": 0.30293450653120463,
+        "AR_small": 0.04636854741896759,
+        "AR_medium": 0.22025316455696203,
+        "AR_large": 0.4408333838047363,
+        "status": "canonical COCOeval",
+        "mode": "segm",
+        "per_class": {
+          "gravel": 0.4425610771953436,
+          "sand": 0.030478789648084904
+        }
+      },
+      "postprocessing": null,
+      "predictions": "/home/supawich/Desktop/Aggregate_Project/experiment/results/nb16_full_cv/0c2cf258ab3af75d89af/yolo26s_seg_fold2_seed42_control_predictions.jsonl.gz",
+      "predictions_sha": "ea24cd4ea3d9bfaacbdf39d3381eeabe85d5e32aa38d1ec549c6b1922511b169",
+      "seconds": 1265.0255092429943,
+      "scope": "development grouped CV; one seed; not external event/site validation"
+    },
+    {
+      "status": "completed",
+      "name": "yolo26s_seg_fold2_seed42_offline_aug",
+      "model": "yolo26s_seg",
+      "fold": 2,
+      "seed": 42,
+      "arm": "offline_aug",
+      "spec": {
+        "plan_id": "0c2cf258ab3af75d89af",
+        "job": {
+          "recipe": {
+            "name": "yolo26s_seg",
+            "kind": "yolo",
+            "task": "segment",
+            "init": "yolo26s-seg.pt",
+            "size": 960,
+            "epochs": 30,
+            "batch": 6,
+            "lr": 0.001
+          },
+          "fold": 2,
+          "seed": 42,
+          "arm": "offline_aug"
+        },
+        "optimizer_steps": 3660,
+        "initializer_sha": "3da1d83e31caec96f9300eb4064f4f62882c133c7c264d63dfe61a7c197837a4"
+      },
+      "checkpoint": "/home/supawich/Desktop/Aggregate_Project/experiment/runs/nb16_full_cv/0c2cf258ab3af75d89af/yolo26s_seg_fold2_seed42_offline_aug/selected.pt",
+      "checkpoint_sha": "eb7eb782d30c61a65118ed9249c838c25f09d726ec38af07b4f00317f6019a9e",
+      "optimizer_steps": 3660,
+      "selected_epoch": 11,
+      "threshold_source": "inner-valid",
+      "thresholds": {
+        "0": 0.6325216293334961,
+        "1": 0.23505856096744537
+      },
+      "box": {
+        "AP": 0.2415900737005213,
+        "AP50": 0.3768788001425344,
+        "AP75": 0.2570641845683621,
+        "AP_small": 0.01503164424159222,
+        "AP_medium": 0.23097952913602007,
+        "AP_large": 0.30507250726140034,
+        "AR1": 0.11284243468795356,
+        "AR10": 0.28875408200290276,
+        "AR100": 0.29704735123367204,
+        "AR_small": 0.05306122448979591,
+        "AR_medium": 0.29447960618846697,
+        "AR_large": 0.355880927866271,
+        "status": "canonical COCOeval",
+        "mode": "bbox",
+        "per_class": {
+          "gravel": 0.48148768264765485,
+          "sand": 0.0016924647533877813
+        }
+      },
+      "mask": {
+        "AP": 0.27072734752075883,
+        "AP50": 0.3831242852972001,
+        "AP75": 0.3162964730098198,
+        "AP_small": 0.010801117580690512,
+        "AP_medium": 0.23199698562878934,
+        "AP_large": 0.35503288286501944,
+        "AR1": 0.12487527213352687,
+        "AR10": 0.30847922714078374,
+        "AR100": 0.3138878809869376,
+        "AR_small": 0.04183673469387755,
+        "AR_medium": 0.3017580872011252,
+        "AR_large": 0.3860396099569984,
+        "status": "canonical COCOeval",
+        "mode": "segm",
+        "per_class": {
+          "gravel": 0.5408107884849636,
+          "sand": 0.000643906556554273
+        }
+      },
+      "postprocessing": null,
+      "predictions": "/home/supawich/Desktop/Aggregate_Project/experiment/results/nb16_full_cv/0c2cf258ab3af75d89af/yolo26s_seg_fold2_seed42_offline_aug_predictions.jsonl.gz",
+      "predictions_sha": "53e2a7ef7d70a56cb62f8364126e4090e54a35c3c43fe8173bef70192454f736",
+      "seconds": 1313.4763503180002,
+      "scope": "development grouped CV; one seed; not external event/site validation"
+    },
+    {
+      "status": "completed",
+      "name": "unet_ws_fold2_seed42_control",
+      "model": "unet_ws",
+      "fold": 2,
+      "seed": 42,
+      "arm": "control",
+      "spec": {
+        "plan_id": "0c2cf258ab3af75d89af",
+        "job": {
+          "recipe": {
+            "name": "unet_ws",
+            "kind": "unet",
+            "task": "segment",
+            "init": "random",
+            "size": 512,
+            "epochs": 30,
+            "batch": 14,
+            "lr": 0.001
+          },
+          "fold": 2,
+          "seed": 42,
+          "arm": "control"
+        },
+        "optimizer_steps": 1560,
+        "initializer_sha": "random"
+      },
+      "checkpoint": "/home/supawich/Desktop/Aggregate_Project/experiment/runs/nb16_full_cv/0c2cf258ab3af75d89af/unet_ws_fold2_seed42_control/selected.pt",
+      "checkpoint_sha": "f26b9c1c43187ded8bfee533ebe6c4a8bfdd2f55408ad0a775e1a491c5466b83",
+      "optimizer_steps": 1560,
+      "selected_epoch": 23,
+      "threshold_source": "inner-valid",
+      "thresholds": {
+        "0": 0.8546199798583984,
+        "1": 0.91944420337677
+      },
+      "box": {
+        "AP": 0.0031259080419209257,
+        "AP50": 0.008325525261869773,
+        "AP75": 0.0024756013526841827,
+        "AP_small": 0.0,
+        "AP_medium": 0.00023000988543924106,
+        "AP_large": 0.013275272641043896,
+        "AR1": 0.004206730769230769,
+        "AR10": 0.04094475689404935,
+        "AR100": 0.042831549346879536,
+        "AR_small": 0.0,
+        "AR_medium": 0.012773302646720368,
+        "AR_large": 0.07611592271818787,
+        "status": "canonical COCOeval",
+        "mode": "bbox",
+        "per_class": {
+          "gravel": 0.006146316002466793,
+          "sand": 0.00010550008137505695
+        }
+      },
+      "mask": {
+        "AP": 0.0029574158645322237,
+        "AP50": 0.007594929344113742,
+        "AP75": 0.0024520275667341595,
+        "AP_small": 0.0,
+        "AP_medium": 0.00012426268877442523,
+        "AP_large": 0.015124011453249793,
+        "AR1": 0.003966346153846154,
+        "AR10": 0.037121280841799706,
+        "AR100": 0.03830052612481858,
+        "AR_small": 0.0,
+        "AR_medium": 0.007904999360695563,
+        "AR_large": 0.07047422930167768,
+        "status": "canonical COCOeval",
+        "mode": "segm",
+        "per_class": {
+          "gravel": 0.0058669601953251615,
+          "sand": 4.787153373928637e-05
+        }
+      },
+      "postprocessing": {
+        "fg": 0.5,
+        "spacing": 9,
+        "min_area": 25,
+        "method": "watershed"
+      },
+      "predictions": "/home/supawich/Desktop/Aggregate_Project/experiment/results/nb16_full_cv/0c2cf258ab3af75d89af/unet_ws_fold2_seed42_control_predictions.jsonl.gz",
+      "predictions_sha": "ad0fe48402dfbc8ab901de798b23cdbb687282f0b0b14f6dec258a1d08e69568",
+      "seconds": 1352.9550869680024,
+      "scope": "development grouped CV; one seed; not external event/site validation"
+    },
+    {
+      "status": "completed",
+      "name": "unet_ws_fold2_seed42_offline_aug",
+      "model": "unet_ws",
+      "fold": 2,
+      "seed": 42,
+      "arm": "offline_aug",
+      "spec": {
+        "plan_id": "0c2cf258ab3af75d89af",
+        "job": {
+          "recipe": {
+            "name": "unet_ws",
+            "kind": "unet",
+            "task": "segment",
+            "init": "random",
+            "size": 512,
+            "epochs": 30,
+            "batch": 14,
+            "lr": 0.001
+          },
+          "fold": 2,
+          "seed": 42,
+          "arm": "offline_aug"
+        },
+        "optimizer_steps": 1560,
+        "initializer_sha": "random"
+      },
+      "checkpoint": "/home/supawich/Desktop/Aggregate_Project/experiment/runs/nb16_full_cv/0c2cf258ab3af75d89af/unet_ws_fold2_seed42_offline_aug/selected.pt",
+      "checkpoint_sha": "8e1dfd5d19f9f7f6ff417564b9a3e9105d98bb772e800d8fe4aa7e69482433ec",
+      "optimizer_steps": 1560,
+      "selected_epoch": 12,
+      "threshold_source": "inner-valid",
+      "thresholds": {
+        "0": 0.9315986633300781,
+        "1": 0.9012194871902466
+      },
+      "box": {
+        "AP": 0.002202137355792337,
+        "AP50": 0.010948507885770009,
+        "AP75": 7.3998431233257855e-06,
+        "AP_small": 0.0,
+        "AP_medium": 0.00020277997863089972,
+        "AP_large": 0.009376596998433124,
+        "AR1": 0.000841346153846154,
+        "AR10": 0.02927249637155297,
+        "AR100": 0.031422351233671986,
+        "AR_small": 0.0,
+        "AR_medium": 0.010113796189745557,
+        "AR_large": 0.05483919811035067,
+        "status": "canonical COCOeval",
+        "mode": "bbox",
+        "per_class": {
+          "gravel": 0.004272093206077373,
+          "sand": 0.00013218150550730164
+        }
+      },
+      "mask": {
+        "AP": 0.0018279223615371393,
+        "AP50": 0.008908764306701655,
+        "AP75": 2.9599372493303142e-05,
+        "AP_small": 0.0,
+        "AP_medium": 0.00015596936910322143,
+        "AP_large": 0.007859156812612842,
+        "AR1": 0.0006009615384615385,
+        "AR10": 0.027140783744557327,
+        "AR100": 0.028578555878084184,
+        "AR_small": 0.0,
+        "AR_medium": 0.008221455056898096,
+        "AR_large": 0.050393676942644294,
+        "status": "canonical COCOeval",
+        "mode": "segm",
+        "per_class": {
+          "gravel": 0.003614927710024659,
+          "sand": 4.0917013049619566e-05
+        }
+      },
+      "postprocessing": {
+        "fg": 0.5,
+        "spacing": 9,
+        "min_area": 25,
+        "method": "watershed"
+      },
+      "predictions": "/home/supawich/Desktop/Aggregate_Project/experiment/results/nb16_full_cv/0c2cf258ab3af75d89af/unet_ws_fold2_seed42_offline_aug_predictions.jsonl.gz",
+      "predictions_sha": "645c09ccd4b79110325898e9211b6c87aca21ca4c89b4956f007478b6ee5a6ca",
+      "seconds": 1354.6925732269956,
+      "scope": "development grouped CV; one seed; not external event/site validation"
+    },
+    {
+      "status": "completed",
+      "name": "yolo26s_det_fold2_seed42_offline_aug",
+      "model": "yolo26s_det",
+      "fold": 2,
+      "seed": 42,
+      "arm": "offline_aug",
+      "spec": {
+        "plan_id": "0c2cf258ab3af75d89af",
+        "job": {
+          "recipe": {
+            "name": "yolo26s_det",
+            "kind": "yolo",
+            "task": "detect",
+            "init": "yolo26s.pt",
+            "size": 960,
+            "epochs": 30,
+            "batch": 5,
+            "lr": 0.001
+          },
+          "fold": 2,
+          "seed": 42,
+          "arm": "offline_aug"
+        },
+        "optimizer_steps": 4380,
+        "initializer_sha": "646f8bc3fe0a656803d95c294f7852321748cb29d13466a1af8862e2db384a1b"
+      },
+      "checkpoint": "/home/supawich/Desktop/Aggregate_Project/experiment/runs/nb16_full_cv/0c2cf258ab3af75d89af/yolo26s_det_fold2_seed42_offline_aug/selected.pt",
+      "checkpoint_sha": "c3425845c0429b75e9b48dfb369ffdbb04f445c39cc771c99554870572958e71",
+      "optimizer_steps": 4380,
+      "selected_epoch": 11,
+      "threshold_source": "inner-valid",
+      "thresholds": {
+        "0": 0.21836671233177185,
+        "1": 0.03206659108400345
+      },
+      "box": {
+        "AP": 0.21477637955285248,
+        "AP50": 0.4123458509069629,
+        "AP75": 0.18131998740058933,
+        "AP_small": 0.008529172618281471,
+        "AP_medium": 0.09045762983819447,
+        "AP_large": 0.3647868238516644,
+        "AR1": 0.12424029390420901,
+        "AR10": 0.2796897677793904,
+        "AR100": 0.28581050435413646,
+        "AR_small": 0.025510204081632647,
+        "AR_medium": 0.2018987341772152,
+        "AR_large": 0.44084246865725885,
+        "status": "canonical COCOeval",
+        "mode": "bbox",
+        "per_class": {
+          "gravel": 0.3728571605406645,
+          "sand": 0.05669559856504038
+        }
+      },
+      "mask": {},
+      "postprocessing": null,
+      "predictions": "/home/supawich/Desktop/Aggregate_Project/experiment/results/nb16_full_cv/0c2cf258ab3af75d89af/yolo26s_det_fold2_seed42_offline_aug_predictions.jsonl.gz",
+      "predictions_sha": "bcf8497b5c5b222a3b5db51d743422b5416a11a1350d9357a3db1c80bcbc0426",
+      "seconds": 712.5901112479987,
+      "scope": "development grouped CV; one seed; not external event/site validation"
+    },
+    {
+      "status": "completed",
+      "name": "yolo26n_seg_fold3_seed42_control",
+      "model": "yolo26n_seg",
+      "fold": 3,
+      "seed": 42,
+      "arm": "control",
+      "spec": {
+        "plan_id": "0c2cf258ab3af75d89af",
+        "job": {
+          "recipe": {
+            "name": "yolo26n_seg",
+            "kind": "yolo",
+            "task": "segment",
+            "init": "yolo26n-seg.pt",
+            "size": 960,
+            "epochs": 30,
+            "batch": 12,
+            "lr": 0.001
+          },
+          "fold": 3,
+          "seed": 42,
+          "arm": "control"
+        },
+        "optimizer_steps": 1830,
+        "initializer_sha": "361fbfabab285c3237700b6bb91d7ecfa602cd945fffda8dbe1242829b71e73f"
+      },
+      "checkpoint": "/home/supawich/Desktop/Aggregate_Project/experiment/runs/nb16_full_cv/0c2cf258ab3af75d89af/yolo26n_seg_fold3_seed42_control/selected.pt",
+      "checkpoint_sha": "85eae7a71c4f6b66a81d510f56d4f1048281e45d246c1bb1442a7b3331e2500f",
+      "optimizer_steps": 1830,
+      "selected_epoch": 10,
+      "threshold_source": "inner-valid",
+      "thresholds": {
+        "0": 0.4099281132221222,
+        "1": 0.07563651353120804
+      },
+      "box": {
+        "AP": 0.2786601129706797,
+        "AP50": 0.414581560674096,
+        "AP75": 0.31573123662874236,
+        "AP_small": 0.0711537054791565,
+        "AP_medium": 0.301835787528907,
+        "AP_large": 0.33701237065215894,
+        "AR1": 0.2053870301137349,
+        "AR10": 0.40743772971779213,
+        "AR100": 0.4619894941081822,
+        "AR_small": 0.18577291381668948,
+        "AR_medium": 0.4594827586206896,
+        "AR_large": 0.5422386543237752,
+        "status": "canonical COCOeval",
+        "mode": "bbox",
+        "per_class": {
+          "gravel": 0.44130719398228974,
+          "sand": 0.11601303195906977
+        }
+      },
+      "mask": {
+        "AP": 0.3701064330611508,
+        "AP50": 0.6198096823924751,
+        "AP75": 0.3230201163361154,
+        "AP_small": 0.05877116662238579,
+        "AP_medium": 0.3002874105514512,
+        "AP_large": 0.5009399758865165,
+        "AR1": 0.26248481693562387,
+        "AR10": 0.4520585869102267,
+        "AR100": 0.4763601659489217,
+        "AR_small": 0.16757865937072505,
+        "AR_medium": 0.4012931034482759,
+        "AR_large": 0.6072589749379093,
+        "status": "canonical COCOeval",
+        "mode": "segm",
+        "per_class": {
+          "gravel": 0.4828064561868544,
+          "sand": 0.2574064099354474
+        }
+      },
+      "postprocessing": null,
+      "predictions": "/home/supawich/Desktop/Aggregate_Project/experiment/results/nb16_full_cv/0c2cf258ab3af75d89af/yolo26n_seg_fold3_seed42_control_predictions.jsonl.gz",
+      "predictions_sha": "83916731712549661cbfb550e2ed4e4d0bd21353ef97e26262f7619fe173112c",
+      "seconds": 784.3987479449934,
+      "scope": "development grouped CV; one seed; not external event/site validation"
+    },
+    {
+      "status": "completed",
+      "name": "yolo26n_seg_fold3_seed42_offline_aug",
+      "model": "yolo26n_seg",
+      "fold": 3,
+      "seed": 42,
+      "arm": "offline_aug",
+      "spec": {
+        "plan_id": "0c2cf258ab3af75d89af",
+        "job": {
+          "recipe": {
+            "name": "yolo26n_seg",
+            "kind": "yolo",
+            "task": "segment",
+            "init": "yolo26n-seg.pt",
+            "size": 960,
+            "epochs": 30,
+            "batch": 12,
+            "lr": 0.001
+          },
+          "fold": 3,
+          "seed": 42,
+          "arm": "offline_aug"
+        },
+        "optimizer_steps": 1830,
+        "initializer_sha": "361fbfabab285c3237700b6bb91d7ecfa602cd945fffda8dbe1242829b71e73f"
+      },
+      "checkpoint": "/home/supawich/Desktop/Aggregate_Project/experiment/runs/nb16_full_cv/0c2cf258ab3af75d89af/yolo26n_seg_fold3_seed42_offline_aug/selected.pt",
+      "checkpoint_sha": "fc0c1c1b6507483fdd3cd92ec31afd608f50816c591622d9cbca77bbc4595446",
+      "optimizer_steps": 1830,
+      "selected_epoch": 26,
+      "threshold_source": "inner-valid",
+      "thresholds": {
+        "0": 0.3150443136692047,
+        "1": 0.038623347878456116
+      },
+      "box": {
+        "AP": 0.3452288177513075,
+        "AP50": 0.5115103036622272,
+        "AP75": 0.35781905388241436,
+        "AP_small": 0.05209954411248919,
+        "AP_medium": 0.35323696310553515,
+        "AP_large": 0.40274178459891774,
+        "AR1": 0.23061221270487278,
+        "AR10": 0.4543119902828387,
+        "AR100": 0.4713028252330699,
+        "AR_small": 0.08748290013679891,
+        "AR_medium": 0.4413793103448276,
+        "AR_large": 0.5830435764280875,
+        "status": "canonical COCOeval",
+        "mode": "bbox",
+        "per_class": {
+          "gravel": 0.45743427222976624,
+          "sand": 0.23302336327284875
+        }
+      },
+      "mask": {
+        "AP": 0.39225405547693215,
+        "AP50": 0.6093272312783625,
+        "AP75": 0.36952966486034194,
+        "AP_small": 0.04195514336174793,
+        "AP_medium": 0.3278832185199793,
+        "AP_large": 0.5140159883195878,
+        "AR1": 0.27641537709210795,
+        "AR10": 0.4587446563500702,
+        "AR100": 0.4686826621235783,
+        "AR_small": 0.10218878248974009,
+        "AR_medium": 0.4168103448275862,
+        "AR_large": 0.5872883269361029,
+        "status": "canonical COCOeval",
+        "mode": "segm",
+        "per_class": {
+          "gravel": 0.4857637126983226,
+          "sand": 0.2987443982555418
+        }
+      },
+      "postprocessing": null,
+      "predictions": "/home/supawich/Desktop/Aggregate_Project/experiment/results/nb16_full_cv/0c2cf258ab3af75d89af/yolo26n_seg_fold3_seed42_offline_aug_predictions.jsonl.gz",
+      "predictions_sha": "b81f1c0969a333faa1375e6e8308d639a960f20028ef7dcbe7b3f054716df7a7",
+      "seconds": 933.6280811090037,
+      "scope": "development grouped CV; one seed; not external event/site validation"
+    },
+    {
+      "status": "completed",
+      "name": "yolo26s_seg_fold3_seed42_control",
+      "model": "yolo26s_seg",
+      "fold": 3,
+      "seed": 42,
+      "arm": "control",
+      "spec": {
+        "plan_id": "0c2cf258ab3af75d89af",
+        "job": {
+          "recipe": {
+            "name": "yolo26s_seg",
+            "kind": "yolo",
+            "task": "segment",
+            "init": "yolo26s-seg.pt",
+            "size": 960,
+            "epochs": 30,
+            "batch": 6,
+            "lr": 0.001
+          },
+          "fold": 3,
+          "seed": 42,
+          "arm": "control"
+        },
+        "optimizer_steps": 3630,
+        "initializer_sha": "3da1d83e31caec96f9300eb4064f4f62882c133c7c264d63dfe61a7c197837a4"
+      },
+      "checkpoint": "/home/supawich/Desktop/Aggregate_Project/experiment/runs/nb16_full_cv/0c2cf258ab3af75d89af/yolo26s_seg_fold3_seed42_control/selected.pt",
+      "checkpoint_sha": "37bbdebb22a2cdf31dfe12a56ab97f4acf1947210c8284a2d450c07332ebbffa",
+      "optimizer_steps": 3630,
+      "selected_epoch": 8,
+      "threshold_source": "inner-valid",
+      "thresholds": {
+        "0": 0.3876228332519531,
+        "1": 0.14388251304626465
+      },
+      "box": {
+        "AP": 0.2657022125253742,
+        "AP50": 0.3776439414883965,
+        "AP75": 0.30605753369752925,
+        "AP_small": 0.041193160223735446,
+        "AP_medium": 0.3174921641156877,
+        "AP_large": 0.28433513538477606,
+        "AR1": 0.20096540627514078,
+        "AR10": 0.3313528307541842,
+        "AR100": 0.3771086713044027,
+        "AR_small": 0.21279069767441858,
+        "AR_medium": 0.4418103448275862,
+        "AR_large": 0.3635583653194852,
+        "status": "canonical COCOeval",
+        "mode": "bbox",
+        "per_class": {
+          "gravel": 0.35795144105929133,
+          "sand": 0.17345298399145698
+        }
+      },
+      "mask": {
+        "AP": 0.315239758543571,
+        "AP50": 0.5070938492760536,
+        "AP75": 0.3149918700998562,
+        "AP_small": 0.022187610859408752,
+        "AP_medium": 0.31050475693875923,
+        "AP_large": 0.39369004849062345,
+        "AR1": 0.23962267127285344,
+        "AR10": 0.4015877147319104,
+        "AR100": 0.445360686511129,
+        "AR_small": 0.20964432284541723,
+        "AR_medium": 0.4112068965517241,
+        "AR_large": 0.5157033190336419,
+        "status": "canonical COCOeval",
+        "mode": "segm",
+        "per_class": {
+          "gravel": 0.38921900106265894,
+          "sand": 0.241260516024483
+        }
+      },
+      "postprocessing": null,
+      "predictions": "/home/supawich/Desktop/Aggregate_Project/experiment/results/nb16_full_cv/0c2cf258ab3af75d89af/yolo26s_seg_fold3_seed42_control_predictions.jsonl.gz",
+      "predictions_sha": "e192641e5682b610bbbf15aea81ed732e5311601a0ed8e3ed2ec7611ceff2171",
+      "seconds": 1189.716294054997,
+      "scope": "development grouped CV; one seed; not external event/site validation"
+    },
+    {
+      "status": "completed",
+      "name": "yolo26s_seg_fold3_seed42_offline_aug",
+      "model": "yolo26s_seg",
+      "fold": 3,
+      "seed": 42,
+      "arm": "offline_aug",
+      "spec": {
+        "plan_id": "0c2cf258ab3af75d89af",
+        "job": {
+          "recipe": {
+            "name": "yolo26s_seg",
+            "kind": "yolo",
+            "task": "segment",
+            "init": "yolo26s-seg.pt",
+            "size": 960,
+            "epochs": 30,
+            "batch": 6,
+            "lr": 0.001
+          },
+          "fold": 3,
+          "seed": 42,
+          "arm": "offline_aug"
+        },
+        "optimizer_steps": 3630,
+        "initializer_sha": "3da1d83e31caec96f9300eb4064f4f62882c133c7c264d63dfe61a7c197837a4"
+      },
+      "checkpoint": "/home/supawich/Desktop/Aggregate_Project/experiment/runs/nb16_full_cv/0c2cf258ab3af75d89af/yolo26s_seg_fold3_seed42_offline_aug/selected.pt",
+      "checkpoint_sha": "17b1fbc0737756e8c8a9f0d21f4ed51c12ff6d0497062ed22058ee27d3a6bd48",
+      "optimizer_steps": 3630,
+      "selected_epoch": 18,
+      "threshold_source": "inner-valid",
+      "thresholds": {
+        "0": 0.07446881383657455,
+        "1": 0.2174501121044159
+      },
+      "box": {
+        "AP": 0.25358987318102183,
+        "AP50": 0.39232960351337054,
+        "AP75": 0.26810486342483186,
+        "AP_small": 0.023165083097778125,
+        "AP_medium": 0.31790508417950825,
+        "AP_large": 0.2919065291920561,
+        "AR1": 0.1811233101446532,
+        "AR10": 0.3553972836117552,
+        "AR100": 0.37974618648746705,
+        "AR_small": 0.10971272229822163,
+        "AR_medium": 0.4038793103448276,
+        "AR_large": 0.3988993000677354,
+        "status": "canonical COCOeval",
+        "mode": "bbox",
+        "per_class": {
+          "gravel": 0.36840471917766887,
+          "sand": 0.13877502718437473
+        }
+      },
+      "mask": {
+        "AP": 0.33497580770202495,
+        "AP50": 0.5841058712485172,
+        "AP75": 0.2923099648271329,
+        "AP_small": 0.021855996377505165,
+        "AP_medium": 0.29858597451147356,
+        "AP_large": 0.44832628530870955,
+        "AR1": 0.23398876847601474,
+        "AR10": 0.4171036234284543,
+        "AR100": 0.43595744009590953,
+        "AR_small": 0.11737346101231191,
+        "AR_medium": 0.39439655172413796,
+        "AR_large": 0.5207326710318355,
+        "status": "canonical COCOeval",
+        "mode": "segm",
+        "per_class": {
+          "gravel": 0.40645316789523284,
+          "sand": 0.26349844750881707
+        }
+      },
+      "postprocessing": null,
+      "predictions": "/home/supawich/Desktop/Aggregate_Project/experiment/results/nb16_full_cv/0c2cf258ab3af75d89af/yolo26s_seg_fold3_seed42_offline_aug_predictions.jsonl.gz",
+      "predictions_sha": "bcbe045b99fda380be70fe398fb17b80bf1d56714ac9c4b2e33bf25331e6c0ba",
+      "seconds": 1302.7403889109992,
+      "scope": "development grouped CV; one seed; not external event/site validation"
+    },
+    {
+      "status": "completed",
+      "name": "unet_ws_fold3_seed42_control",
+      "model": "unet_ws",
+      "fold": 3,
+      "seed": 42,
+      "arm": "control",
+      "spec": {
+        "plan_id": "0c2cf258ab3af75d89af",
+        "job": {
+          "recipe": {
+            "name": "unet_ws",
+            "kind": "unet",
+            "task": "segment",
+            "init": "random",
+            "size": 512,
+            "epochs": 30,
+            "batch": 14,
+            "lr": 0.001
+          },
+          "fold": 3,
+          "seed": 42,
+          "arm": "control"
+        },
+        "optimizer_steps": 1560,
+        "initializer_sha": "random"
+      },
+      "checkpoint": "/home/supawich/Desktop/Aggregate_Project/experiment/runs/nb16_full_cv/0c2cf258ab3af75d89af/unet_ws_fold3_seed42_control/selected.pt",
+      "checkpoint_sha": "059097ae1ca44b5d84619915ef3eb25a99d5f2f8d8fd0bfa461f0a794e91d25b",
+      "optimizer_steps": 1560,
+      "selected_epoch": 9,
+      "threshold_source": "inner-valid",
+      "thresholds": {
+        "0": 0.7975336313247681,
+        "1": 0.8840014934539795
+      },
+      "box": {
+        "AP": 0.0003564492112822146,
+        "AP50": 0.0006964263140204279,
+        "AP75": 0.0003059055082180479,
+        "AP_small": 0.0,
+        "AP_medium": 0.0003768030724479448,
+        "AP_large": 0.0031672206058261697,
+        "AR1": 0.0029498525073746312,
+        "AR10": 0.025056394239111573,
+        "AR100": 0.03323395327559825,
+        "AR_small": 0.0,
+        "AR_medium": 0.04267241379310345,
+        "AR_large": 0.03262023030029352,
+        "status": "canonical COCOeval",
+        "mode": "bbox",
+        "per_class": {
+          "gravel": 0.0005819353826957119,
+          "sand": 0.00013096303986871735
+        }
+      },
+      "mask": {
+        "AP": 0.000369925456415987,
+        "AP50": 0.0008078760448807787,
+        "AP75": 0.0003445860048013641,
+        "AP_small": 0.0,
+        "AP_medium": 0.0005946629106251501,
+        "AP_large": 0.003027358114899075,
+        "AR1": 0.0025073746312684365,
+        "AR10": 0.023978199485747635,
+        "AR100": 0.034257725616392974,
+        "AR_small": 0.0,
+        "AR_medium": 0.056034482758620684,
+        "AR_large": 0.027184466019417475,
+        "status": "canonical COCOeval",
+        "mode": "segm",
+        "per_class": {
+          "gravel": 0.0005550846525472708,
+          "sand": 0.00018476626028470321
+        }
+      },
+      "postprocessing": {
+        "fg": 0.5,
+        "spacing": 9,
+        "min_area": 25,
+        "method": "watershed"
+      },
+      "predictions": "/home/supawich/Desktop/Aggregate_Project/experiment/results/nb16_full_cv/0c2cf258ab3af75d89af/unet_ws_fold3_seed42_control_predictions.jsonl.gz",
+      "predictions_sha": "84b55de4b369773621be139380d31296e1df318790b1089e87bb4005207877a4",
+      "seconds": 1334.8781312900028,
+      "scope": "development grouped CV; one seed; not external event/site validation"
+    },
+    {
+      "status": "completed",
+      "name": "unet_ws_fold3_seed42_offline_aug",
+      "model": "unet_ws",
+      "fold": 3,
+      "seed": 42,
+      "arm": "offline_aug",
+      "spec": {
+        "plan_id": "0c2cf258ab3af75d89af",
+        "job": {
+          "recipe": {
+            "name": "unet_ws",
+            "kind": "unet",
+            "task": "segment",
+            "init": "random",
+            "size": 512,
+            "epochs": 30,
+            "batch": 14,
+            "lr": 0.001
+          },
+          "fold": 3,
+          "seed": 42,
+          "arm": "offline_aug"
+        },
+        "optimizer_steps": 1560,
+        "initializer_sha": "random"
+      },
+      "checkpoint": "/home/supawich/Desktop/Aggregate_Project/experiment/runs/nb16_full_cv/0c2cf258ab3af75d89af/unet_ws_fold3_seed42_offline_aug/selected.pt",
+      "checkpoint_sha": "dd18f51a3a3fb67e7b518f99ea9eb728ff67e87582e35dc52ce10ae37725b518",
+      "optimizer_steps": 1560,
+      "selected_epoch": 7,
+      "threshold_source": "inner-valid",
+      "thresholds": {
+        "0": 0.755156397819519,
+        "1": 0.8605496883392334
+      },
+      "box": {
+        "AP": 0.0007599227822911265,
+        "AP50": 0.0020042231725164302,
+        "AP75": 0.000588609159379073,
+        "AP_small": 4.877079188043568e-05,
+        "AP_medium": 0.00207611812305126,
+        "AP_large": 0.0013610876036174772,
+        "AR1": 0.00855457227138643,
+        "AR10": 0.018050888899405294,
+        "AR100": 0.037836985156089784,
+        "AR_small": 0.011080711354309167,
+        "AR_medium": 0.08146551724137932,
+        "AR_large": 0.017859561977873105,
+        "status": "canonical COCOeval",
+        "mode": "bbox",
+        "per_class": {
+          "gravel": 0.0007114097611950997,
+          "sand": 0.0008084358033871535
+        }
+      },
+      "mask": {
+        "AP": 0.0005169812351663367,
+        "AP50": 0.0016000390421318951,
+        "AP75": 0.00024504664914368174,
+        "AP_small": 3.818315800598545e-05,
+        "AP_medium": 0.001368915667775592,
+        "AP_large": 0.0009440579725932775,
+        "AR1": 0.006047197640117994,
+        "AR10": 0.014298897354597512,
+        "AR100": 0.029272159386683073,
+        "AR_small": 0.009302325581395349,
+        "AR_medium": 0.06336206896551724,
+        "AR_large": 0.01285843305486566,
+        "status": "canonical COCOeval",
+        "mode": "segm",
+        "per_class": {
+          "gravel": 0.00041943976211643834,
+          "sand": 0.0006145227082162353
+        }
+      },
+      "postprocessing": {
+        "fg": 0.5,
+        "spacing": 9,
+        "min_area": 25,
+        "method": "watershed"
+      },
+      "predictions": "/home/supawich/Desktop/Aggregate_Project/experiment/results/nb16_full_cv/0c2cf258ab3af75d89af/unet_ws_fold3_seed42_offline_aug_predictions.jsonl.gz",
+      "predictions_sha": "986403719c2f6a3d8298108d94771a3d889ef6dabdf7466af593228617182518",
+      "seconds": 1427.2848827039998,
+      "scope": "development grouped CV; one seed; not external event/site validation"
+    },
+    {
+      "status": "completed",
+      "name": "yolo26n_det_fold3_seed42_offline_aug",
+      "model": "yolo26n_det",
+      "fold": 3,
+      "seed": 42,
+      "arm": "offline_aug",
+      "spec": {
+        "plan_id": "0c2cf258ab3af75d89af",
+        "job": {
+          "recipe": {
+            "name": "yolo26n_det",
+            "kind": "yolo",
+            "task": "detect",
+            "init": "yolo26n.pt",
+            "size": 960,
+            "epochs": 30,
+            "batch": 10,
+            "lr": 0.001
+          },
+          "fold": 3,
+          "seed": 42,
+          "arm": "offline_aug"
+        },
+        "optimizer_steps": 2190,
+        "initializer_sha": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef"
+      },
+      "checkpoint": "/home/supawich/Desktop/Aggregate_Project/experiment/runs/nb16_full_cv/0c2cf258ab3af75d89af/yolo26n_det_fold3_seed42_offline_aug/selected.pt",
+      "checkpoint_sha": "3ddd4bf99b5c2215ccbd99b3b673e0e9c74acf72a773b95a0659955510fbf061",
+      "optimizer_steps": 2190,
+      "selected_epoch": 17,
+      "threshold_source": "inner-valid",
+      "thresholds": {
+        "0": 0.34657973051071167,
+        "1": 0.04843755438923836
+      },
+      "box": {
+        "AP": 0.28408452798568506,
+        "AP50": 0.4263969329585646,
+        "AP75": 0.3038736200627958,
+        "AP_small": 0.06394162399877051,
+        "AP_medium": 0.29222428055671495,
+        "AP_large": 0.3165752174878428,
+        "AR1": 0.21192481819759273,
+        "AR10": 0.40015459120092123,
+        "AR100": 0.45541779060779575,
+        "AR_small": 0.1798221614227086,
+        "AR_medium": 0.4047413793103448,
+        "AR_large": 0.5474542786181983,
+        "status": "canonical COCOeval",
+        "mode": "bbox",
+        "per_class": {
+          "gravel": 0.42566090781089044,
+          "sand": 0.14250814816047977
+        }
+      },
+      "mask": {},
+      "postprocessing": null,
+      "predictions": "/home/supawich/Desktop/Aggregate_Project/experiment/results/nb16_full_cv/0c2cf258ab3af75d89af/yolo26n_det_fold3_seed42_offline_aug_predictions.jsonl.gz",
+      "predictions_sha": "bb99f850f4809108b8be5f10c82b0f086f8a96edf5bad8a7f512969dfef29ea5",
+      "seconds": 516.2423567380029,
+      "scope": "development grouped CV; one seed; not external event/site validation"
+    },
+    {
+      "status": "completed",
+      "name": "yolo26s_det_fold3_seed42_offline_aug",
+      "model": "yolo26s_det",
+      "fold": 3,
+      "seed": 42,
+      "arm": "offline_aug",
+      "spec": {
+        "plan_id": "0c2cf258ab3af75d89af",
+        "job": {
+          "recipe": {
+            "name": "yolo26s_det",
+            "kind": "yolo",
+            "task": "detect",
+            "init": "yolo26s.pt",
+            "size": 960,
+            "epochs": 30,
+            "batch": 5,
+            "lr": 0.001
+          },
+          "fold": 3,
+          "seed": 42,
+          "arm": "offline_aug"
+        },
+        "optimizer_steps": 4350,
+        "initializer_sha": "646f8bc3fe0a656803d95c294f7852321748cb29d13466a1af8862e2db384a1b"
+      },
+      "checkpoint": "/home/supawich/Desktop/Aggregate_Project/experiment/runs/nb16_full_cv/0c2cf258ab3af75d89af/yolo26s_det_fold3_seed42_offline_aug/selected.pt",
+      "checkpoint_sha": "63fc4f712a549d6ef0769546392ab8df93bfca21544932a09e783086db7355d1",
+      "optimizer_steps": 4350,
+      "selected_epoch": 11,
+      "threshold_source": "inner-valid",
+      "thresholds": {
+        "0": 0.22799600660800934,
+        "1": 0.08962735533714294
+      },
+      "box": {
+        "AP": 0.16672692502515685,
+        "AP50": 0.27971598544654186,
+        "AP75": 0.17353804490229924,
+        "AP_small": 0.002696950133841306,
+        "AP_medium": 0.1611018272433876,
+        "AP_large": 0.19759731110777687,
+        "AR1": 0.11546385247582543,
+        "AR10": 0.3121156910068935,
+        "AR100": 0.36482340321486595,
+        "AR_small": 0.1615595075239398,
+        "AR_medium": 0.3939655172413793,
+        "AR_large": 0.40764845337547984,
+        "status": "canonical COCOeval",
+        "mode": "bbox",
+        "per_class": {
+          "gravel": 0.26924096014242405,
+          "sand": 0.06421288990788969
+        }
+      },
+      "mask": {},
+      "postprocessing": null,
+      "predictions": "/home/supawich/Desktop/Aggregate_Project/experiment/results/nb16_full_cv/0c2cf258ab3af75d89af/yolo26s_det_fold3_seed42_offline_aug_predictions.jsonl.gz",
+      "predictions_sha": "5ed8da3c4579d5991147646fff97511e4cae5b68db1ad1960bd5198832d022f5",
+      "seconds": 766.7878109029989,
+      "scope": "development grouped CV; one seed; not external event/site validation"
+    },
+    {
+      "status": "completed",
+      "name": "yolo26n_seg_fold4_seed42_control",
+      "model": "yolo26n_seg",
+      "fold": 4,
+      "seed": 42,
+      "arm": "control",
+      "spec": {
+        "plan_id": "0c2cf258ab3af75d89af",
+        "job": {
+          "recipe": {
+            "name": "yolo26n_seg",
+            "kind": "yolo",
+            "task": "segment",
+            "init": "yolo26n-seg.pt",
+            "size": 960,
+            "epochs": 30,
+            "batch": 12,
+            "lr": 0.001
+          },
+          "fold": 4,
+          "seed": 42,
+          "arm": "control"
+        },
+        "optimizer_steps": 1830,
+        "initializer_sha": "361fbfabab285c3237700b6bb91d7ecfa602cd945fffda8dbe1242829b71e73f"
+      },
+      "checkpoint": "/home/supawich/Desktop/Aggregate_Project/experiment/runs/nb16_full_cv/0c2cf258ab3af75d89af/yolo26n_seg_fold4_seed42_control/selected.pt",
+      "checkpoint_sha": "d245d79f62850fdea9c009e8d7ec02d540e6dca66730625bb4acd935814092e9",
+      "optimizer_steps": 1830,
+      "selected_epoch": 9,
+      "threshold_source": "inner-valid",
+      "thresholds": {
+        "0": 0.3275371193885803,
+        "1": 0.22523540258407593
+      },
+      "box": {
+        "AP": 0.3683746419882538,
+        "AP50": 0.5939878388121702,
+        "AP75": 0.3786584270371171,
+        "AP_small": 0.171990972740268,
+        "AP_medium": 0.2574749277987836,
+        "AP_large": 0.5069280881610136,
+        "AR1": 0.20014750581083499,
+        "AR10": 0.4916160081053699,
+        "AR100": 0.5375491686036117,
+        "AR_small": 0.38380952380952377,
+        "AR_medium": 0.4461931728802894,
+        "AR_large": 0.6476052595721489,
+        "status": "canonical COCOeval",
+        "mode": "bbox",
+        "per_class": {
+          "gravel": 0.4727201778152208,
+          "sand": 0.26402910616128666
+        }
+      },
+      "mask": {
+        "AP": 0.4214584954371493,
+        "AP50": 0.6216843306939365,
+        "AP75": 0.4808044993425653,
+        "AP_small": 0.14600564935868446,
+        "AP_medium": 0.2818556568524169,
+        "AP_large": 0.5984390058193091,
+        "AR1": 0.21178333035341795,
+        "AR10": 0.5244293462065678,
+        "AR100": 0.5507367840753323,
+        "AR_small": 0.32166666666666666,
+        "AR_medium": 0.4672054428189398,
+        "AR_large": 0.6702616160239815,
+        "status": "canonical COCOeval",
+        "mode": "segm",
+        "per_class": {
+          "gravel": 0.49574658633129665,
+          "sand": 0.3471704045430019
+        }
+      },
+      "postprocessing": null,
+      "predictions": "/home/supawich/Desktop/Aggregate_Project/experiment/results/nb16_full_cv/0c2cf258ab3af75d89af/yolo26n_seg_fold4_seed42_control_predictions.jsonl.gz",
+      "predictions_sha": "99d94a9561e05bccd00ff1b8a552c16ebd04e7d5558bc7dcc351e14fea06ad07",
+      "seconds": 853.1726301699964,
+      "scope": "development grouped CV; one seed; not external event/site validation"
+    },
+    {
+      "status": "completed",
+      "name": "yolo26n_seg_fold4_seed42_offline_aug",
+      "model": "yolo26n_seg",
+      "fold": 4,
+      "seed": 42,
+      "arm": "offline_aug",
+      "spec": {
+        "plan_id": "0c2cf258ab3af75d89af",
+        "job": {
+          "recipe": {
+            "name": "yolo26n_seg",
+            "kind": "yolo",
+            "task": "segment",
+            "init": "yolo26n-seg.pt",
+            "size": 960,
+            "epochs": 30,
+            "batch": 12,
+            "lr": 0.001
+          },
+          "fold": 4,
+          "seed": 42,
+          "arm": "offline_aug"
+        },
+        "optimizer_steps": 1830,
+        "initializer_sha": "361fbfabab285c3237700b6bb91d7ecfa602cd945fffda8dbe1242829b71e73f"
+      },
+      "checkpoint": "/home/supawich/Desktop/Aggregate_Project/experiment/runs/nb16_full_cv/0c2cf258ab3af75d89af/yolo26n_seg_fold4_seed42_offline_aug/selected.pt",
+      "checkpoint_sha": "5ccfeb5153208d80385a627b46b21e629985489ddcea44ae6d82fa5094292cbb",
+      "optimizer_steps": 1830,
+      "selected_epoch": 21,
+      "threshold_source": "inner-valid",
+      "thresholds": {
+        "0": 0.4050615429878235,
+        "1": 0.08143402636051178
+      },
+      "box": {
+        "AP": 0.42675952525967203,
+        "AP50": 0.6321912578062419,
+        "AP75": 0.4703455768861172,
+        "AP_small": 0.1619872104779746,
+        "AP_medium": 0.339529981765043,
+        "AP_large": 0.5632142425719682,
+        "AR1": 0.21218636390726503,
+        "AR10": 0.5307981703319626,
+        "AR100": 0.560704600989332,
+        "AR_small": 0.2773809523809524,
+        "AR_medium": 0.49820276860154156,
+        "AR_large": 0.6706431393922877,
+        "status": "canonical COCOeval",
+        "mode": "bbox",
+        "per_class": {
+          "gravel": 0.49194299997721147,
+          "sand": 0.36157605054213265
+        }
+      },
+      "mask": {
+        "AP": 0.44863775429954916,
+        "AP50": 0.6329183598971715,
+        "AP75": 0.5011821867167032,
+        "AP_small": 0.10344681415486826,
+        "AP_medium": 0.3123905220936064,
+        "AP_large": 0.636696612610904,
+        "AR1": 0.22257434888849156,
+        "AR10": 0.5332342511472674,
+        "AR100": 0.5582402109780082,
+        "AR_small": 0.25571428571428567,
+        "AR_medium": 0.4756764196948245,
+        "AR_large": 0.694597356588091,
+        "status": "canonical COCOeval",
+        "mode": "segm",
+        "per_class": {
+          "gravel": 0.4912440035658049,
+          "sand": 0.4060315050332935
+        }
+      },
+      "postprocessing": null,
+      "predictions": "/home/supawich/Desktop/Aggregate_Project/experiment/results/nb16_full_cv/0c2cf258ab3af75d89af/yolo26n_seg_fold4_seed42_offline_aug_predictions.jsonl.gz",
+      "predictions_sha": "8c761171265298c365d51d5a194cbf623005b41f594746ece9324429ebc6d269",
+      "seconds": 998.0653605900006,
+      "scope": "development grouped CV; one seed; not external event/site validation"
+    },
+    {
+      "status": "completed",
+      "name": "yolo26s_seg_fold4_seed42_control",
+      "model": "yolo26s_seg",
+      "fold": 4,
+      "seed": 42,
+      "arm": "control",
+      "spec": {
+        "plan_id": "0c2cf258ab3af75d89af",
+        "job": {
+          "recipe": {
+            "name": "yolo26s_seg",
+            "kind": "yolo",
+            "task": "segment",
+            "init": "yolo26s-seg.pt",
+            "size": 960,
+            "epochs": 30,
+            "batch": 6,
+            "lr": 0.001
+          },
+          "fold": 4,
+          "seed": 42,
+          "arm": "control"
+        },
+        "optimizer_steps": 3660,
+        "initializer_sha": "3da1d83e31caec96f9300eb4064f4f62882c133c7c264d63dfe61a7c197837a4"
+      },
+      "checkpoint": "/home/supawich/Desktop/Aggregate_Project/experiment/runs/nb16_full_cv/0c2cf258ab3af75d89af/yolo26s_seg_fold4_seed42_control/selected.pt",
+      "checkpoint_sha": "51813599ef07255521b6c571a75970596be68e1cdf7f335a1b5c0d2dc2fbcf38",
+      "optimizer_steps": 3660,
+      "selected_epoch": 16,
+      "threshold_source": "inner-valid",
+      "thresholds": {
+        "0": 0.4485991597175598,
+        "1": 0.09060347080230713
+      },
+      "box": {
+        "AP": 0.3027289247479377,
+        "AP50": 0.5310847461598046,
+        "AP75": 0.3045828454839569,
+        "AP_small": 0.05013401114588205,
+        "AP_medium": 0.22680945178126058,
+        "AP_large": 0.42679111900812244,
+        "AR1": 0.17701591274807799,
+        "AR10": 0.4125096847249538,
+        "AR100": 0.4273779724655819,
+        "AR_small": 0.13964285714285712,
+        "AR_medium": 0.3342181846783074,
+        "AR_large": 0.5682313666712087,
+        "status": "canonical COCOeval",
+        "mode": "bbox",
+        "per_class": {
+          "gravel": 0.38945111513846387,
+          "sand": 0.21600673435741177
+        }
+      },
+      "mask": {
+        "AP": 0.36782601194598613,
+        "AP50": 0.5488289348970221,
+        "AP75": 0.42035042941531126,
+        "AP_small": 0.041963826448327426,
+        "AP_medium": 0.2143217334365161,
+        "AP_large": 0.5599158377606244,
+        "AR1": 0.20804428154240423,
+        "AR10": 0.4479632278443293,
+        "AR100": 0.4589397461112104,
+        "AR_small": 0.12226190476190477,
+        "AR_medium": 0.3441127890514394,
+        "AR_large": 0.6296702548031067,
+        "status": "canonical COCOeval",
+        "mode": "segm",
+        "per_class": {
+          "gravel": 0.4429427199711781,
+          "sand": 0.2927093039207942
+        }
+      },
+      "postprocessing": null,
+      "predictions": "/home/supawich/Desktop/Aggregate_Project/experiment/results/nb16_full_cv/0c2cf258ab3af75d89af/yolo26s_seg_fold4_seed42_control_predictions.jsonl.gz",
+      "predictions_sha": "b2fc2c0776d5cee94faa3e65a7f685fb13876d7c6648959ed224f223b8147c2a",
+      "seconds": 1270.618709329996,
+      "scope": "development grouped CV; one seed; not external event/site validation"
+    },
+    {
+      "status": "completed",
+      "name": "yolo26s_seg_fold4_seed42_offline_aug",
+      "model": "yolo26s_seg",
+      "fold": 4,
+      "seed": 42,
+      "arm": "offline_aug",
+      "spec": {
+        "plan_id": "0c2cf258ab3af75d89af",
+        "job": {
+          "recipe": {
+            "name": "yolo26s_seg",
+            "kind": "yolo",
+            "task": "segment",
+            "init": "yolo26s-seg.pt",
+            "size": 960,
+            "epochs": 30,
+            "batch": 6,
+            "lr": 0.001
+          },
+          "fold": 4,
+          "seed": 42,
+          "arm": "offline_aug"
+        },
+        "optimizer_steps": 3660,
+        "initializer_sha": "3da1d83e31caec96f9300eb4064f4f62882c133c7c264d63dfe61a7c197837a4"
+      },
+      "checkpoint": "/home/supawich/Desktop/Aggregate_Project/experiment/runs/nb16_full_cv/0c2cf258ab3af75d89af/yolo26s_seg_fold4_seed42_offline_aug/selected.pt",
+      "checkpoint_sha": "2065a4a82c295d3d079f850ef405be0bef11b2806c111b8fa7c94b1bed4dee42",
+      "optimizer_steps": 3660,
+      "selected_epoch": 10,
+      "threshold_source": "inner-valid",
+      "thresholds": {
+        "0": 0.49460822343826294,
+        "1": 0.12139002233743668
+      },
+      "box": {
+        "AP": 0.3461489024476769,
+        "AP50": 0.5960232727207269,
+        "AP75": 0.3493962570406818,
+        "AP_small": 0.08327133726194551,
+        "AP_medium": 0.27769505672700623,
+        "AP_large": 0.4712671455493658,
+        "AR1": 0.1955681208653674,
+        "AR10": 0.4577932236724476,
+        "AR100": 0.5067338637582692,
+        "AR_small": 0.3616666666666667,
+        "AR_medium": 0.4130092811074406,
+        "AR_large": 0.6152575282736068,
+        "status": "canonical COCOeval",
+        "mode": "bbox",
+        "per_class": {
+          "gravel": 0.39867257164679326,
+          "sand": 0.2936252332485605
+        }
+      },
+      "mask": {
+        "AP": 0.4085090131097628,
+        "AP50": 0.6115262995137439,
+        "AP75": 0.45108965318759064,
+        "AP_small": 0.034376096060920756,
+        "AP_medium": 0.3054121854370634,
+        "AP_large": 0.5686634985655638,
+        "AR1": 0.21238154836402642,
+        "AR10": 0.4980295309613207,
+        "AR100": 0.530354907920615,
+        "AR_small": 0.2902380952380953,
+        "AR_medium": 0.4513921661160924,
+        "AR_large": 0.6411363946041695,
+        "status": "canonical COCOeval",
+        "mode": "segm",
+        "per_class": {
+          "gravel": 0.42884575953806836,
+          "sand": 0.3881722666814572
+        }
+      },
+      "postprocessing": null,
+      "predictions": "/home/supawich/Desktop/Aggregate_Project/experiment/results/nb16_full_cv/0c2cf258ab3af75d89af/yolo26s_seg_fold4_seed42_offline_aug_predictions.jsonl.gz",
+      "predictions_sha": "508f06999f96ec02a077cd60abd2a4714632f430d85c755f403a63fa70428dff",
+      "seconds": 1411.2377960349986,
+      "scope": "development grouped CV; one seed; not external event/site validation"
+    },
+    {
+      "status": "completed",
+      "name": "unet_ws_fold4_seed42_control",
+      "model": "unet_ws",
+      "fold": 4,
+      "seed": 42,
+      "arm": "control",
+      "spec": {
+        "plan_id": "0c2cf258ab3af75d89af",
+        "job": {
+          "recipe": {
+            "name": "unet_ws",
+            "kind": "unet",
+            "task": "segment",
+            "init": "random",
+            "size": 512,
+            "epochs": 30,
+            "batch": 14,
+            "lr": 0.001
+          },
+          "fold": 4,
+          "seed": 42,
+          "arm": "control"
+        },
+        "optimizer_steps": 1590,
+        "initializer_sha": "random"
+      },
+      "checkpoint": "/home/supawich/Desktop/Aggregate_Project/experiment/runs/nb16_full_cv/0c2cf258ab3af75d89af/unet_ws_fold4_seed42_control/selected.pt",
+      "checkpoint_sha": "2c36a984c78e8ecc544ffd1fbabafcc9c817a2e9c69a86e0ac809dcce6e6fc25",
+      "optimizer_steps": 1590,
+      "selected_epoch": 13,
+      "threshold_source": "inner-valid",
+      "thresholds": {
+        "0": 0.8330621123313904,
+        "1": 0.9270832538604736
+      },
+      "box": {
+        "AP": 0.0016788700889062709,
+        "AP50": 0.006377878907195996,
+        "AP75": 0.0006987082147016495,
+        "AP_small": 0.0,
+        "AP_medium": 0.0010288309674753907,
+        "AP_large": 0.011598692028741343,
+        "AR1": 0.008987424757136897,
+        "AR10": 0.024834614696942606,
+        "AR100": 0.02616440193098516,
+        "AR_small": 0.0,
+        "AR_medium": 0.019175711813748622,
+        "AR_large": 0.040417631829949584,
+        "status": "canonical COCOeval",
+        "mode": "bbox",
+        "per_class": {
+          "gravel": 0.0003163584129156208,
+          "sand": 0.0030413817648969202
+        }
+      },
+      "mask": {
+        "AP": 0.0018085300048183998,
+        "AP50": 0.009693850286049459,
+        "AP75": 0.0001900921904502116,
+        "AP_small": 0.0,
+        "AP_medium": 0.001168763361208585,
+        "AP_large": 0.012038325985870398,
+        "AR1": 0.006593807735860302,
+        "AR10": 0.023967459324155192,
+        "AR100": 0.026361076345431788,
+        "AR_small": 0.0,
+        "AR_medium": 0.022994336951392167,
+        "AR_large": 0.036885134214470636,
+        "status": "canonical COCOeval",
+        "mode": "segm",
+        "per_class": {
+          "gravel": 0.0004448023852958317,
+          "sand": 0.0031722576243409678
+        }
+      },
+      "postprocessing": {
+        "fg": 0.5,
+        "spacing": 9,
+        "min_area": 25,
+        "method": "watershed"
+      },
+      "predictions": "/home/supawich/Desktop/Aggregate_Project/experiment/results/nb16_full_cv/0c2cf258ab3af75d89af/unet_ws_fold4_seed42_control_predictions.jsonl.gz",
+      "predictions_sha": "1fad3c5a7e2178c548d7b5d069f7a57e26f95cbf1bbe0d85a836aadd56c8167d",
+      "seconds": 1583.348462078,
+      "scope": "development grouped CV; one seed; not external event/site validation"
+    },
+    {
+      "status": "completed",
+      "name": "unet_ws_fold4_seed42_offline_aug",
+      "model": "unet_ws",
+      "fold": 4,
+      "seed": 42,
+      "arm": "offline_aug",
+      "spec": {
+        "plan_id": "0c2cf258ab3af75d89af",
+        "job": {
+          "recipe": {
+            "name": "unet_ws",
+            "kind": "unet",
+            "task": "segment",
+            "init": "random",
+            "size": 512,
+            "epochs": 30,
+            "batch": 14,
+            "lr": 0.001
+          },
+          "fold": 4,
+          "seed": 42,
+          "arm": "offline_aug"
+        },
+        "optimizer_steps": 1590,
+        "initializer_sha": "random"
+      },
+      "checkpoint": "/home/supawich/Desktop/Aggregate_Project/experiment/runs/nb16_full_cv/0c2cf258ab3af75d89af/unet_ws_fold4_seed42_offline_aug/selected.pt",
+      "checkpoint_sha": "81f4c9a54eee3009cfe9d6b571acb12288a9fa62f50a84f1a2109467aa078c94",
+      "optimizer_steps": 1590,
+      "selected_epoch": 30,
+      "threshold_source": "inner-valid",
+      "thresholds": {
+        "0": 0.9258949756622314,
+        "1": 0.7954354286193848
+      },
+      "box": {
+        "AP": 0.003299292702733896,
+        "AP50": 0.012162372079578938,
+        "AP75": 0.0006322046552065973,
+        "AP_small": 0.0,
+        "AP_medium": 0.0004947574757071722,
+        "AP_large": 0.02390920097681446,
+        "AR1": 0.014896596936647,
+        "AR10": 0.052389892127063596,
+        "AR100": 0.055708772870850465,
+        "AR_small": 0.0,
+        "AR_medium": 0.023698285354727074,
+        "AR_large": 0.09955375391742745,
+        "status": "canonical COCOeval",
+        "mode": "bbox",
+        "per_class": {
+          "gravel": 0.001407755026843801,
+          "sand": 0.005190830378623992
+        }
+      },
+      "mask": {
+        "AP": 0.0025884677049596125,
+        "AP50": 0.009266336024341506,
+        "AP75": 0.0010183875530410185,
+        "AP_small": 0.0,
+        "AP_medium": 0.0004114698623303874,
+        "AP_large": 0.020532075038167282,
+        "AR1": 0.011144883485309018,
+        "AR10": 0.048513767209011266,
+        "AR100": 0.05267298408725192,
+        "AR_small": 0.0,
+        "AR_medium": 0.02291961617114991,
+        "AR_large": 0.09253985556615343,
+        "status": "canonical COCOeval",
+        "mode": "segm",
+        "per_class": {
+          "gravel": 0.0017369021703015572,
+          "sand": 0.0034400332396176676
+        }
+      },
+      "postprocessing": {
+        "fg": 0.5,
+        "spacing": 9,
+        "min_area": 25,
+        "method": "watershed"
+      },
+      "predictions": "/home/supawich/Desktop/Aggregate_Project/experiment/results/nb16_full_cv/0c2cf258ab3af75d89af/unet_ws_fold4_seed42_offline_aug_predictions.jsonl.gz",
+      "predictions_sha": "a0b25f2c42640d3caf72a1da607f8ccf959b161d03057f9d5bc2c217d8424949",
+      "seconds": 1474.6657474230014,
+      "scope": "development grouped CV; one seed; not external event/site validation"
+    },
+    {
+      "status": "completed",
+      "name": "yolo26n_det_fold4_seed42_control",
+      "model": "yolo26n_det",
+      "fold": 4,
+      "seed": 42,
+      "arm": "control",
+      "spec": {
+        "plan_id": "0c2cf258ab3af75d89af",
+        "job": {
+          "recipe": {
+            "name": "yolo26n_det",
+            "kind": "yolo",
+            "task": "detect",
+            "init": "yolo26n.pt",
+            "size": 960,
+            "epochs": 30,
+            "batch": 10,
+            "lr": 0.001
+          },
+          "fold": 4,
+          "seed": 42,
+          "arm": "control"
+        },
+        "optimizer_steps": 2220,
+        "initializer_sha": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef"
+      },
+      "checkpoint": "/home/supawich/Desktop/Aggregate_Project/experiment/runs/nb16_full_cv/0c2cf258ab3af75d89af/yolo26n_det_fold4_seed42_control/selected.pt",
+      "checkpoint_sha": "652a92974d6b61336a708c6e280672e941340eb53540226b7e6cb778576983d9",
+      "optimizer_steps": 2220,
+      "selected_epoch": 13,
+      "threshold_source": "inner-valid",
+      "thresholds": {
+        "0": 0.4304690361022949,
+        "1": 0.03006589785218239
+      },
+      "box": {
+        "AP": 0.3566364115280733,
+        "AP50": 0.5698931161495079,
+        "AP75": 0.37890830746953486,
+        "AP_small": 0.02233976311462749,
+        "AP_medium": 0.27643678286471746,
+        "AP_large": 0.49823542966307127,
+        "AR1": 0.19801835627868167,
+        "AR10": 0.47075660051254536,
+        "AR100": 0.49952693843494844,
+        "AR_small": 0.2130952380952381,
+        "AR_medium": 0.3960751927009596,
+        "AR_large": 0.6527626379615751,
+        "status": "canonical COCOeval",
+        "mode": "bbox",
+        "per_class": {
+          "gravel": 0.44856972740643586,
+          "sand": 0.2647030956497108
+        }
+      },
+      "mask": {},
+      "postprocessing": null,
+      "predictions": "/home/supawich/Desktop/Aggregate_Project/experiment/results/nb16_full_cv/0c2cf258ab3af75d89af/yolo26n_det_fold4_seed42_control_predictions.jsonl.gz",
+      "predictions_sha": "cfc280b5591adea68d8a0467d81cee8851e803d7931552067b5683f7781b654e",
+      "seconds": 433.02806833200157,
+      "scope": "development grouped CV; one seed; not external event/site validation"
+    },
+    {
+      "status": "completed",
+      "name": "yolo26n_det_fold4_seed42_offline_aug",
+      "model": "yolo26n_det",
+      "fold": 4,
+      "seed": 42,
+      "arm": "offline_aug",
+      "spec": {
+        "plan_id": "0c2cf258ab3af75d89af",
+        "job": {
+          "recipe": {
+            "name": "yolo26n_det",
+            "kind": "yolo",
+            "task": "detect",
+            "init": "yolo26n.pt",
+            "size": 960,
+            "epochs": 30,
+            "batch": 10,
+            "lr": 0.001
+          },
+          "fold": 4,
+          "seed": 42,
+          "arm": "offline_aug"
+        },
+        "optimizer_steps": 2220,
+        "initializer_sha": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef"
+      },
+      "checkpoint": "/home/supawich/Desktop/Aggregate_Project/experiment/runs/nb16_full_cv/0c2cf258ab3af75d89af/yolo26n_det_fold4_seed42_offline_aug/selected.pt",
+      "checkpoint_sha": "eee2088e1bc77ee492c8a26cf719bbd7148dd8cf1323d9b5932970c0d4c296ff",
+      "optimizer_steps": 2220,
+      "selected_epoch": 10,
+      "threshold_source": "inner-valid",
+      "thresholds": {
+        "0": 0.3302047550678253,
+        "1": 0.019469574093818665
+      },
+      "box": {
+        "AP": 0.3822903068080821,
+        "AP50": 0.6506296523019186,
+        "AP75": 0.3501799875899722,
+        "AP_small": 0.21704323460339162,
+        "AP_medium": 0.28441736894282277,
+        "AP_large": 0.49508517724592066,
+        "AR1": 0.1851898206090947,
+        "AR10": 0.5166629417724538,
+        "AR100": 0.5655812324929973,
+        "AR_small": 0.4005952380952381,
+        "AR_medium": 0.49110036180588323,
+        "AR_large": 0.6568435754189944,
+        "status": "canonical COCOeval",
+        "mode": "bbox",
+        "per_class": {
+          "gravel": 0.4415783733813929,
+          "sand": 0.3230022402347715
+        }
+      },
+      "mask": {},
+      "postprocessing": null,
+      "predictions": "/home/supawich/Desktop/Aggregate_Project/experiment/results/nb16_full_cv/0c2cf258ab3af75d89af/yolo26n_det_fold4_seed42_offline_aug_predictions.jsonl.gz",
+      "predictions_sha": "275c281991503b7d002cce6ff2fc054903e77e9e72984dd8cfe50e8dccb25b89",
+      "seconds": 533.4666072070031,
+      "scope": "development grouped CV; one seed; not external event/site validation"
+    },
+    {
+      "status": "completed",
+      "name": "yolo26s_det_fold4_seed42_control",
+      "model": "yolo26s_det",
+      "fold": 4,
+      "seed": 42,
+      "arm": "control",
+      "spec": {
+        "plan_id": "0c2cf258ab3af75d89af",
+        "job": {
+          "recipe": {
+            "name": "yolo26s_det",
+            "kind": "yolo",
+            "task": "detect",
+            "init": "yolo26s.pt",
+            "size": 960,
+            "epochs": 30,
+            "batch": 5,
+            "lr": 0.001
+          },
+          "fold": 4,
+          "seed": 42,
+          "arm": "control"
+        },
+        "optimizer_steps": 4410,
+        "initializer_sha": "646f8bc3fe0a656803d95c294f7852321748cb29d13466a1af8862e2db384a1b"
+      },
+      "checkpoint": "/home/supawich/Desktop/Aggregate_Project/experiment/runs/nb16_full_cv/0c2cf258ab3af75d89af/yolo26s_det_fold4_seed42_control/selected.pt",
+      "checkpoint_sha": "aaa4ee589ae2dd971bd2ec6739272a7a3a5e26d55164915a7eb1264f33d6f862",
+      "optimizer_steps": 4410,
+      "selected_epoch": 13,
+      "threshold_source": "inner-valid",
+      "thresholds": {
+        "0": 0.6768339276313782,
+        "1": 0.051880449056625366
+      },
+      "box": {
+        "AP": 0.24907020397533225,
+        "AP50": 0.4741116824906248,
+        "AP75": 0.21810132324969414,
+        "AP_small": 0.08672746234920234,
+        "AP_medium": 0.22263405603818323,
+        "AP_large": 0.34342636301198043,
+        "AR1": 0.14962900053638478,
+        "AR10": 0.3770635913940044,
+        "AR100": 0.3922514750581083,
+        "AR_small": 0.18607142857142858,
+        "AR_medium": 0.337391851502281,
+        "AR_large": 0.48470500068129174,
+        "status": "canonical COCOeval",
+        "mode": "bbox",
+        "per_class": {
+          "gravel": 0.33797680140130487,
+          "sand": 0.1601636065493597
+        }
+      },
+      "mask": {},
+      "postprocessing": null,
+      "predictions": "/home/supawich/Desktop/Aggregate_Project/experiment/results/nb16_full_cv/0c2cf258ab3af75d89af/yolo26s_det_fold4_seed42_control_predictions.jsonl.gz",
+      "predictions_sha": "8204f4578fa612553838dbb4c3370b1f8e46fa0f99491aea1a7dbfafea2aa749",
+      "seconds": 686.8794129679954,
+      "scope": "development grouped CV; one seed; not external event/site validation"
+    },
+    {
+      "status": "completed",
+      "name": "yolo26s_det_fold4_seed42_offline_aug",
+      "model": "yolo26s_det",
+      "fold": 4,
+      "seed": 42,
+      "arm": "offline_aug",
+      "spec": {
+        "plan_id": "0c2cf258ab3af75d89af",
+        "job": {
+          "recipe": {
+            "name": "yolo26s_det",
+            "kind": "yolo",
+            "task": "detect",
+            "init": "yolo26s.pt",
+            "size": 960,
+            "epochs": 30,
+            "batch": 5,
+            "lr": 0.001
+          },
+          "fold": 4,
+          "seed": 42,
+          "arm": "offline_aug"
+        },
+        "optimizer_steps": 4410,
+        "initializer_sha": "646f8bc3fe0a656803d95c294f7852321748cb29d13466a1af8862e2db384a1b"
+      },
+      "checkpoint": "/home/supawich/Desktop/Aggregate_Project/experiment/runs/nb16_full_cv/0c2cf258ab3af75d89af/yolo26s_det_fold4_seed42_offline_aug/selected.pt",
+      "checkpoint_sha": "8f525d4711ff45680f723b896f84068b67def84e0048cb1bba3111da2c432757",
+      "optimizer_steps": 4410,
+      "selected_epoch": 20,
+      "threshold_source": "inner-valid",
+      "thresholds": {
+        "0": 0.30652809143066406,
+        "1": 0.1317228525876999
+      },
+      "box": {
+        "AP": 0.2432600775009285,
+        "AP50": 0.4010393500866542,
+        "AP75": 0.2648940907549118,
+        "AP_small": 0.033430712798326975,
+        "AP_medium": 0.18202991875282395,
+        "AP_large": 0.35168248803817836,
+        "AR1": 0.14997169080398118,
+        "AR10": 0.336363162286191,
+        "AR100": 0.35177602956076043,
+        "AR_small": 0.07892857142857142,
+        "AR_medium": 0.31753185464841904,
+        "AR_large": 0.43754939365036105,
+        "status": "canonical COCOeval",
+        "mode": "bbox",
+        "per_class": {
+          "gravel": 0.3470322950609453,
+          "sand": 0.13948785994091178
+        }
+      },
+      "mask": {},
+      "postprocessing": null,
+      "predictions": "/home/supawich/Desktop/Aggregate_Project/experiment/results/nb16_full_cv/0c2cf258ab3af75d89af/yolo26s_det_fold4_seed42_offline_aug_predictions.jsonl.gz",
+      "predictions_sha": "f93097aa2f1ec3529f003c0ef587504ca03a82dcf7427d34281c3eec9d71f515",
+      "seconds": 780.8493820549993,
+      "scope": "development grouped CV; one seed; not external event/site validation"
+    }
+  ]
+}

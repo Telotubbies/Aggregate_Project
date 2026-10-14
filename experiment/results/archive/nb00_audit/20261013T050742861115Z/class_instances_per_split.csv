@@ -1,0 +1,4 @@
+new_split,gravel,sand,total
+test,189,159,348
+train,1281,1541,2822
+valid,317,374,691

@@ -1,0 +1,62 @@
+[
+  {
+    "name": "yolo26n_seg",
+    "kind": "yolo",
+    "task": "segment",
+    "init": "yolo26n-seg.pt",
+    "size": 960,
+    "epochs": 100,
+    "batch": 8,
+    "lr": 0.001
+  },
+  {
+    "name": "yolo26s_seg",
+    "kind": "yolo",
+    "task": "segment",
+    "init": "yolo26s-seg.pt",
+    "size": 960,
+    "epochs": 100,
+    "batch": 8,
+    "lr": 0.001
+  },
+  {
+    "name": "mrcnn",
+    "kind": "mrcnn",
+    "task": "segment",
+    "init": "COCO_DEFAULT",
+    "size": 960,
+    "epochs": 12,
+    "batch": 2,
+    "lr": 0.005
+  },
+  {
+    "name": "unet_ws",
+    "kind": "unet",
+    "task": "segment",
+    "init": "random",
+    "size": 512,
+    "epochs": 40,
+    "batch": 8,
+    "lr": 0.001
+  },
+  {
+    "name": "yolo26n_det",
+    "kind": "yolo",
+    "task": "detect",
+    "init": "yolo26n.pt",
+    "size": 960,
+    "epochs": 100,
+    "batch": 8,
+    "lr": 0.001
+  },
+  {
+    "name": "yolo26s_det",
+    "kind": "yolo",
+    "task": "detect",
+    "init": "yolo26s.pt",
+    "size": 960,
+    "epochs": 100,
+    "batch": 8,
+    "lr": 0.001
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "model": "unet_ws",
+  "batch": 14,
+  "status": "FAIL",
+  "peak_allocated_gib": 6.189068794250488,
+  "peak_reserved_gib": 7.48046875,
+  "seconds": 0.17790405299820122,
+  "error": "RuntimeError: nll_loss2d_forward_out_cuda_template does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True)'. You can turn off determinism just for this operation, or you can use the 'warn_only=True' option, if that's acceptable for your application. You can also file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation."
+}

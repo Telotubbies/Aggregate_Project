@@ -1,0 +1,9 @@
+{
+  "model": "yolo26n_det",
+  "batch": 10,
+  "status": "PASS",
+  "peak_allocated_gib": 5.715862274169922,
+  "peak_reserved_gib": 6.7109375,
+  "seconds": 4.851983216001827,
+  "error": null
+}

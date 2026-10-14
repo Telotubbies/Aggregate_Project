@@ -1,0 +1,9 @@
+{
+  "test_sha": "5cf27d13cfecd4362dd8bdbbebe6abab7ca48e74d762716e1ece3947547b02b6",
+  "confirmatory": false,
+  "status": "CONTAMINATED: visually inspected, error-analysed and used to motivate post-hoc resplit",
+  "images": 105,
+  "groups": 12,
+  "largest_group_image_share": 0.5333333333333333,
+  "usable_for": "descriptive development comparison only; never model/threshold selection"
+}

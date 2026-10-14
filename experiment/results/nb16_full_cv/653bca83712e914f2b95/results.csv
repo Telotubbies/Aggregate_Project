@@ -1,0 +1,2 @@
+model,fold,seed,arm,box_AP,mask_AP,optimizer_steps
+yolo26n_seg,0,42,control,0.20989153409272615,0.24018103467347546,3690

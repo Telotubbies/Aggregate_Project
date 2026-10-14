@@ -1,0 +1,9 @@
+{
+  "model": "unet_ws",
+  "batch": 14,
+  "status": "PASS",
+  "peak_allocated_gib": 7.71783447265625,
+  "peak_reserved_gib": 10.12109375,
+  "seconds": 8.367796138998528,
+  "error": null
+}

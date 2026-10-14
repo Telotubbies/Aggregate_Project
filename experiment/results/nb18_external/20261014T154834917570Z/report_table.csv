@@ -1,0 +1,9 @@
+dataset,model,arm,folds,mask_AP,mask_AP_sd,mask_AP50,box_AP,box_AP_sd,box_AP50
+piled_materials,yolo26n_seg,control,5,0.0181,0.0148,0.0541,0.015,0.012,0.044
+piled_materials,yolo26n_seg,offline_aug,5,0.0347,0.0076,0.0919,0.0313,0.0054,0.0858
+piled_materials,yolo26s_seg,control,5,0.0093,0.0067,0.0256,0.0069,0.0043,0.0188
+piled_materials,yolo26s_seg,offline_aug,5,0.0283,0.0192,0.0788,0.0234,0.0145,0.0639
+separate_rock_sand,yolo26n_seg,control,5,0.0426,0.0136,0.078,0.042,0.0149,0.0781
+separate_rock_sand,yolo26n_seg,offline_aug,5,0.0657,0.01,0.0897,0.0636,0.0109,0.0881
+separate_rock_sand,yolo26s_seg,control,5,0.0211,0.0079,0.0511,0.0177,0.0105,0.0476
+separate_rock_sand,yolo26s_seg,offline_aug,5,0.0414,0.0158,0.062,0.0339,0.0141,0.0618

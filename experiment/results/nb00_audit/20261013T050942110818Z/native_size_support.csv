@@ -1,0 +1,7 @@
+split,cls,small,medium,large
+test,gravel,8,66,115
+test,sand,19,58,82
+train,gravel,101,489,691
+train,sand,173,525,843
+valid,gravel,3,175,139
+valid,sand,71,136,167

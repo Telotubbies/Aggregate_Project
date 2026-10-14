@@ -1,0 +1,15 @@
+{
+  "status": "finished_with_errors",
+  "plan_id": "0c2cf258ab3af75d89af",
+  "total": 60,
+  "completed": 43,
+  "failed": 17,
+  "pid": 304597,
+  "started_utc": "2026-10-13T09:12:32.294634+00:00",
+  "current": null,
+  "epoch": 30,
+  "optimizer_steps": 4410,
+  "val_AP": 0.21102513117566987,
+  "updated_utc": "2026-10-13T21:00:14.117598+00:00",
+  "finished_utc": "2026-10-13T21:00:14.124192+00:00"
+}

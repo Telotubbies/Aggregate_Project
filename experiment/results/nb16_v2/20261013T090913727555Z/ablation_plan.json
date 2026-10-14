@@ -1,0 +1,67 @@
+{
+  "arms": [
+    {
+      "name": "ablation_control",
+      "kind": "yolo",
+      "task": "segment",
+      "init": "yolo26n-seg.pt",
+      "size": 960,
+      "epochs": 100,
+      "batch": 8,
+      "lr": 0.001,
+      "intervention": "none"
+    },
+    {
+      "name": "ablation_640",
+      "kind": "yolo",
+      "task": "segment",
+      "init": "yolo26n-seg.pt",
+      "size": 640,
+      "epochs": 100,
+      "batch": 8,
+      "lr": 0.001,
+      "intervention": "none"
+    },
+    {
+      "name": "ablation_clahe",
+      "kind": "yolo",
+      "task": "segment",
+      "init": "yolo26n-seg.pt",
+      "size": 960,
+      "epochs": 100,
+      "batch": 8,
+      "lr": 0.001,
+      "intervention": "clahe"
+    },
+    {
+      "name": "ablation_hflip",
+      "kind": "yolo",
+      "task": "segment",
+      "init": "yolo26n-seg.pt",
+      "size": 960,
+      "epochs": 100,
+      "batch": 8,
+      "lr": 0.001,
+      "intervention": "hflip"
+    },
+    {
+      "name": "ablation_affine",
+      "kind": "yolo",
+      "task": "segment",
+      "init": "yolo26n-seg.pt",
+      "size": 960,
+      "epochs": 100,
+      "batch": 8,
+      "lr": 0.001,
+      "intervention": "affine"
+    }
+  ],
+  "seeds": [
+    42,
+    123,
+    2026
+  ],
+  "selection": "full valid canonical AP",
+  "test_status": "development-inspected only",
+  "vary_one_factor": true
+}
