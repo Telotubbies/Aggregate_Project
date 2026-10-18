@@ -2,7 +2,7 @@
 
 เอกสารนี้สรุปขั้นตอน ผลการทดลอง ข้อจำกัด และปัญหาที่ยังค้างของ pipeline วิจัยฉบับปรับปรุง (Notebook 01–04 และ 03.5) ตัวเลขทั้งหมดอ่านจากไฟล์ใน `outputs/` ที่ notebook บันทึกไว้ในการรันครั้งล่าสุด (18 ตุลาคม 2569) แผนการวิจัยฉบับเต็ม การตัดสินใจเชิงวิธีการ และบันทึกการเปลี่ยนแปลงอยู่ใน [RESEARCH_PLAN.md](RESEARCH_PLAN.md)
 
-**สถานะ:** ชุด test (Notebook 03) และชุด holdout (Notebook 04) ถูกเปิดประเมินแล้วครั้งเดียว (`outputs/03_yolo_experiments/evaluation/TEST_OPENED.json`, `outputs/04_holdout/HOLDOUT_OPENED.json`) การเปลี่ยนแปลงใด ๆ หลังจากนี้ต้องรายงานเป็นการวิเคราะห์หลังเปิดผล
+**สถานะ:** ชุด test (Notebook 03) และชุด holdout (Notebook 04) ถูกเปิดประเมินแล้วครั้งเดียว (`outputs/_archive_round1/03_evaluation/TEST_OPENED.json`, `outputs/_archive_round1/04_holdout/HOLDOUT_OPENED.json`) การเปลี่ยนแปลงใด ๆ หลังจากนี้ต้องรายงานเป็นการวิเคราะห์หลังเปิดผล
 
 ## สารบัญ
 
@@ -355,7 +355,7 @@ Grouped CV ของ baseline: mask AP 0.280 / 0.531 / 0.433 (fold 0–2) sand A
 
 Confusion matrix ของสถานะบน test: gravel 99/114 ภาพถูก (15 ภาพทายเป็น mixed), sand 81/82, mixed 48/48
 
-![test failure cases](outputs/03_yolo_experiments/evaluation/test_failure_cases.png)
+![test failure cases](outputs/_archive_round1/03_evaluation/test_failure_cases.png)
 
 ---
 
@@ -384,13 +384,13 @@ Recall ตามควอนไทล์ของพื้นที่ GT บน
 
 ในบรรดา GT ขนาดเล็ก (< 2,019 พิกเซล) ของ val ทั้ง 84 ชิ้น 85% ติดขอบภาพหรืออยู่ห่างไม่เกิน 15 พิกเซลจาก instance ขนาดใหญ่ของคลาสเดียวกัน (sand 88%) ซึ่งเป็นเศษของกองเดียวที่ถูกเสาหรือคานบัง
 
-![size analysis](outputs/03.5_best_model_evaluation/figures/fig07_val_size_analysis.png)
+![size analysis](outputs/_archive_round1/03.5_best_model_evaluation/figures/fig07_val_size_analysis.png)
 
 ### 6.2 PR curve และ confusion matrix ระดับ instance
 
-![test PR curves](outputs/03.5_best_model_evaluation/figures/fig03_test_pr_curves.png)
+![test PR curves](outputs/_archive_round1/03.5_best_model_evaluation/figures/fig03_test_pr_curves.png)
 
-![test confusion](outputs/03.5_best_model_evaluation/figures/fig04_test_confusion_instance.png)
+![test confusion](outputs/_archive_round1/03.5_best_model_evaluation/figures/fig04_test_confusion_instance.png)
 
 ### 6.3 การจำแนกประเภทความผิดพลาด (TIDE, mask IoU)
 
@@ -405,25 +405,25 @@ Recall ตามควอนไทล์ของพื้นที่ GT บน
 
 บน val ความผิดพลาดหลักคือ Loc (mask ครอบทั้งกองขณะที่ GT แบ่งเป็นหลายชิ้น) ส่วนบน test คือ Bkg (ทายวัสดุบนพื้นหลังของฉากใหม่) และ Dupe (mask ซ้อนหลายชิ้นบนกองเดียว)
 
-![test TIDE](outputs/03.5_best_model_evaluation/figures/fig05_test_tide_errors.png)
+![test TIDE](outputs/_archive_round1/03.5_best_model_evaluation/figures/fig05_test_tide_errors.png)
 
 ### 6.4 คุณภาพของ mask, calibration และผลรายกลุ่ม
 
 D-ECE (15 ช่วง, conf ≥ 0.05): val gravel 0.082 / sand 0.089, test gravel 0.098 / sand 0.083 บน test แบบจำลองกลุ่ม gravel `0f964fdb` (111 ภาพ) ได้ mask AP 0.440 และกลุ่ม mixed `4a7f29af` ได้ gravel 0.869 / sand 0.445
 
-![test mask quality](outputs/03.5_best_model_evaluation/figures/fig06_test_mask_quality.png)
+![test mask quality](outputs/_archive_round1/03.5_best_model_evaluation/figures/fig06_test_mask_quality.png)
 
-![test calibration](outputs/03.5_best_model_evaluation/figures/fig08_test_calibration.png)
+![test calibration](outputs/_archive_round1/03.5_best_model_evaluation/figures/fig08_test_calibration.png)
 
-![test state classification](outputs/03.5_best_model_evaluation/figures/fig10_test_state_classification.png)
+![test state classification](outputs/_archive_round1/03.5_best_model_evaluation/figures/fig10_test_state_classification.png)
 
 ### 6.5 ภาพตัวอย่าง TP / FP / FN
 
-![test worst images](outputs/03.5_best_model_evaluation/figures/fig11_test_worst_images.png)
+![test worst images](outputs/_archive_round1/03.5_best_model_evaluation/figures/fig11_test_worst_images.png)
 
-![test FP gallery](outputs/03.5_best_model_evaluation/figures/fig12_test_fp_gallery.png)
+![test FP gallery](outputs/_archive_round1/03.5_best_model_evaluation/figures/fig12_test_fp_gallery.png)
 
-![test FN gallery](outputs/03.5_best_model_evaluation/figures/fig13_test_fn_gallery.png)
+![test FN gallery](outputs/_archive_round1/03.5_best_model_evaluation/figures/fig13_test_fn_gallery.png)
 
 ### 6.6 Self-attention ของแบบจำลองที่ตรึงไว้
 
@@ -432,7 +432,7 @@ D-ECE (15 ช่วง, conf ≥ 0.05): val gravel 0.082 / sand 0.089, test grav
 | ชั้น 10 `C2PSA` | 20×20 | 2 | 0.80 / 0.84 / 0.82 | 0.74–0.77 |
 | ชั้น 22 `C3k2(attn=True)` | 20×20 | 2 | 0.94 / 1.00 / 0.92 | 0.67–0.72 |
 
-![attention on mixed image](outputs/03.5_best_model_evaluation/figures/fig01b_attention_mixed.png)
+![attention on mixed image](outputs/_archive_round1/03.5_best_model_evaluation/figures/fig01b_attention_mixed.png)
 
 ### 6.7 ความทนทาน (val-C, mask AP)
 
@@ -461,7 +461,7 @@ mPC 0.501, rPC 0.86 ความมืดระดับ 5 ทำให้ mask 
 
 ผลต่างแบบคู่ S1 − S0: piled_materials −0.037 [−0.048, −0.025], separate_rock_sand −0.014 [−0.020, −0.000] standardization ทำให้ผลแย่ลงในทั้งสองชุด
 
-![shift statistics](outputs/04_holdout/figures/fig01_shift_image_stats.png)
+![shift statistics](outputs/_archive_round1/04_holdout/figures/fig01_shift_image_stats.png)
 
 ### 7.2 การจำแนกระดับภาพ (S0, threshold ที่ตรึงไว้)
 
@@ -472,9 +472,9 @@ mPC 0.501, rPC 0.86 ความมืดระดับ 5 ทำให้ mask 
 
 บน piled_materials แบบจำลองทาย sand บ่อยเกินไป (recall 0.91, specificity 0.52) บน separate_rock_sand แบบจำลองตรวจพบวัสดุอย่างน้อยหนึ่งชนิดได้แม่นยำ แต่พลาดวัสดุชนิดที่สองในภาพ mixed (recall ของ mixed 0.25) ชุด s02 ถูกทายเป็น none 61% และ mixed 39%
 
-![image-level confusion](outputs/04_holdout/figures/image_level_confusion.png)
+![image-level confusion](outputs/_archive_round1/04_holdout/figures/image_level_confusion.png)
 
-![holdout predictions](outputs/04_holdout/figures/fig04_predictions_piled_materials.png)
+![holdout predictions](outputs/_archive_round1/04_holdout/figures/fig04_predictions_piled_materials.png)
 
 ### 7.3 วิดีโอ: overlay และลำดับสถานะ
 
@@ -486,11 +486,11 @@ mPC 0.501, rPC 0.86 ความมืดระดับ 5 ทำให้ mask 
 | `32842c3f` | 19.8 s | ไม่อยู่ในชุดพัฒนา | none → gravel → mixed → gravel → mixed → gravel (gravel 86%, mixed 13%) | 18 / 5 |
 | `5d81688a` | 20.8 s | กลุ่มใน test (gravel) | none → gravel (gravel 99%) | 6 / 1 |
 
-ช่วง none 0.2 วินาทีแรกของทุกคลิปเกิดจาก hysteresis ซึ่งต้องการ 3 เฟรมก่อนเปลี่ยนสถานะ ไม่ใช่ผลของแบบจำลอง วิดีโอ overlay ความละเอียดเต็มอยู่ใน `outputs/04_holdout/temporal/pred_overlay_<id>.mp4`
+ช่วง none 0.2 วินาทีแรกของทุกคลิปเกิดจาก hysteresis ซึ่งต้องการ 3 เฟรมก่อนเปลี่ยนสถานะ ไม่ใช่ผลของแบบจำลอง วิดีโอ overlay ความละเอียดเต็มอยู่ใน `outputs/_archive_round1/04_holdout/temporal/pred_overlay_<id>.mp4`
 
 | `0a48349e` | `32842c3f` | `5d81688a` |
 |---|---|---|
-| ![0a48349e](outputs/04_holdout/temporal/pred_overlay_0a48349e.gif) | ![32842c3f](outputs/04_holdout/temporal/pred_overlay_32842c3f.gif) | ![5d81688a](outputs/04_holdout/temporal/pred_overlay_5d81688a.gif) |
+| ![0a48349e](outputs/_archive_round1/04_holdout/temporal/pred_overlay_0a48349e.gif) | ![32842c3f](outputs/_archive_round1/04_holdout/temporal/pred_overlay_32842c3f.gif) | ![5d81688a](outputs/_archive_round1/04_holdout/temporal/pred_overlay_5d81688a.gif) |
 
 การประเมินระดับเวลา (frame-wise accuracy, segmental F1, Edit score) ยังไม่ได้ทำ เพราะยังไม่มี label ช่วงเวลาที่ผู้วิจัยยืนยันแล้ว
 
@@ -567,7 +567,7 @@ uv pip install --python .venv/bin/python -r requirements.lock.txt
 | 1 | `01_eda_and_dataset_splitting.ipynb` | — | ~1 นาที | split, Silver, `manifests/` |
 | 2 | `02_preprocessing_and_augmentation.ipynb` | `RUN_TRAINING = True` | ~2.5 ชั่วโมง | `configs/aug_recipe_selected.json` |
 | 3 | `03_yolo_training_architecture_and_benchmarking.ipynb` | `RUN_TRAINING`, `RUN_TEST_EVAL` (ครั้งเดียว), `RUN_EXPORT` | ~2.5 ชั่วโมง | `configs/frozen_inference.yaml`, `TEST_OPENED.json` |
-| 3.5 | `03.5_best_model_evaluation.ipynb` | `RUN_VALC`, `RUN_SPEED` | ~3 นาที | `outputs/03.5_best_model_evaluation/` |
+| 3.5 | `03.5_best_model_evaluation.ipynb` | `RUN_VALC`, `RUN_SPEED` | ~3 นาที | `outputs/_archive_round1/03.5_best_model_evaluation/` |
 | 4 | `04_holdout_standardization_and_final_evaluation.ipynb` | `RUN_HOLDOUT_EVAL` (ครั้งเดียว), `RUN_TEMPORAL_EVAL` | ~5 นาที | `HOLDOUT_OPENED.json`, GIF ของวิดีโอ |
 
 ```bash
