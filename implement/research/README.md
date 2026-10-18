@@ -176,6 +176,47 @@ classDiagram
 
 ---
 
+### 2.3 สถาปัตยกรรม YOLO26n-seg และบล็อกที่ทดลองปรับ
+
+รูปด้านล่างเป็นแผนผังอ้างอิงของตระกูล YOLO (บล็อก C2f) ไม่ใช่สถาปัตยกรรมที่ใช้จริง YOLO26 ใช้ **C3k2** แทน C2f และ **Segment26** เป็น head ผู้จัดทำรูปคือ Priyanto Hidayatullah และ Refdinal Tubagus (ใช้เป็นภาพประกอบเท่านั้น) ตารางถัดไปอ้างอิงจากโมเดลที่ติดตั้งจริง (`yolo26-seg.yaml`, layer index ตามที่ Ultralytics ใช้)
+
+![YOLO architecture reference](assets/yolo_architecture_reference.png)
+
+| Index | Module | From | Parameters (n) | หมายเหตุ |
+|---|---|---|---:|---|
+| 0–1 | Conv, Conv | input | 0.5 K, 4.7 K | stride 2 (P1, P2) |
+| 2 | C3k2 | 1 | 6.6 K | backbone P2 |
+| 3 | Conv | 2 | 37.0 K | P3 |
+| 4 | C3k2 | 3 | 26.1 K | backbone P3 |
+| 5 | Conv | 4 | 147.7 K | P4 |
+| 6 | C3k2 | 5 | 87.0 K | backbone P4 |
+| 7 | Conv | 6 | 295.4 K | P5 |
+| 8 | C3k2 | 7 | 346.1 K | backbone P5 |
+| 9 | SPPF | 8 | 164.6 K | pooling |
+| 10 | C2PSA | 9 | 249.7 K | attention (ชั้นที่ 1) |
+| 11, 14 | Upsample | — | 0 | |
+| 12, 15, 18, 21 | Concat | — | 0 | skip connection |
+| 13, 16, 19, 22 | C3k2 | — | 119.8 K, 34.3 K, 95.2 K, 463.1 K | neck/head (22 ใช้ `attn=True`) |
+| 17, 20 | Conv | — | 37.0 K, 147.7 K | downsample ใน PAN |
+| 23 | Segment26 | [16, 19, 22] | 863.7 K | head P3, P4, P5 |
+
+**บล็อกที่การทดลองปรับ** (ทุกการปรับเป็นการแก้ argument ของชั้นนี้ ไม่มีการเพิ่มโมดูลเอง ยกเว้น CBAM/ECA ของรอบแรก)
+
+| การทดลอง | ชั้นที่ถูกปรับ | สิ่งที่เปลี่ยน | รอบ | สถานะ |
+|---|---|---|---|---|
+| Augmentation / preprocessing | ไม่ใช่ block | ข้อมูลเข้า (offline/online aug, P1–P5) | 1, 2 | รอบสองแก้ A9 ให้รวม A3 |
+| C1 CBAM ที่ P3 | 16 | แทรก CBAM หลัง C3k2 | 1, 2 (ฝึกใหม่) | รอบสองฝึกใหม่ |
+| C2 ECA ที่ P3 | 16 | แทรก ECA | 1 | รายงานจากรอบแรก |
+| C3 / C4 CBAM / ECA P3–P5 | 16, 19, 22 | แทรก attention ทั้งสามระดับ | 1 | รายงานจากรอบแรก |
+| A0 ถอด attention | 22 | `attn=False` | 1, 2 (ฝึกใหม่) | รอบสองฝึกใหม่ |
+| A1–A4 เพิ่ม attention | 16, 19, 6, 8 | `attn=True` | 1 | รายงานจากรอบแรก |
+| R1 imgsz 960 | ไม่ใช่ block | ความละเอียดอินพุต | 2 | ใหม่ |
+| R2 YOLO26s-seg | ทุก block (scale s) | เปลี่ยน depth/width | 2 | ใหม่ |
+| R3 hard-group oversampling | ไม่ใช่ block | ข้อมูลฝึกซ้ำกลุ่มยาก | 2 | ใหม่ |
+| MuSGD | ไม่ใช่ block | optimizer | 1 | ไม่ฝึกในรอบสอง |
+
+**ข้อสังเกต:** เฉพาะ C1 และ A0 ที่ฝึกใหม่ในรอบสอง ตามที่ตกลงไว้ (arm ที่ดีที่สุดของแต่ละกลุ่มในรอบแรก) ที่เหลือรายงานจากรอบแรกและแยกไว้ชัดเจน
+
 ## 3. Notebook 01: ชุดข้อมูลและการแบ่งชุดข้อมูล
 
 **ชุดข้อมูล:** Roboflow `aggregate_rock-and-sand` v5 จำนวน 1,089 ภาพ (JPEG/RGB) และ 6,023 instance (gravel 2,876 / sand 3,147) หลังรวมกลุ่มของวิดีโอและภาพเกือบซ้ำ (pHash, d ≤ 8) เหลือ 27 กลุ่ม
