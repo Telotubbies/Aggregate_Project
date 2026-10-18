@@ -48,53 +48,119 @@
 
 ### 2.1 Flow diagram
 
+![ภาพรวม pipeline พร้อมภาพจากข้อมูลจริง](assets/pipeline_overview.png)
+
+ภาพบนสรุป pipeline จากซ้ายไปขวาตามลำดับ notebook ทุกคอลัมน์เริ่มจากข้อมูลนำเข้า (IN) ผ่านสามขั้นตอนหลักซึ่งระบุชื่อ function ที่เรียกใช้และแสดงผลจริงของขั้นนั้น (ภาพตัวอย่างจากชุดข้อมูล ภาพ augmentation feature map ผลการทดลอง และผลการประเมิน) แล้วจบที่ไฟล์ผลลัพธ์ (OUT) ที่ส่งต่อให้ notebook ถัดไป ภาพและตัวเลขทั้งหมดสร้างจากไฟล์ใน `outputs/` และแบบจำลองที่ตรึงไว้ (`A9_selected_s42`) ส่วนแผนภาพด้านล่างแสดงลำดับ function โดยละเอียด ([PDF](assets/pipeline_overview.pdf))
+
+แผนภาพแสดงลำดับ function ที่แต่ละ notebook เรียกใช้ จัดเป็นหกคอลัมน์ตามลำดับการทำงาน แต่ละคอลัมน์เริ่มจากข้อมูลนำเข้า (INPUT, สีฟ้า) ผ่านขั้นตอนประมวลผลซึ่งระบุชื่อ function พร้อมข้อมูลเข้าและผลลัพธ์ของขั้นนั้น มีด่านตรวจหรือจุดตัดสินใจ (สีส้ม) และจบที่ไฟล์ผลลัพธ์ (OUTPUT, สีเขียว) ที่ notebook ถัดไปนำไปใช้ ภาพความละเอียดสูง: [assets/pipeline_flowchart.png](assets/pipeline_flowchart.png) และ [assets/pipeline_flowchart.svg](assets/pipeline_flowchart.svg)
+
 ```mermaid
-flowchart TD
-    subgraph SRC[ข้อมูลต้นทาง]
-        BR[Bronze: Roboflow aggregate_rock-and-sand v5<br/>1,089 ภาพ, 6,023 instance]
-        HO[Holdout ภายนอก: piled_materials,<br/>separate_rock_sand, s02]
-        VID[วิดีโอ 3 คลิป]
-    end
+flowchart LR
+    classDef io fill:#e8f1fb,stroke:#3b6ea5,color:#0b2540
+    classDef out fill:#e9f6ec,stroke:#3d8b4f,color:#0f2e17
+    classDef proc fill:#ffffff,stroke:#8a8f98,color:#1d1f23
+    classDef gate fill:#fff4e0,stroke:#c98a1b,color:#3d2a05
 
-    BR --> N01
-    subgraph N01[Notebook 01: EDA และการแบ่งชุดข้อมูล]
-        A1[ตรวจ annotation, pHash, กลุ่มวิดีโอ] --> A2[กฎ Silver: ซ่อม geometry,<br/>รวม annotation ซ้ำ, ignore region]
-        A2 --> A3[เปรียบเทียบ split S0–S3]
-        A3 --> A4[S3 constrained group split<br/>train 714 / val 131 / test 244]
-    end
+        subgraph N01["Notebook 01 · EDA, Silver และการแบ่งชุดข้อมูล"]
+            direction TB
+            A0[/"<b>INPUT</b><br/>data/bronze: Roboflow v5<br/>1,089 ภาพ · 6,023 polygon (YOLO)"/]
+            A1["<b>parse_name() · sha256_file()</b><br/>ชื่อไฟล์ → กลุ่มแหล่งที่มา, hash ภาพ"]
+            A2["<b>geom_features() · phash_bits()</b><br/>polygon → flag geometry<br/>ภาพ → pHash 64 bit"]
+            A3["<b>union() · find()</b><br/>คู่ pHash d ≤ 8 → group_merged (27 กลุ่ม)"]
+            A4["<b>image_stats() · cramers_v()</b><br/>ความสว่าง, contrast, ความคม<br/>→ ตัวแปรกวน คลาส × กลุ่ม"]
+            A5["<b>clean_geometry() · rule_flags()</b><br/>ε, τ, a_min, r_max → sensitivity<br/>→ เลือกพารามิเตอร์ Silver"]
+            A6["<b>yolo_line() · dataset_hash()</b><br/>polygon ที่ซ่อมแล้ว → data/silver_‹hash›<br/><b>audit_tile()</b> → ตรวจตัวอย่างสุ่ม"]
+            A7["<b>state_of() · split_metrics()</b><br/>ป้ายสถานะระดับภาพ, เทียบ S0–S3<br/>→ S3: 714 / 131 / 244 + CV 3 fold"]
+            A8{{"<b>G1</b> · coco_gt()<br/>กลุ่มไม่ข้าม split, ไม่มีภาพเกือบซ้ำข้าม split"}}
+            A9[("<b>OUTPUT</b><br/>data/dev_‹hash›/ data.yaml, cv/fold*.yaml<br/>annotations/*_coco.json<br/>manifests/images_*.csv")]
+            A0 --> A1 --> A2 --> A3 --> A4 --> A5 --> A6 --> A7 --> A8 --> A9
+        end
 
-    A4 --> N02
-    subgraph N02[Notebook 02: preprocessing และ augmentation]
-        B1[preprocessing P1–P5] --> B3[screening A0–A8, seed 42]
-        B2[สร้าง offline aug A3–A7 และ val-C] --> B3
-        B3 --> B4[ยืนยัน 3 arm ที่ดีที่สุด × 3 seed]
-        B4 --> B5[compose A9 + P5_unsharp × 3 seed]
-        B5 --> B6[(configs/aug_recipe_selected.json)]
-    end
+        subgraph N02["Notebook 02 · preprocessing และ augmentation"]
+            direction TB
+            B0[/"<b>INPUT</b><br/>data/dev_‹hash› (train, val)<br/>guard_not_test() กันการแตะ test"/]
+            B1["<b>letterbox_poly()</b><br/>letterbox เทียบ squash → ขนาด 640"]
+            B2["<b>pp_grayworld · pp_clahe · pp_gamma_auto<br/>pp_denoise · pp_unsharp</b> (P1–P5)<br/>ภาพ → quality() บน material_mask()"]
+            B3["<b>aug_dark · aug_rain · aug_dust<br/>aug_photometric · aug_blur</b><br/>ภาพ + level → ภาพสถานการณ์จำลอง"]
+            B4["<b>build_offline() · build_val_c()<br/>build_preprocessed()</b><br/>→ data/offline_aug_A3–A7, val_c, preproc_P*"]
+            B5["<b>train_run()</b> + EpochLogger<br/>data.yaml + recipe(epochs, online)<br/>→ runs/‹arm›_‹seed›_‹hash›/best.pt"]
+            B6["<b>eval_run()</b><br/>predict_dets → l1_evaluate (run_cocoeval)<br/>→ l2_evaluate, collect() บน val-C"]
+            B7{{"screening A0–A8 (seed 42)<br/>→ 3 arm ที่ดีที่สุด × 3 seed"}}
+            B8["<b>compose_a9() · build_combined_offline()</b><br/>รวม arm ที่ช่วย + P5_unsharp × 3 seed"]
+            B9[("<b>OUTPUT</b><br/>configs/aug_recipe_selected.json<br/>data/preproc_P5_unsharp_A9_*<br/>tables/augmentation_all_runs.csv")]
+            B0 --> B1 --> B2 --> B3 --> B4 --> B5 --> B6 --> B7 --> B8 --> B9
+        end
 
-    B6 --> N03
-    subgraph N03[Notebook 03: การฝึกและสถาปัตยกรรม]
-        C1[baseline A9 × 3 seed, reproducibility] --> C2[feature map, ต้นทุนรายชั้น, latency]
-        C2 --> C3[MuSGD เทียบ AdamW]
-        C3 --> C4[CBAM / ECA × 4 arm]
-        C4 --> C5[C3k2 attn=True × 5 arm]
-        C5 --> C6[SAHI, shortcut test]
-        C6 --> C7{arm ใดดีกว่า baseline<br/>เกิน 1 SD?}
-        C7 -- ไม่มี --> C8[เลือก baseline]
-        C8 --> C9[grouped CV 3 fold]
-        C9 --> C10[(configs/frozen_inference.yaml)]
-        C10 --> C11[ประเมิน test ครั้งเดียว]
-    end
+        subgraph N03A["Notebook 03 (ก) · การฝึกและสถาปัตยกรรม"]
+            direction TB
+            C0[/"<b>INPUT</b><br/>aug_recipe_selected.json<br/>preproc_P5_unsharp_A9 · yolo26n-seg.pt"/]
+            C1["<b>train_run() × 3 seed · eval_val()</b><br/>baseline A9 → baseline_record.json"]
+            C2["<b>capture_activations()</b><br/>ภาพ letterbox → feature map ทุกชั้น"]
+            C3["<b>thop_flops() · cuda_time()<br/>model_latency()</b> → FLOPs, ms ต่อชั้น"]
+            C4["AdamW เทียบ MuSGD<br/>train_run(recipe ต่าง optimizer)"]
+            C5["<b>insert_attention()</b> + AttSegTrainer<br/>ECA · CBAMPaper · C3k2Att → C1–C4"]
+            C6["<b>c3k2_attn_cfg()</b> + C3k2AttnSegTrainer<br/><b>capture_psa() · plot_psa()</b> → A0–A4"]
+            C7["<b>hardgroup_data() · oversample()</b><br/>R1 imgsz 960 · R2 YOLO26s · R3 กลุ่มยาก"]
+            C8["SAHI · <b>inpaint_material()</b><br/>ลบวัสดุ → ทดสอบ shortcut"]
+            C9[("<b>OUTPUT</b><br/>architecture_ablations/*_runs.csv<br/>feature_maps/, layer_benchmarks/")]
+            C0 --> C1 --> C2 --> C3 --> C4 --> C5 --> C6 --> C7 --> C8 --> C9
+        end
 
-    C10 --> N035[Notebook 03.5: การประเมินโดยละเอียด<br/>COCO, PR, TIDE, Boundary IoU, calibration,<br/>attention, val-C, test]
-    C10 --> N04
-    HO --> N04
-    VID --> N04
-    subgraph N04[Notebook 04: holdout และวิดีโอ]
-        D1[EDA ของ holdout, distribution shift] --> D2[standardization S0 / S1]
-        D2 --> D3[ประเมิน holdout ครั้งเดียว<br/>L1 instance + L2 ระดับภาพ]
-        D3 --> D4[overlay วิดีโอ, GIF, ลำดับสถานะ]
-    end
+        subgraph N03B["Notebook 03 (ข) · เลือก ตรึง และประเมิน test"]
+            direction TB
+            D0[/"<b>INPUT</b><br/>ผลทุก arm บน val<br/>data/dev_‹hash›/cv/fold0–2"/]
+            D1["<b>arm_table() · stop_info() · cost_of()</b><br/>mean ± SD ต่อ arm"]
+            D2{{"arm ใดดีกว่า baseline เกิน 1 SD?<br/>ไม่มี → เลือก baseline"}}
+            D3["<b>config_of() · apply_att()</b><br/>grouped CV 3 fold บน train+val"]
+            D4{{"<b>G4</b> · ตรึงการตั้งค่า<br/>→ frozen_inference.yaml"}}
+            D5["ประเมิน test ครั้งเดียว<br/><b>l1_evaluate · l2_evaluate<br/>boundary_iou · cluster_bootstrap</b>"]
+            D6["export ONNX / TensorRT / NCNN<br/><b>bench_exported() · match_discrepancy()</b>"]
+            D9[("<b>OUTPUT</b><br/>frozen_inference.yaml · best.pt<br/>TEST_OPENED.json · test metric + CI<br/>quantization/ (RTX 3080 Ti, Pi 5)")]
+            D0 --> D1 --> D2 --> D3 --> D4 --> D5 --> D6 --> D9
+        end
+
+        subgraph N035["Notebook 03.5 · ประเมินแบบจำลองที่ตรึงไว้"]
+            direction TB
+            E0[/"<b>INPUT</b><br/>best.pt ที่ตรึงไว้<br/>COCO GT ของ val, val-C, test"/]
+            E1["<b>coco_block()</b><br/>predict_dets → run_cocoeval<br/>→ AP, AP50, AP_s/m/l + bootstrap CI"]
+            E2["<b>pr_figure()</b> → PR curve, P/R/F1 ตาม conf"]
+            E3["<b>build_matches() · class_aware_match()<br/>confusion_instance()</b> → confusion matrix"]
+            E4["<b>tide_assign() · tide_report()</b><br/>→ Cls, Loc, Both, Dupe, Bkg, Miss"]
+            E5["<b>mask_quality() · size_analysis()</b><br/>Boundary IoU, AP ตามขนาดวัตถุ"]
+            E6["<b>calibration() · per_group()</b><br/>ECE, ผลรายกลุ่มฉาก"]
+            E7["<b>state_eval() · galleries()</b><br/>L2 ระดับภาพ, ภาพ TP / FP / FN"]
+            E9[("<b>OUTPUT</b><br/>outputs/03.5_*/figures fig01–fig14<br/>summary.json")]
+            E0 --> E1 --> E2 --> E3 --> E4 --> E5 --> E6 --> E7 --> E9
+        end
+
+        subgraph N04["Notebook 04 · holdout, standardization และวิดีโอ"]
+            direction TB
+            F0[/"<b>INPUT</b><br/>holdout zip 3 ชุด (piled_materials,<br/>separate_rock_sand, s02) · วิดีโอ 3 คลิป<br/>frozen_inference.yaml"/]
+            F1["<b>silver_instances() · write_coco()</b><br/>กฎ Silver เดียวกับชุดพัฒนา → holdout_gt"]
+            F2["<b>phash() · fnd()</b><br/>ภาพซ้ำภายใน holdout และซ้อนกับ dev"]
+            F3["<b>image_stats() · embed()</b><br/>→ distribution shift เทียบ dev"]
+            F4["<b>std_grayworld() · std_gamma()<br/>standardize_S1()</b> → S0 / S1"]
+            F5{{"<b>G5</b> · pipeline(std_fn)<br/>predict_dets → l1_evaluate, l2_evaluate<br/>ประเมินครั้งเดียว"}}
+            F6["<b>presence_metrics() · image_level_report()</b><br/>accuracy, precision, recall ระดับภาพ"]
+            F7["<b>presence_to_state() · smooth() · runs_of()</b><br/>เฟรม → ลำดับสถานะ, overlay, GIF<br/><b>segmental_f1() · edit_score()</b> (L3)"]
+            F9[("<b>OUTPUT</b><br/>HOLDOUT_OPENED.json<br/>state_predictions_*.csv<br/>pred_states_*.csv, GIF")]
+            F0 --> F1 --> F2 --> F3 --> F4 --> F5 --> F6 --> F7 --> F9
+        end
+
+    N01 ==> N02 ==> N03A ==> N03B ==> N035
+    N03B ==>|"frozen_inference.yaml"| N04
+    N035 ~~~ N04
+
+    class A0,B0,C0,D0,E0,F0 io
+    class A9,B9,C9,D9,E9,F9 out
+    class A1,A2,A3,A4,A5,A6,A7,B1,B2,B3,B4,B5,B6,B8,C1,C2,C3,C4,C5,C6,C7,C8,D1,D3,D5,D6,E1,E2,E3,E4,E5,E6,E7,F1,F2,F3,F4,F6,F7 proc
+    class A8,B7,D2,D4,F5 gate
+    style N01 fill:#f7f8fa,stroke:#9aa3ad
+    style N02 fill:#f7f8fa,stroke:#9aa3ad
+    style N03A fill:#f7f8fa,stroke:#9aa3ad
+    style N03B fill:#f7f8fa,stroke:#9aa3ad
+    style N035 fill:#f7f8fa,stroke:#9aa3ad
+    style N04 fill:#f7f8fa,stroke:#9aa3ad
 ```
 
 ### 2.2 Class diagram ของโค้ดหลักและโครงสร้างของแบบจำลอง
@@ -178,7 +244,11 @@ classDiagram
 
 ### 2.3 สถาปัตยกรรม YOLO26n-seg และบล็อกที่ทดลองปรับ
 
-รูปด้านล่างเป็นแผนผังอ้างอิงของตระกูล YOLO (บล็อก C2f) ไม่ใช่สถาปัตยกรรมที่ใช้จริง YOLO26 ใช้ **C3k2** แทน C2f และ **Segment26** เป็น head ผู้จัดทำรูปคือ Priyanto Hidayatullah และ Refdinal Tubagus (ใช้เป็นภาพประกอบเท่านั้น) ตารางถัดไปอ้างอิงจากโมเดลที่ติดตั้งจริง (`yolo26-seg.yaml`, layer index ตามที่ Ultralytics ใช้)
+![สถาปัตยกรรม YOLO26n-seg](assets/yolo26n_seg_architecture.png)
+
+แผนภาพนี้สร้างจากแบบจำลองที่ตรึงไว้โดยตรง แถว (b) แสดงทั้ง 24 ชั้นเรียงจากซ้ายไปขวา ความสูงของบล็อกแปรตามความละเอียดเชิงพื้นที่ ใต้บล็อกระบุขนาด H² และจำนวน channel เส้นเหนือบล็อกคือ skip connection เข้าสู่ Concat ส่วนเส้นใต้บล็อกคือ P3, P4 และ P5 ที่ส่งเข้า Segment26 สัญลักษณ์บนบล็อกระบุตำแหน่งที่การทดลองปรับ (★ แทรก CBAM/ECA, ▲ เปิด `attn=True`, ◆ PSA ใน baseline) แถว (a) เป็น feature map จริงของภาพตัวอย่างจากชุด val สีของแต่ละพิกเซลคือค่า RMS ของ activation ข้ามทุก channel ณ ตำแหน่งนั้น ($\sqrt{\tfrac{1}{C}\sum_c a_c^2}$) ซึ่งบอกว่าชั้นนั้นตอบสนองต่อบริเวณใดแรงเพียงใดโดยไม่แยกคลาส แต่ละชั้นถูกปรับสเกลเป็น 0–1 ด้วยค่าต่ำสุดและสูงสุดของชั้นนั้นเอง (แดง = ตอบสนองแรงที่สุดในชั้น, น้ำเงิน = อ่อนที่สุด) จึงเปรียบเทียบได้เฉพาะภายในชั้นเดียวกัน ส่วนช่วงค่าจริงก่อนปรับสเกลระบุไว้ที่ขอบบนของแต่ละภาพ (RMS min–max) ช่อง Proto26 แสดง prototype mask สี่ช่องที่มีความแปรปรวนสูงสุดด้วยค่าจริง (magma) แถว (c) แสดงโครงสร้างภายในของแต่ละชนิดบล็อก โดยเส้นประเชื่อมจากบล็อกตัวแทนในแถว (b) ([PDF](assets/yolo26n_seg_architecture.pdf))
+
+รูปถัดไปเป็นแผนผังอ้างอิงของตระกูล YOLO (บล็อก C2f) ไม่ใช่สถาปัตยกรรมที่ใช้จริง YOLO26 ใช้ **C3k2** แทน C2f และ **Segment26** เป็น head ผู้จัดทำรูปคือ Priyanto Hidayatullah และ Refdinal Tubagus (ใช้เป็นภาพประกอบเท่านั้น) ตารางถัดไปอ้างอิงจากโมเดลที่ติดตั้งจริง (`yolo26-seg.yaml`, layer index ตามที่ Ultralytics ใช้)
 
 ![YOLO architecture reference](assets/yolo_architecture_reference.png)
 
