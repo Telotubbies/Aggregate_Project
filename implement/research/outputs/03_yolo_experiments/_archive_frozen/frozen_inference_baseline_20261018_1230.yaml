@@ -1,0 +1,36 @@
+selected: baseline
+weights: outputs/02_preprocessing_augmentation/runs/A9_selected_s42_d99d73b9/weights/best.pt
+weights_sha256: 8578c9f82bde384cf6c5cc4a39cb97db540eb63ae83c98ab85ff52f16fa95faf
+imgsz: 640
+preprocessing: P5_unsharp
+attention: null
+conf_thresholds:
+  gravel: 0.24
+  sand: 0.16
+val_operating_point:
+  gravel:
+    conf: 0.24
+    TP: 183.0
+    FP: 29.0
+    FN: 42.0
+    precision: 0.8632075471698113
+    recall: 0.8133333333333334
+    F1: 0.8375286041189931
+  sand:
+    conf: 0.16
+    TP: 133.0
+    FP: 75.0
+    FN: 61.0
+    precision: 0.6394230769230769
+    recall: 0.6855670103092784
+    F1: 0.6616915422885572
+state_min_conf: 0.05
+state_thresholds:
+  gravel: 0.0028646719880536927
+  sand: 0.001040412933996125
+max_det: 100
+retina_masks: true
+dev_hash: 19659e679798
+silver_hash: 0997f3096843
+ultralytics: 8.4.180
+frozen: 2026-10-18T12:00:20+0700

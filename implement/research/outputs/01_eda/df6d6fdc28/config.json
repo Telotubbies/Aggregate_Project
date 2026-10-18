@@ -1,0 +1,20 @@
+{
+  "notebook": "01_eda_and_dataset_splitting",
+  "version": "v1",
+  "seed": 42,
+  "bronze": "/home/supawich/Desktop/Aggregate_Project/implement/data/bronze",
+  "phash_size": 8,
+  "lap_short_side": 360,
+  "near_dup_threshold": 8,
+  "silver": {
+    "eps_frac": 0.0025,
+    "tau_iomin": 0.7,
+    "dup_merge": "union",
+    "a_floor_px640": 64.0,
+    "a_min_frac": 0.001,
+    "r_max_eval": Infinity
+  },
+  "silver_hash": "0997f3096843",
+  "n_cv_folds": 3,
+  "dev_hash": "19659e679798"
+}

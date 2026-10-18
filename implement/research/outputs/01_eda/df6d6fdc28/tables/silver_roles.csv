@@ -1,0 +1,4 @@
+cls_name,dropped,train_and_eval,train_only_ignore_eval,All
+gravel,155,1786,253,2194
+sand,35,2075,71,2181
+All,190,3861,324,4375

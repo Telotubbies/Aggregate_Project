@@ -1,0 +1,4 @@
+dataset,n_dev,n_holdout,domain_classifier_auc
+piled_materials,714,1095,1.0
+separate_rock_sand,714,182,1.0
+s02,714,66,1.0

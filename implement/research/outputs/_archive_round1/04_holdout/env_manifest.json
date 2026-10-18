@@ -1,0 +1,37 @@
+{
+  "timestamp": "2026-10-18T14:04:52+0700",
+  "python": "3.12.3",
+  "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39",
+  "cpu": "x86_64",
+  "cpu_count": 20,
+  "packages": {
+    "torch": "2.14.1",
+    "torchvision": "0.29.1",
+    "ultralytics": "8.4.180",
+    "numpy": "2.5.4",
+    "opencv-python": "5.0.0.93",
+    "albumentations": "2.0.8",
+    "pycocotools": "2.0.11",
+    "onnx": "1.23.2",
+    "onnxruntime": "1.31.0",
+    "openvino": "2026.4.1",
+    "tensorrt": null,
+    "nncf": null,
+    "ncnn": null,
+    "sahi": "0.12.8",
+    "scikit-learn": "1.9.1",
+    "scikit-image": "0.26.0",
+    "thop": null,
+    "ultralytics-thop": "2.2.2"
+  },
+  "cuda_available": true,
+  "torch_cuda": "13.0",
+  "cudnn": 92400,
+  "gpu": {
+    "name": "NVIDIA GeForce RTX 3080 Ti",
+    "total_memory_gb": 11.62,
+    "capability": "8.6"
+  },
+  "nvidia_smi": "NVIDIA GeForce RTX 3080 Ti, 580.178.04, 12288 MiB",
+  "git_commit": "be0a789bbe48419cb657b13060635b565b1376a5"
+}

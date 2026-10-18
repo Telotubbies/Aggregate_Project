@@ -1,0 +1,19 @@
+{
+  "layer": "23_Segment26.one2one_cv3[0]",
+  "module": "Sequential",
+  "in_shape": "[[1, 64, 80, 80]]",
+  "out_shape": "[1, 2, 80, 80]",
+  "channels": 2,
+  "H": 80,
+  "W": 80,
+  "stride": 8.0,
+  "act_mean": -16.56138801574707,
+  "act_std": 2.109647035598755,
+  "act_abs_max": 22.73089599609375,
+  "frac_zero": 1.0,
+  "top16_channels": [
+    1,
+    0
+  ],
+  "visualized": true
+}

@@ -1,0 +1,17 @@
+dataset,standardization,state,precision,recall,F1,support
+piled_materials,S0_raw,none,0.02564102564102564,0.025,0.02531645569620253,40
+piled_materials,S0_raw,gravel,0.8288973384030418,0.5069767441860465,0.6291486291486291,430
+piled_materials,S0_raw,sand,0.7475728155339806,0.6684027777777778,0.7057745187901008,576
+piled_materials,S0_raw,mixed,0.08992805755395683,0.5102040816326531,0.1529051987767584,49
+piled_materials,S1_dev_stats,none,0.034482758620689655,0.075,0.047244094488188976,40
+piled_materials,S1_dev_stats,gravel,0.6701754385964912,0.4441860465116279,0.5342657342657343,430
+piled_materials,S1_dev_stats,sand,0.70917225950783,0.5503472222222222,0.6197458455522972,576
+piled_materials,S1_dev_stats,mixed,0.06159420289855073,0.3469387755102041,0.10461538461538461,49
+separate_rock_sand,S0_raw,none,0.0,0.0,0.0,1
+separate_rock_sand,S0_raw,gravel,0.0,0.0,0.0,4
+separate_rock_sand,S0_raw,sand,0.0,0.0,0.0,2
+separate_rock_sand,S0_raw,mixed,0.9772727272727273,0.24571428571428572,0.3926940639269406,175
+separate_rock_sand,S1_dev_stats,none,0.0,0.0,0.0,1
+separate_rock_sand,S1_dev_stats,gravel,0.0,0.0,0.0,4
+separate_rock_sand,S1_dev_stats,sand,0.0,0.0,0.0,2
+separate_rock_sand,S1_dev_stats,mixed,0.9310344827586207,0.15428571428571428,0.2647058823529412,175

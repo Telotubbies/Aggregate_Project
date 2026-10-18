@@ -1,0 +1,464 @@
+image_id,line,issue,detail,file,rf_split
+28,3,lt3_vertices,,0a48349e-f671-436a-8af5-de54f079109f_mp4-0002_jpg.rf.971195cad50e6197c6ad57dfa4044a80.jpg,train
+28,4,invalid_geometry,Self-intersection[24.25 354],0a48349e-f671-436a-8af5-de54f079109f_mp4-0002_jpg.rf.971195cad50e6197c6ad57dfa4044a80.jpg,train
+31,4,invalid_geometry,Too few points in geometry component[227 566],0a48349e-f671-436a-8af5-de54f079109f_mp4-0005_jpg.rf.186030c1b8d6e1044f24df2050ed52f6.jpg,train
+31,4,zero_area,,0a48349e-f671-436a-8af5-de54f079109f_mp4-0005_jpg.rf.186030c1b8d6e1044f24df2050ed52f6.jpg,train
+32,1,lt3_vertices,,0a48349e-f671-436a-8af5-de54f079109f_mp4-0006_jpg.rf.7c4e859a2535edae8fd4092d40b5feb4.jpg,train
+34,5,invalid_geometry,Too few points in geometry component[221 590],0a48349e-f671-436a-8af5-de54f079109f_mp4-0008_jpg.rf.86c66d0d13d3e0b8d033b68637119ffe.jpg,train
+34,5,zero_area,,0a48349e-f671-436a-8af5-de54f079109f_mp4-0008_jpg.rf.86c66d0d13d3e0b8d033b68637119ffe.jpg,train
+38,4,invalid_geometry,Too few points in geometry component[2 394],0a48349e-f671-436a-8af5-de54f079109f_mp4-0013_jpg.rf.3e973f61e81eb803b3b353f5327e6975.jpg,train
+38,4,zero_area,,0a48349e-f671-436a-8af5-de54f079109f_mp4-0013_jpg.rf.3e973f61e81eb803b3b353f5327e6975.jpg,train
+40,0,invalid_geometry,Too few points in geometry component[251 402],0a48349e-f671-436a-8af5-de54f079109f_mp4-0015_jpg.rf.d38ce010f9c0d0b35c69a2bf310dce07.jpg,train
+40,0,zero_area,,0a48349e-f671-436a-8af5-de54f079109f_mp4-0015_jpg.rf.d38ce010f9c0d0b35c69a2bf310dce07.jpg,train
+40,2,invalid_geometry,Too few points in geometry component[257 406],0a48349e-f671-436a-8af5-de54f079109f_mp4-0015_jpg.rf.d38ce010f9c0d0b35c69a2bf310dce07.jpg,train
+40,2,zero_area,,0a48349e-f671-436a-8af5-de54f079109f_mp4-0015_jpg.rf.d38ce010f9c0d0b35c69a2bf310dce07.jpg,train
+40,4,invalid_geometry,Too few points in geometry component[271 385],0a48349e-f671-436a-8af5-de54f079109f_mp4-0015_jpg.rf.d38ce010f9c0d0b35c69a2bf310dce07.jpg,train
+40,4,zero_area,,0a48349e-f671-436a-8af5-de54f079109f_mp4-0015_jpg.rf.d38ce010f9c0d0b35c69a2bf310dce07.jpg,train
+56,3,invalid_geometry,Too few points in geometry component[250 517],0a48349e-f671-436a-8af5-de54f079109f_mp4-0037_jpg.rf.0bb8770c1bb83341fca82558320b0404.jpg,train
+56,3,zero_area,,0a48349e-f671-436a-8af5-de54f079109f_mp4-0037_jpg.rf.0bb8770c1bb83341fca82558320b0404.jpg,train
+56,5,lt3_vertices,,0a48349e-f671-436a-8af5-de54f079109f_mp4-0037_jpg.rf.0bb8770c1bb83341fca82558320b0404.jpg,train
+78,5,invalid_geometry,Too few points in geometry component[253 416],0a48349e-f671-436a-8af5-de54f079109f_mp4-0075_jpg.rf.0ab4264584c682a105c01a330175290b.jpg,train
+78,5,zero_area,,0a48349e-f671-436a-8af5-de54f079109f_mp4-0075_jpg.rf.0ab4264584c682a105c01a330175290b.jpg,train
+80,0,lt3_vertices,,0a48349e-f671-436a-8af5-de54f079109f_mp4-0077_jpg.rf.bc4932dc2f9d982c605c677cbcb32a0c.jpg,train
+80,1,invalid_geometry,Too few points in geometry component[220 518],0a48349e-f671-436a-8af5-de54f079109f_mp4-0077_jpg.rf.bc4932dc2f9d982c605c677cbcb32a0c.jpg,train
+80,1,zero_area,,0a48349e-f671-436a-8af5-de54f079109f_mp4-0077_jpg.rf.bc4932dc2f9d982c605c677cbcb32a0c.jpg,train
+101,2,invalid_geometry,Self-intersection[664.88050268201 45.6574176786119],0f964fdb-9fc1-4941-9c12-15445855221a-1-_mp4-0026_jpg.rf.2ef68e2abe7479ded6836559966dd8d6.jpg,train
+103,4,invalid_geometry,Self-intersection[654.011494252874 43.0306513409962],0f964fdb-9fc1-4941-9c12-15445855221a-1-_mp4-0028_jpg.rf.1a2a75574ac8739214738cf363851bbd.jpg,train
+105,0,invalid_geometry,Too few points in geometry component[267 203],0f964fdb-9fc1-4941-9c12-15445855221a-1-_mp4-0033_jpg.rf.fd5a3403838f87b7c4b7c7cc270fdb36.jpg,train
+105,0,zero_area,,0f964fdb-9fc1-4941-9c12-15445855221a-1-_mp4-0033_jpg.rf.fd5a3403838f87b7c4b7c7cc270fdb36.jpg,train
+111,3,invalid_geometry,Self-intersection[614.861111111111 51.1388888888889],0f964fdb-9fc1-4941-9c12-15445855221a-1-_mp4-0039_jpg.rf.0ad49b35ff9176ff8d7b9e894e203dc8.jpg,train
+114,1,invalid_geometry,Self-intersection[759.140186915888 426.560747663551],0f964fdb-9fc1-4941-9c12-15445855221a-1-_mp4-0045_jpg.rf.4be1ca5d418ec03a54d27df9532d1546.jpg,train
+114,4,invalid_geometry,Self-intersection[622.700218818381 42.1597374179431],0f964fdb-9fc1-4941-9c12-15445855221a-1-_mp4-0045_jpg.rf.4be1ca5d418ec03a54d27df9532d1546.jpg,train
+116,1,invalid_geometry,Self-intersection[617.415730337079 48.0561797752809],0f964fdb-9fc1-4941-9c12-15445855221a-1-_mp4-0047_jpg.rf.a666f5b3cd407ee4af9014a78bde30a3.jpg,train
+117,3,invalid_geometry,Ring Self-intersection[619 36],0f964fdb-9fc1-4941-9c12-15445855221a-1-_mp4-0050_jpg.rf.3f1125d18d5f6f89466cb655b4122309.jpg,train
+125,1,invalid_geometry,Self-intersection[411.355899419729 109.141199226306],0f964fdb-9fc1-4941-9c12-15445855221a-1-_mp4-0060_jpg.rf.bf220db7ffa442cd84ede093ec74eaf1.jpg,train
+128,1,invalid_geometry,Self-intersection[416.574850299401 123.433133732535],0f964fdb-9fc1-4941-9c12-15445855221a-1-_mp4-0064_jpg.rf.db45fd8497ddd3b8fd48391ed67608a7.jpg,train
+128,3,invalid_geometry,Self-intersection[348.497605663127 190.398084530502],0f964fdb-9fc1-4941-9c12-15445855221a-1-_mp4-0064_jpg.rf.db45fd8497ddd3b8fd48391ed67608a7.jpg,train
+130,2,invalid_geometry,Too few points in geometry component[351 188],0f964fdb-9fc1-4941-9c12-15445855221a-1-_mp4-0067_jpg.rf.af6bf9998aff17d3ec78054ac0c7f45e.jpg,train
+130,2,zero_area,,0f964fdb-9fc1-4941-9c12-15445855221a-1-_mp4-0067_jpg.rf.af6bf9998aff17d3ec78054ac0c7f45e.jpg,train
+132,4,invalid_geometry,Self-intersection[426.5 113.5],0f964fdb-9fc1-4941-9c12-15445855221a-1-_mp4-0069_jpg.rf.ee5c193ef7819f4a489637e1d6b784ee.jpg,train
+135,5,invalid_geometry,Self-intersection[434.098360655738 105.540983606557],0f964fdb-9fc1-4941-9c12-15445855221a-1-_mp4-0072_jpg.rf.0feb5e00e40812c7a5880368d88b44cb.jpg,train
+136,5,invalid_geometry,Too few points in geometry component[425 113],0f964fdb-9fc1-4941-9c12-15445855221a-1-_mp4-0074_jpg.rf.4a9ef4afd4d9bfc5ca3228e65052b4c6.jpg,train
+136,5,zero_area,,0f964fdb-9fc1-4941-9c12-15445855221a-1-_mp4-0074_jpg.rf.4a9ef4afd4d9bfc5ca3228e65052b4c6.jpg,train
+136,7,invalid_geometry,Self-intersection[618.644305772231 13.4071762870515],0f964fdb-9fc1-4941-9c12-15445855221a-1-_mp4-0074_jpg.rf.4a9ef4afd4d9bfc5ca3228e65052b4c6.jpg,train
+137,6,invalid_geometry,Self-intersection[614.435897435897 11.6923076923077],0f964fdb-9fc1-4941-9c12-15445855221a-1-_mp4-0075_jpg.rf.2faa4fe1a8dbd3f2c1cdc5372926c0d7.jpg,train
+144,0,invalid_geometry,Self-intersection[703.922082246911 427.198390205192],0f964fdb-9fc1-4941-9c12-15445855221a-1-_mp4-0086_jpg.rf.215ae887ba1775a80d11ed759aca9282.jpg,train
+179,5,invalid_geometry,Self-intersection[17.8108108108108 527.684684684685],1991989f-1bf5-4e50-89bb-7301b220ac01_mp4-0053_jpg.rf.b02c295c5a58c1b6ba17b582a8056c73.jpg,train
+194,3,invalid_geometry,Self-intersection[42.6216216216216 370.378378378378],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0002_jpg.rf.98821ac14bb080a4620ac8dd3a65ea95.jpg,train
+203,5,invalid_geometry,Self-intersection[59.2818791946309 390.758389261745],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0008_jpg.rf.16c7b3f12069753da2e126092e38518d.jpg,train
+205,2,invalid_geometry,Ring Self-intersection[294 482],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0010_jpg.rf.6cbf10a43d8971007292b71e787b711f.jpg,train
+206,3,invalid_geometry,Self-intersection[61.2080924855491 399.722543352601],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0011_jpg.rf.5e0703fe76834b3f8c833e4ce503e064.jpg,train
+213,3,invalid_geometry,Self-intersection[62.7080291970803 391.029197080292],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0014_jpg.rf.f7126bd97ee380c04646c06d370dd368.jpg,train
+223,2,invalid_geometry,Self-intersection[63.7073170731707 395.048780487805],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0021_jpg.rf.38e378a0d9cf0719bbd11bb6f34840ec.jpg,train
+225,3,invalid_geometry,Too few points in geometry component[240 327],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0024_jpg.rf.b68469ed7dbc2761e9d97caa5e98626f.jpg,train
+225,3,zero_area,,2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0024_jpg.rf.b68469ed7dbc2761e9d97caa5e98626f.jpg,train
+227,1,invalid_geometry,Too few points in geometry component[75 488],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0025_jpg.rf.98cc0a2c362f5bd72b5d42ee89284c0a.jpg,train
+227,1,zero_area,,2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0025_jpg.rf.98cc0a2c362f5bd72b5d42ee89284c0a.jpg,train
+227,5,invalid_geometry,Too few points in geometry component[232 635],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0025_jpg.rf.98cc0a2c362f5bd72b5d42ee89284c0a.jpg,train
+227,5,zero_area,,2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0025_jpg.rf.98cc0a2c362f5bd72b5d42ee89284c0a.jpg,train
+227,6,lt3_vertices,,2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0025_jpg.rf.98cc0a2c362f5bd72b5d42ee89284c0a.jpg,train
+236,3,lt3_vertices,,2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0031_jpg.rf.b3400ccf1cff118eb5a017300e89dece.jpg,train
+254,2,invalid_geometry,Ring Self-intersection[66.154 406.154],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0042_jpg.rf.1f3125525f7beea1bbb7d6054734fb7b.jpg,train
+262,0,invalid_geometry,Self-intersection[5.71428571428571 457.285714285714],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0049_jpg.rf.0c268fa6123d96c5dc08f1a94071efaa.jpg,train
+268,4,invalid_geometry,Self-intersection[4.38181818181818 432.185454545455],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0052_jpg.rf.e94f0276a69cde5a941c6a02995d7830.jpg,train
+270,6,invalid_geometry,Self-intersection[195.728971962617 413.635514018692],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0054_jpg.rf.2ca01e867f540553ab356a613cc446e2.jpg,train
+278,1,invalid_geometry,Ring Self-intersection[250 629],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0058_jpg.rf.5fa0bc5f197101db2139ccb0ace29aa1.jpg,train
+279,1,lt3_vertices,,2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0059_jpg.rf.b8388138bc3efe1678da5b78cd7350bb.jpg,train
+279,6,lt3_vertices,,2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0059_jpg.rf.b8388138bc3efe1678da5b78cd7350bb.jpg,train
+282,0,lt3_vertices,,2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0062_jpg.rf.035a31615d0c21948389cd1eb25df01c.jpg,train
+282,8,invalid_geometry,Too few points in geometry component[150 339],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0062_jpg.rf.035a31615d0c21948389cd1eb25df01c.jpg,train
+282,8,zero_area,,2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0062_jpg.rf.035a31615d0c21948389cd1eb25df01c.jpg,train
+284,4,invalid_geometry,Self-intersection[262.390243902439 617.768292682927],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0063_jpg.rf.06d6c826d985396d08b94813ac69b6bf.jpg,train
+287,1,lt3_vertices,,2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0068_jpg.rf.61d1a02d8f3d2347f1c84c792e34f210.jpg,train
+290,7,invalid_geometry,Too few points in geometry component[13 426],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0069_jpg.rf.9b728e01fdfa584eabbe418bedc77bae.jpg,train
+290,7,zero_area,,2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0069_jpg.rf.9b728e01fdfa584eabbe418bedc77bae.jpg,train
+301,6,invalid_geometry,Too few points in geometry component[6 594],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0076_jpg.rf.fc5391644342b9f57a8419fbaef59a01.jpg,train
+301,6,zero_area,,2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0076_jpg.rf.fc5391644342b9f57a8419fbaef59a01.jpg,train
+301,7,lt3_vertices,,2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0076_jpg.rf.fc5391644342b9f57a8419fbaef59a01.jpg,train
+301,8,lt3_vertices,,2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0076_jpg.rf.fc5391644342b9f57a8419fbaef59a01.jpg,train
+305,3,invalid_geometry,Too few points in geometry component[75 514],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0079_jpg.rf.b9c5c02d9843939a380d5cec6b27f6e3.jpg,train
+305,3,zero_area,,2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0079_jpg.rf.b9c5c02d9843939a380d5cec6b27f6e3.jpg,train
+315,6,invalid_geometry,Ring Self-intersection[234 173],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0086_jpg.rf.aef0abd2b135367befed224e1872ff1a.jpg,train
+320,1,invalid_geometry,Self-intersection[4.21951219512195 450.414634146341],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0090_jpg.rf.d2aa2f43a8cf636bbcaa98c002e402f0.jpg,train
+322,4,invalid_geometry,Too few points in geometry component[123 208],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0091_jpg.rf.9d077b1ddfad8976838ed34a3b86f41d.jpg,train
+322,4,zero_area,,2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0091_jpg.rf.9d077b1ddfad8976838ed34a3b86f41d.jpg,train
+323,4,invalid_geometry,Self-intersection[245.236220472441 171.165354330709],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0092_jpg.rf.5858e35fea36c807ddcead2aa28d76a7.jpg,train
+328,3,invalid_geometry,Self-intersection[9 455],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0096_jpg.rf.5965731fdc85d1aee7f459faa0f38702.jpg,train
+332,4,invalid_geometry,Self-intersection[4.99625888514777 439.002618780397],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0098_jpg.rf.7235693a9562b35508014309a232d6b8.jpg,train
+334,4,invalid_geometry,Self-intersection[5.6797153024911 438.106761565836],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0099_jpg.rf.74dad1f63f126b4284bb1e3842d5696f.jpg,train
+337,3,invalid_geometry,Too few points in geometry component[82 461],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0101_jpg.rf.499dbacbf9e412389af075a4edd5e1d2.jpg,train
+337,3,zero_area,,2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0101_jpg.rf.499dbacbf9e412389af075a4edd5e1d2.jpg,train
+338,1,invalid_geometry,Ring Self-intersection[33 378],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0102_jpg.rf.b073380f8a26ace80104579ebeab35f0.jpg,train
+341,5,invalid_geometry,Too few points in geometry component[224 635],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0103_jpg.rf.821177b7dd664d84327621f37d4e3931.jpg,train
+341,5,zero_area,,2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0103_jpg.rf.821177b7dd664d84327621f37d4e3931.jpg,train
+341,6,lt3_vertices,,2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0103_jpg.rf.821177b7dd664d84327621f37d4e3931.jpg,train
+343,0,invalid_geometry,Too few points in geometry component[253 616],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0104_jpg.rf.abf956a75562b4e760832de1cc748630.jpg,train
+343,0,zero_area,,2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0104_jpg.rf.abf956a75562b4e760832de1cc748630.jpg,train
+343,2,invalid_geometry,Self-intersection[245.884615384615 623.230769230769],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0104_jpg.rf.abf956a75562b4e760832de1cc748630.jpg,train
+343,4,lt3_vertices,,2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0104_jpg.rf.abf956a75562b4e760832de1cc748630.jpg,train
+344,4,invalid_geometry,Self-intersection[48.2727272727273 361.181818181818],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0105_jpg.rf.043dd05fe4f43c76335c6ecd4c4c8fd5.jpg,train
+345,2,invalid_geometry,Too few points in geometry component[249 615],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0105_jpg.rf.d7e8e596d83321002688079da0885e1a.jpg,train
+345,2,zero_area,,2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0105_jpg.rf.d7e8e596d83321002688079da0885e1a.jpg,train
+345,7,lt3_vertices,,2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0105_jpg.rf.d7e8e596d83321002688079da0885e1a.jpg,train
+345,8,invalid_geometry,Too few points in geometry component[2 461],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0105_jpg.rf.d7e8e596d83321002688079da0885e1a.jpg,train
+345,8,zero_area,,2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0105_jpg.rf.d7e8e596d83321002688079da0885e1a.jpg,train
+345,10,invalid_geometry,Too few points in geometry component[2 416],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0105_jpg.rf.d7e8e596d83321002688079da0885e1a.jpg,train
+345,10,zero_area,,2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0105_jpg.rf.d7e8e596d83321002688079da0885e1a.jpg,train
+352,0,lt3_vertices,,2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0113_jpg.rf.e86474ab939ac4ea2ce8a7d1eb03199f.jpg,train
+352,2,invalid_geometry,Too few points in geometry component[60 390],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0113_jpg.rf.e86474ab939ac4ea2ce8a7d1eb03199f.jpg,train
+352,2,zero_area,,2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0113_jpg.rf.e86474ab939ac4ea2ce8a7d1eb03199f.jpg,train
+352,4,lt3_vertices,,2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0113_jpg.rf.e86474ab939ac4ea2ce8a7d1eb03199f.jpg,train
+352,5,invalid_geometry,Too few points in geometry component[3 478],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0113_jpg.rf.e86474ab939ac4ea2ce8a7d1eb03199f.jpg,train
+352,5,zero_area,,2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0113_jpg.rf.e86474ab939ac4ea2ce8a7d1eb03199f.jpg,train
+352,12,invalid_geometry,Too few points in geometry component[38 638],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0113_jpg.rf.e86474ab939ac4ea2ce8a7d1eb03199f.jpg,train
+352,12,zero_area,,2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0113_jpg.rf.e86474ab939ac4ea2ce8a7d1eb03199f.jpg,train
+359,1,invalid_geometry,Self-intersection[244.187311178248 606.873111782477],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0119_jpg.rf.efffa165412bbe7b485aa80b5bc47a27.jpg,train
+376,3,invalid_geometry,Ring Self-intersection[75 403],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0133_jpg.rf.261735b9eb0ce4feacdc1da04d023f79.jpg,train
+377,0,invalid_geometry,Self-intersection[4.84709480122324 359.091743119266],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0133_jpg.rf.7e08b12d1fda20c61e51c84eeaae0609.jpg,train
+410,1,lt3_vertices,,4a7f29af-8d1c-4a3b-90e6-b9cf771fd1c2_mp4-0005_jpg.rf.4029568a13b4cefffa50c3fa306ce847.jpg,train
+410,2,lt3_vertices,,4a7f29af-8d1c-4a3b-90e6-b9cf771fd1c2_mp4-0005_jpg.rf.4029568a13b4cefffa50c3fa306ce847.jpg,train
+410,3,invalid_geometry,Too few points in geometry component[126 953],4a7f29af-8d1c-4a3b-90e6-b9cf771fd1c2_mp4-0005_jpg.rf.4029568a13b4cefffa50c3fa306ce847.jpg,train
+410,3,zero_area,,4a7f29af-8d1c-4a3b-90e6-b9cf771fd1c2_mp4-0005_jpg.rf.4029568a13b4cefffa50c3fa306ce847.jpg,train
+410,4,invalid_geometry,Too few points in geometry component[115 953],4a7f29af-8d1c-4a3b-90e6-b9cf771fd1c2_mp4-0005_jpg.rf.4029568a13b4cefffa50c3fa306ce847.jpg,train
+410,4,zero_area,,4a7f29af-8d1c-4a3b-90e6-b9cf771fd1c2_mp4-0005_jpg.rf.4029568a13b4cefffa50c3fa306ce847.jpg,train
+420,2,invalid_geometry,Too few points in geometry component[143 451],4a7f29af-8d1c-4a3b-90e6-b9cf771fd1c2_mp4-0021_jpg.rf.93c2e2ce78eddbad8d739c27c6c83641.jpg,train
+420,2,zero_area,,4a7f29af-8d1c-4a3b-90e6-b9cf771fd1c2_mp4-0021_jpg.rf.93c2e2ce78eddbad8d739c27c6c83641.jpg,train
+420,3,invalid_geometry,Too few points in geometry component[176 441],4a7f29af-8d1c-4a3b-90e6-b9cf771fd1c2_mp4-0021_jpg.rf.93c2e2ce78eddbad8d739c27c6c83641.jpg,train
+420,3,zero_area,,4a7f29af-8d1c-4a3b-90e6-b9cf771fd1c2_mp4-0021_jpg.rf.93c2e2ce78eddbad8d739c27c6c83641.jpg,train
+429,2,invalid_geometry,Self-intersection[442 461],4a7f29af-8d1c-4a3b-90e6-b9cf771fd1c2_mp4-0034_jpg.rf.59a382a2021cfe94f2c1d99dbdc9dafe.jpg,train
+442,0,invalid_geometry,Self-intersection[2.92762713499952 260.924901090418],5d14519a-5463-48e4-be39-5ac0f51b2859_jpg.rf.907a50e15248cfffca6b3bd3a142bc22.jpg,train
+445,5,invalid_geometry,Self-intersection[446.214285714286 226.321428571429],5d81688a-7f52-42a4-b81d-822c2d2319a3_mp4-0004_jpg.rf.f060697417d76985910d9a79c4e2e95c.jpg,train
+446,3,invalid_geometry,Self-intersection[467.051282051282 208.282051282051],5d81688a-7f52-42a4-b81d-822c2d2319a3_mp4-0005_jpg.rf.4495f29d2008f5f4141085778f6497b4.jpg,train
+447,0,invalid_geometry,Self-intersection[473.6 208.4],5d81688a-7f52-42a4-b81d-822c2d2319a3_mp4-0006_jpg.rf.ceb01e59e632d243d2a430d4041db494.jpg,train
+447,1,invalid_geometry,Self-intersection[911.934404895089 532.356172515354],5d81688a-7f52-42a4-b81d-822c2d2319a3_mp4-0006_jpg.rf.ceb01e59e632d243d2a430d4041db494.jpg,train
+452,0,invalid_geometry,Self-intersection[571 393.75],5d81688a-7f52-42a4-b81d-822c2d2319a3_mp4-0013_jpg.rf.0105f5b70ccf22406342118711037183.jpg,train
+456,0,invalid_geometry,Too few points in geometry component[483 348],5d81688a-7f52-42a4-b81d-822c2d2319a3_mp4-0019_jpg.rf.f42e54b8031ccdd8ba113081865d516a.jpg,train
+456,0,zero_area,,5d81688a-7f52-42a4-b81d-822c2d2319a3_mp4-0019_jpg.rf.f42e54b8031ccdd8ba113081865d516a.jpg,train
+496,3,invalid_geometry,Self-intersection[321.25 648.833333333333],6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0020_jpg.rf.daa7a449a82f04caea62a9098b374f1f.jpg,train
+496,5,invalid_geometry,Self-intersection[251.998680738786 633.789577836412],6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0020_jpg.rf.daa7a449a82f04caea62a9098b374f1f.jpg,train
+507,4,invalid_geometry,Self-intersection[284.368421052632 670.526315789474],6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0036_jpg.rf.7c20c7b91f239afa40aea5a64d92bb71.jpg,train
+508,2,invalid_geometry,Too few points in geometry component[104 610],6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0037_jpg.rf.ced76ca9b54ca7e4a8c44b7eff4f569d.jpg,train
+508,2,zero_area,,6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0037_jpg.rf.ced76ca9b54ca7e4a8c44b7eff4f569d.jpg,train
+508,3,invalid_geometry,Too few points in geometry component[82 574],6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0037_jpg.rf.ced76ca9b54ca7e4a8c44b7eff4f569d.jpg,train
+508,3,zero_area,,6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0037_jpg.rf.ced76ca9b54ca7e4a8c44b7eff4f569d.jpg,train
+508,4,lt3_vertices,,6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0037_jpg.rf.ced76ca9b54ca7e4a8c44b7eff4f569d.jpg,train
+508,8,invalid_geometry,Too few points in geometry component[57 677],6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0037_jpg.rf.ced76ca9b54ca7e4a8c44b7eff4f569d.jpg,train
+508,8,zero_area,,6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0037_jpg.rf.ced76ca9b54ca7e4a8c44b7eff4f569d.jpg,train
+508,9,invalid_geometry,Too few points in geometry component[142 624],6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0037_jpg.rf.ced76ca9b54ca7e4a8c44b7eff4f569d.jpg,train
+508,9,zero_area,,6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0037_jpg.rf.ced76ca9b54ca7e4a8c44b7eff4f569d.jpg,train
+508,10,invalid_geometry,Too few points in geometry component[154 609],6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0037_jpg.rf.ced76ca9b54ca7e4a8c44b7eff4f569d.jpg,train
+508,10,zero_area,,6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0037_jpg.rf.ced76ca9b54ca7e4a8c44b7eff4f569d.jpg,train
+508,11,invalid_geometry,Too few points in geometry component[298 608],6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0037_jpg.rf.ced76ca9b54ca7e4a8c44b7eff4f569d.jpg,train
+508,11,zero_area,,6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0037_jpg.rf.ced76ca9b54ca7e4a8c44b7eff4f569d.jpg,train
+508,13,lt3_vertices,,6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0037_jpg.rf.ced76ca9b54ca7e4a8c44b7eff4f569d.jpg,train
+508,14,invalid_geometry,Too few points in geometry component[239 588],6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0037_jpg.rf.ced76ca9b54ca7e4a8c44b7eff4f569d.jpg,train
+508,14,zero_area,,6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0037_jpg.rf.ced76ca9b54ca7e4a8c44b7eff4f569d.jpg,train
+508,15,invalid_geometry,Too few points in geometry component[232 585],6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0037_jpg.rf.ced76ca9b54ca7e4a8c44b7eff4f569d.jpg,train
+508,15,zero_area,,6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0037_jpg.rf.ced76ca9b54ca7e4a8c44b7eff4f569d.jpg,train
+508,17,invalid_geometry,Too few points in geometry component[165 574],6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0037_jpg.rf.ced76ca9b54ca7e4a8c44b7eff4f569d.jpg,train
+508,17,zero_area,,6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0037_jpg.rf.ced76ca9b54ca7e4a8c44b7eff4f569d.jpg,train
+509,1,invalid_geometry,Too few points in geometry component[430 900],6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0038_jpg.rf.7ade8b8402b3797dec8432781d8e06d9.jpg,train
+509,1,zero_area,,6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0038_jpg.rf.7ade8b8402b3797dec8432781d8e06d9.jpg,train
+509,2,invalid_geometry,Too few points in geometry component[321 887],6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0038_jpg.rf.7ade8b8402b3797dec8432781d8e06d9.jpg,train
+509,2,zero_area,,6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0038_jpg.rf.7ade8b8402b3797dec8432781d8e06d9.jpg,train
+509,4,invalid_geometry,Too few points in geometry component[72 576],6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0038_jpg.rf.7ade8b8402b3797dec8432781d8e06d9.jpg,train
+509,4,zero_area,,6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0038_jpg.rf.7ade8b8402b3797dec8432781d8e06d9.jpg,train
+510,7,invalid_geometry,Too few points in geometry component[468 907],6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0039_jpg.rf.d18816f4cf811210cdc8736dc696965b.jpg,train
+510,7,zero_area,,6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0039_jpg.rf.d18816f4cf811210cdc8736dc696965b.jpg,train
+511,2,invalid_geometry,Self-intersection[495 885],6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0040_jpg.rf.5383ffa84007b489fff44eef2f5a8f25.jpg,train
+511,4,lt3_vertices,,6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0040_jpg.rf.5383ffa84007b489fff44eef2f5a8f25.jpg,train
+511,5,invalid_geometry,Too few points in geometry component[111 638],6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0040_jpg.rf.5383ffa84007b489fff44eef2f5a8f25.jpg,train
+511,5,zero_area,,6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0040_jpg.rf.5383ffa84007b489fff44eef2f5a8f25.jpg,train
+511,8,invalid_geometry,Too few points in geometry component[404 953],6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0040_jpg.rf.5383ffa84007b489fff44eef2f5a8f25.jpg,train
+511,8,zero_area,,6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0040_jpg.rf.5383ffa84007b489fff44eef2f5a8f25.jpg,train
+511,11,invalid_geometry,Too few points in geometry component[487 933],6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0040_jpg.rf.5383ffa84007b489fff44eef2f5a8f25.jpg,train
+511,11,zero_area,,6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0040_jpg.rf.5383ffa84007b489fff44eef2f5a8f25.jpg,train
+511,12,invalid_geometry,Too few points in geometry component[480 931],6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0040_jpg.rf.5383ffa84007b489fff44eef2f5a8f25.jpg,train
+511,12,zero_area,,6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0040_jpg.rf.5383ffa84007b489fff44eef2f5a8f25.jpg,train
+511,14,invalid_geometry,Too few points in geometry component[118 678],6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0040_jpg.rf.5383ffa84007b489fff44eef2f5a8f25.jpg,train
+511,14,zero_area,,6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0040_jpg.rf.5383ffa84007b489fff44eef2f5a8f25.jpg,train
+511,15,invalid_geometry,Too few points in geometry component[105 665],6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0040_jpg.rf.5383ffa84007b489fff44eef2f5a8f25.jpg,train
+511,15,zero_area,,6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0040_jpg.rf.5383ffa84007b489fff44eef2f5a8f25.jpg,train
+511,16,invalid_geometry,Too few points in geometry component[125 637],6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0040_jpg.rf.5383ffa84007b489fff44eef2f5a8f25.jpg,train
+511,16,zero_area,,6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0040_jpg.rf.5383ffa84007b489fff44eef2f5a8f25.jpg,train
+511,20,lt3_vertices,,6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0040_jpg.rf.5383ffa84007b489fff44eef2f5a8f25.jpg,train
+512,4,lt3_vertices,,6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0041_jpg.rf.aaeac167e8d2500845e817fff25ca4bd.jpg,train
+512,6,invalid_geometry,Too few points in geometry component[414 294],6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0041_jpg.rf.aaeac167e8d2500845e817fff25ca4bd.jpg,train
+512,6,zero_area,,6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0041_jpg.rf.aaeac167e8d2500845e817fff25ca4bd.jpg,train
+514,3,invalid_geometry,Too few points in geometry component[404 786],6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0044_jpg.rf.c83f54d20d9163951235283fc9ca78ac.jpg,train
+514,3,zero_area,,6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0044_jpg.rf.c83f54d20d9163951235283fc9ca78ac.jpg,train
+514,6,lt3_vertices,,6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0044_jpg.rf.c83f54d20d9163951235283fc9ca78ac.jpg,train
+514,8,invalid_geometry,Too few points in geometry component[37 825],6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0044_jpg.rf.c83f54d20d9163951235283fc9ca78ac.jpg,train
+514,8,zero_area,,6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0044_jpg.rf.c83f54d20d9163951235283fc9ca78ac.jpg,train
+514,10,invalid_geometry,Too few points in geometry component[328 633],6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0044_jpg.rf.c83f54d20d9163951235283fc9ca78ac.jpg,train
+514,10,zero_area,,6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0044_jpg.rf.c83f54d20d9163951235283fc9ca78ac.jpg,train
+514,13,invalid_geometry,Too few points in geometry component[312 610],6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0044_jpg.rf.c83f54d20d9163951235283fc9ca78ac.jpg,train
+514,13,zero_area,,6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0044_jpg.rf.c83f54d20d9163951235283fc9ca78ac.jpg,train
+514,15,invalid_geometry,Too few points in geometry component[503 954],6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0044_jpg.rf.c83f54d20d9163951235283fc9ca78ac.jpg,train
+514,15,zero_area,,6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0044_jpg.rf.c83f54d20d9163951235283fc9ca78ac.jpg,train
+514,16,invalid_geometry,Too few points in geometry component[532 953],6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0044_jpg.rf.c83f54d20d9163951235283fc9ca78ac.jpg,train
+514,16,zero_area,,6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0044_jpg.rf.c83f54d20d9163951235283fc9ca78ac.jpg,train
+514,17,invalid_geometry,Too few points in geometry component[526 953],6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0044_jpg.rf.c83f54d20d9163951235283fc9ca78ac.jpg,train
+514,17,zero_area,,6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0044_jpg.rf.c83f54d20d9163951235283fc9ca78ac.jpg,train
+515,1,invalid_geometry,Too few points in geometry component[165 958],6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0047_jpg.rf.8f713fbf96978090cb826bd0f7be3392.jpg,train
+515,1,zero_area,,6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0047_jpg.rf.8f713fbf96978090cb826bd0f7be3392.jpg,train
+516,1,invalid_geometry,Too few points in geometry component[173 958],6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0048_jpg.rf.a5505d17ed6a669e22b0cabae5c8e22a.jpg,train
+516,1,zero_area,,6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0048_jpg.rf.a5505d17ed6a669e22b0cabae5c8e22a.jpg,train
+516,2,invalid_geometry,Too few points in geometry component[533 854],6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0048_jpg.rf.a5505d17ed6a669e22b0cabae5c8e22a.jpg,train
+516,2,zero_area,,6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0048_jpg.rf.a5505d17ed6a669e22b0cabae5c8e22a.jpg,train
+516,4,invalid_geometry,Too few points in geometry component[38 784],6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0048_jpg.rf.a5505d17ed6a669e22b0cabae5c8e22a.jpg,train
+516,4,zero_area,,6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0048_jpg.rf.a5505d17ed6a669e22b0cabae5c8e22a.jpg,train
+516,7,invalid_geometry,Too few points in geometry component[531 850],6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0048_jpg.rf.a5505d17ed6a669e22b0cabae5c8e22a.jpg,train
+516,7,zero_area,,6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0048_jpg.rf.a5505d17ed6a669e22b0cabae5c8e22a.jpg,train
+517,6,invalid_geometry,Too few points in geometry component[396 197],6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0049_jpg.rf.259cc9769ea8b554acc1ad962545b526.jpg,train
+517,6,zero_area,,6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0049_jpg.rf.259cc9769ea8b554acc1ad962545b526.jpg,train
+520,0,invalid_geometry,Too few points in geometry component[60 851],6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0053_jpg.rf.593540f59576b78a065c4a769636a70e.jpg,train
+520,0,zero_area,,6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0053_jpg.rf.593540f59576b78a065c4a769636a70e.jpg,train
+520,2,invalid_geometry,Too few points in geometry component[68 711],6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0053_jpg.rf.593540f59576b78a065c4a769636a70e.jpg,train
+520,2,zero_area,,6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0053_jpg.rf.593540f59576b78a065c4a769636a70e.jpg,train
+521,0,invalid_geometry,Too few points in geometry component[536 951],6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0055_jpg.rf.d20801bde4cd8f7f1051335a06324bc3.jpg,train
+521,0,zero_area,,6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0055_jpg.rf.d20801bde4cd8f7f1051335a06324bc3.jpg,train
+523,1,invalid_geometry,Self-intersection[0 881.25],6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0057_jpg.rf.c78b918ef493cb73e07ad6877888d605.jpg,train
+525,1,lt3_vertices,,6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0060_jpg.rf.8946390dd3aabee807b652eec0b5cfdc.jpg,train
+527,0,invalid_geometry,Too few points in geometry component[240 918],6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0062_jpg.rf.b7c2d14b1b29328eb7434c87b382ea72.jpg,train
+527,0,zero_area,,6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0062_jpg.rf.b7c2d14b1b29328eb7434c87b382ea72.jpg,train
+530,0,invalid_geometry,Self-intersection[180.625 691.875],8f435cb5-02c7-452a-a971-cef315681c19_mp4-0003_jpg.rf.910cbfcc3793e1e125e159593b93ca4f.jpg,train
+534,0,invalid_geometry,Too few points in geometry component[180 635],8f435cb5-02c7-452a-a971-cef315681c19_mp4-0010_jpg.rf.08c139ad78d9f897976dc3be5623ad52.jpg,train
+534,0,zero_area,,8f435cb5-02c7-452a-a971-cef315681c19_mp4-0010_jpg.rf.08c139ad78d9f897976dc3be5623ad52.jpg,train
+535,2,invalid_geometry,Too few points in geometry component[79 789],8f435cb5-02c7-452a-a971-cef315681c19_mp4-0011_jpg.rf.306b5a7a8cb14a503f90acebc3c17573.jpg,train
+535,2,zero_area,,8f435cb5-02c7-452a-a971-cef315681c19_mp4-0011_jpg.rf.306b5a7a8cb14a503f90acebc3c17573.jpg,train
+545,1,invalid_geometry,Too few points in geometry component[484 711],8f435cb5-02c7-452a-a971-cef315681c19_mp4-0025_jpg.rf.9f6227ea25a14f1fe5812867fed5c5d8.jpg,train
+545,1,zero_area,,8f435cb5-02c7-452a-a971-cef315681c19_mp4-0025_jpg.rf.9f6227ea25a14f1fe5812867fed5c5d8.jpg,train
+545,7,invalid_geometry,Too few points in geometry component[518 784],8f435cb5-02c7-452a-a971-cef315681c19_mp4-0025_jpg.rf.9f6227ea25a14f1fe5812867fed5c5d8.jpg,train
+545,7,zero_area,,8f435cb5-02c7-452a-a971-cef315681c19_mp4-0025_jpg.rf.9f6227ea25a14f1fe5812867fed5c5d8.jpg,train
+545,8,invalid_geometry,Too few points in geometry component[532 771],8f435cb5-02c7-452a-a971-cef315681c19_mp4-0025_jpg.rf.9f6227ea25a14f1fe5812867fed5c5d8.jpg,train
+545,8,zero_area,,8f435cb5-02c7-452a-a971-cef315681c19_mp4-0025_jpg.rf.9f6227ea25a14f1fe5812867fed5c5d8.jpg,train
+545,9,invalid_geometry,Too few points in geometry component[432 695],8f435cb5-02c7-452a-a971-cef315681c19_mp4-0025_jpg.rf.9f6227ea25a14f1fe5812867fed5c5d8.jpg,train
+545,9,zero_area,,8f435cb5-02c7-452a-a971-cef315681c19_mp4-0025_jpg.rf.9f6227ea25a14f1fe5812867fed5c5d8.jpg,train
+545,10,invalid_geometry,Self-intersection[464.785714285714 690.142857142857],8f435cb5-02c7-452a-a971-cef315681c19_mp4-0025_jpg.rf.9f6227ea25a14f1fe5812867fed5c5d8.jpg,train
+545,13,invalid_geometry,Too few points in geometry component[441 661],8f435cb5-02c7-452a-a971-cef315681c19_mp4-0025_jpg.rf.9f6227ea25a14f1fe5812867fed5c5d8.jpg,train
+545,13,zero_area,,8f435cb5-02c7-452a-a971-cef315681c19_mp4-0025_jpg.rf.9f6227ea25a14f1fe5812867fed5c5d8.jpg,train
+547,7,invalid_geometry,Self-intersection[240.282051282051 428.820512820513],8f435cb5-02c7-452a-a971-cef315681c19_mp4-0027_jpg.rf.51ce7156ca03d03fb302fb085e35542d.jpg,train
+548,20,invalid_geometry,Self-intersection[13.5454545454545 1355.72727272727],9056e676-f14d-410c-9dc7-c5686b3fca04_jpg.rf.6fc669c89bf6cb1267ccf00e86958e00.jpg,train
+561,3,invalid_geometry,Too few points in geometry component[120 181],96ecd4fe-5910-4cd4-8a24-11ed20aab3b7_mp4-0017_jpg.rf.ab588d3d110678feba632e1554033b30.jpg,train
+561,3,zero_area,,96ecd4fe-5910-4cd4-8a24-11ed20aab3b7_mp4-0017_jpg.rf.ab588d3d110678feba632e1554033b30.jpg,train
+595,1,invalid_geometry,Too few points in geometry component[1 791],b029e315-2e53-4152-a536-1adea99e32f7_mp4-0001_jpg.rf.4a42b26a6d5fcc57d34032c980b506d7.jpg,train
+595,1,zero_area,,b029e315-2e53-4152-a536-1adea99e32f7_mp4-0001_jpg.rf.4a42b26a6d5fcc57d34032c980b506d7.jpg,train
+595,8,lt3_vertices,,b029e315-2e53-4152-a536-1adea99e32f7_mp4-0001_jpg.rf.4a42b26a6d5fcc57d34032c980b506d7.jpg,train
+596,2,invalid_geometry,Too few points in geometry component[15 838],b029e315-2e53-4152-a536-1adea99e32f7_mp4-0002_jpg.rf.8562bcccbf7ed450032928e73d53d3f2.jpg,train
+596,2,zero_area,,b029e315-2e53-4152-a536-1adea99e32f7_mp4-0002_jpg.rf.8562bcccbf7ed450032928e73d53d3f2.jpg,train
+596,3,invalid_geometry,Too few points in geometry component[509 663],b029e315-2e53-4152-a536-1adea99e32f7_mp4-0002_jpg.rf.8562bcccbf7ed450032928e73d53d3f2.jpg,train
+596,3,zero_area,,b029e315-2e53-4152-a536-1adea99e32f7_mp4-0002_jpg.rf.8562bcccbf7ed450032928e73d53d3f2.jpg,train
+596,6,invalid_geometry,Too few points in geometry component[157 491],b029e315-2e53-4152-a536-1adea99e32f7_mp4-0002_jpg.rf.8562bcccbf7ed450032928e73d53d3f2.jpg,train
+596,6,zero_area,,b029e315-2e53-4152-a536-1adea99e32f7_mp4-0002_jpg.rf.8562bcccbf7ed450032928e73d53d3f2.jpg,train
+596,7,invalid_geometry,Too few points in geometry component[353 449],b029e315-2e53-4152-a536-1adea99e32f7_mp4-0002_jpg.rf.8562bcccbf7ed450032928e73d53d3f2.jpg,train
+596,7,zero_area,,b029e315-2e53-4152-a536-1adea99e32f7_mp4-0002_jpg.rf.8562bcccbf7ed450032928e73d53d3f2.jpg,train
+596,8,invalid_geometry,Too few points in geometry component[213 395],b029e315-2e53-4152-a536-1adea99e32f7_mp4-0002_jpg.rf.8562bcccbf7ed450032928e73d53d3f2.jpg,train
+596,8,zero_area,,b029e315-2e53-4152-a536-1adea99e32f7_mp4-0002_jpg.rf.8562bcccbf7ed450032928e73d53d3f2.jpg,train
+597,2,invalid_geometry,Too few points in geometry component[506 688],b029e315-2e53-4152-a536-1adea99e32f7_mp4-0003_jpg.rf.d345dc5393412b9b2762e9f24c2b7cc5.jpg,train
+597,2,zero_area,,b029e315-2e53-4152-a536-1adea99e32f7_mp4-0003_jpg.rf.d345dc5393412b9b2762e9f24c2b7cc5.jpg,train
+597,6,invalid_geometry,Too few points in geometry component[368 451],b029e315-2e53-4152-a536-1adea99e32f7_mp4-0003_jpg.rf.d345dc5393412b9b2762e9f24c2b7cc5.jpg,train
+597,6,zero_area,,b029e315-2e53-4152-a536-1adea99e32f7_mp4-0003_jpg.rf.d345dc5393412b9b2762e9f24c2b7cc5.jpg,train
+597,9,invalid_geometry,Too few points in geometry component[14 851],b029e315-2e53-4152-a536-1adea99e32f7_mp4-0003_jpg.rf.d345dc5393412b9b2762e9f24c2b7cc5.jpg,train
+597,9,zero_area,,b029e315-2e53-4152-a536-1adea99e32f7_mp4-0003_jpg.rf.d345dc5393412b9b2762e9f24c2b7cc5.jpg,train
+598,6,invalid_geometry,Self-intersection[184.668421052632 409.047368421053],b029e315-2e53-4152-a536-1adea99e32f7_mp4-0005_jpg.rf.c0cf3d5a70a50c686e549a437d81c507.jpg,train
+601,4,invalid_geometry,Ring Self-intersection[295 396],b029e315-2e53-4152-a536-1adea99e32f7_mp4-0009_jpg.rf.67dd7190ce2a667a587dd293ca4f865b.jpg,train
+601,6,invalid_geometry,Self-intersection[490.589473684211 610.421052631579],b029e315-2e53-4152-a536-1adea99e32f7_mp4-0009_jpg.rf.67dd7190ce2a667a587dd293ca4f865b.jpg,train
+602,2,invalid_geometry,Self-intersection[164.6 485.4],b029e315-2e53-4152-a536-1adea99e32f7_mp4-0010_jpg.rf.20c39a0619fb2c1c832861235c8fd20b.jpg,train
+603,1,invalid_geometry,Self-intersection[3.86961108542845 590.881476476654],b029e315-2e53-4152-a536-1adea99e32f7_mp4-0011_jpg.rf.34d70b2b31c437706f543b913d4782e9.jpg,train
+603,3,invalid_geometry,Too few points in geometry component[518 625],b029e315-2e53-4152-a536-1adea99e32f7_mp4-0011_jpg.rf.34d70b2b31c437706f543b913d4782e9.jpg,train
+603,3,zero_area,,b029e315-2e53-4152-a536-1adea99e32f7_mp4-0011_jpg.rf.34d70b2b31c437706f543b913d4782e9.jpg,train
+603,7,lt3_vertices,,b029e315-2e53-4152-a536-1adea99e32f7_mp4-0011_jpg.rf.34d70b2b31c437706f543b913d4782e9.jpg,train
+603,8,invalid_geometry,Too few points in geometry component[282 413],b029e315-2e53-4152-a536-1adea99e32f7_mp4-0011_jpg.rf.34d70b2b31c437706f543b913d4782e9.jpg,train
+603,8,zero_area,,b029e315-2e53-4152-a536-1adea99e32f7_mp4-0011_jpg.rf.34d70b2b31c437706f543b913d4782e9.jpg,train
+603,9,invalid_geometry,Too few points in geometry component[282 407],b029e315-2e53-4152-a536-1adea99e32f7_mp4-0011_jpg.rf.34d70b2b31c437706f543b913d4782e9.jpg,train
+603,9,zero_area,,b029e315-2e53-4152-a536-1adea99e32f7_mp4-0011_jpg.rf.34d70b2b31c437706f543b913d4782e9.jpg,train
+603,10,lt3_vertices,,b029e315-2e53-4152-a536-1adea99e32f7_mp4-0011_jpg.rf.34d70b2b31c437706f543b913d4782e9.jpg,train
+603,11,invalid_geometry,Too few points in geometry component[176 400],b029e315-2e53-4152-a536-1adea99e32f7_mp4-0011_jpg.rf.34d70b2b31c437706f543b913d4782e9.jpg,train
+603,11,zero_area,,b029e315-2e53-4152-a536-1adea99e32f7_mp4-0011_jpg.rf.34d70b2b31c437706f543b913d4782e9.jpg,train
+603,14,invalid_geometry,Too few points in geometry component[178 394],b029e315-2e53-4152-a536-1adea99e32f7_mp4-0011_jpg.rf.34d70b2b31c437706f543b913d4782e9.jpg,train
+603,14,zero_area,,b029e315-2e53-4152-a536-1adea99e32f7_mp4-0011_jpg.rf.34d70b2b31c437706f543b913d4782e9.jpg,train
+603,15,lt3_vertices,,b029e315-2e53-4152-a536-1adea99e32f7_mp4-0011_jpg.rf.34d70b2b31c437706f543b913d4782e9.jpg,train
+603,16,lt3_vertices,,b029e315-2e53-4152-a536-1adea99e32f7_mp4-0011_jpg.rf.34d70b2b31c437706f543b913d4782e9.jpg,train
+603,17,invalid_geometry,Too few points in geometry component[193 382],b029e315-2e53-4152-a536-1adea99e32f7_mp4-0011_jpg.rf.34d70b2b31c437706f543b913d4782e9.jpg,train
+603,17,zero_area,,b029e315-2e53-4152-a536-1adea99e32f7_mp4-0011_jpg.rf.34d70b2b31c437706f543b913d4782e9.jpg,train
+603,20,lt3_vertices,,b029e315-2e53-4152-a536-1adea99e32f7_mp4-0011_jpg.rf.34d70b2b31c437706f543b913d4782e9.jpg,train
+603,21,invalid_geometry,Too few points in geometry component[203 377],b029e315-2e53-4152-a536-1adea99e32f7_mp4-0011_jpg.rf.34d70b2b31c437706f543b913d4782e9.jpg,train
+603,21,zero_area,,b029e315-2e53-4152-a536-1adea99e32f7_mp4-0011_jpg.rf.34d70b2b31c437706f543b913d4782e9.jpg,train
+603,23,lt3_vertices,,b029e315-2e53-4152-a536-1adea99e32f7_mp4-0011_jpg.rf.34d70b2b31c437706f543b913d4782e9.jpg,train
+606,5,invalid_geometry,Self-intersection[30.1136363636364 808.75],b029e315-2e53-4152-a536-1adea99e32f7_mp4-0014_jpg.rf.582847bb6f201b85d7a5c87216a7acaf.jpg,train
+607,2,invalid_geometry,Too few points in geometry component[16 554],b029e315-2e53-4152-a536-1adea99e32f7_mp4-0015_jpg.rf.0c0bbfc5cd727794a3cd6709cb8c5132.jpg,train
+607,2,zero_area,,b029e315-2e53-4152-a536-1adea99e32f7_mp4-0015_jpg.rf.0c0bbfc5cd727794a3cd6709cb8c5132.jpg,train
+607,3,invalid_geometry,Too few points in geometry component[7 554],b029e315-2e53-4152-a536-1adea99e32f7_mp4-0015_jpg.rf.0c0bbfc5cd727794a3cd6709cb8c5132.jpg,train
+607,3,zero_area,,b029e315-2e53-4152-a536-1adea99e32f7_mp4-0015_jpg.rf.0c0bbfc5cd727794a3cd6709cb8c5132.jpg,train
+607,9,invalid_geometry,Too few points in geometry component[355 428],b029e315-2e53-4152-a536-1adea99e32f7_mp4-0015_jpg.rf.0c0bbfc5cd727794a3cd6709cb8c5132.jpg,train
+607,9,zero_area,,b029e315-2e53-4152-a536-1adea99e32f7_mp4-0015_jpg.rf.0c0bbfc5cd727794a3cd6709cb8c5132.jpg,train
+607,12,invalid_geometry,Ring Self-intersection[298 436],b029e315-2e53-4152-a536-1adea99e32f7_mp4-0015_jpg.rf.0c0bbfc5cd727794a3cd6709cb8c5132.jpg,train
+611,3,lt3_vertices,,b029e315-2e53-4152-a536-1adea99e32f7_mp4-0023_jpg.rf.02e19cbbcd291500315944e3eae321f8.jpg,train
+612,2,lt3_vertices,,b029e315-2e53-4152-a536-1adea99e32f7_mp4-0024_jpg.rf.5f8218262f482ac00b2708eaa0524546.jpg,train
+614,2,invalid_geometry,Too few points in geometry component[528 607],b029e315-2e53-4152-a536-1adea99e32f7_mp4-0027_jpg.rf.9b5811359a5ea098142ab1c3aac42512.jpg,train
+614,2,zero_area,,b029e315-2e53-4152-a536-1adea99e32f7_mp4-0027_jpg.rf.9b5811359a5ea098142ab1c3aac42512.jpg,train
+614,3,invalid_geometry,Ring Self-intersection[526 616],b029e315-2e53-4152-a536-1adea99e32f7_mp4-0027_jpg.rf.9b5811359a5ea098142ab1c3aac42512.jpg,train
+614,4,invalid_geometry,Self-intersection[531.678868552413 627.269550748752],b029e315-2e53-4152-a536-1adea99e32f7_mp4-0027_jpg.rf.9b5811359a5ea098142ab1c3aac42512.jpg,train
+615,2,lt3_vertices,,b029e315-2e53-4152-a536-1adea99e32f7_mp4-0028_jpg.rf.a52052f5317a6d7b593f8f72ea108703.jpg,train
+628,2,invalid_geometry,Self-intersection[143.471337579618 32.4649681528662],bbf45eda-4ffb-4bf1-9b29-a4e91475c8ec_mp4-0017_jpg.rf.4b1e479cf86297cec8c9d55f247c3e16.jpg,train
+641,0,invalid_geometry,Self-intersection[110 444],d56fcb3c-0531-4696-8b67-2645d89e4a7f_mp4-0000_jpg.rf.c741e272b0956f5de1ca80073b54ff44.jpg,train
+651,2,invalid_geometry,Too few points in geometry component[255 537],d56fcb3c-0531-4696-8b67-2645d89e4a7f_mp4-0015_jpg.rf.f4a646c344a6f16203073ea8fb162b22.jpg,train
+651,2,zero_area,,d56fcb3c-0531-4696-8b67-2645d89e4a7f_mp4-0015_jpg.rf.f4a646c344a6f16203073ea8fb162b22.jpg,train
+651,6,invalid_geometry,Too few points in geometry component[107 523],d56fcb3c-0531-4696-8b67-2645d89e4a7f_mp4-0015_jpg.rf.f4a646c344a6f16203073ea8fb162b22.jpg,train
+651,6,zero_area,,d56fcb3c-0531-4696-8b67-2645d89e4a7f_mp4-0015_jpg.rf.f4a646c344a6f16203073ea8fb162b22.jpg,train
+660,0,invalid_geometry,Too few points in geometry component[285 766],d56fcb3c-0531-4696-8b67-2645d89e4a7f_mp4-0030_jpg.rf.c2216714b2e16c5daef43bc57df21aea.jpg,train
+660,0,zero_area,,d56fcb3c-0531-4696-8b67-2645d89e4a7f_mp4-0030_jpg.rf.c2216714b2e16c5daef43bc57df21aea.jpg,train
+661,0,invalid_geometry,Too few points in geometry component[134 766],d56fcb3c-0531-4696-8b67-2645d89e4a7f_mp4-0031_jpg.rf.91a7896e4ae4095de4b7508497540ca6.jpg,train
+661,0,zero_area,,d56fcb3c-0531-4696-8b67-2645d89e4a7f_mp4-0031_jpg.rf.91a7896e4ae4095de4b7508497540ca6.jpg,train
+661,4,invalid_geometry,Too few points in geometry component[230 555],d56fcb3c-0531-4696-8b67-2645d89e4a7f_mp4-0031_jpg.rf.91a7896e4ae4095de4b7508497540ca6.jpg,train
+661,4,zero_area,,d56fcb3c-0531-4696-8b67-2645d89e4a7f_mp4-0031_jpg.rf.91a7896e4ae4095de4b7508497540ca6.jpg,train
+674,0,invalid_geometry,Self-intersection[424 532],d56fcb3c-0531-4696-8b67-2645d89e4a7f_mp4-0049_jpg.rf.0a5b1f40e2565ec0e0f5d55fa8d2bc38.jpg,train
+677,0,invalid_geometry,Too few points in geometry component[421 545],d56fcb3c-0531-4696-8b67-2645d89e4a7f_mp4-0052_jpg.rf.d8ac8d950cf38875a8f94ee12b852a23.jpg,train
+677,0,zero_area,,d56fcb3c-0531-4696-8b67-2645d89e4a7f_mp4-0052_jpg.rf.d8ac8d950cf38875a8f94ee12b852a23.jpg,train
+685,17,invalid_geometry,Too few points in geometry component[4 904],f9b12ec3-0036-45f7-8cc3-4d2e6f481cdc_mp4-0000_jpg.rf.743d95f6211d81f88d40d7a330043ce5.jpg,train
+685,17,zero_area,,f9b12ec3-0036-45f7-8cc3-4d2e6f481cdc_mp4-0000_jpg.rf.743d95f6211d81f88d40d7a330043ce5.jpg,train
+728,0,invalid_geometry,Too few points in geometry component[32 627],fa45e6fb-4502-41bb-bb80-a4a4149318ad_mp4-0008_jpg.rf.8edb52b8829314ea294155966e07a3e0.jpg,train
+728,0,zero_area,,fa45e6fb-4502-41bb-bb80-a4a4149318ad_mp4-0008_jpg.rf.8edb52b8829314ea294155966e07a3e0.jpg,train
+728,1,invalid_geometry,Too few points in geometry component[35 617],fa45e6fb-4502-41bb-bb80-a4a4149318ad_mp4-0008_jpg.rf.8edb52b8829314ea294155966e07a3e0.jpg,train
+728,1,zero_area,,fa45e6fb-4502-41bb-bb80-a4a4149318ad_mp4-0008_jpg.rf.8edb52b8829314ea294155966e07a3e0.jpg,train
+728,2,lt3_vertices,,fa45e6fb-4502-41bb-bb80-a4a4149318ad_mp4-0008_jpg.rf.8edb52b8829314ea294155966e07a3e0.jpg,train
+728,4,lt3_vertices,,fa45e6fb-4502-41bb-bb80-a4a4149318ad_mp4-0008_jpg.rf.8edb52b8829314ea294155966e07a3e0.jpg,train
+728,6,invalid_geometry,Too few points in geometry component[27 591],fa45e6fb-4502-41bb-bb80-a4a4149318ad_mp4-0008_jpg.rf.8edb52b8829314ea294155966e07a3e0.jpg,train
+728,6,zero_area,,fa45e6fb-4502-41bb-bb80-a4a4149318ad_mp4-0008_jpg.rf.8edb52b8829314ea294155966e07a3e0.jpg,train
+728,7,lt3_vertices,,fa45e6fb-4502-41bb-bb80-a4a4149318ad_mp4-0008_jpg.rf.8edb52b8829314ea294155966e07a3e0.jpg,train
+729,0,invalid_geometry,Too few points in geometry component[270 264],fa45e6fb-4502-41bb-bb80-a4a4149318ad_mp4-0009_jpg.rf.42377039928d1825a4a44610c78be8f2.jpg,train
+729,0,zero_area,,fa45e6fb-4502-41bb-bb80-a4a4149318ad_mp4-0009_jpg.rf.42377039928d1825a4a44610c78be8f2.jpg,train
+729,6,invalid_geometry,Ring Self-intersection[57 619],fa45e6fb-4502-41bb-bb80-a4a4149318ad_mp4-0009_jpg.rf.42377039928d1825a4a44610c78be8f2.jpg,train
+729,9,lt3_vertices,,fa45e6fb-4502-41bb-bb80-a4a4149318ad_mp4-0009_jpg.rf.42377039928d1825a4a44610c78be8f2.jpg,train
+735,4,lt3_vertices,,fa45e6fb-4502-41bb-bb80-a4a4149318ad_mp4-0019_jpg.rf.5a330894e00388be6e544c033f9caf59.jpg,train
+735,6,invalid_geometry,Too few points in geometry component[138 286],fa45e6fb-4502-41bb-bb80-a4a4149318ad_mp4-0019_jpg.rf.5a330894e00388be6e544c033f9caf59.jpg,train
+735,6,zero_area,,fa45e6fb-4502-41bb-bb80-a4a4149318ad_mp4-0019_jpg.rf.5a330894e00388be6e544c033f9caf59.jpg,train
+737,4,invalid_geometry,Too few points in geometry component[293 450],fa45e6fb-4502-41bb-bb80-a4a4149318ad_mp4-0021_jpg.rf.5705ecbe28b9cecf40abe7999d6e027c.jpg,train
+737,4,zero_area,,fa45e6fb-4502-41bb-bb80-a4a4149318ad_mp4-0021_jpg.rf.5705ecbe28b9cecf40abe7999d6e027c.jpg,train
+738,5,lt3_vertices,,fa45e6fb-4502-41bb-bb80-a4a4149318ad_mp4-0022_jpg.rf.877809ecfdf84612feff653adce1e6cb.jpg,train
+739,4,invalid_geometry,Too few points in geometry component[135 308],fa45e6fb-4502-41bb-bb80-a4a4149318ad_mp4-0023_jpg.rf.4532e4605a2f112beaee69be036c9c1f.jpg,train
+739,4,zero_area,,fa45e6fb-4502-41bb-bb80-a4a4149318ad_mp4-0023_jpg.rf.4532e4605a2f112beaee69be036c9c1f.jpg,train
+741,4,invalid_geometry,Too few points in geometry component[198 228],fa45e6fb-4502-41bb-bb80-a4a4149318ad_mp4-0026_jpg.rf.bf4c65aea6a2435c32227dc207339ffe.jpg,train
+741,4,zero_area,,fa45e6fb-4502-41bb-bb80-a4a4149318ad_mp4-0026_jpg.rf.bf4c65aea6a2435c32227dc207339ffe.jpg,train
+741,5,invalid_geometry,Too few points in geometry component[207 201],fa45e6fb-4502-41bb-bb80-a4a4149318ad_mp4-0026_jpg.rf.bf4c65aea6a2435c32227dc207339ffe.jpg,train
+741,5,zero_area,,fa45e6fb-4502-41bb-bb80-a4a4149318ad_mp4-0026_jpg.rf.bf4c65aea6a2435c32227dc207339ffe.jpg,train
+744,2,invalid_geometry,Self-intersection[186.111111111111 259.888888888889],fa45e6fb-4502-41bb-bb80-a4a4149318ad_mp4-0029_jpg.rf.7cca5790d322eef969e859ef1b270886.jpg,train
+745,1,invalid_geometry,Self-intersection[190.083333333333 247.666666666667],fa45e6fb-4502-41bb-bb80-a4a4149318ad_mp4-0031_jpg.rf.374f41e5b33ca6f820cb45185a2a8a85.jpg,train
+753,0,invalid_geometry,Self-intersection[420.172413793103 785.896551724138],07451999-bdf8-4862-b869-6db57c35f0c1_mp4-0013_jpg.rf.b235c789f8f0eb45d7efdd17894c7f55.jpg,valid
+758,2,invalid_geometry,Too few points in geometry component[3 372],0a48349e-f671-436a-8af5-de54f079109f_mp4-0001_jpg.rf.65807a1edc21b97c96cf58c8c45c20eb.jpg,valid
+758,2,zero_area,,0a48349e-f671-436a-8af5-de54f079109f_mp4-0001_jpg.rf.65807a1edc21b97c96cf58c8c45c20eb.jpg,valid
+759,2,invalid_geometry,Too few points in geometry component[231 591],0a48349e-f671-436a-8af5-de54f079109f_mp4-0009_jpg.rf.bd71069f58d002ef7d7bd813f897843f.jpg,valid
+759,2,zero_area,,0a48349e-f671-436a-8af5-de54f079109f_mp4-0009_jpg.rf.bd71069f58d002ef7d7bd813f897843f.jpg,valid
+760,0,invalid_geometry,Too few points in geometry component[305 592],0a48349e-f671-436a-8af5-de54f079109f_mp4-0016_jpg.rf.2ff24b42fc562758926b62ffd3d6b91c.jpg,valid
+760,0,zero_area,,0a48349e-f671-436a-8af5-de54f079109f_mp4-0016_jpg.rf.2ff24b42fc562758926b62ffd3d6b91c.jpg,valid
+763,4,invalid_geometry,Too few points in geometry component[267 496],0a48349e-f671-436a-8af5-de54f079109f_mp4-0031_jpg.rf.29fca1312fd17356328cfd1fc490438b.jpg,valid
+763,4,zero_area,,0a48349e-f671-436a-8af5-de54f079109f_mp4-0031_jpg.rf.29fca1312fd17356328cfd1fc490438b.jpg,valid
+767,2,invalid_geometry,Too few points in geometry component[253 507],0a48349e-f671-436a-8af5-de54f079109f_mp4-0042_jpg.rf.db21cae3bb6daef84eb29e49977d72bb.jpg,valid
+767,2,zero_area,,0a48349e-f671-436a-8af5-de54f079109f_mp4-0042_jpg.rf.db21cae3bb6daef84eb29e49977d72bb.jpg,valid
+782,0,invalid_geometry,Too few points in geometry component[267 203],0f964fdb-9fc1-4941-9c12-15445855221a-1-_mp4-0032_jpg.rf.4cd462f25e2fc954bd3230d253b6f50d.jpg,valid
+782,0,zero_area,,0f964fdb-9fc1-4941-9c12-15445855221a-1-_mp4-0032_jpg.rf.4cd462f25e2fc954bd3230d253b6f50d.jpg,valid
+784,2,invalid_geometry,Ring Self-intersection[402 77],0f964fdb-9fc1-4941-9c12-15445855221a-1-_mp4-0043_jpg.rf.d9d9ae69e4c26b706dc838ba8b9621bd.jpg,valid
+786,3,invalid_geometry,Self-intersection[633.216216216216 18.9189189189189],0f964fdb-9fc1-4941-9c12-15445855221a-1-_mp4-0056_jpg.rf.3fc2a12b1047fb12c80d80a1290dcd7a.jpg,valid
+789,6,invalid_geometry,Self-intersection[590.645161290323 4.93548387096774],0f964fdb-9fc1-4941-9c12-15445855221a-1-_mp4-0078_jpg.rf.327b3996f2472a766b5380343275b16b.jpg,valid
+806,2,invalid_geometry,Self-intersection[35.7142857142857 365],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0000_jpg.rf.4410c15283a120d72e19855f5017eefe.jpg,valid
+812,4,invalid_geometry,Self-intersection[259.413793103448 214.51724137931],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0017_jpg.rf.450aa444a1554c9ff1cd5554d2216280.jpg,valid
+813,4,lt3_vertices,,2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0022_jpg.rf.e7e07abbd362548ad4260e4ee1857066.jpg,valid
+813,6,lt3_vertices,,2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0022_jpg.rf.e7e07abbd362548ad4260e4ee1857066.jpg,valid
+815,1,invalid_geometry,Too few points in geometry component[95 514],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0023_jpg.rf.e7957724a74c71cd252e8ef27bb9b9c2.jpg,valid
+815,1,zero_area,,2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0023_jpg.rf.e7957724a74c71cd252e8ef27bb9b9c2.jpg,valid
+815,6,invalid_geometry,Too few points in geometry component[107 425],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0023_jpg.rf.e7957724a74c71cd252e8ef27bb9b9c2.jpg,valid
+815,6,zero_area,,2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0023_jpg.rf.e7957724a74c71cd252e8ef27bb9b9c2.jpg,valid
+815,7,invalid_geometry,Too few points in geometry component[78 424],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0023_jpg.rf.e7957724a74c71cd252e8ef27bb9b9c2.jpg,valid
+815,7,zero_area,,2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0023_jpg.rf.e7957724a74c71cd252e8ef27bb9b9c2.jpg,valid
+815,8,invalid_geometry,Self-intersection[114.9 427.7],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0023_jpg.rf.e7957724a74c71cd252e8ef27bb9b9c2.jpg,valid
+818,6,invalid_geometry,Self-intersection[123.777777777778 422],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0036_jpg.rf.ab20c51420bb17b5e0fa4321df0a8648.jpg,valid
+819,2,invalid_geometry,Ring Self-intersection[5 438],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0037_jpg.rf.d6e4e91597a90e133dc66cf3a7667dae.jpg,valid
+822,6,invalid_geometry,Too few points in geometry component[247 167],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0043_jpg.rf.7e254ab9aa0eb884cd13b66645795ab5.jpg,valid
+822,6,zero_area,,2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0043_jpg.rf.7e254ab9aa0eb884cd13b66645795ab5.jpg,valid
+832,3,invalid_geometry,Ring Self-intersection[223 630],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0065_jpg.rf.edd052cd565941eb7ca5c5c3e5746e2a.jpg,valid
+834,7,lt3_vertices,,2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0066_jpg.rf.82746e8c142314443df31a18ca55e664.jpg,valid
+834,13,duplicate_line,,2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0066_jpg.rf.82746e8c142314443df31a18ca55e664.jpg,valid
+834,13,lt3_vertices,,2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0066_jpg.rf.82746e8c142314443df31a18ca55e664.jpg,valid
+834,16,invalid_geometry,Too few points in geometry component[220 634],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0066_jpg.rf.82746e8c142314443df31a18ca55e664.jpg,valid
+834,16,zero_area,,2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0066_jpg.rf.82746e8c142314443df31a18ca55e664.jpg,valid
+838,5,invalid_geometry,Self-intersection[329.47048737923 514.615],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0080_jpg.rf.51edbda029f89f55000f45111d7b588c.jpg,valid
+844,1,invalid_geometry,Too few points in geometry component[3 476],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0100_jpg.rf.a53ef10ea72d7f4fbb03e113713e2238.jpg,valid
+844,1,zero_area,,2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0100_jpg.rf.a53ef10ea72d7f4fbb03e113713e2238.jpg,valid
+844,6,invalid_geometry,Too few points in geometry component[83 635],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0100_jpg.rf.a53ef10ea72d7f4fbb03e113713e2238.jpg,valid
+844,6,zero_area,,2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0100_jpg.rf.a53ef10ea72d7f4fbb03e113713e2238.jpg,valid
+844,9,invalid_geometry,Too few points in geometry component[17 524],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0100_jpg.rf.a53ef10ea72d7f4fbb03e113713e2238.jpg,valid
+844,9,zero_area,,2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0100_jpg.rf.a53ef10ea72d7f4fbb03e113713e2238.jpg,valid
+844,12,lt3_vertices,,2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0100_jpg.rf.a53ef10ea72d7f4fbb03e113713e2238.jpg,valid
+844,15,invalid_geometry,Self-intersection[9.83870967741935 469.096774193548],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0100_jpg.rf.a53ef10ea72d7f4fbb03e113713e2238.jpg,valid
+845,1,invalid_geometry,Too few points in geometry component[223 631],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0106_jpg.rf.d197c37a8e554ba9426e0552cb6aa87d.jpg,valid
+845,1,zero_area,,2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0106_jpg.rf.d197c37a8e554ba9426e0552cb6aa87d.jpg,valid
+886,3,invalid_geometry,Too few points in geometry component[401 220],5d81688a-7f52-42a4-b81d-822c2d2319a3_mp4-0001_jpg.rf.fba7bd5558a2dfe44ee397f6e0631fdd.jpg,valid
+886,3,zero_area,,5d81688a-7f52-42a4-b81d-822c2d2319a3_mp4-0001_jpg.rf.fba7bd5558a2dfe44ee397f6e0631fdd.jpg,valid
+886,5,lt3_vertices,,5d81688a-7f52-42a4-b81d-822c2d2319a3_mp4-0001_jpg.rf.fba7bd5558a2dfe44ee397f6e0631fdd.jpg,valid
+903,2,invalid_geometry,Too few points in geometry component[357 755],6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0042_jpg.rf.1b199840e61489c083d42e1dd7ba2930.jpg,valid
+903,2,zero_area,,6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0042_jpg.rf.1b199840e61489c083d42e1dd7ba2930.jpg,valid
+906,0,invalid_geometry,Too few points in geometry component[525 953],6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0054_jpg.rf.06a981a11596c90a7d1cfb1befaadea9.jpg,valid
+906,0,zero_area,,6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0054_jpg.rf.06a981a11596c90a7d1cfb1befaadea9.jpg,valid
+931,3,invalid_geometry,Too few points in geometry component[527 624],b029e315-2e53-4152-a536-1adea99e32f7_mp4-0018_jpg.rf.28739ffde4622b64e2c9a3b3d9620a58.jpg,valid
+931,3,zero_area,,b029e315-2e53-4152-a536-1adea99e32f7_mp4-0018_jpg.rf.28739ffde4622b64e2c9a3b3d9620a58.jpg,valid
+931,4,invalid_geometry,Too few points in geometry component[510 608],b029e315-2e53-4152-a536-1adea99e32f7_mp4-0018_jpg.rf.28739ffde4622b64e2c9a3b3d9620a58.jpg,valid
+931,4,zero_area,,b029e315-2e53-4152-a536-1adea99e32f7_mp4-0018_jpg.rf.28739ffde4622b64e2c9a3b3d9620a58.jpg,valid
+931,5,invalid_geometry,Too few points in geometry component[520 607],b029e315-2e53-4152-a536-1adea99e32f7_mp4-0018_jpg.rf.28739ffde4622b64e2c9a3b3d9620a58.jpg,valid
+931,5,zero_area,,b029e315-2e53-4152-a536-1adea99e32f7_mp4-0018_jpg.rf.28739ffde4622b64e2c9a3b3d9620a58.jpg,valid
+931,6,invalid_geometry,Too few points in geometry component[185 530],b029e315-2e53-4152-a536-1adea99e32f7_mp4-0018_jpg.rf.28739ffde4622b64e2c9a3b3d9620a58.jpg,valid
+931,6,zero_area,,b029e315-2e53-4152-a536-1adea99e32f7_mp4-0018_jpg.rf.28739ffde4622b64e2c9a3b3d9620a58.jpg,valid
+932,5,invalid_geometry,Too few points in geometry component[535 671],b029e315-2e53-4152-a536-1adea99e32f7_mp4-0020_jpg.rf.b2d34ca190cef325783126294f779f89.jpg,valid
+932,5,zero_area,,b029e315-2e53-4152-a536-1adea99e32f7_mp4-0020_jpg.rf.b2d34ca190cef325783126294f779f89.jpg,valid
+933,2,lt3_vertices,,b029e315-2e53-4152-a536-1adea99e32f7_mp4-0021_jpg.rf.0926ee9e039957dc6f0003e9b20aa124.jpg,valid
+948,3,invalid_geometry,Too few points in geometry component[249 521],d56fcb3c-0531-4696-8b67-2645d89e4a7f_mp4-0023_jpg.rf.76bb0cc8c6d007b44977a1c58d68532b.jpg,valid
+948,3,zero_area,,d56fcb3c-0531-4696-8b67-2645d89e4a7f_mp4-0023_jpg.rf.76bb0cc8c6d007b44977a1c58d68532b.jpg,valid
+948,4,lt3_vertices,,d56fcb3c-0531-4696-8b67-2645d89e4a7f_mp4-0023_jpg.rf.76bb0cc8c6d007b44977a1c58d68532b.jpg,valid
+948,6,invalid_geometry,Too few points in geometry component[208 510],d56fcb3c-0531-4696-8b67-2645d89e4a7f_mp4-0023_jpg.rf.76bb0cc8c6d007b44977a1c58d68532b.jpg,valid
+948,6,zero_area,,d56fcb3c-0531-4696-8b67-2645d89e4a7f_mp4-0023_jpg.rf.76bb0cc8c6d007b44977a1c58d68532b.jpg,valid
+948,9,invalid_geometry,Ring Self-intersection[202 506],d56fcb3c-0531-4696-8b67-2645d89e4a7f_mp4-0023_jpg.rf.76bb0cc8c6d007b44977a1c58d68532b.jpg,valid
+950,4,invalid_geometry,Ring Self-intersection[157 763],d56fcb3c-0531-4696-8b67-2645d89e4a7f_mp4-0029_jpg.rf.165c496eca2f8319d54e8b7ba033c484.jpg,valid
+951,0,lt3_vertices,,d56fcb3c-0531-4696-8b67-2645d89e4a7f_mp4-0032_jpg.rf.701b5236f93f0b6d4d29975f5c88c0be.jpg,valid
+959,2,invalid_geometry,Too few points in geometry component[255 451],f9b12ec3-0036-45f7-8cc3-4d2e6f481cdc_mp4-0023_jpg.rf.6a06878fdfd53253609488816187f520.jpg,valid
+959,2,zero_area,,f9b12ec3-0036-45f7-8cc3-4d2e6f481cdc_mp4-0023_jpg.rf.6a06878fdfd53253609488816187f520.jpg,valid
+959,3,invalid_geometry,Too few points in geometry component[117 286],f9b12ec3-0036-45f7-8cc3-4d2e6f481cdc_mp4-0023_jpg.rf.6a06878fdfd53253609488816187f520.jpg,valid
+959,3,zero_area,,f9b12ec3-0036-45f7-8cc3-4d2e6f481cdc_mp4-0023_jpg.rf.6a06878fdfd53253609488816187f520.jpg,valid
+959,5,invalid_geometry,Too few points in geometry component[186 233],f9b12ec3-0036-45f7-8cc3-4d2e6f481cdc_mp4-0023_jpg.rf.6a06878fdfd53253609488816187f520.jpg,valid
+959,5,zero_area,,f9b12ec3-0036-45f7-8cc3-4d2e6f481cdc_mp4-0023_jpg.rf.6a06878fdfd53253609488816187f520.jpg,valid
+959,7,invalid_geometry,Too few points in geometry component[233 197],f9b12ec3-0036-45f7-8cc3-4d2e6f481cdc_mp4-0023_jpg.rf.6a06878fdfd53253609488816187f520.jpg,valid
+959,7,zero_area,,f9b12ec3-0036-45f7-8cc3-4d2e6f481cdc_mp4-0023_jpg.rf.6a06878fdfd53253609488816187f520.jpg,valid
+961,2,invalid_geometry,Too few points in geometry component[460 853],f9b12ec3-0036-45f7-8cc3-4d2e6f481cdc_mp4-0030_jpg.rf.29f76b9fc7d266e24a7d092db379c41b.jpg,valid
+961,2,zero_area,,f9b12ec3-0036-45f7-8cc3-4d2e6f481cdc_mp4-0030_jpg.rf.29f76b9fc7d266e24a7d092db379c41b.jpg,valid
+987,2,invalid_geometry,Too few points in geometry component[281 384],0a48349e-f671-436a-8af5-de54f079109f_mp4-0044_jpg.rf.0725d6e790a3e8b21f5a6f1c09b185ab.jpg,test
+987,2,zero_area,,0a48349e-f671-436a-8af5-de54f079109f_mp4-0044_jpg.rf.0725d6e790a3e8b21f5a6f1c09b185ab.jpg,test
+996,3,invalid_geometry,Ring Self-intersection[622 43],0f964fdb-9fc1-4941-9c12-15445855221a-1-_mp4-0041_jpg.rf.3aea14092995ac9d8deb0f3d1a34fdc4.jpg,test
+997,3,invalid_geometry,Ring Self-intersection[619 42],0f964fdb-9fc1-4941-9c12-15445855221a-1-_mp4-0049_jpg.rf.2f4e80d2679a1f65992653bf0d849bbd.jpg,test
+999,2,invalid_geometry,Self-intersection[431.616477272727 109.53125],0f964fdb-9fc1-4941-9c12-15445855221a-1-_mp4-0073_jpg.rf.040ab0203193f3f7c94dcac0d24177a6.jpg,test
+1008,4,invalid_geometry,Self-intersection[8.79310344827586 527.586206896552],1991989f-1bf5-4e50-89bb-7301b220ac01_mp4-0049_jpg.rf.b3b6af0bfc53ac6d0f591b691f253b25.jpg,test
+1013,3,invalid_geometry,Too few points in geometry component[204 374],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0021_jpg.rf.6e815a577f56e9fd7b3a646f4e66113d.jpg,test
+1013,3,zero_area,,2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0021_jpg.rf.6e815a577f56e9fd7b3a646f4e66113d.jpg,test
+1020,5,invalid_geometry,Self-intersection[9.85714285714286 462],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0070_jpg.rf.9eaa43c1462336e78cad3ce10b1dd713.jpg,test
+1024,4,invalid_geometry,Self-intersection[4.27675116623874 445.007377138104],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0088_jpg.rf.81776000fa90076afa0d84c5a8cfee32.jpg,test
+1024,5,lt3_vertices,,2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0088_jpg.rf.81776000fa90076afa0d84c5a8cfee32.jpg,test
+1024,7,invalid_geometry,Too few points in geometry component[2 474],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0088_jpg.rf.81776000fa90076afa0d84c5a8cfee32.jpg,test
+1024,7,zero_area,,2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0088_jpg.rf.81776000fa90076afa0d84c5a8cfee32.jpg,test
+1032,0,invalid_geometry,Self-intersection[2 419],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0115_jpg.rf.9a70015509a827e7edfa089132bf0021.jpg,test
+1037,0,invalid_geometry,Self-intersection[1.95530726256983 421.04469273743],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0146_jpg.rf.ecfe1d7b543059c860a801a9091f30a7.jpg,test
+1041,0,invalid_geometry,Self-intersection[5.04624277456647 368.317919075145],2be0c9f6-caf7-4f26-9b59-b1299865a721_mp4-0163_jpg.rf.5ace51d288b978ea59e6993a2e128b0f.jpg,test
+1046,1,lt3_vertices,,5d81688a-7f52-42a4-b81d-822c2d2319a3_mp4-0009_jpg.rf.47d742eeb6c80beb5bb82b8c89e47d37.jpg,test
+1046,2,invalid_geometry,Self-intersection[515.909090909091 327.090909090909],5d81688a-7f52-42a4-b81d-822c2d2319a3_mp4-0009_jpg.rf.47d742eeb6c80beb5bb82b8c89e47d37.jpg,test
+1047,0,invalid_geometry,Self-intersection[429.555555555556 375.222222222222],5d81688a-7f52-42a4-b81d-822c2d2319a3_mp4-0018_jpg.rf.c159b8ba08b53f2b733af84175c1d648.jpg,test
+1056,6,lt3_vertices,,6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0045_jpg.rf.4eee28c81a5adcfc497cfcf4fbf5a63a.jpg,test
+1056,7,invalid_geometry,Too few points in geometry component[524 934],6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0045_jpg.rf.4eee28c81a5adcfc497cfcf4fbf5a63a.jpg,test
+1056,7,zero_area,,6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0045_jpg.rf.4eee28c81a5adcfc497cfcf4fbf5a63a.jpg,test
+1056,8,invalid_geometry,Too few points in geometry component[517 933],6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0045_jpg.rf.4eee28c81a5adcfc497cfcf4fbf5a63a.jpg,test
+1056,8,zero_area,,6f40fbbd-891e-434b-a1ec-365668a5ae66_mp4-0045_jpg.rf.4eee28c81a5adcfc497cfcf4fbf5a63a.jpg,test
+1067,0,invalid_geometry,Self-intersection[531.135135135135 670.903474903475],b029e315-2e53-4152-a536-1adea99e32f7_mp4-0017_jpg.rf.426a6e272e9a39de1539106fa24e8bfe.jpg,test
+1068,2,invalid_geometry,Self-intersection[531.645161290323 597.838709677419],b029e315-2e53-4152-a536-1adea99e32f7_mp4-0025_jpg.rf.399b435ad9eb1fea10c4ad17c82ae574.jpg,test
+1076,3,invalid_geometry,Too few points in geometry component[82 484],d56fcb3c-0531-4696-8b67-2645d89e4a7f_mp4-0018_jpg.rf.f8ccb1a69afecde74b5656eacc4b25bc.jpg,test
+1076,3,zero_area,,d56fcb3c-0531-4696-8b67-2645d89e4a7f_mp4-0018_jpg.rf.f8ccb1a69afecde74b5656eacc4b25bc.jpg,test
+1086,5,invalid_geometry,Too few points in geometry component[113 327],fa45e6fb-4502-41bb-bb80-a4a4149318ad_mp4-0024_jpg.rf.c98ebe71205415024f578954de8240ad.jpg,test
+1086,5,zero_area,,fa45e6fb-4502-41bb-bb80-a4a4149318ad_mp4-0024_jpg.rf.c98ebe71205415024f578954de8240ad.jpg,test
+1086,6,lt3_vertices,,fa45e6fb-4502-41bb-bb80-a4a4149318ad_mp4-0024_jpg.rf.c98ebe71205415024f578954de8240ad.jpg,test
+1086,7,invalid_geometry,Too few points in geometry component[161 254],fa45e6fb-4502-41bb-bb80-a4a4149318ad_mp4-0024_jpg.rf.c98ebe71205415024f578954de8240ad.jpg,test
+1086,7,zero_area,,fa45e6fb-4502-41bb-bb80-a4a4149318ad_mp4-0024_jpg.rf.c98ebe71205415024f578954de8240ad.jpg,test

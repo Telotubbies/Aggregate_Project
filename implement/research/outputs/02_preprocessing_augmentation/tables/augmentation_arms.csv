@@ -1,0 +1,10 @@
+arm,data,epochs,n_train,steps_per_epoch,degrees,copy_paste,mosaic,hsv_h,fliplr,total_steps
+A0_none,data/dev_19659e679798/data.yaml,80,714,45,0.0,0.0,0.0,0.0,0.0,3600
+A1_default,data/dev_19659e679798/data.yaml,80,714,45,0.0,0.0,1.0,0.015,0.5,3600
+A2_geometric,data/dev_19659e679798/data.yaml,80,714,45,10.0,0.0,1.0,0.015,0.5,3600
+A8_copy_paste,data/dev_19659e679798/data.yaml,80,714,45,0.0,0.3,1.0,0.015,0.5,3600
+A3_photometric,data/offline_aug_A3_photometric_af24818762/data.yaml,40,1428,90,0.0,0.0,1.0,0.015,0.5,3600
+A4_rain,data/offline_aug_A4_rain_40e3fde81f/data.yaml,40,1428,90,0.0,0.0,1.0,0.015,0.5,3600
+A5_dark,data/offline_aug_A5_dark_d408213f15/data.yaml,40,1428,90,0.0,0.0,1.0,0.015,0.5,3600
+A6_dust,data/offline_aug_A6_dust_fba46e8f94/data.yaml,40,1428,90,0.0,0.0,1.0,0.015,0.5,3600
+A7_env_all,data/offline_aug_A7_env_all_0ee3d3dc69/data.yaml,20,2856,179,0.0,0.0,1.0,0.015,0.5,3580

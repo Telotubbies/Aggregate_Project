@@ -1,0 +1,32 @@
+{
+  "config": {
+    "notebook": "01_eda_and_dataset_splitting",
+    "version": "v1",
+    "seed": 42,
+    "bronze": "/home/supawich/Desktop/Aggregate_Project/implement/data/bronze",
+    "phash_size": 8,
+    "lap_short_side": 360
+  },
+  "env": {
+    "timestamp": "2026-10-18T15:57:19+0700",
+    "python": "3.12.3",
+    "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39",
+    "processor": "x86_64",
+    "cpu_count": 20,
+    "git_commit": "be0a789bbe48419cb657b13060635b565b1376a5",
+    "packages": {
+      "numpy": "2.5.4",
+      "pandas": "3.0.6",
+      "opencv-python": "5.0.0.93",
+      "pillow": "13.0.0",
+      "imagehash": "4.3.2",
+      "shapely": "2.2.0",
+      "scikit-learn": "1.9.1",
+      "matplotlib": "3.11.2",
+      "pycocotools": "2.0.11",
+      "torch": "2.14.1",
+      "ultralytics": "8.4.180"
+    },
+    "gpu": "NVIDIA GeForce RTX 3080 Ti, 12288 MiB, 580.178.04"
+  }
+}

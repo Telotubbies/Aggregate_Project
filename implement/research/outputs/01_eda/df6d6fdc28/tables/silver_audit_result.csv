@@ -1,0 +1,5 @@
+stratum,n,accept,reject,unsure,reject_rate,reject_ci95_low,reject_ci95_high,reviewer
+dropped,30,30,0,0,0.0,0.0,0.1135133931739688,claude-ai-visual
+ignore_eval,30,23,7,0,0.23333333333333334,0.11792388144489496,0.40928326158122175,claude-ai-visual
+merged,30,27,0,3,0.0,0.0,0.1135133931739688,claude-ai-visual
+unchanged,30,28,0,2,0.0,0.0,0.1135133931739688,claude-ai-visual

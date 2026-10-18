@@ -1,0 +1,22 @@
+[
+  {
+    "stage": "dev",
+    "dev_hash": "19659e679798",
+    "silver_hash": "0997f3096843",
+    "bronze": "/home/supawich/Desktop/Aggregate_Project/implement/data/bronze",
+    "bronze_roboflow": "aggregate_rock-and-sand v5",
+    "notebook_run": "df6d6fdc28",
+    "silver_params": {
+      "eps_frac": 0.0025,
+      "tau_iomin": 0.7,
+      "dup_merge": "union",
+      "a_floor_px640": 64.0,
+      "a_min_frac": 0.001,
+      "r_max_eval": Infinity
+    },
+    "near_dup_threshold": 8,
+    "n_cv_folds": 3,
+    "manifest": "manifests/images_19659e679798.csv",
+    "recorded": "2026-10-18T01:23:24+0700"
+  }
+]

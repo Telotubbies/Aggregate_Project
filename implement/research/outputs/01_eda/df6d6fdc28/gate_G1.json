@@ -1,0 +1,18 @@
+{
+  "no group spans two splits": true,
+  "no near-duplicate pair (d<=D_ND) across splits": true,
+  "train contains gravel and sand frames": true,
+  "val contains gravel and sand frames": true,
+  "test contains gravel and sand frames": true,
+  "thesis-video groups in test": true,
+  "train: images == labels == manifest": true,
+  "train: COCO GT loads (714 imgs, 3001 anns)": true,
+  "val: images == labels == manifest": true,
+  "val: COCO GT loads (131 imgs, 429 anns)": true,
+  "test: images == labels == manifest": true,
+  "test: COCO GT loads (244 imgs, 755 anns)": true,
+  "test sha256 list matches manifest": true,
+  "fold 0: no group overlap between train and val": true,
+  "fold 1: no group overlap between train and val": true,
+  "fold 2: no group overlap between train and val": true
+}

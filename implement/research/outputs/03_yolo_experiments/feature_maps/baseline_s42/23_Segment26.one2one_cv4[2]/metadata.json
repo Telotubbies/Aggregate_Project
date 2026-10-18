@@ -1,0 +1,33 @@
+{
+  "layer": "23_Segment26.one2one_cv4[2]",
+  "module": "Sequential",
+  "in_shape": "[[1, 256, 20, 20]]",
+  "out_shape": "[1, 32, 20, 20]",
+  "channels": 32,
+  "H": 20,
+  "W": 20,
+  "stride": 32.0,
+  "act_mean": -0.030617155134677887,
+  "act_std": 0.6712737083435059,
+  "act_abs_max": 4.165077209472656,
+  "frac_zero": 0.48640625,
+  "top16_channels": [
+    3,
+    16,
+    2,
+    20,
+    6,
+    26,
+    4,
+    0,
+    7,
+    13,
+    27,
+    12,
+    8,
+    10,
+    23,
+    17
+  ],
+  "visualized": true
+}

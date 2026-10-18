@@ -1,0 +1,53 @@
+{
+  "run_id": "df6d6fdc28",
+  "silver_hash": "0997f3096843",
+  "dev_hash": "19659e679798",
+  "bronze_images": 1089,
+  "bronze_instances": 6023,
+  "annotation_issues": {
+    "duplicate_line": 1,
+    "invalid_geometry": 253,
+    "lt3_vertices": 55,
+    "zero_area": 154
+  },
+  "groups_raw": 32,
+  "groups_merged": 27,
+  "silver_roles": {
+    "train_and_eval": 3861,
+    "train_only_ignore_eval": 324,
+    "dropped": 190
+  },
+  "split_counts": {
+    "train": 714,
+    "val": 131,
+    "test": 244
+  },
+  "split_state_counts": {
+    "test": {
+      "gravel": 114,
+      "mixed": 48,
+      "none": 0,
+      "sand": 82
+    },
+    "train": {
+      "gravel": 300,
+      "mixed": 57,
+      "none": 5,
+      "sand": 352
+    },
+    "val": {
+      "gravel": 75,
+      "mixed": 7,
+      "none": 0,
+      "sand": 49
+    }
+  },
+  "roboflow_split_leakage": {
+    "groups_spanning": 14,
+    "near_dup_pairs_cross_split": 6948
+  },
+  "cramers_v": {
+    "source group": 0.981,
+    "resolution": 0.628
+  }
+}

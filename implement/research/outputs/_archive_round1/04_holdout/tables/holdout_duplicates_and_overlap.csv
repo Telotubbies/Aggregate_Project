@@ -1,0 +1,4 @@
+dataset,images,clusters,exact_dup_in_dev,near_dup_to_dev,min_dist_to_dev
+piled_materials,1095,1031,0,0,12
+s02,66,2,0,0,20
+separate_rock_sand,182,96,0,0,14
