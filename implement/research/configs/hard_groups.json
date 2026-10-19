@@ -1,0 +1,220 @@
+{
+  "groups": [
+    "1991989f-1bf5-4e50-89bb-7301b220ac01",
+    "bbf45eda-4ffb-4bf1-9b29-a4e91475c8ec"
+  ],
+  "threshold": 0.38202666554112075,
+  "K": 5,
+  "rule": "train groups with n>=10 and macro mask AP <= Q25 in round-1 grouped CV",
+  "table": [
+    {
+      "group": "1991989f-1bf5-4e50-89bb-7301b220ac01",
+      "fold": 0,
+      "n": 65,
+      "in_train": true,
+      "state": "mixed",
+      "source_run": "outputs/03_yolo_experiments/cv/baseline_fold0_s42_8040bb24",
+      "mask_AP_gravel": 0.5339,
+      "mask_AP_sand": 0.0008,
+      "macro_mask_AP": 0.2673
+    },
+    {
+      "group": "5079fbab-a649-4a32-b4de-6ffd03974c2b",
+      "fold": 0,
+      "n": 2,
+      "in_train": true,
+      "state": "gravel",
+      "source_run": "outputs/03_yolo_experiments/cv/baseline_fold0_s42_8040bb24",
+      "mask_AP_gravel": 0.6821,
+      "mask_AP_sand": NaN,
+      "macro_mask_AP": 0.6821
+    },
+    {
+      "group": "6f40fbbd-891e-434b-a1ec-365668a5ae66",
+      "fold": 0,
+      "n": 47,
+      "in_train": true,
+      "state": "gravel",
+      "source_run": "outputs/03_yolo_experiments/cv/baseline_fold0_s42_8040bb24",
+      "mask_AP_gravel": 0.4967,
+      "mask_AP_sand": NaN,
+      "macro_mask_AP": 0.4967
+    },
+    {
+      "group": "b029e315-2e53-4152-a536-1adea99e32f7",
+      "fold": 0,
+      "n": 59,
+      "in_train": true,
+      "state": "gravel",
+      "source_run": "outputs/03_yolo_experiments/cv/baseline_fold0_s42_8040bb24",
+      "mask_AP_gravel": 0.6425,
+      "mask_AP_sand": NaN,
+      "macro_mask_AP": 0.6425
+    },
+    {
+      "group": "e9eebbd1-234c-467a-91b7-690191769c63",
+      "fold": 0,
+      "n": 3,
+      "in_train": true,
+      "state": "gravel",
+      "source_run": "outputs/03_yolo_experiments/cv/baseline_fold0_s42_8040bb24",
+      "mask_AP_gravel": 0.589,
+      "mask_AP_sand": NaN,
+      "macro_mask_AP": 0.589
+    },
+    {
+      "group": "6459c886-45a3-4065-82bc-2ed15b2875b0",
+      "fold": 1,
+      "n": 49,
+      "in_train": false,
+      "state": "sand",
+      "source_run": "outputs/03_yolo_experiments/cv/baseline_fold1_s42_2ea39c32",
+      "mask_AP_gravel": NaN,
+      "mask_AP_sand": 0.4765,
+      "macro_mask_AP": 0.4765
+    },
+    {
+      "group": "68935cd9-3fa0-403f-ba48-4764b89115a0",
+      "fold": 1,
+      "n": 1,
+      "in_train": true,
+      "state": "gravel",
+      "source_run": "outputs/03_yolo_experiments/cv/baseline_fold1_s42_2ea39c32",
+      "mask_AP_gravel": 0.0042,
+      "mask_AP_sand": NaN,
+      "macro_mask_AP": 0.0042
+    },
+    {
+      "group": "9056e676-f14d-410c-9dc7-c5686b3fca04",
+      "fold": 1,
+      "n": 1,
+      "in_train": true,
+      "state": "gravel",
+      "source_run": "outputs/03_yolo_experiments/cv/baseline_fold1_s42_2ea39c32",
+      "mask_AP_gravel": 0.2277,
+      "mask_AP_sand": NaN,
+      "macro_mask_AP": 0.2277
+    },
+    {
+      "group": "96ecd4fe-5910-4cd4-8a24-11ed20aab3b7",
+      "fold": 1,
+      "n": 66,
+      "in_train": true,
+      "state": "gravel",
+      "source_run": "outputs/03_yolo_experiments/cv/baseline_fold1_s42_2ea39c32",
+      "mask_AP_gravel": 0.6912,
+      "mask_AP_sand": NaN,
+      "macro_mask_AP": 0.6912
+    },
+    {
+      "group": "c6f16e4e-55cb-4abc-91ea-0d01ae0d6d28",
+      "fold": 1,
+      "n": 1,
+      "in_train": true,
+      "state": "gravel",
+      "source_run": "outputs/03_yolo_experiments/cv/baseline_fold1_s42_2ea39c32",
+      "mask_AP_gravel": 0.395,
+      "mask_AP_sand": NaN,
+      "macro_mask_AP": 0.395
+    },
+    {
+      "group": "d56fcb3c-0531-4696-8b67-2645d89e4a7f",
+      "fold": 1,
+      "n": 57,
+      "in_train": true,
+      "state": "gravel",
+      "source_run": "outputs/03_yolo_experiments/cv/baseline_fold1_s42_2ea39c32",
+      "mask_AP_gravel": 0.5925,
+      "mask_AP_sand": NaN,
+      "macro_mask_AP": 0.5925
+    },
+    {
+      "group": "fe3e6f0d-5f1f-4948-8468-9538c3b384da",
+      "fold": 1,
+      "n": 1,
+      "in_train": true,
+      "state": "sand",
+      "source_run": "outputs/03_yolo_experiments/cv/baseline_fold1_s42_2ea39c32",
+      "mask_AP_gravel": NaN,
+      "mask_AP_sand": 0.6333,
+      "macro_mask_AP": 0.6333
+    },
+    {
+      "group": "04802d75-aef4-4463-b9ac-241ba1c9d161",
+      "fold": 2,
+      "n": 1,
+      "in_train": true,
+      "state": "sand",
+      "source_run": "outputs/03_yolo_experiments/cv/baseline_fold2_s42_8df5b000",
+      "mask_AP_gravel": NaN,
+      "mask_AP_sand": 0.1257,
+      "macro_mask_AP": 0.1257
+    },
+    {
+      "group": "07451999-bdf8-4862-b869-6db57c35f0c1",
+      "fold": 2,
+      "n": 40,
+      "in_train": false,
+      "state": "gravel",
+      "source_run": "outputs/03_yolo_experiments/cv/baseline_fold2_s42_8df5b000",
+      "mask_AP_gravel": 0.4278,
+      "mask_AP_sand": 0.455,
+      "macro_mask_AP": 0.4414
+    },
+    {
+      "group": "2f4b2f2f-9d1c-4a87-b5eb-75cd2824d881",
+      "fold": 2,
+      "n": 1,
+      "in_train": true,
+      "state": "gravel",
+      "source_run": "outputs/03_yolo_experiments/cv/baseline_fold2_s42_8df5b000",
+      "mask_AP_gravel": 0.7132,
+      "mask_AP_sand": NaN,
+      "macro_mask_AP": 0.7132
+    },
+    {
+      "group": "51647d0e-59fc-4bf9-b510-488636e21705",
+      "fold": 2,
+      "n": 1,
+      "in_train": true,
+      "state": "gravel",
+      "source_run": "outputs/03_yolo_experiments/cv/baseline_fold2_s42_8df5b000",
+      "mask_AP_gravel": 0.3059,
+      "mask_AP_sand": NaN,
+      "macro_mask_AP": 0.3059
+    },
+    {
+      "group": "bbf45eda-4ffb-4bf1-9b29-a4e91475c8ec",
+      "fold": 2,
+      "n": 36,
+      "in_train": true,
+      "state": "sand",
+      "source_run": "outputs/03_yolo_experiments/cv/baseline_fold2_s42_8df5b000",
+      "mask_AP_gravel": 0.0013,
+      "mask_AP_sand": 0.2582,
+      "macro_mask_AP": 0.1298
+    },
+    {
+      "group": "f9b12ec3-0036-45f7-8cc3-4d2e6f481cdc",
+      "fold": 2,
+      "n": 56,
+      "in_train": true,
+      "state": "gravel",
+      "source_run": "outputs/03_yolo_experiments/cv/baseline_fold2_s42_8df5b000",
+      "mask_AP_gravel": 0.606,
+      "mask_AP_sand": NaN,
+      "macro_mask_AP": 0.606
+    },
+    {
+      "group": "fa45e6fb-4502-41bb-bb80-a4a4149318ad",
+      "fold": 2,
+      "n": 42,
+      "in_train": false,
+      "state": "gravel",
+      "source_run": "outputs/03_yolo_experiments/cv/baseline_fold2_s42_8df5b000",
+      "mask_AP_gravel": 0.7949,
+      "mask_AP_sand": NaN,
+      "macro_mask_AP": 0.7949
+    }
+  ]
+}

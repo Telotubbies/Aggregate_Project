@@ -1,0 +1,24 @@
+level,metric,dev test (ref.),Piled Materials · S0,Piled Materials · S1,Separate Rock-Sand · S0,Separate Rock-Sand · S1
+data,images,244,"1,095","1,095",182,182
+data,near-duplicate clusters,7,"1,031","1,031",96,96
+instance · mask,AP50-95 (macro),0.466,0.075,0.040,0.064,0.035
+instance · mask,AP50-95 95% CI,"[0.385, 0.638]","[0.064, 0.093]","[0.032, 0.053]","[0.033, 0.115]","[0.018, 0.071]"
+instance · mask,AP50,0.735,0.155,0.078,0.082,0.057
+instance · mask,AP75,0.445,0.063,0.038,0.063,0.032
+instance · mask,AP small / medium / large,0.162 / 0.466 / 0.560,0.000 / 0.017 / 0.117,0.000 / 0.016 / 0.090,0.001 / 0.008 / 0.418,0.002 / 0.012 / 0.300
+instance · mask,AP50-95 gravel,0.567,0.070,0.052,0.038,0.007
+instance · mask,AP50-95 sand,0.366,0.080,0.029,0.090,0.062
+instance · box,AP50-95,0.483,0.092,0.048,0.061,0.036
+instance · box,AP50,0.686,0.193,0.090,0.082,0.055
+instance · box,AP75,0.547,0.083,0.049,0.068,0.039
+instance · frozen threshold · gravel,precision,0.897,0.304,0.134,0.143,0.042
+instance · frozen threshold · gravel,recall,0.723,0.252,0.235,0.056,0.053
+instance · frozen threshold · gravel,F1,0.800,0.275,0.171,0.080,0.047
+instance · frozen threshold · sand,precision,0.689,0.210,0.075,0.538,0.300
+instance · frozen threshold · sand,recall,0.601,0.447,0.284,0.118,0.162
+instance · frozen threshold · sand,F1,0.642,0.286,0.119,0.193,0.210
+image · 4 states,accuracy,1.000,0.542,0.456,0.088,0.099
+image · 4 states,balanced accuracy,1.000,0.346,0.303,0.146,0.149
+image · 4 states,macro-F1,1.000,0.316,0.263,0.046,0.050
+image · presence,F1 gravel,1.000,0.541,0.562,0.423,0.525
+image · presence,F1 sand,1.000,0.737,0.710,0.636,0.686

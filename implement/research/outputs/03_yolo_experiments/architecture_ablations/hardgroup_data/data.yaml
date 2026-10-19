@@ -1,0 +1,4 @@
+train: /home/supawich/Desktop/Aggregate_Project/implement/research/outputs/03_yolo_experiments/architecture_ablations/hardgroup_data/train.txt
+val: /home/supawich/Desktop/Aggregate_Project/implement/research/data/preproc_P5_unsharp_A9_1450497fd9/val/images
+nc: 2
+names: ['gravel', 'sand']

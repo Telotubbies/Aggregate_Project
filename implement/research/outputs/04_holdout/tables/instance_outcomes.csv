@@ -1,0 +1,31 @@
+dataset,side,cls,outcome,n,share
+test,GT,sand,correct,172,0.5972222222222222
+test,GT,sand,missed,115,0.3993055555555556
+test,GT,gravel,correct,321,0.722972972972973
+test,GT,gravel,missed,123,0.27702702702702703
+test,GT,sand,wrong class,1,0.003472222222222222
+test,prediction,sand,correct,172,0.6852589641434262
+test,prediction,gravel,background,36,0.1005586592178771
+test,prediction,sand,background,79,0.3147410358565737
+test,prediction,gravel,correct,321,0.8966480446927374
+test,prediction,gravel,wrong class,1,0.002793296089385475
+piled_materials,GT,sand,correct,313,0.4471428571428571
+piled_materials,GT,gravel,missed,314,0.5946969696969697
+piled_materials,GT,sand,missed,380,0.5428571428571428
+piled_materials,GT,gravel,wrong class,81,0.1534090909090909
+piled_materials,GT,gravel,correct,133,0.2518939393939394
+piled_materials,GT,sand,wrong class,7,0.01
+piled_materials,prediction,sand,correct,313,0.20992622401073105
+piled_materials,prediction,sand,background,1097,0.7357478202548625
+piled_materials,prediction,gravel,background,298,0.680365296803653
+piled_materials,prediction,sand,wrong class,81,0.05432595573440644
+piled_materials,prediction,gravel,correct,133,0.3036529680365297
+piled_materials,prediction,gravel,wrong class,7,0.01598173515981735
+separate_rock_sand,GT,gravel,correct,21,0.05570291777188329
+separate_rock_sand,GT,gravel,missed,356,0.9442970822281167
+separate_rock_sand,GT,sand,missed,262,0.8821548821548821
+separate_rock_sand,GT,sand,correct,35,0.11784511784511785
+separate_rock_sand,prediction,gravel,correct,21,0.14285714285714285
+separate_rock_sand,prediction,sand,correct,35,0.5384615384615384
+separate_rock_sand,prediction,sand,background,30,0.46153846153846156
+separate_rock_sand,prediction,gravel,background,126,0.8571428571428571

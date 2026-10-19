@@ -1,0 +1,11 @@
+{
+  "n": 244,
+  "accuracy": 1.0,
+  "balanced_accuracy": 1.0,
+  "macro_f1": 1.0,
+  "kappa": 1.0,
+  "thresholds": {
+    "gravel": 0.014245966302328453,
+    "sand": 0.001276440419015716
+  }
+}

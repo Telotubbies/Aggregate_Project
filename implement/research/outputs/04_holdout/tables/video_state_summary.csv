@@ -1,0 +1,4 @@
+video,duration_s,n_pred,sequence,n_segments,switches_raw,switches_smoothed,share_none,share_gravel,share_sand,share_mixed
+0a48349e,55.5,555,none -> sand,2,0,1,0.0036036036036036037,0.0,0.9963963963963964,0.0
+32842c3f,19.835,199,none -> gravel -> mixed -> gravel -> mixed -> gravel -> mixed -> gravel,8,8,7,0.010050251256281407,0.9195979899497487,0.0,0.07035175879396985
+5d81688a,20.766666666666666,208,none -> gravel,2,2,1,0.009615384615384616,0.9903846153846154,0.0,0.0

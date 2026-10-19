@@ -5,7 +5,7 @@
     "A3_photometric",
     "A8_copy_paste"
   ],
-  "offline_dataset": "data/preproc_P5_unsharp_A9_1d518b8361/data.yaml",
+  "offline_dataset": "data/preproc_P5_unsharp_A9_1450497fd9/data.yaml",
   "online": {
     "hsv_h": 0.015,
     "hsv_s": 0.7,
@@ -25,7 +25,7 @@
     "copy_paste_mode": "flip"
   },
   "recipe": {
-    "epochs": 20,
+    "epochs": 60,
     "imgsz": 640,
     "batch": 16,
     "workers": 8,
@@ -34,10 +34,10 @@
     "lrf": 0.01,
     "momentum": 0.937,
     "weight_decay": 0.0005,
-    "warmup_epochs": 0.6,
-    "close_mosaic": 2,
+    "warmup_epochs": 1.8,
+    "close_mosaic": 6,
     "cos_lr": false,
-    "patience": 20,
+    "patience": 60,
     "amp": true,
     "cache": false,
     "hsv_h": 0.015,
@@ -57,13 +57,30 @@
     "copy_paste": 0.3,
     "copy_paste_mode": "flip"
   },
-  "val_mask_AP_mean": 0.5812745231396356,
-  "val_mask_AP_sd": 0.0017097033290261747,
-  "A1_val_mask_AP_mean": 0.5580243792353837,
+  "val_mask_AP_mean": 0.5637669214251314,
+  "val_mask_AP_sd": 0.01901835277791993,
+  "A1_val_mask_AP_mean": 0.5562016368547914,
   "preprocessing": "P5_unsharp",
+  "preprocessing_params": {
+    "TARGET_L": 70.56271362304688
+  },
+  "offline_sets": [
+    "A3_photometric",
+    "A7_env_all"
+  ],
+  "training_policy": {
+    "max_epochs": 60,
+    "patience": 60,
+    "optimizer": "AdamW"
+  },
+  "epochs_run": {
+    "42": 60,
+    "43": 60,
+    "44": 60
+  },
   "run_dirs": {
-    "42": "outputs/02_preprocessing_augmentation/runs/A9_selected_s42_d99d73b9",
-    "43": "outputs/02_preprocessing_augmentation/runs/A9_selected_s43_d99d73b9",
-    "44": "outputs/02_preprocessing_augmentation/runs/A9_selected_s44_d99d73b9"
+    "42": "outputs/02_preprocessing_augmentation/runs/A9_selected_s42_225a7ce9",
+    "43": "outputs/02_preprocessing_augmentation/runs/A9_selected_s43_225a7ce9",
+    "44": "outputs/02_preprocessing_augmentation/runs/A9_selected_s44_225a7ce9"
   }
 }

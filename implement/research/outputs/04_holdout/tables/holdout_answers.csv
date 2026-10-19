@@ -1,0 +1,12 @@
+question,dataset,finding
+7.1 drop vs test,Piled Materials,"macro mask AP 0.075 [0.064, 0.093] vs test 0.466"
+7.2 image level,Piled Materials,"presence F1 gravel 0.54, sand 0.74 (test 1.00 / 1.00)"
+7.3 main error,Piled Materials,GT gravel → sand 15%; GT gravel missed 59%; GT sand missed 54%
+7.4 S1 − S0,Piled Materials,"Δ macro mask AP -0.035 [-0.044, -0.027]"
+7.5 conf ≥ 0.8,Piled Materials,142/1095 images have any detection ≥ 0.8
+7.1 drop vs test,Separate Rock-Sand,"macro mask AP 0.064 [0.033, 0.115] vs test 0.466"
+7.2 image level,Separate Rock-Sand,"presence F1 gravel 0.42, sand 0.64 (test 1.00 / 1.00)"
+7.3 main error,Separate Rock-Sand,GT gravel → sand 0%; GT gravel missed 94%; GT sand missed 88%
+7.4 S1 − S0,Separate Rock-Sand,"Δ macro mask AP -0.029 [-0.055, -0.008]"
+7.5 conf ≥ 0.8,Separate Rock-Sand,16/182 images have any detection ≥ 0.8
+7.6 S02,S02 (unlabelled),max confidence 0.66; median per-image max 0.42 vs test 0.86

@@ -1,0 +1,69 @@
+{
+  "model": "R2_yolo26s__C1_cbam_P3",
+  "provisional": false,
+  "round": 2,
+  "model_size": "s",
+  "imgsz": 640,
+  "weights_sha256": "accdf2e4453c5c3cbeaa3b39d76898c34a491d6a109b82c6d4cc33458234e09a",
+  "params": 11437512,
+  "GFLOPs": 37.33,
+  "val": {
+    "mask_AP": 0.593799086078145,
+    "mask_AP_CI95": [
+      0.44936348041604335,
+      0.852453082171529
+    ],
+    "mask_AP50": 0.7765635607014443,
+    "mask_AP75": 0.6521155496971509,
+    "mask_AP_gravel": 0.7476205345727903,
+    "mask_AP_sand": 0.43997763758349995,
+    "conf_thresholds": {
+      "gravel": 0.37,
+      "sand": 0.28
+    },
+    "tp_fp_fn": {
+      "gravel": {
+        "TP": 194,
+        "FP": 8,
+        "FN": 31,
+        "precision": 0.9604,
+        "recall": 0.8622,
+        "F1": 0.9087
+      },
+      "sand": {
+        "TP": 108,
+        "FP": 47,
+        "FN": 86,
+        "precision": 0.6968,
+        "recall": 0.5567,
+        "F1": 0.6189
+      }
+    },
+    "tide_delta_AP50": {
+      "Cls": 0.0001,
+      "Loc": 0.0737,
+      "Both": 0.0002,
+      "Dupe": 0.0071,
+      "Bkg": 0.0301,
+      "Miss": 0.0207
+    },
+    "largest_error": "Loc",
+    "boundary_iou_median": {
+      "gravel": 0.8097,
+      "sand": 0.7382
+    },
+    "state": {
+      "n": 131,
+      "accuracy": 0.9465648854961832,
+      "balanced_accuracy": 0.7074829931972788,
+      "macro_f1": 0.7244838018033896,
+      "kappa": 0.8948394495412844,
+      "thresholds": {
+        "gravel": 0.014245966302328453,
+        "sand": 0.001276440419015716
+      }
+    }
+  },
+  "speed_gpu_p50_ms": 5.4037055087974295,
+  "device": "NVIDIA GeForce RTX 3080 Ti"
+}

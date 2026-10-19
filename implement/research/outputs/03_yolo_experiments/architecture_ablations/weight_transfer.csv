@@ -1,1 +1,5 @@
-
+kind,layers,tensors_matched,tensors_total,params_matched,params_total
+cbam,[16],740,847,2983470,3074974
+cbam,[16],740,847,2983470,3074974
+c3k2_attn,on=[] off=[22] scale=n,698,844,2715815,2988988
+c3k2_attn,on=[] off=[22] scale=n,698,844,2715815,2988988

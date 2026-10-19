@@ -1,8 +1,8 @@
 {
   "baseline_arm": "A9_selected",
-  "data": "data/preproc_P5_unsharp_A9_1d518b8361/data.yaml",
+  "data": "data/preproc_P5_unsharp_A9_1450497fd9/data.yaml",
   "recipe": {
-    "epochs": 20,
+    "epochs": 60,
     "imgsz": 640,
     "batch": 16,
     "workers": 8,
@@ -11,10 +11,10 @@
     "lrf": 0.01,
     "momentum": 0.937,
     "weight_decay": 0.0005,
-    "warmup_epochs": 0.6,
-    "close_mosaic": 2,
+    "warmup_epochs": 1.8,
+    "close_mosaic": 6,
     "cos_lr": false,
-    "patience": 20,
+    "patience": 60,
     "amp": true,
     "cache": false,
     "hsv_h": 0.015,
@@ -36,9 +36,9 @@
   },
   "preprocessing": "P5_unsharp",
   "runs": {
-    "42": "outputs/02_preprocessing_augmentation/runs/A9_selected_s42_d99d73b9",
-    "43": "outputs/02_preprocessing_augmentation/runs/A9_selected_s43_d99d73b9",
-    "44": "outputs/02_preprocessing_augmentation/runs/A9_selected_s44_d99d73b9"
+    "42": "outputs/02_preprocessing_augmentation/runs/A9_selected_s42_225a7ce9",
+    "43": "outputs/02_preprocessing_augmentation/runs/A9_selected_s43_225a7ce9",
+    "44": "outputs/02_preprocessing_augmentation/runs/A9_selected_s44_225a7ce9"
   },
   "base_weights_sha256": "361fbfabab285c3237700b6bb91d7ecfa602cd945fffda8dbe1242829b71e73f",
   "model_yaml": "/home/supawich/Desktop/Aggregate_Project/implement/research/.venv/lib/python3.12/site-packages/ultralytics/cfg/models/26/yolo26-seg.yaml",

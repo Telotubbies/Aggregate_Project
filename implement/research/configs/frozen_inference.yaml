@@ -1,0 +1,48 @@
+selected: R2_yolo26s__C1_cbam_P3
+round: 2
+model_size: s
+weights: outputs/03_yolo_experiments/architecture_ablations/R2_yolo26s__C1_cbam_P3_s42_c8de8872/weights/best.pt
+weights_sha256: accdf2e4453c5c3cbeaa3b39d76898c34a491d6a109b82c6d4cc33458234e09a
+imgsz: 640
+preprocessing: P5_unsharp
+preprocessing_params:
+  TARGET_L: 70.56271362304688
+attention:
+  kind: cbam
+  layers:
+  - 16
+training_policy:
+  max_epochs: 60
+  patience: 60
+  optimizer: AdamW
+hard_groups: null
+conf_thresholds:
+  gravel: 0.37
+  sand: 0.28
+val_operating_point:
+  gravel:
+    conf: 0.37
+    TP: 194.0
+    FP: 8.0
+    FN: 31.0
+    precision: 0.9603960396039604
+    recall: 0.8622222222222222
+    F1: 0.9086651053864169
+  sand:
+    conf: 0.28
+    TP: 108.0
+    FP: 47.0
+    FN: 86.0
+    precision: 0.6967741935483871
+    recall: 0.5567010309278351
+    F1: 0.6189111747851003
+state_min_conf: 0.05
+state_thresholds:
+  gravel: 0.014245966302328453
+  sand: 0.001276440419015716
+max_det: 100
+retina_masks: true
+dev_hash: 19659e679798
+silver_hash: 0997f3096843
+ultralytics: 8.4.180
+frozen: 2026-10-19T00:30:20+0700

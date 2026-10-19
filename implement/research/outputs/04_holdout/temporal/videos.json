@@ -1,0 +1,28 @@
+{
+  "0a48349e": {
+    "path": "/home/supawich/Desktop/Aggregate_Project/implement/research/data/videos/0a48349e-f671-436a-8af5-de54f079109f.mp4",
+    "sha256": "87c643c1cd8e08f1f05649ab5a5bfb1889839003817c9b0cda62ba76701ee356",
+    "fps": 29.98198198198198,
+    "frames": 1664,
+    "duration_s": 55.5,
+    "in_dev_split": [
+      "test"
+    ]
+  },
+  "32842c3f": {
+    "path": "/home/supawich/Desktop/Aggregate_Project/implement/research/data/videos/32842c3f-25ad-4bab-8eb5-89fc619a6918.mp4",
+    "sha256": "460d3cb7553aa910b1d0a3d29f7e0d20b18d5113fefed128ae7086a98ab1d9d3",
+    "fps": 29.997479203428284,
+    "frames": 595,
+    "duration_s": 19.835,
+    "in_dev_split": []
+  },
+  "5d81688a": {
+    "path": "/home/supawich/Desktop/Aggregate_Project/implement/research/data/videos/5d81688a-7f52-42a4-b81d-822c2d2319a3.mp4",
+    "sha256": "5e1553d98c4b489e0aab9f22b5ff21a6dee1d4d6b03fdfa80599b0ea6a72a275",
+    "fps": 30.0,
+    "frames": 623,
+    "duration_s": 20.766666666666666,
+    "in_dev_split": []
+  }
+}

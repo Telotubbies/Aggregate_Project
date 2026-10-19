@@ -1,0 +1,4 @@
+train: /home/supawich/Desktop/Aggregate_Project/implement/research/outputs/03_yolo_experiments/cv/fold2/train_selected.txt
+val: /home/supawich/Desktop/Aggregate_Project/implement/research/outputs/03_yolo_experiments/cv/fold2/val_pp.txt
+nc: 2
+names: ['gravel', 'sand']

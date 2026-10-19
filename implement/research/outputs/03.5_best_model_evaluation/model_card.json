@@ -1,0 +1,67 @@
+{
+  "model": "R2_yolo26s__C1_cbam_P3",
+  "provisional": false,
+  "framework": "ultralytics 8.4.180",
+  "architecture": "SegmentationModel",
+  "base_weights": "/home/supawich/Desktop/Aggregate_Project/implement/research/weights/yolo26s-seg.pt",
+  "task": "segment",
+  "parameters": 11437512,
+  "GFLOPs@imgsz": 37.33,
+  "imgsz_eval": 640,
+  "model_size": "s",
+  "round": 2,
+  "layers": 24,
+  "attention": {
+    "kind": "cbam",
+    "layers": [
+      16
+    ]
+  },
+  "imgsz": 640,
+  "train_images (after offline aug)": 3570,
+  "val_images": 131,
+  "data": "/home/supawich/Desktop/Aggregate_Project/implement/research/data/preproc_P5_unsharp_A9_1450497fd9/data.yaml",
+  "epochs": 60,
+  "batch": 16,
+  "optimizer": "AdamW",
+  "lr0": 0.001,
+  "lrf": 0.01,
+  "weight_decay": 0.0005,
+  "warmup_epochs": 1.8,
+  "close_mosaic": 6,
+  "amp": true,
+  "seed": 42,
+  "train_wall_time_s": "1777.1",
+  "online_augmentation": {
+    "hsv_h": 0.015,
+    "hsv_s": 0.7,
+    "hsv_v": 0.4,
+    "degrees": 0.0,
+    "translate": 0.1,
+    "scale": 0.5,
+    "shear": 0.0,
+    "perspective": 0.0,
+    "flipud": 0.0,
+    "fliplr": 0.5,
+    "mosaic": 1.0,
+    "mixup": 0.0,
+    "copy_paste": 0.3,
+    "copy_paste_mode": "flip"
+  },
+  "offline_augmentation_components": [
+    "A7_env_all",
+    "A3_photometric",
+    "A8_copy_paste"
+  ],
+  "preprocessing": "P5_unsharp",
+  "conf_thresholds": {
+    "gravel": 0.37,
+    "sand": 0.28
+  },
+  "state_thresholds": {
+    "gravel": 0.014245966302328453,
+    "sand": 0.001276440419015716
+  },
+  "weights_sha256": "accdf2e4453c5c3cbeaa3b39d76898c34a491d6a109b82c6d4cc33458234e09a",
+  "dev_hash": "19659e679798"
+}
