@@ -1,0 +1,15 @@
+{
+  "init": "/home/supawich/Desktop/Aggregate_Project/implement/research/outputs/05_hard_negative_mining/runs/A_f11/r1_s1/weights/last.pt",
+  "init_sha256": "a7c4331d4816223d26ce226812fe7c341a0d2210e7d4cf36ea6b9309764c6e74",
+  "data": "/home/supawich/Desktop/Aggregate_Project/implement/research/data/hnm/A_f11/r1/data.yaml",
+  "recipe": {
+    "epochs": 8,
+    "freeze": null,
+    "lr0": 0.0001,
+    "lrf": 0.1,
+    "warmup_epochs": 0.0,
+    "close_mosaic": 3
+  },
+  "last_sha256": "cae3b8a35b1f7977d2534d810e354819fb961127325e80acf2b8a70ec3b58a41",
+  "finished": "2026-10-20T14:22:54+0700"
+}

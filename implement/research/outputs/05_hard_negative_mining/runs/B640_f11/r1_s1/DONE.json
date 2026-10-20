@@ -1,0 +1,15 @@
+{
+  "init": "/home/supawich/Desktop/Aggregate_Project/experiment/runs/bench_ws/yolo26s/weights/best.pt",
+  "init_sha256": "0caad329417ada21185f2a68c851a97f20a939075bfea7265672d3f7c58c666a",
+  "data": "/home/supawich/Desktop/Aggregate_Project/implement/research/data/hnm/B640_f11/r1/data.yaml",
+  "recipe": {
+    "epochs": 15,
+    "freeze": 11,
+    "lr0": 0.001667,
+    "lrf": 0.1,
+    "warmup_epochs": 1.0,
+    "close_mosaic": 0
+  },
+  "last_sha256": "954c6d339eae3f36b6080e9d6cc7399a7692bedbddde0cecc39452611cd843d2",
+  "finished": "2026-10-20T18:02:43+0700"
+}

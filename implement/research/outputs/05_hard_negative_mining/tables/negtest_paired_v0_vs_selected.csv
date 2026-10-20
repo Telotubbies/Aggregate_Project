@@ -1,0 +1,4 @@
+arm,selected,n,v0_fp_images,selected_fp_images,fixed,newly_wrong,diff_rate,mcnemar_exact_p
+A,v0,1500,1134,1134,0,0,0.0,1.0
+B,f11_r3,1500,244,0,244,0,-0.16266666666666665,7.074749280333369e-74
+B640,f11_r3,1500,438,0,438,0,-0.292,2.817681462947307e-132

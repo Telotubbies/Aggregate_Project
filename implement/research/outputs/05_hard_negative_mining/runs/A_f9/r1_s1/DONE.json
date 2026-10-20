@@ -1,0 +1,15 @@
+{
+  "init": "/home/supawich/Desktop/Aggregate_Project/implement/research/outputs/03_yolo_experiments/architecture_ablations/R2_yolo26s__C1_cbam_P3_s42_c8de8872/weights/best.pt",
+  "init_sha256": "accdf2e4453c5c3cbeaa3b39d76898c34a491d6a109b82c6d4cc33458234e09a",
+  "data": "/home/supawich/Desktop/Aggregate_Project/implement/research/data/hnm/A_f9/r1/data.yaml",
+  "recipe": {
+    "epochs": 15,
+    "freeze": 9,
+    "lr0": 0.001,
+    "lrf": 0.1,
+    "warmup_epochs": 1.0,
+    "close_mosaic": 3
+  },
+  "last_sha256": "4cc39833688232a3fd127e52ee4bcf065e40d6893dd6e62f88c519efe6290e0f",
+  "finished": "2026-10-20T13:43:46+0700"
+}

@@ -1,31 +1,31 @@
 dataset,side,cls,outcome,n,share
-test,GT,sand,correct,172,0.5972222222222222
-test,GT,sand,missed,115,0.3993055555555556
-test,GT,gravel,correct,321,0.722972972972973
-test,GT,gravel,missed,123,0.27702702702702703
-test,GT,sand,wrong class,1,0.003472222222222222
-test,prediction,sand,correct,172,0.6852589641434262
-test,prediction,gravel,background,36,0.1005586592178771
-test,prediction,sand,background,79,0.3147410358565737
-test,prediction,gravel,correct,321,0.8966480446927374
-test,prediction,gravel,wrong class,1,0.002793296089385475
-piled_materials,GT,sand,correct,313,0.4471428571428571
-piled_materials,GT,gravel,missed,314,0.5946969696969697
-piled_materials,GT,sand,missed,380,0.5428571428571428
-piled_materials,GT,gravel,wrong class,81,0.1534090909090909
-piled_materials,GT,gravel,correct,133,0.2518939393939394
-piled_materials,GT,sand,wrong class,7,0.01
+test,GT,sand,correct,151,0.7330097087378641
+test,GT,sand,missed,54,0.2621359223300971
+test,GT,gravel,correct,284,0.8231884057971014
+test,GT,gravel,missed,61,0.17681159420289855
+test,GT,sand,wrong class,1,0.0048543689320388345
+test,prediction,sand,correct,151,0.6622807017543859
+test,prediction,gravel,background,36,0.11214953271028037
+test,prediction,sand,background,77,0.33771929824561403
+test,prediction,gravel,correct,284,0.8847352024922118
+test,prediction,gravel,wrong class,1,0.003115264797507788
+piled_materials,GT,sand,correct,313,0.4490674318507891
+piled_materials,GT,gravel,missed,309,0.5908221797323135
+piled_materials,GT,sand,missed,377,0.5408895265423243
+piled_materials,GT,gravel,wrong class,81,0.15487571701720843
+piled_materials,GT,gravel,correct,133,0.25430210325047803
+piled_materials,GT,sand,wrong class,7,0.010043041606886656
 piled_materials,prediction,sand,correct,313,0.20992622401073105
 piled_materials,prediction,sand,background,1097,0.7357478202548625
 piled_materials,prediction,gravel,background,298,0.680365296803653
 piled_materials,prediction,sand,wrong class,81,0.05432595573440644
 piled_materials,prediction,gravel,correct,133,0.3036529680365297
 piled_materials,prediction,gravel,wrong class,7,0.01598173515981735
-separate_rock_sand,GT,gravel,correct,21,0.05570291777188329
-separate_rock_sand,GT,gravel,missed,356,0.9442970822281167
-separate_rock_sand,GT,sand,missed,262,0.8821548821548821
-separate_rock_sand,GT,sand,correct,35,0.11784511784511785
+separate_rock_sand,GT,gravel,correct,21,0.07167235494880546
+separate_rock_sand,GT,gravel,missed,272,0.9283276450511946
+separate_rock_sand,GT,sand,missed,178,0.8476190476190476
+separate_rock_sand,GT,sand,correct,32,0.1523809523809524
 separate_rock_sand,prediction,gravel,correct,21,0.14285714285714285
-separate_rock_sand,prediction,sand,correct,35,0.5384615384615384
-separate_rock_sand,prediction,sand,background,30,0.46153846153846156
+separate_rock_sand,prediction,sand,correct,32,0.5161290322580645
+separate_rock_sand,prediction,sand,background,30,0.4838709677419355
 separate_rock_sand,prediction,gravel,background,126,0.8571428571428571

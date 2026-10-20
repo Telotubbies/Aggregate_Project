@@ -1,4 +1,4 @@
 index,pred gravel,pred sand,pred background
-GT gravel,194,0,31
-GT sand,0,108,86
+GT gravel,191,0,21
+GT sand,0,104,55
 GT background,8,47,0

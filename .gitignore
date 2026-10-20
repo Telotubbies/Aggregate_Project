@@ -1,7 +1,5 @@
 # training outputs
-runs/
-*.pt
-*.onnx
+
 
 # python / jupyter
 __pycache__/
@@ -24,3 +22,9 @@ experiment/results/bench_ws/video/*.avi
 
 # prediction caches (regenerable, large)
 *.npy
+
+# implement: datasets and regenerable caches (rebuild via notebooks 01, 02, 04, 05)
+implement/data/
+implement/research/data/
+implement/research/outputs/05_hard_negative_mining/cache/
+implement/research/outputs/04_holdout/tmp_std.jpg
